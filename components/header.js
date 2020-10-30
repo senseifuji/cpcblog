@@ -16,7 +16,8 @@ import useWindowSize from '../hooks/usewindowsize';
 
 const Header = ({position}) => {
     //Extracting colors
-    const {yellow, white, red, black} = customTheme.colors.cpc
+
+      const {yellow, white, red, black} = customTheme.colors.cpc
     const {gotham} = customTheme.fonts.cpc
 
     //send question states...
@@ -101,8 +102,8 @@ const Header = ({position}) => {
                                 <li className={"item " +  (router.pathname === '/acerca' ? 'inpage':'')}> 
                                     <Link href="/acerca"><a >Acerca de</a></Link>
                                 </li>
-                                <li className={"item " + (router.pathname === '/faqs' ? 'inpage':'')}>
-                                    <Link href="/faqs"><a >Preguntas Frecuentes</a></Link>
+                                <li className={"item " + (router.pathname === '/faq' ? 'inpage':'')}>
+                                    <Link href="/faq"><a >Preguntas Frecuentes</a></Link>
                                 </li>
                                 <li  className={"item " +  (router.pathname === '/publicaciones' ? 'inpage':'')}>
                                     <Link href="/publicaciones"><a >Publicaciones</a></Link>
