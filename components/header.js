@@ -1,22 +1,23 @@
+import { Flex, Box, List } from "@chakra-ui/core";
+
+import customTheme from '../config/customTheme';
+
 import Logo from './svgs/cpclogo';
 import Link from 'next/link'
+
 import {useState} from 'react';
-import customTheme from '../config/customTheme';
-import { Flex, Box, List } from "@chakra-ui/core";
 import { useRouter } from 'next/router'
-
-
 
 
 const Header = ({position}) => {
     //Extracting colors
     const {yellow, white, red} = customTheme.colors.cpc
-
+    
     //state that is passed to the logo component on hover and unhover
     const [logoColor, setLogoColor] = useState(white)
-
+    
     const router = useRouter() //router of app, to know in which page we're in
-
+    
     return (
         <header>
             <Flex width="100%" justify="center">
@@ -52,9 +53,25 @@ const Header = ({position}) => {
                     </Flex>
 
                     {/* SOCIAL MEDIA SECTION */}
-                    <Box>
-                        here goes social media
-                    </Box>  
+                    <Flex>
+                        <List d="flex">
+                            <li className="socialitem">
+                                <Link href="https://www.facebook.com/cpcchih/">
+                                    <a target="_blank"><i aria-hidden className="fab fa-facebook"></i></a>
+                                </Link>
+                            </li>
+                            <li className="socialitem">
+                                <Link href="http://twitter.com/cpc_chih">
+                                    <a target="_blank"><i aria-hidden className="fab fa-twitter"></i></a>
+                                </Link>
+                            </li>
+                            <li className="socialitem">
+                                <Link href="https://www.youtube.com/channel/UCSzbJsei-QnAbjUMmHXBxYg?view_as=subscriber">
+                                    <a target="_blank"><i aria-hidden className="fab fa-youtube"></i></a>
+                                </Link>
+                            </li>
+                        </List>
+                    </Flex>  
                 </Flex>
             </Flex>
 
@@ -89,6 +106,18 @@ const Header = ({position}) => {
                     border-bottom: 3px solid ${yellow};
                 }
 
+                .socialitem{
+                    padding: 0 0.5em;
+                    color: white;
+                    font-size: 1.55em;
+                }
+
+                .socialitem:hover{
+                    color: ${yellow}
+                }
+
+               
+                
                 
             `}</style>
 
