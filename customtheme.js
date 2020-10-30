@@ -7,6 +7,7 @@ const customTheme = {
     cpc: {
         red: "#F1748A",
         white: "#FFFFFF",
+        black: "#000000",
         yellow: "#FDD56F"
     },
   },
