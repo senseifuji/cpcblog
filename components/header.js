@@ -3,8 +3,7 @@ import {
     ModalBody, ModalCloseButton, useDisclosure} 
 from "@chakra-ui/core";
 
-import customTheme from '../customTheme';
-
+import customTheme from '../customtheme';
 import Logo from './svgs/cpclogo';
 import ModalLogo from './svgs/modallogo'
 import Link from 'next/link'
@@ -271,7 +270,7 @@ const Header = ({position}) => {
 
 
         </header>
-      );
+    );
 }
 
  
