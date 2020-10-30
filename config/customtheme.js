@@ -10,6 +10,12 @@ const customTheme = {
         yellow: "#FDD56F"
     },
   },
+  fonts: {
+    ...theme.fonts, 
+    cpc: {
+      gotham: "Gotham Condensed"
+    }
+  }
 };
 
 export default customTheme;

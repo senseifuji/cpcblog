@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Flex } from '@chakra-ui/core';
 
 const Layout = ({children, title}) => {
     return ( 
@@ -6,11 +7,12 @@ const Layout = ({children, title}) => {
             <Head>
                 <title>{title}</title>
                 <link rel="icon" href="/favicon.ico" />
+                <link rel="stylesheet" href="css/fontface.css"/>
             </Head>
 
-            <div className="container">
+            <Flex>
                 {children}
-            </div>  
+            </Flex>  
         </>
      );
 }
