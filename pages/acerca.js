@@ -1,6 +1,5 @@
 import Layout from '../components/layout'
-import colors from '../styles/colors'
-import Header from '../components/header'
+import Header from '../components/header/index'
 
 export default function AboutPage() {
     return (
