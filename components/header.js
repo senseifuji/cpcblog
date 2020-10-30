@@ -1,6 +1,6 @@
 import { Flex, Box, List, Text} from "@chakra-ui/core";
 
-import customTheme from '..//customTheme';
+import customTheme from '../customTheme';
 
 import Logo from './svgs/cpclogo';
 import Link from 'next/link'
