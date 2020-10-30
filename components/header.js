@@ -15,6 +15,8 @@ const Header = ({position}) => {
     //state that is passed to the logo component on hover and unhover
     const [logoColor, setLogoColor] = useState(white)
 
+    const router = useRouter() //router of app, to know in which page we're in
+
     return (
         <header>
             <Flex width="100%" justify="center">
@@ -31,19 +33,19 @@ const Header = ({position}) => {
                     {/* LINKS SECTION */}
                     <Flex color={white} direction="row" justify="left" fontFamily="cpc.gotham" fontSize="1.2em" width="inherit">
                         <List d="flex">
-                            <li className="item" > 
+                            <li className={"item " +  (router.pathname === '/acerca' ? 'inpage':'')}> 
                                 <Link href="/acerca"><a >Acerca de</a></Link>
                             </li>
-                            <li className="item" >
+                            <li className={"item " + (router.pathname === '/faqs' ? 'inpage':'')}>
                                 <Link href="/faqs"><a >Preguntas Frecuentes</a></Link>
                             </li>
-                            <li className="item" >
+                            <li className={"item " +  (router.pathname === '/publicaciones' ? 'inpage':'')}>
                                 <Link href="/publicaciones"><a >Publicaciones</a></Link>
                             </li>
-                            <li className="item" >
+                            <li className={"item " +  (router.pathname === '/sesiones' ? 'inpage':'')}>
                                 <Link href="/sesiones"><a >Sesiones</a></Link>
                             </li>
-                            <li className="item" >
+                            <li className={"item " + (router.pathname === '/contacto' ? 'inpage':'')}>
                                 <Link href="/contacto"><a >Contacto</a></Link>
                             </li>
                         </List>
@@ -74,9 +76,16 @@ const Header = ({position}) => {
                     border-bottom: 3px solid ${red};
                     transition: 0.3s;
                     cursor: pointer;
+                    padding-bottom: 0.25em;
+
                 }
 
                 .item:hover{
+                    border-bottom: 3px solid ${yellow};
+                }
+
+                .inpage{
+                    color: ${yellow};
                     border-bottom: 3px solid ${yellow};
                 }
 
