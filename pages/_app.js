@@ -1,4 +1,4 @@
-import customTheme from '../config/customtheme';
+import customTheme from '../lib/customtheme'
 import { ThemeProvider, CSSReset} from "@chakra-ui/core";
 
 
