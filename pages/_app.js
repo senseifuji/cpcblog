@@ -1,6 +1,5 @@
-import customTheme from '../config/customtheme';
+import customTheme from '../customtheme';
 import { ThemeProvider, CSSReset} from "@chakra-ui/core";
-
 
 const MyApp = ({Component, pageProps}) => {
 
