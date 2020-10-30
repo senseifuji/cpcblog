@@ -11,6 +11,7 @@ import { useRouter } from 'next/router'
 const Header = ({position}) => {
     //Extracting colors
     const {yellow, white, red} = customTheme.colors.cpc
+  
 
     //state that is passed to the logo component on hover and unhover
     const [logoColor, setLogoColor] = useState(white)
@@ -36,8 +37,8 @@ const Header = ({position}) => {
                             <li className={"item " +  (router.pathname === '/acerca' ? 'inpage':'')}> 
                                 <Link href="/acerca"><a >Acerca de</a></Link>
                             </li>
-                            <li className={"item " + (router.pathname === '/faqs' ? 'inpage':'')}>
-                                <Link href="/faqs"><a >Preguntas Frecuentes</a></Link>
+                            <li className={"item " + (router.pathname === '/faq' ? 'inpage':'')}>
+                                <Link href="/faq"><a >Preguntas Frecuentes</a></Link>
                             </li>
                             <li className={"item " +  (router.pathname === '/publicaciones' ? 'inpage':'')}>
                                 <Link href="/publicaciones"><a >Publicaciones</a></Link>
