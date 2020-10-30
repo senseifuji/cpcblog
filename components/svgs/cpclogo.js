@@ -1,10 +1,10 @@
 
-
+import { Icon, createIcon } from "@chakra-ui/core"
 
 const Logo = ({logofill, letrasfill, width, height}) =>  {
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.34 42.52" width={width} height={height}>
+    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.34 42.52" width={width} height={height}>
       <g id="CPC_short">
         <path
           id="C1"
@@ -80,9 +80,9 @@ const Logo = ({logofill, letrasfill, width, height}) =>  {
              .figuras{
                  fill: ${logofill}
              }
-
         `}</style>
     </svg>
+     
   );
 }
 
