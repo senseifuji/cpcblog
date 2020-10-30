@@ -160,8 +160,8 @@ const Header = ({position}) => {
                                     <li className={"modalitem " +  (router.pathname === '/acerca' ? 'inpage':'')}> 
                                         <Link href="/acerca"><a >Acerca de</a></Link>
                                     </li>
-                                    <li className={"modalitem " + (router.pathname === '/faqs' ? 'inpage':'')}>
-                                        <Link href="/faqs"><a >Preguntas Frecuentes</a></Link>
+                                    <li className={"modalitem " + (router.pathname === '/faq' ? 'inpage':'')}>
+                                        <Link href="/faq"><a >Preguntas Frecuentes</a></Link>
                                     </li>
                                     <li  className={"modalitem " +  (router.pathname === '/publicaciones' ? 'inpage':'')}>
                                         <Link href="/publicaciones"><a >Publicaciones</a></Link>
