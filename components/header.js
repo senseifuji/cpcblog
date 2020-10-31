@@ -18,7 +18,7 @@ const Header = ({position}) => {
     //Extracting colors
 
       const {yellow, white, red, black} = customTheme.colors.cpc
-    const {gotham} = customTheme.fonts.cpc
+    const {gothamCondensed} = customTheme.fonts.cpc
 
     //send question states...
     const [questionText, setQuestionText] = useState('')
@@ -79,7 +79,7 @@ const Header = ({position}) => {
                             <span>
                                 <i className="fas fa-bars"></i>
                             </span>
-                            <Text fontFamily={gotham} fontSize="m">Menú</Text>
+                            <Text fontFamily={gothamCondensed} fontSize="m">Menú</Text>
                         </div>
                     )}
 
@@ -97,7 +97,7 @@ const Header = ({position}) => {
 
                     {/* LINKS SECTION */}
                     {linksPadding && (
-                        <Flex color={white} direction="row" justify={["center", "center", "center", "left"]} fontFamily={gotham} fontSize="1.2em" width="inherit">
+                        <Flex color={white} direction="row" justify={["center", "center", "center", "left"]} fontFamily={gothamCondensed} fontSize="1.2em" width="inherit">
                             <List d="flex">
                                 <li className={"item " +  (router.pathname === '/acerca' ? 'inpage':'')}> 
                                     <Link href="/acerca"><a >Acerca de</a></Link>
@@ -174,13 +174,13 @@ const Header = ({position}) => {
                                 </List>
                             </Flex>
                             <Flex direction="column" width="100%">
-                                <Text fontFamily={gotham} color={white} fontSize="1.1em">¿Tienes alguna pregunta al CPC?</Text>
+                                <Text fontFamily={gothamCondensed} color={white} fontSize="1.1em">¿Tienes alguna pregunta al CPC?</Text>
                                 <Textarea mb={2} p={3} size="lg" fontSize="sm" onChange={(e) => setQuestionText(e.target.value)} placeholder="Escribe aquí tu pregunta. Cada mes subiremos las preguntas hechas aquí al sitio de Preguntas Frecuentes." />
                                 {error && (
                                     <Text mb={2} color={yellow}>{error}</Text>
                                 ) }
                                 <Button bg={yellow} color={black}  _hover={{bg: "cpc.black", color: "cpc.yellow"}}  isLoading={isLoading} onClick={handleSendQuestion}>
-                                     <i aria-hidden="true" className="fas fa-question-circle"></i> <Text ml={2} fontFamily={gotham} fontSize="1.25em" >Pregunta al CPC</Text>
+                                     <i aria-hidden="true" className="fas fa-question-circle"></i> <Text ml={2} fontFamily={gothamCondensed} fontSize="1.25em" >Pregunta al CPC</Text>
                                 </Button>
                             </Flex>
                         </Flex>
@@ -221,7 +221,7 @@ const Header = ({position}) => {
                 .modalitem{
                     color: ${white};
                     margin: 0.4em 0;
-                    font-family: ${gotham};
+                    font-family: ${gothamCondensed};
                     font-size: 1.25em;
                     cursor: pointer;
                     border-bottom: 3px solid ${red};
