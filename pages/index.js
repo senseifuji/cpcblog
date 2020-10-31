@@ -4,7 +4,7 @@ import Section from '../components/section'
 import customtheme from '../customtheme';
 import Header from '../components/header';
 import { useState, useEffect } from 'react';
-import { Text, Flex, Button} from '@chakra-ui/core';
+import { Text, Flex, Button, Image} from '@chakra-ui/core';
 
 const homeWords = ["vigilamos", "combatimos", "eliminamos"];
 
@@ -58,8 +58,15 @@ export default function Home() {
         >
 
           <Flex direction="row">
-            <Flex direction="column" width="100%">
-              Aqui va la imagen del coronavirus
+            <Flex direction="column" width="100%" justify="center">
+              <img src="/images/covid.png" id="covidimage" onMouse/>
+              <style jsx>{`
+                #covidimage{
+                  filter: brightness( 127% ) contrast( 96% ) saturate( 99% ) blur( 0.9px ) hue-rotate( 350deg );
+                  opacity: 0.7;
+                  width: 184px
+                }
+              `}</style>
             </Flex>
             <Flex fontFamily="cpc.gothamCondensedBook" fontSize="1.2em" direction="column" width="100%" textAlign="center" alignItems="center">
               <Text fontFamily="cpc.gothamCondensedBook" mb={3}>
