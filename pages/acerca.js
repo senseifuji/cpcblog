@@ -10,9 +10,16 @@ import MonoCovid from '../components/svgs/monocovid';
 import Carrito from '../components/svgs/carrito';
 import Camino from '../components/svgs/camino';
 
+import customTheme from '../customTheme.js'
+
+
 import {Box, Flex, Text, Image} from '@chakra-ui/core';
+import Link from 'next/link'
 
 export default function AboutPage() {
+
+    const {colors} = customTheme
+
     return (
         <Layout title="Acerca de - CPC Anticorrupcion">
             <Header position="fixed"/>
@@ -62,8 +69,32 @@ export default function AboutPage() {
                             </Text>
                         </Flex>
                    </Flex>
-                </Section>                     
+                </Section>    
+                {/* Definicion de Corrupcion section*/}
+                <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
+                    <Flex direction="column" alignItems="center" textAlign="center">
+                        <Text color="cpc.red" fontFamily="cpc.gothamMedium" fontSize={["1.5em", "2em", "2em", "2em"]}><b>Nuestra definición de corrupción*</b></Text>
+                        <Text my="0.8em" fontFamily="cpc.gothamCondensedBook" fontSize={["1em", "1.4em", "1.7em", "1.7em"]} >Es un problema de <b>captura</b> que se traduce en la incapacidad del Estado para 
+                            controlar el <b>particularismo</b>. Se trata de una <b>forma de organización social</b> que 
+                            se caracteriza por la distribución de bienes sobre una base no universalista que 
+                            <b> refleja el acceso y distribución restringida al poder.</b>
+                        </Text>
+                        <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1em", "1.2em", "1.1em", "1.2em"]}>
+                            *Basado en el trabajo de la 
+                            <Link href="http://rendiciondecuentas.org.mx/wp-content/uploads/2018/06/PNA-AccountWordPressEduHdez.pdf">
+                                <a className="redlink"> Red por la Rendición de Cuentas.</a>
+                            </Link>
+                        </Text>
+                    </Flex>
+                </Section>
             </Content>
+            <style jsx>{`
+                .redlink {
+                    color: ${colors.cpc.red};
+                    cursor: pointer;
+                    text-decoration: underline;
+                }   
+            `}</style>
         </Layout>
     )
 }
