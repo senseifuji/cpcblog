@@ -25,7 +25,11 @@ export default function AboutPage() {
             <Header position="fixed"/>
             <Content>
                 {/* Main SECTION */}
-                <Section bg="cpc.red" color="cpc.white">
+                <Section bg="cpc.red" color="cpc.white" 
+                    triangleBiBottom="true"
+                    triangleBiBottomColorOne={colors.cpc.red}
+                    triangleBiBottomColorTwo={colors.cpc.yellow}
+                >
                      <Text fontSize={["1.25em", "2em", "2em", "2em"]} fontFamily="cpc.gothamMedium" textAlign="center" lineHeight="1.18em">
                             <b>¿Has buscado en Google <br/> imágenes de la palabra corrupción?</b>
                         </Text>
@@ -39,13 +43,13 @@ export default function AboutPage() {
                             <ManitasDineros manitasSize="146px"/>
                             <Text fontFamily='cpc.gothamCondensed' fontSize={["1em", "1.4em", "1.7em", "1.7em"]} mt="-1em">Creemos que las suficientes como para afirmar que</Text>
                         </Flex>
-                        <Text my="0.5em" fontFamily="cpc.gothamMedium" fontSize={["1.25em", "2em", "2em", "2em"]} lineHeight="1.2" textAlign="center">
+                        <Text my="0.5em" fontFamily="cpc.gothamMedium" fontSize={["1.25em", "2em", "2em", "2.5em"]} lineHeight="1.2" textAlign="center">
                             <b>Nos urge una mejor <br/>definición de corrupción</b>
                         </Text>
                 </Section>  
 
                 {/* CARRITO-CAMINO-MONOVACUNAS SECTION */}
-                <Section bg="cpc.yellow" color="cpc.black" triangleDown="true" triangleColor={colors.cpc.yellow}>
+                <Section bg="cpc.yellow" color="cpc.black" miniTriangleDown="true" miniTriangleColor={colors.cpc.yellow}>
                    <Flex justify="space-evenly" direction={["column", 'column', 'row', 'row']}>
                         <Flex alignItems="center" direction={["column", 'column', 'row', 'row']} mx={4}>
                             <Box mx={["0em", "0em", "1em", "1.5em"]}>
