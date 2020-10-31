@@ -7,9 +7,11 @@ const Section = ({
     color, 
     miniTriangleDown = false, 
     miniTriangleColor, 
-    triangleBiBottom = false,
-    triangleBiBottomColorOne, 
-    triangleBiBottomColorTwo,
+    splitBiBottom = false,
+    splitBiBottomColorOne, 
+    splitBiBottomColorTwo,
+    splitBiBottomInverse = false,
+    
     desktopWidth = "80%",
     tabletWidth= "90%",
     
@@ -24,8 +26,9 @@ const Section = ({
         </Flex>
 
         {/* option to triangle 100%width colors */}
-        {triangleBiBottom && (
-            <div className="bicolortriangleContainer" data-negative="false">
+        {splitBiBottom && (
+            <div className={"splittriangleContainer " +  (splitBiBottomInverse  ? 'splitBiBottomInverse':'splitBiBottomNormal')}
+            data-negative="false">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" width="100%" height="24px">
                     <path  d="M0,6V0h1000v100L0,6z"></path>
                 </svg>
@@ -44,12 +47,19 @@ const Section = ({
         )}
 
         <style jsx>{`
-            .bicolortriangleContainer{
-                background-color: ${triangleBiBottomColorTwo};
-                fill: ${triangleBiBottomColorOne};
-                transform: translateX(0) rotateY(180deg);
+            .splittriangleContainer{
+                background-color: ${splitBiBottomColorTwo};
+                fill: ${splitBiBottomColorOne};
                 height: 24px;
                 width: 100%;
+            }
+
+            .splitBiBottomNormal {
+                transform: translateX(0) rotateY(180deg);
+            }
+
+            .splitBiBottomInverse{
+                transform: translateX(-50px) rotateY(380deg);
             }
 
             .miniTriangleDownContainer{

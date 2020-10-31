@@ -8,7 +8,11 @@ const customtheme = {
         red: "#F1748A",
         white: "#FFFFFF",
         black: "#000000",
-        yellow: "#FDD56F"
+        blackLight: "#333333",
+        yellow: "#FDD56F",
+        blue: "#2c7ca1",
+        blueMedium: "#54a3bd",
+        blueLight: "#84cad9"
     },
   },
   fonts: {

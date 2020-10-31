@@ -26,9 +26,9 @@ export default function AboutPage() {
             <Content>
                 {/* Main SECTION */}
                 <Section bg="cpc.red" color="cpc.white" 
-                    triangleBiBottom="true"
-                    triangleBiBottomColorOne={colors.cpc.red}
-                    triangleBiBottomColorTwo={colors.cpc.yellow}
+                    splitBiBottom="true"
+                    splitBiBottomColorOne={colors.cpc.red}
+                    splitBiBottomColorTwo={colors.cpc.yellow}
                 >
                      <Text fontSize={["1.25em", "2em", "2em", "2em"]} fontFamily="cpc.gothamMedium" textAlign="center" lineHeight="1.18em">
                             <b>¿Has buscado en Google <br/> imágenes de la palabra corrupción?</b>

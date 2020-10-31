@@ -114,7 +114,6 @@ const Header = ({position}) => {
                                 <li  className={"item " +  (router.pathname === '/contacto' ? 'inpage':'')}>
                                     <Link href="/contacto"><a >Contacto</a></Link>
                                 </li>
-                               
                             </List>
                         </Flex>
                     )}
