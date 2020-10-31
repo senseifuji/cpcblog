@@ -15,7 +15,9 @@ const customTheme = {
     ...theme.fonts, 
     cpc: {
       gothamCondensed: "Gotham Condensed, Sans-serif ",
-      gothamMedium: "Gotham Medium, Sans-serif"
+      gothamMedium: "Gotham Medium, Sans-serif",
+      gothamCondensedLight: "Gotham Condensed Light, Sans-serif",
+      gothamCondensedBook: "Gotham Condensed Book, Sans-serif"
     }
   }
 };

@@ -41,29 +41,12 @@ const  ManitasDineros =({manitasSize}) =>  {
         className="algo6"
       ></path>
       <style jsx>{`
-            .algo1{
-                fill:#ef9645;
-            }
-            
-            .algo2{
-                fill:#ffcc4d;
-            }
-            
-            .algo3{
-                fill:#a7d28b;
-            }
-            
-            .algo4{
-                fill:#9aaab4;
-            }
-            
-            .algo5{
-                fill:#67757f;
-            }
-            
-            .algo6{
-                fill:#ffdc5d;
-            }
+            .algo1{fill:#ef9645;}
+            .algo2{fill:#ffcc4d;}
+            .algo3{fill:#a7d28b;}
+            .algo4{fill:#9aaab4;}
+            .algo5{fill:#67757f;}
+            .algo6{fill:#ffdc5d;}
           `}
     </style>
     </svg>

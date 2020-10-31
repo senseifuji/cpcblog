@@ -1,9 +1,20 @@
 @font-face {
     font-family: Gotham Condensed;
-    src: url("../fonts/GothamCondensed-Medium.otf") format("opentype");
+    src: url("../fonts/GothamCondensedMedium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gotham Condensed Light;
+    src: url("../fonts/GothamCondensedLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gotham Condensed Book;
+    src: url("../fonts/GothamCondensedBook.otf") format("opentype");
 }
 
 @font-face {
     font-family: Gotham Medium;
     src: url("../fonts/GothamMedium.otf") format("opentype");
 }
+
