@@ -10,7 +10,7 @@ import MonoCovid from '../components/svgs/monocovid';
 import Carrito from '../components/svgs/carrito';
 import Camino from '../components/svgs/camino';
 
-import customTheme from '../customTheme.js'
+import customtheme from '../customtheme.js'
 
 
 import {Box, Flex, Text, Image} from '@chakra-ui/core';
@@ -18,7 +18,7 @@ import Link from 'next/link'
 
 export default function AboutPage() {
 
-    const {colors} = customTheme
+    const {colors} = customtheme
 
     return (
         <Layout title="Acerca de - CPC Anticorrupcion">

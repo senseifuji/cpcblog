@@ -3,7 +3,7 @@ import {
     ModalBody, ModalCloseButton, useDisclosure} 
 from "@chakra-ui/core";
 
-import customTheme from '../customtheme';
+import customtheme from '../customtheme';
 import Logo from './svgs/cpclogo';
 import ModalLogo from './svgs/modallogo'
 import Link from 'next/link'
@@ -17,8 +17,8 @@ import useWindowSize from '../hooks/usewindowsize';
 const Header = ({position}) => {
     //Extracting colors
 
-      const {yellow, white, red, black} = customTheme.colors.cpc
-    const {gothamCondensed} = customTheme.fonts.cpc
+      const {yellow, white, red, black} = customtheme.colors.cpc
+    const {gothamCondensed} = customtheme.fonts.cpc
 
     //send question states...
     const [questionText, setQuestionText] = useState('')

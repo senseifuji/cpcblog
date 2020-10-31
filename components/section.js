@@ -1,5 +1,5 @@
 import {Flex} from '@chakra-ui/core'
-import customTheme from '../customtheme'
+import customtheme from '../customtheme'
 
 const Section = ({
     children, 
@@ -14,7 +14,7 @@ const Section = ({
     tabletWidth= "90%",
     
 }) => {
-    const {colors} = customTheme
+    const {colors} = customtheme
     return ( 
         <>
         <Flex direction="row" width="100%" bg={bg} justify="center">
