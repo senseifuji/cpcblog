@@ -8,6 +8,7 @@ const Carrito = ({size}) =>{
       viewBox="0 0 40.53 31.53"
       width={size} 
       height={size}
+      className="carritosvg"
     >
       <path
         d="M38 19c1 0 1-1 1-4V9.86A2.21 2.21 0 0037 8H20V2c0-1.06-.24-2-2-2h-5c-3 0-6 8-6 8s-6 0-6 3v4s-1 .34-1 2a1.81 1.81 0 002 2z"
@@ -56,7 +57,14 @@ const Carrito = ({size}) =>{
         className="troca7"
       ></path>
       <style>{`
-          .troca1{fill:#dd2e44;}.troca2{fill:#bbddf5;}.troca3{fill:#99aab5;}.troca4{fill:#ccd6dd;}.troca5{fill:#292f33;}.troca6{fill:#66757f;}.troca7{fill:#f492a9;}
+          .carritosvg{transform: rotate(20deg);}
+          .troca1{fill:#dd2e44;}
+          .troca2{fill:#bbddf5;}
+          .troca3{fill:#99aab5;}
+          .troca4{fill:#ccd6dd;}
+          .troca5{fill:#292f33;}
+          .troca6{fill:#66757f;}
+          .troca7{fill:#f492a9;}
      `}</style>
     </svg>
   );
