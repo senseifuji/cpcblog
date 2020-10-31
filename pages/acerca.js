@@ -45,7 +45,7 @@ export default function AboutPage() {
                 </Section>  
 
                 {/* CARRITO-CAMINO-MONOVACUNAS SECTION */}
-                <Section bg="cpc.yellow" color="cpc.black">
+                <Section bg="cpc.yellow" color="cpc.black" triangleDown="true" triangleColor={colors.cpc.yellow}>
                    <Flex justify="space-evenly" direction={["column", 'column', 'row', 'row']}>
                         <Flex alignItems="center" direction={["column", 'column', 'row', 'row']} mx={4}>
                             <Box mx={["0em", "0em", "1em", "1.5em"]}>
