@@ -196,6 +196,7 @@ const Header = ({position}) => {
                     position: ${position};
                     width: 100%;
                     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                    z-index: 100;
                 }  
 
                 {/* mobile menu */}
