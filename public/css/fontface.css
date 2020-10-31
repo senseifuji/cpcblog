@@ -5,5 +5,5 @@
 
 @font-face {
     font-family: Gotham Medium;
-    src: url("../fonts/GothamMedium.ttf") format('truetype');
+    src: url("../fonts/GothamMedium.otf") format("opentype");
 }
