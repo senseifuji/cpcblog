@@ -137,7 +137,7 @@ const YoElijoRegidor = ({size}) =>  {
 
           @media only screen and (max-width: 990px) {
             svg {
-              margin-top: -5em;
+              margin-top: -4em;
             }
           }
 
