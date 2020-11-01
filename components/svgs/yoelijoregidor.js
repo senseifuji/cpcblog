@@ -132,8 +132,21 @@ const YoElijoRegidor = ({size}) =>  {
           .rosabonis{fill:#f1748a;}
           .blanquitochido{fill:#fff;}
           svg {
-            margin-top: -5.3em;
+            margin-top: -5em;
           }
+
+          @media only screen and (max-width: 990px) {
+            svg {
+              margin-top: -5em;
+            }
+          }
+
+          @media only screen and (max-width: 768px) {
+           
+          }
+
+
+
       `}</style>
     </svg>
   );
