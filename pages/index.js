@@ -5,7 +5,7 @@ import Section from '../components/section'
 import customtheme from '../customtheme';
 import Header from '../components/header';
 import { useState, useEffect } from 'react';
-import { Text, Flex, Button, Image} from '@chakra-ui/core';
+import { Text, Flex, Button, Box} from '@chakra-ui/core';
 import YoElijoRegidor from '../components/svgs/yoelijoregidor'
 import InformeAnual from '../components/svgs/informeanual'
 import useWindowSize from '../hooks/usewindowsize';
@@ -17,7 +17,7 @@ export default function Home() {
 
   const [currentHomeWord, setCurrentHomeWord] = useState(homeWords[0]);
   const [headerPosition, setHeaderPosition] = useState(false)
-  const {yellow, white, black, red, blackLight, blue, purple} = customtheme.colors.cpc
+  const {yellow, white, black, red, yellowLight, blue, purple} = customtheme.colors.cpc
 
 
   let configsDefault = {
@@ -84,15 +84,24 @@ export default function Home() {
 
       {/* --------VACUNA A LA CORRUPCIÓN-------- */}
       <Layout direction="column">
-        <Section bg="cpc.yellow" color="cpc.blackLight" desktopWidth="100%"
+        <Section bg="cpc.yellowLight" color="cpc.blackLight" desktopWidth="100%"
           splitBiBottom={true} 
-          splitBiBottomColorOne={yellow}
+          splitBiBottomColorOne={yellowLight}
           splitBiBottomColorTwo={black}
           splitBiBottomInverse={false}
         >
 
-          <Flex direction={["column", "column", "row", "row"]}>
-            <Flex direction="column" width="100%" justify="center" alignItems="center" py={["1em"]}>
+          <Flex direction={["column", "column", "row", "row"]} alignItems="center">
+            <Flex direction="column" width="100%" justify="center" alignItems="center" py={["2em"]}>
+              <Flex direction="column" alignItems="center" transform="translateY(150px)" zIndex="50" mt="-10em">
+                <Text fontFamily="cpc.gothamMedium" fontSize={["2.2em", "2.8em", "2.8em", "2.8em"]}  color={white} textShadow="0px 0px 10px rgba(0,0,0,0.3)">
+                  <b>vacuna a la</b>
+                  </Text>
+                <Text fontFamily="cpc.gothamMedium" fontSize={["2.5em", "2.8em", "2.8em", "3.3em"]} mt="-0.75em" color={white} fontWeight=""textShadow="0px 0px 10px rgba(0,0,0,0.3)" letterSpacing="-0.9px">
+                  <b>CORRUPCIÓN</b>
+                  </Text>
+                <Text fontSize={["2em", "2em", "2em", "2em"]} mt={["-0.5em"]} px={5} py={0} fontFamily="cpc.gothamCondensed" color={white} bg={blue} width="fit-content">durante el COVID19</Text>
+              </Flex>
               <img src="/images/covid.png" id="covidimage"/>
             </Flex>
             <Flex fontFamily="cpc.gothamCondensed" lineHeight="1.1em" fontSize="1.2em" direction="column" width="100%" textAlign="center" alignItems="center" px="1em">
@@ -111,7 +120,7 @@ export default function Home() {
                 	&nbsp; Conocé nuestra investigación
               </Button>
               <Text fontFamily="cpc.gothamCondensed" my={4}>¿Ya conoces nuestras exigencias y quieres aportar?</Text>
-              <Button size="lg" bg={yellow} color={blue} borderColor={blue} border="2px" rounded="10px" _hover={{ bg: "cpc.blueLight" }} width="200px">
+              <Button size="lg" bg={yellowLight} color={blue} borderColor={blue} border="2px" rounded="10px" _hover={{ bg: "cpc.blueLight" }} width="200px">
                   <i aria-hidden="true" class="fas fa-hand-peace"></i>
                  	&nbsp; Me interesa sumarme
               </Button>
