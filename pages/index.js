@@ -9,12 +9,14 @@ import { Text, Flex, Button, Image} from '@chakra-ui/core';
 import YoElijoRegidor from '../components/svgs/yoelijoregidor'
 import InformeAnual from '../components/svgs/informeanual'
 import useWindowSize from '../hooks/usewindowsize';
+import useScrollPosition from '@react-hook/window-scroll'
 
 const homeWords = ["vigilamos", "combatimos", "eliminamos"];
 
 export default function Home() {
 
   const [currentHomeWord, setCurrentHomeWord] = useState(homeWords[0]);
+  const [headerPosition, setHeaderPosition] = useState(false)
   const {yellow, white, black, red, blackLight, blue, purple} = customtheme.colors.cpc
 
 
@@ -24,6 +26,7 @@ export default function Home() {
 
   const [configs, setConfigs] = useState(configsDefault)
   let size = useWindowSize() //window hook, to resize logo...
+  const scrollY = useScrollPosition(30 /*fps*/) //hook for knowing y axis of scroll
 
   //Iterating in homeWords
   useEffect(() => {
@@ -37,17 +40,23 @@ export default function Home() {
 
   //custom sizes for some svgs
   useEffect(() => {
-     if(size.width > 990){  //desktop 
-        setConfigs({...configs, regidorSize: "350px"})
+    //desktop 
+    if(size.width > 990){ setConfigs({...configs, regidorSize: "350px"}) } 
+    if(size.width < 990){  } //tablet 
+      //mobile
+    if(size.width < 768){ setConfigs({...configs, regidorSize: "280px"}) } 
 
-      } 
-      if(size.width < 990){   //tablet
-      } 
-      if(size.width < 768){  //mobile
-        setConfigs({...configs, regidorSize: "280px"})
-      } 
-  }, [size])
+    //header fixed
+    if(scrollY > 193){
+      setHeaderPosition("fixed")
+    } else {
+      setHeaderPosition("relative")
+    }
 
+
+  }, [size, scrollY])
+
+ 
   return (
     <>
 
@@ -71,7 +80,7 @@ export default function Home() {
 
 
       {/* -------HEADER------ */}
-      <Header/>
+      <Header position={headerPosition}/>
 
       {/* --------VACUNA A LA CORRUPCIÓN-------- */}
       <Layout direction="column">
