@@ -1,10 +1,12 @@
 import Layout from '../components/layout'
 import Content from '../components/content'
+import Link from 'next/link'
 import Section from '../components/section'
 import customtheme from '../customtheme';
 import Header from '../components/header';
 import { useState, useEffect } from 'react';
 import { Text, Flex, Button, Image} from '@chakra-ui/core';
+import YoElijoRegidor from '../components/svgs/yoelijoregidor'
 
 const homeWords = ["vigilamos", "combatimos", "eliminamos"];
 
@@ -58,15 +60,8 @@ export default function Home() {
         >
 
           <Flex direction="row">
-            <Flex direction="column" width="100%" justify="center">
-              <img src="/images/covid.png" id="covidimage" onMouse/>
-              <style jsx>{`
-                #covidimage{
-                  filter: brightness( 127% ) contrast( 96% ) saturate( 99% ) blur( 0.9px ) hue-rotate( 350deg );
-                  opacity: 0.7;
-                  width: 184px
-                }
-              `}</style>
+            <Flex direction="column" width="100%" justify="center" alignItems="center">
+              <img src="/images/covid.png" id="covidimage"/>
             </Flex>
             <Flex fontFamily="cpc.gothamCondensedBook" fontSize="1.2em" direction="column" width="100%" textAlign="center" alignItems="center">
               <Text fontFamily="cpc.gothamCondensedBook" mb={3}>
@@ -91,6 +86,66 @@ export default function Home() {
             </Flex>
           </Flex>
         </Section>
+
+         <Section bg="cpc.black" color="cpc.white" desktopWidth="80%"
+          splitBiBottom={true} 
+          splitBiBottomColorOne={black}
+          splitBiBottomColorTwo={blue}
+          splitBiBottomInverse={false}
+        >
+
+         <Flex justify="space-around">
+            <Flex direction="column" fontFamily="cpc.gothamMedium" lineHeight="1.2em" fontSize={["2em", "2em", "2em", "2em"]}>
+                <Text fontWeight="600" textAlign="center" mt="2em"><strong>El CPC se une <br/> a la iniciativa</strong></Text>
+                <YoElijoRegidor size="400px"/> 
+            </Flex>
+            <Flex direction="column" alignItems="center" width={["23%"]}>
+                <Flex direction="column" alignItems="center">
+                  <Text color={red} fontSize={["4.25em"]}><b>76</b></Text>
+                  <Text fontFamily="cpc.gothamMedium" fontSize="19px" mt="-1em">organizaciones</Text>
+                </Flex>
+                <Flex justify="center">
+                  <Text mt="1em" fontFamily="cpc.gothamCondensed" fontSize="1.2em" lineHeight="1.3em" width={["100%"]} textAlign="center">
+                   <b>
+                      Se han sumado a esta iniciativa ciudadana que busca 
+                      <span className="redText"> reducir la captura de los puestos públicos</span> de 
+                      las personas tomadoras de decisiones 
+                      dentro de los ayuntamientos del estado de Chihuahua.
+                   </b>
+                  </Text>
+                </Flex>
+            </Flex>
+            <Flex direction="column" justify="center" textAlign="center" alignItems="center" width={["15em"]}>
+                <Text fontFamily="cpc.gothamCondensed" fontSize="1.2em" lineHeight="1.3em">
+                  <b>
+                    Se está buscando que la iniciativa de reforma a la Constitución Política del Estado de Chihuahua; 
+                    el Código Municipal y la Ley Electoral del Estado de Chihuahua, 
+                    <span className="redText">se apruebe antes del 30 de junio del 2020.</span>
+                  </b>
+                </Text>
+                <Link href="http://regidor.mx/yoelijo">
+                   <Button fontFamily="cpc.gothamCondensed" mt="1em" size="lg" bg={red} color={white} rounded="10px" _hover={{ bg: "cpc.redLight" }} width="150px">
+                    <i aria-hidden="true" class="fas fa-vote-yea"></i>
+                 	  &nbsp; Conoce Más
+                  </Button>
+                </Link>
+               
+            </Flex>
+         </Flex>
+
+        </Section>
+
+        <style jsx>{`
+          #covidimage{
+            filter: brightness( 127% ) contrast( 96% ) saturate( 99% ) blur( 0.9px ) hue-rotate( 350deg );
+            opacity: 0.7;
+            width: 184px
+          }
+
+          .redText {
+              color: ${red};
+          }  
+        `}</style>
       </Layout>
       </>
   )   

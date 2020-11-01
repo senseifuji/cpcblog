@@ -11,7 +11,6 @@ const Section = ({
     splitBiBottomColorOne, 
     splitBiBottomColorTwo,
     splitBiBottomInverse = false,
-    
     desktopWidth = "80%",
     tabletWidth= "90%",
     
