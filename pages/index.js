@@ -1,20 +1,21 @@
 import Layout from '../components/layout'
-import Content from '../components/content'
-import Link from 'next/link'
 import Section from '../components/section'
 import customtheme from '../customtheme';
 import Header from '../components/header';
-import { useState, useEffect } from 'react';
 import { Text, Flex, Button, Box} from '@chakra-ui/core';
+
 import YoElijoRegidor from '../components/svgs/yoelijoregidor'
 import InformeAnual from '../components/svgs/informeanual'
+
+import { useState, useEffect } from 'react';
+import Link from 'next/link'
+import CountUp from 'react-countup';
 import useWindowSize from '../hooks/usewindowsize';
 import useScrollPosition from '@react-hook/window-scroll'
 
-const homeWords = ["vigilamos", "combatimos", "eliminamos"];
-
 export default function Home() {
-
+  
+  const homeWords = ["vigilamos", "combatimos", "eliminamos"];
   const [currentHomeWord, setCurrentHomeWord] = useState(homeWords[0]);
   const [headerPosition, setHeaderPosition] = useState(false)
   const {yellow, white, black, red, yellowLight, blue, purple} = customtheme.colors.cpc
@@ -149,7 +150,9 @@ export default function Home() {
               {/* //second part */}
               <Flex direction="column" alignItems="center" alignItems="center" width={["100%", "100%", "48%", "17em"]}  mx={["2em"]}>
                 <Flex direction="column" alignItems="center">
-                  <Text color={red} fontSize={["4.25em"]}><b>76</b></Text>
+                  <Text color={red} fontSize={["4.25em"]}>
+                    <b><CountUp end={76} /></b>
+                  </Text>
                   <Text fontFamily="cpc.gothamMedium" fontSize="19px" mt="-1em">organizaciones</Text>
                 </Flex>
                 <Flex justify="center">
@@ -202,7 +205,9 @@ export default function Home() {
               {/* //second part */}
               <Flex direction="column" alignItems="center" alignItems="center" width={["100%", "100%", "48%", "17em"]}  mx={["2em"]}>
                 <Flex direction="column" alignItems="center">
-                  <Text color={yellow} fontSize={["4.25em"]}><b>775</b></Text>
+                  <Text color={yellow} fontSize={["4.25em"]}>
+                    <b><CountUp end={775} /></b>
+                  </Text>
                   <Text fontFamily="cpc.gothamMedium" fontSize="19px" mt="-1em">días</Text>
                 </Flex>
                 <Flex justify="center">
