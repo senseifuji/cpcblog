@@ -3,7 +3,7 @@ import {
     ModalBody, ModalCloseButton, useDisclosure} 
 from "@chakra-ui/core";
 
-import customtheme from '../customtheme';
+import customTheme from '../customtheme';
 import Logo from './svgs/cpclogo';
 import ModalLogo from './svgs/modallogo'
 import Link from 'next/link'
@@ -17,8 +17,8 @@ import useWindowSize from '../hooks/usewindowsize';
 const Header = ({position}) => {
     //Extracting colors
 
-      const {yellow, white, red, black} = customtheme.colors.cpc
-    const {gothamCondensed} = customtheme.fonts.cpc
+      const {yellow, white, red, black} = customTheme.colors.cpc
+    const {gothamCondensed} = customTheme.fonts.cpc
 
     //send question states...
     const [questionText, setQuestionText] = useState('')
@@ -114,6 +114,7 @@ const Header = ({position}) => {
                                 <li  className={"item " +  (router.pathname === '/contacto' ? 'inpage':'')}>
                                     <Link href="/contacto"><a >Contacto</a></Link>
                                 </li>
+                               
                             </List>
                         </Flex>
                     )}
@@ -195,8 +196,6 @@ const Header = ({position}) => {
                     position: ${position};
                     width: 100%;
                     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-                    z-index: 100;
-                    top: 0;
                 }  
 
                 {/* mobile menu */}
@@ -222,7 +221,7 @@ const Header = ({position}) => {
                 .modalitem{
                     color: ${white};
                     margin: 0.4em 0;
-                    font-family: ${gothamCondensed};
+z                    font-family: ${gothamCondensed};
                     font-size: 1.25em;
                     cursor: pointer;
                     border-bottom: 3px solid ${red};
