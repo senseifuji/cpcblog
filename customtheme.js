@@ -10,10 +10,12 @@ const customtheme = {
         white: "#FFFFFF",
         black: "#000000",
         blackLight: "#333333",
-        yellow: "#FDD56F",
+        yellowLight: "#FDD56F",
+        yellow: "#f9c450",
         blue: "#2c7ca1",
         blueMedium: "#54a3bd",
-        blueLight: "#84cad9"
+        blueLight: "#84cad9",
+        purple: "#a479b0"
     },
   },
   fonts: {

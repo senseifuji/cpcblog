@@ -28,7 +28,7 @@ export default function AboutPage() {
                 <Section bg="cpc.red" color="cpc.white" 
                     splitBiBottom="true"
                     splitBiBottomColorOne={colors.cpc.red}
-                    splitBiBottomColorTwo={colors.cpc.yellow}
+                    splitBiBottomColorTwo={colors.cpc.yellowLight}
                 >
                      <Text fontSize={["1.25em", "2em", "2em", "2em"]} fontFamily="cpc.gothamMedium" textAlign="center" lineHeight="1.18em">
                             <b>¿Has buscado en Google <br/> imágenes de la palabra corrupción?</b>
@@ -49,7 +49,7 @@ export default function AboutPage() {
                 </Section>  
 
                 {/* CARRITO-CAMINO-MONOVACUNAS SECTION */}
-                <Section bg="cpc.yellow" color="cpc.black" miniTriangleDown="true" miniTriangleColor={colors.cpc.yellow}>
+                <Section bg="cpc.yellowLight" color="cpc.black" miniTriangleDown="true" miniTriangleColor={colors.cpc.yellowLight}>
                    <Flex justify="space-evenly" direction={["column", 'column', 'row', 'row']}>
                         <Flex alignItems="center" direction={["column", 'column', 'row', 'row']} mx={4}>
                             <Box mx={["0em", "0em", "1em", "1.5em"]}>

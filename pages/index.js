@@ -7,6 +7,7 @@ import Header from '../components/header';
 import { useState, useEffect } from 'react';
 import { Text, Flex, Button, Image} from '@chakra-ui/core';
 import YoElijoRegidor from '../components/svgs/yoelijoregidor'
+import InformeAnual from '../components/svgs/informeanual'
 import useWindowSize from '../hooks/usewindowsize';
 
 const homeWords = ["vigilamos", "combatimos", "eliminamos"];
@@ -14,7 +15,7 @@ const homeWords = ["vigilamos", "combatimos", "eliminamos"];
 export default function Home() {
 
   const [currentHomeWord, setCurrentHomeWord] = useState(homeWords[0]);
-  const {yellow, white, black, red, blackLight, blue} = customtheme.colors.cpc
+  const {yellow, white, black, red, blackLight, blue, purple} = customtheme.colors.cpc
 
 
   let configsDefault = {
@@ -112,7 +113,7 @@ export default function Home() {
 
       {/* --------- YO ELIJO REGIDOR SECTION-------- */}
 
-         <Section bg="cpc.black" color="cpc.white" desktopWidth="80%"
+        <Section bg="cpc.black" color="cpc.white" desktopWidth="80%"
           splitBiBottom={true} 
           splitBiBottomColorOne={black}
           splitBiBottomColorTwo={blue}
@@ -161,12 +162,66 @@ export default function Home() {
                   </Link>
               </Flex>
             </Flex>
-            
          </Flex>
         </Section>
 
 
         {/* --------ANUAL ANTICORRUPCION -------- */}
+        <Section bg="cpc.blue" color="cpc.white" desktopWidth="80%"
+          splitBiBottom={true} 
+          splitBiBottomColorOne={blue}
+          splitBiBottomColorTwo={purple}
+          splitBiBottomInverse={true}
+        >
+
+         <Flex justify="space-around" direction={["column", "column", "column", "row"]}>
+           {/* //wrapper one  */}
+            <Flex direction="column" fontFamily="cpc.gothamMedium" lineHeight="1.2em" alignItems={["center"]} fontSize={["1.5em", "2em", "2em", "2em"]} >
+                <InformeAnual size={configs.regidorSize}/> 
+            </Flex>
+              {/* wrapper two */}
+            <Flex mt={["-6em", "-7em", "-6em", "0em"]} justify="center" alignItems="center" px={["1em", "3em", "1em", "1em"]} direction={["column", "column", "row", "row"]}>
+              {/* //second part */}
+              <Flex direction="column" alignItems="center" alignItems="center" width={["100%", "100%", "48%", "17em"]}  mx={["2em"]}>
+                <Flex direction="column" alignItems="center">
+                  <Text color={yellow} fontSize={["4.25em"]}><b>775</b></Text>
+                  <Text fontFamily="cpc.gothamMedium" fontSize="19px" mt="-1em">días</Text>
+                </Flex>
+                <Flex justify="center">
+                  <Text my="1em" fontFamily="cpc.gothamCondensed" fontSize="1.2em" lineHeight="1.3em" width={["100%"]} textAlign="center">
+                   <b>
+                      Tenemos sin que avance la 
+                      <span className="yellowText"> investigación por presunta corrupción </span>
+                      que presentamos en Función Pública
+                   </b>
+                  </Text>
+                </Flex>
+              </Flex>
+                {/* //third part  */}
+              <Flex direction="column" justify="center"  alignItems="center" width={["100%", "100%", "35%", "15em"]} mx={["2em"]}>
+                  <Text fontFamily="cpc.gothamCondensed" textAlign="center" fontSize="1.2em" lineHeight="1.3em">
+                    <b>
+                      La hipótesis es simple: 
+                      <span className="yellowText">
+                        si al CPC no le hacen caso ¿Qué le espera al resto de las personas?
+                      </span>   
+                    </b>
+                  </Text>
+                  <Text fontFamily="cpc.gothamCondensed" textAlign="center" fontSize="1.2em" lineHeight="1.3em">
+                    <b>
+                      Decidimos investigar qué frena la detección e investigación de corrupción en Chihuahua.   
+                    </b>
+                  </Text>
+                  <Link href="http://informe2019.anticorrupcion.org/">
+                    <Button fontFamily="cpc.gothamCondensed" mt="1em" size="lg" bg={yellow} color={white} rounded="10px" _hover={{ bg: "cpc.yellowLight" }} width="150px">
+                      <i aria-hidden="true" class="fab fa-readme"></i>
+                      &nbsp; Lee el informe
+                    </Button>
+                  </Link>
+              </Flex>
+            </Flex>
+         </Flex>
+        </Section>
     
 
         <style jsx>{`
@@ -179,6 +234,10 @@ export default function Home() {
           .redText {
               color: ${red};
           }  
+
+          .yellowText{
+            color: ${yellow}
+          }
         `}</style>
       </Layout>
       </>
