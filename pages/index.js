@@ -6,6 +6,7 @@ import { Text, Flex, Button, Box} from '@chakra-ui/core';
 
 import YoElijoRegidor from '../components/svgs/yoelijoregidor'
 import InformeAnual from '../components/svgs/informeanual'
+import Chihuahua from '../components/svgs/chihuahua'
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link'
@@ -245,7 +246,23 @@ export default function Home() {
             </Flex>
          </Flex>
         </Section>
-    
+        {/*------------ESTADO DE CHIHUAHUA------------*/}
+        <Section bg="cpc.purple" color="cpc.white" desktopWidth="80%"
+          splitBiBottom={true} 
+          splitBiBottomColorOne={purple}
+          splitBiBottomColorTwo={purple}
+          splitBiBottomInverse={true}>
+            
+          <Flex justify="space-between" direction={["column", "column", "column", "row"]}>
+            <Flex direction="column"  fontFamily="cpc.gothamMedium" lineHeight="1.2em" alignItems={["center"]} fontSize={["1.5em", "2em", "2em", "2em"]} >
+              <Chihuahua size="200px"/> 
+            </Flex>
+            <Flex direction="column" justify="center" fontFamily="cpc.gothamMedium" lineHeight="1.2em" alignItems={["center"]} fontSize={["1.5em", "2em", "2em", "2em"]} >
+              <Text fontWeight="600" textAlign="center" mt={["0em", "0em", "0em", "2em"]}><strong>Aqui va texto de prueba <br/> del estado de <span className="yellowText"> Chihuahua </span></strong></Text>
+            </Flex>
+          </Flex>
+        </Section>
+        
 
         <style jsx>{`
           #covidimage{
