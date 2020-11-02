@@ -258,7 +258,7 @@ export default function Home() {
               <Chihuahua size="200px"/> 
             </Flex>
             <Flex direction="column" justify="center" fontFamily="cpc.gothamMedium" lineHeight="1.2em" alignItems={["center"]} fontSize={["1.5em", "2em", "2em", "2em"]} >
-              <Text fontWeight="600" textAlign="center" mt={["0em", "0em", "0em", "2em"]}><strong>Aqui va texto de prueba <br/> del estado de <span className="yellowText"> Chihuahua </span></strong></Text>
+              <Text fontWeight="600" textAlign="center" mt={["1em", "1em", "0em", "2em"]}><strong>Aqui va texto de prueba <br/> del estado de <span className="yellowText"> Chihuahua </span></strong></Text>
             </Flex>
           </Flex>
         </Section>
