@@ -1,9 +1,9 @@
 import Layout from '../components/layout'
 import Header from '../components/header'
 import Content from '../components/content';
-import {getAllFaqs} from '../lib/api'
 import FaqItem from '../components/faqItem';
 import Section from '../components/section';
+import {getAllFaqs} from '../lib/api'
 
 export default function FaqPage({faqs}) {
     return (
@@ -11,7 +11,7 @@ export default function FaqPage({faqs}) {
             <Header position="fixed"/>
             <Content>
                 <Section bg="cpc.yellow" color="cpc.white">
-                    {faqs.map(faq => <FaqItem key={faq._id} faqs={faq}/>)}
+                    {faqs.map(faq => <FaqItem key={faq._id} question={faq.question} answer={faq.answer}/>)}
                 </Section>
             </Content>
         </Layout>
@@ -25,7 +25,6 @@ export async function getStaticProps(){
     try{
         const response = await getAllFaqs();
         faqs = response
-        console.log("Getting faqs from sanity")
     } catch(e){
         faqs = []
     }

@@ -1,10 +1,10 @@
 import { Flex, Text } from "@chakra-ui/core";
 
-const FaqItem = ({faqs}) => {
+const FaqItem = ({question, answer}) => {
     return (
         <Flex my={5} direction="column">
-            <Text><b>{faqs.question}</b></Text>
-            <Text>{faqs.answer}</Text>
+            <Text><b>{question}</b></Text>
+            <Text>{answer}</Text>
         </Flex>
 
     )

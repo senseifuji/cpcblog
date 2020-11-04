@@ -27,6 +27,6 @@ SANITY_PROJECT_ID=tuprojectid
 
 ```
 
-Adicionalmente si quieres utilizar el manejador de contenido de sanity.io
-Tendrás que clonar el repositorio desde => https://github.com/cpcwebchih/blogsanity
+
+El repositorio del manejador de contenido lo puedes clonar desde => https://github.com/cpcwebchih/blogsanity
 
