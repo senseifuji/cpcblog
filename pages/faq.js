@@ -21,11 +21,11 @@ export default function FaqPage({faqs}) {
 //this functions run on build time on server.
 //provides props to your page, and makes it static
 export async function getStaticProps(){
-    console.log("getting STATIC PROPS....")
     let faqs;
     try{
         const response = await getAllFaqs();
         faqs = response
+        console.log("Getting faqs from sanity")
     } catch(e){
         faqs = []
     }
