@@ -4,22 +4,21 @@ import Content from '../../components/content';
 import ListItem from '../../components/listitem';
 import Section from '../../components/section'
 
-import { getAllPosts } from '../../lib/api';
+import { getAllSessions } from '../../lib/api';
 
-export default function PublicacionesPage({posts}) {
-    console.log("posts =>", posts)
+export default function SesionesPage({sessions}) {
     return (
-        <Layout title="Publicaciones de CPC Anticorrupcion">
+        <Layout title="Sesiones de CPC Anticorrupcion">
             <Header position="fixed"/>
             <Content>
                 <Section bg="cpc.yellow" color="cpc.white">
-                    { posts.map(post => 
-                        <ListItem key={post._id} 
-                            title={post.title} 
-                            author={post.author} 
-                            date={post.date}
-                            image={post.coverImage}
-                            url={`/publicaciones/${post.slug}`}
+                    { sessions.map(session => 
+                        <ListItem key={session._id} 
+                            title={session.title} 
+                            author={session.author} 
+                            date={session.date}
+                            image={session.coverImage}
+                            url={`/sesiones/${session.slug}`}
                         />
                     )}
                 </Section>
@@ -32,17 +31,17 @@ export default function PublicacionesPage({posts}) {
 //this functions run on build time on server.
 //provides props to your page, and makes it static
 export async function getStaticProps(){
-    let posts;
+    let sessions;
     try{
-        const response = await getAllPosts();
-        posts = response
+        const response = await getAllSessions();
+        sessions = response
     } catch(e){
-        posts = []
+        sessions = []
     }
 
     return {
         props: {
-            posts
+            sessions
         }
     }
 
