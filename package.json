@@ -17,5 +17,8 @@
     "react": "16.13.1",
     "react-countup": "^4.3.3",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@sanity/cli": "^2.0.5"
   }
 }
