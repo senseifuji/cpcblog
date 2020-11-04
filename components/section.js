@@ -13,12 +13,13 @@ const Section = ({
     splitBiBottomInverse = false,
     desktopWidth = "80%",
     tabletWidth= "90%",
+    justify="center"
     
 }) => {
     const {colors} = customtheme
     return ( 
         <>
-        <Flex direction="row" width="100%" bg={bg} justify="center">
+        <Flex direction="row" width="100%" bg={bg} justify={justify}>
             <Flex px={2} py="2em" direction="column" align="center" color={color} width={["100%", "100%", tabletWidth, desktopWidth]} bg={bg}>
                 {children}
             </Flex>
