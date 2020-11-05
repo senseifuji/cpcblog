@@ -1,28 +1,25 @@
-import { getPostBySlug, getAllPosts } from '../../lib/api';
-import { Heading, Text } from '@chakra-ui/core';
+import { getSessionBySlug, getAllSessions } from '../../lib/api';
 import Layout from '../../components/layout'
 import Content from '../../components/content'
 import Header from '../../components/header'
 import DetailItem from '../../components/detailItem';
 
-const PostDetail = ({post}) => {
-    const title = `${post.title} - CPC Anticorrupcion`
+const SessionDetail = ({session}) => {
+    const title = `${session.title} - CPC Anticorrupcion`
     return ( 
 
         <Layout title={title}>
             <Header position="fixed"/>
             <Content>
                 <DetailItem 
-                    title={post.title} 
-                    author={post.author.name} 
-                    date={post.date}
-                    coverImage={post.coverImage}
+                    title={session.title} 
+                    author={session.author.name} 
+                    date={session.date}
+                    coverImage={session.coverImage}
                 /> 
             </Content>
         </Layout>
         
-
-
      );
 }
 
@@ -30,15 +27,15 @@ const PostDetail = ({post}) => {
 
 
 export async function getStaticProps({params}){
-    const post = await getPostBySlug(params.slug);
+    const session = await getSessionBySlug(params.slug);
     return {
-        props: {post}
+        props: {session}
     }
 }
 
 export async function getStaticPaths(){
-    const posts = await getAllPosts();
-    const paths = posts?.map(post => { return {params: {slug: post.slug}} })
+    const sessions = await getAllSessions();
+    const paths = sessions?.map(session => { return {params: {slug: session.slug}} })
     return {
         paths: paths,
         fallback: false
@@ -46,5 +43,5 @@ export async function getStaticPaths(){
 }
 
  
-export default PostDetail;
+export default SessionDetail;
 

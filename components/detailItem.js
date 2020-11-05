@@ -7,7 +7,7 @@ const DetailItem = ({title, author, date, coverImage}) => {
     return ( 
        <>
         <Heading>{title}</Heading>
-        <Text>Escrito por {author.name}</Text>
+        <Text>Escrito por {author}</Text>
         <Text>Fecha {date}</Text>
         <Image
             src={urlFor(coverImage).height(400).url()}
