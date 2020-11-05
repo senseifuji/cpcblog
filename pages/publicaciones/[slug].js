@@ -23,13 +23,8 @@ const PostDetail = ({post}) => {
                 /> 
             </Content>
         </Layout>
-        
-
-
      );
 }
-
-
 
 
 export async function getStaticProps({params}){
