@@ -5,7 +5,9 @@ import Content from '../../components/content'
 import Header from '../../components/header'
 import DetailItem from '../../components/detailItem';
 
+
 const PostDetail = ({post}) => {
+    console.log("post =>", post)
     const title = `${post.title} - CPC Anticorrupcion`
     return ( 
 
@@ -17,6 +19,7 @@ const PostDetail = ({post}) => {
                     author={post.author.name} 
                     date={post.date}
                     coverImage={post.coverImage}
+                    content={post.content}
                 /> 
             </Content>
         </Layout>

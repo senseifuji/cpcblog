@@ -7,7 +7,6 @@ import Section from '../../components/section'
 import { getAllPosts } from '../../lib/api';
 
 export default function PublicacionesPage({posts}) {
-    console.log("posts =>", posts)
     return (
         <Layout title="Publicaciones de CPC Anticorrupcion">
             <Header position="fixed"/>
