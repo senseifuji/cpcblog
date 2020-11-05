@@ -118,12 +118,12 @@ export default function Home() {
               </Text>
 
               <Button size="lg" bg={blue} color={yellow} rounded="10px" _hover={{ bg: "cpc.blueMedium" }} width={["250px", "200px", "200px", "200px"]}>
-                <i aria-hidden="true" class="far fa-file-alt"></i>
+                <i aria-hidden="true" className="far fa-file-alt"></i>
                 	&nbsp; Conocé nuestra investigación
               </Button>
               <Text fontFamily="cpc.gothamCondensed" my={4}>¿Ya conoces nuestras exigencias y quieres aportar?</Text>
               <Button size="lg" bg={yellowLight} color={blue} borderColor={blue} border="2px" rounded="10px" _hover={{ bg: "cpc.blueLight" }} width="200px">
-                  <i aria-hidden="true" class="fas fa-hand-peace"></i>
+                  <i aria-hidden="true" className="fas fa-hand-peace"></i>
                  	&nbsp; Me interesa sumarme
               </Button>
             </Flex>
