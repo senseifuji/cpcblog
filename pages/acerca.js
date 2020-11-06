@@ -4,17 +4,9 @@ import Header from '../components/header'
 import Content from '../components/content';
 import Section from '../components/section'
 
-// SVGS
-import ManitasDineros from '../components/svgs/manitasdineros';
-import MonoCovid from '../components/svgs/monocovid';
-import Carrito from '../components/svgs/carrito';
-import Camino from '../components/svgs/camino';
-
 import customtheme from '../customtheme.js'
 
-
-import {Box, Flex, Text, Image} from '@chakra-ui/core';
-import Link from 'next/link'
+import {Flex, Text, Image, List, ListItem} from '@chakra-ui/core';
 
 export default function AboutPage() {
 
@@ -24,80 +16,119 @@ export default function AboutPage() {
         <Layout title="Acerca de - CPC Anticorrupcion">
             <Header position="fixed"/>
             <Content>
-                {/* Main SECTION */}
+                {/* Top SECTION */}
                 <Section bg="cpc.red" color="cpc.white" 
                     splitBiBottom="true"
                     splitBiBottomColorOne={colors.cpc.red}
-                    splitBiBottomColorTwo={colors.cpc.yellowLight}
+                    splitBiBottomColorTwo={colors.cpc.blueDark}
                 >
-                     <Text fontSize={["1.25em", "2em", "2em", "2em"]} fontFamily="cpc.gothamMedium" textAlign="center" lineHeight="1.18em">
-                            <b>¿Has buscado en Google <br/> imágenes de la palabra corrupción?</b>
-                        </Text>
-                        <Text fontFamily='cpc.gothamCondensed' fontSize={["1em", "1.4em", "1.7em", "1.7em"]} d="inline-flex" alignItems="center">
-                            ¿Cuantas veces has visto este emoji 
-                            <Image src="/images/manitas.svg" alt="Manitas" width="1em" height="1em" />
-                            junto con este otro &nbsp;
-                            <Image src="/images/billetitos.svg" alt="Billetitos" width="1em" height="1em" />?
-                        </Text>
-                        <Flex direction="column" alignItems="center">
-                            <ManitasDineros manitasSize="146px"/>
-                            <Text fontFamily='cpc.gothamCondensed' fontSize={["1em", "1.4em", "1.7em", "1.7em"]} mt="-1em">Creemos que las suficientes como para afirmar que</Text>
-                        </Flex>
-                        <Text my="0.5em" fontFamily="cpc.gothamMedium" fontSize={["1.25em", "2em", "2em", "2.5em"]} lineHeight="1.2" textAlign="center">
-                            <b>Nos urge una mejor <br/>definición de corrupción</b>
-                        </Text>
+                    <Text fontSize={["1em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
+                        <b>es por eso que para combatir la <br/> corrupción, trabajamos en el</b>
+                    </Text>
                 </Section>  
 
-                {/* CARRITO-CAMINO-MONOVACUNAS SECTION */}
-                <Section bg="cpc.yellowLight" color="cpc.black" miniTriangleDown="true" miniTriangleColor={colors.cpc.yellowLight}>
+                {/* Sistema Estatal SECTION */}
+                <Section bg="cpc.blueDark" color="cpc.white" miniTriangleDown="true" miniTriangleColor={colors.cpc.blueDark}>
                    <Flex justify="space-evenly" direction={["column", 'column', 'row', 'row']}>
-                        <Flex alignItems="center" direction={["column", 'column', 'row', 'row']} mx={4}>
-                            <Box mx={["0em", "0em", "1em", "1.5em"]}>
-                                <Camino size="100px"/>
-                            </Box>
-                            <Box mx={["0em", "0em", "1em", "1.5em"]} my="1em">
-                                <Carrito size="100px"/>
-                            </Box>
-                            <Box mx={["0em", "0em", "1em", "1.5em"]} my="-1em">
-                                <MonoCovid size="100px"/>
-                            </Box>
-                        </Flex>
-                        <Flex width={["100%", "100%", "46%", "46%" ]}>
-                            <Text my={4} fontFamily="cpc.gothamCondensedBook" fontSize={["1em", "1.2em", "1.1em", "1.2em"]} textAlign={["center", "center", "left", "left"]}>
-                                Agua destilada disfrazada de medicinas para el cáncer; carreteras que se abren en dos por tener materiales de segunda; 
-                                personas arrolladas por no tener la seguridad mínima en eventos deportivos; niñas y niños enfermos por habitar en viviendas 
-                                populares construidas en una zona contaminada; edificios colapsados por no cumplir con las regulaciones de construcción antisismos. 
-                                <strong> La corrupción mata</strong> y muchas veces va más allá del soborno, por eso desde el Comité de Participación Ciudadana de Chihuahua 
-                                creemos que la forma de definir la corrupción debe de ser mucho más amplia, porque 
-                                <strong> lo que no se define no se puede combatir</strong>.
+                        <Flex direction="column" alignItems="center" width={["100%", "100%", "70%", "60%" ]}>
+                            <Image src="/images/sistemaestatal.svg" alt="Manitas" width={["15em", "15em", "20em", "20em"]} />                            
+                            <Text my={4} lineHeight="1.1em" fontFamily="cpc.spaceMonoBold" fontSize={["1em", "1.2em", "1.5em", "1.5em"]} textAlign={["center", "center", "center", "left"]}>
+                                Ente creado para coordinar acciones
+                                interinstitucionales orientadas a:
+                                combatir, prevenir, disuadir, sancionar
+                                y reducir <span className="redText">los niveles de corrupción</span>
+                                 &nbsp;en el Estado.
                             </Text>
                         </Flex>
                    </Flex>
                 </Section>    
                 {/* Definicion de Corrupcion section*/}
-                <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
+                <Section bg="cpc.white" color="cpc.black" desktopWidth="58%" miniTriangleDown="true" miniTriangleColor={colors.cpc.blueDark}>
                     <Flex direction="column" alignItems="center" textAlign="center">
-                        <Text color="cpc.red" fontFamily="cpc.gothamMedium" fontSize={["1.5em", "2em", "2em", "2em"]}><b>Nuestra definición de corrupción*</b></Text>
-                        <Text my="0.8em" fontFamily="cpc.gothamCondensedBook" fontSize={["1em", "1.4em", "1.7em", "1.7em"]} >Es un problema de <b>captura</b> que se traduce en la incapacidad del Estado para 
-                            controlar el <b>particularismo</b>. Se trata de una <b>forma de organización social</b> que 
-                            se caracteriza por la distribución de bienes sobre una base no universalista que 
-                            <b> refleja el acceso y distribución restringida al poder.</b>
+                        <Text color="cpc.black" fontFamily="cpc.gothamCondensedLight" fontSize={["1.5em", "2em", "2em", "3em"]}><b>Está formado por</b></Text>
+                        <Text width={["300px", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px="1.5em" py="0.5em" fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.4em", "1.7em", "2.5em"]} >
+                           Los <b>67 municipios</b><br/> del estado <br/> de Chihuahua
                         </Text>
-                        <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1em", "1.2em", "1.1em", "1.2em"]}>
-                            *Basado en el trabajo de la 
-                            <Link href="http://rendiciondecuentas.org.mx/wp-content/uploads/2018/06/PNA-AccountWordPressEduHdez.pdf">
-                                <a className="redlink"> Red por la Rendición de Cuentas.</a>
-                            </Link>
+                        <Text color="cpc.black" fontSize={["1.5em", "2em", "2em", "4em"]} > + </Text>
+                        <Text width={["300px", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1em", "1em", "3em", "3em"]} py="2em" fontFamily="cpc.spaceMonoItalic" borderColor="cpc.pink" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left">
+                            Integrado por:
+                            <List styleType="disc">
+                                <ListItem>La Secretaría de la Función Pública</ListItem>
+                                <ListItem>La Auditoría Superior del Estado </ListItem>
+                                <ListItem>El Tribunal de Justicia Administrativa </ListItem>
+                                <ListItem>La Fiscalía Especializada Anticorrupción</ListItem>
+                                <ListItem>El Consejo de la Judicatura Estatal </ListItem>
+                                <ListItem>El ICHITAIP</ListItem>
+                                <ListItem>y presidido por el Comité de Participación Ciudadana</ListItem>
+                            </List>
+                        </Text>
+                         <Text color="cpc.black" fontSize={["1.5em", "2em", "2em", "4em"]} > + </Text>
+                        <Text width={["300px", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1em", "1em", "3em", "3em"]} py="2em" my="0.8em" fontFamily="cpc.spaceMonoItalic" borderColor="cpc.pink" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left">
+                            5 personas de la academia o sociedad civil, con experiencia en:transparencia, 
+                            participación ciudadana y anticorrupción
                         </Text>
                     </Flex>
                 </Section>
+                {/* FUNCION DEL COMITE  */}
+                <Section bg="cpc.red" color="cpc.white">
+                    <Text fontSize={["1em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
+                        <b>¿Cuál es la función del Comité de Participación Ciudadana?</b>
+                    </Text>
+                    <Image src="/images/cpc.svg" alt="Manitas" my="3em" width={["10em", "15em", "17em", "17em"]} />   
+                    <Text width={["300px", "400px", "500px", "750px"]} color="cpc.black" border="2px" borderRadius="lg" px={["1em", "1em", "3em", "3em"]} py="2em" fontFamily="cpc.spaceMonoItalic" borderColor="cpc.white" fontSize={["1em", "1em", "1em", "1.25em"]} textAlign="left">
+                        Integrado por:
+                        <List styleType="disc">
+                            <ListItem><b>No</b> metemos gente a la cárcel</ListItem>
+                            <ListItem><b>No</b> llevamos expedientes de investigación </ListItem>
+                            <ListItem><b>No</b> investigamos, substanciamos ni sancionamos </ListItem>
+                        </List>
+                    </Text>   
+                     <Text width={["300px", "400px", "500px", "750px"]} color="cpc.black" border="2px" borderRadius="lg" px={["1em", "1em", "3em", "3em"]} py="2em" mt="2em" fontFamily="cpc.spaceMonoItalic" borderColor="cpc.white" fontSize={["1em", "1em", "1em", "1.25em"]} textAlign="left">
+                        <List styleType="disc">
+                            <ListItem my={5}>Proponer políticas anticorrupción, metodologías e 
+                                indicadores de medición que permitan prevenir,
+                                detectar y sancionar faltas administrativas graves y no
+                                graves así como actos de corrupción.
+                            </ListItem>
+                            <ListItem my={5}>
+                                Vigilar el funcionamiento del Sistema EstatalAnticorrupción.
+                            </ListItem>
+                            <ListItem my={5}>
+                                Vincular a sociedad civil, academia y sector empresarial
+                                a través de: participación y vigilancia ciudadana.
+                            </ListItem>
+                             <ListItem my={5}>
+                               Proponer mecanismos para que la sociedad participe en
+                                la prevención y denuncia de faltas administrativas y
+                                hechos de corrupción.
+                            </ListItem>
+                             <ListItem my={5}>
+                                Llevar registro voluntario de las OSC que deseen
+                                colaborar de manera coordinada con el Comité de
+                                Participación Ciudadana.
+                            </ListItem>
+                        </List>
+                    </Text>                        
+                </Section>  
+
+                {/* FOURTH SECTION */}
+                 <Section bg="cpc.white" color="cpc.red"  desktopWidth="50%">
+                    <Text fontSize={["1em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
+                        <b>¿Quienes integran al Comité de Participación Ciudadana?</b>
+                    </Text>                     
+                </Section>  
+
+                
             </Content>
             <style jsx>{`
                 .redlink {
                     color: ${colors.cpc.red};
                     cursor: pointer;
                     text-decoration: underline;
-                }   
+                }
+                .redText {
+                    color: ${colors.cpc.red};
+                }
             `}</style>
         </Layout>
     )

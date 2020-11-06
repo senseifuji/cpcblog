@@ -18,3 +18,23 @@
     src: url("../fonts/GothamMedium.otf") format("opentype");
 }
 
+@font-face {
+    font-family: Gotham Bold;
+    src: url("../fonts/GothamBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: SpaceMono Regular;
+    src: url("../fonts/SpaceMonoRegular.ttf");
+}
+
+@font-face {
+    font-family: SpaceMono Bold;
+    src: url("../fonts/SpaceMonoBold.ttf");
+}
+
+@font-face {
+    font-family: SpaceMono Italic;
+    src: url("../fonts/SpaceMonoRegular.ttf");
+}
+

@@ -7,7 +7,6 @@ import DetailItem from '../../components/detailItem';
 
 
 const PostDetail = ({post}) => {
-    console.log("post =>", post)
     const title = `${post.title} - CPC Anticorrupcion`
     return ( 
 

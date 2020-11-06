@@ -17,7 +17,6 @@ const SessionDetail = ({session}) => {
                     date={session.date}
                     coverImage={session.coverImage}
                     content={session.content}
-
                 /> 
             </Content>
         </Layout>
