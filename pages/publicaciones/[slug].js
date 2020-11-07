@@ -5,7 +5,6 @@ import Content from '../../components/content'
 import Header from '../../components/header'
 import DetailItem from '../../components/detailItem';
 
-
 const PostDetail = ({post}) => {
     const title = `${post.title} - CPC Anticorrupcion`
     return ( 
@@ -44,4 +43,3 @@ export async function getStaticPaths(){
 
  
 export default PostDetail;
-

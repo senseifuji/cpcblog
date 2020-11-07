@@ -112,12 +112,55 @@ export default function AboutPage() {
                 </Section>  
 
                 {/* FOURTH SECTION */}
-                 <Section bg="cpc.white" color="cpc.red"  desktopWidth="50%">
-                    <Text fontSize={["1em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
+                 <Section bg="cpc.white" color="cpc.red"  desktopWidth="100%">
+                    <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em" width={["90%","90%", "100%", "50%" ]}>
                         <b>¿Quienes integran al Comité de Participación Ciudadana?</b>
-                    </Text>                     
-                </Section>  
+                    </Text> 
+                    <Flex mt={10} direction="column" color="cpc.black" alignItems="center">
+                        <Flex  direction="column" alignItems="center" my={["1em", "0.5em", "0em", "0em"]}>
+                            <Image src="/images/anaterrazas.svg" alt="ana terrazas" width={["15em", "15em", "18em", "18em"]} />            
+                            <Flex direction="column"  alignItems="center" mt={[-10]}>
+                                <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>Ana Terrazas</b></Text>    
+                                <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Presidenta</Text> 
+                                <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>1 Año</Text>   
+                            </Flex>  
+                        </Flex>     
+                    </Flex>
 
+                    <Flex direction={["column", "column", "row", "row"]} color="cpc.black" alignItems="center" justify="space-evenly" width="100%" mt={["0em", "0em", "-2em", "-8em"]}>
+                        <Flex  direction="column" alignItems="center" my={["1em", "0.5em", "0em", "0em"]}>
+                            <Image src="/images/lilianaochoa.svg" alt="ana terrazas" width={["15em", "15em", "18em", "18em"]} />            
+                            <Flex direction="column"  alignItems="center" mt={[-5]}>
+                                <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>Liliana Ochoa</b></Text>    
+                                <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Integrante - 2 Años</Text> 
+                            </Flex>  
+                        </Flex>  
+                         <Flex  direction="column" alignItems="center" my={["1em", "0.5em", "0em", "0em"]}>
+                            <Image src="/images/renemoreno.svg" alt="rene moreno" width={["15em", "15em", "18em", "18em"]} />            
+                            <Flex direction="column"  alignItems="center" mt={[-5]}>
+                                <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>René Moreno</b></Text>    
+                                <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Integrante - 3 Años</Text> 
+                            </Flex>  
+                        </Flex>    
+                    </Flex>
+
+                    <Flex mt={10} direction={["column", "column", "row", "row"]} color="cpc.black" alignItems="center" justify="center" width="100%" mt={["1em"]}>
+                        <Flex  direction="column" alignItems="center" mx={[10]} my={["1em", "0.5em", "0em", "0em"]}>
+                            <Image src="/images/miguelgomez.svg" alt="miguel gomez" width={["15em", "15em", "18em", "18em"]} />            
+                            <Flex direction="column"  alignItems="center" mt={[-5]}>
+                                <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>Miguel Gómez</b></Text>    
+                                <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Integrante - 4 Años</Text> 
+                            </Flex>  
+                        </Flex>  
+                        <Flex  direction="column" alignItems="center" mx={[10]} my={["1em", "0.5em", "0em", "0em"]}>
+                            <Image src="/images/carmenalvarez.svg" alt="carmen alvarez" width={["15em", "15em", "18em", "18em"]} />            
+                            <Flex direction="column"  alignItems="center" mt={[-5]}>
+                                <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>Carmen Álvarez</b></Text>    
+                                <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Integrante - 5 Años</Text> 
+                            </Flex>  
+                        </Flex>    
+                    </Flex>
+                </Section>  
                 
             </Content>
             <style jsx>{`
