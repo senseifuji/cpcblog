@@ -49,7 +49,7 @@ export default function AboutPage() {
                         <Text width={["300px", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px="1.5em" py="0.5em" fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.4em", "1.7em", "2.5em"]} >
                            Los <b>67 municipios</b><br/> del estado <br/> de Chihuahua
                         </Text>
-                        <Text color="cpc.black" fontSize={["1.5em", "2em", "2em", "4em"]} > + </Text>
+                        <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]} > + </Text>
                         <Image src="/images/comitecoordinador.svg" alt="comite coordinador" width={["15em", "18em", "20em", "20em"]} my={5}/>            
                         <Text width={["300px", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1em", "1em", "3em", "3em"]} py="2em" fontFamily="cpc.spaceMonoItalic" borderColor="cpc.pink" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left">
                             Integrado por:
@@ -66,7 +66,7 @@ export default function AboutPage() {
                     </Flex>
                 </Section>
                 <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
-                    <Text color="cpc.black" fontSize={["1.5em", "2em", "2em", "4em"]} mt="-1em"> + </Text>
+                    <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]} mt="-1em"> + </Text>
                     <Image src="/images/comiteparticipacion.svg" alt="comite participacion" width={["15em", "18em", "20em", "20em"]} my={5}/>            
                     <Text width={["300px", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1em", "1em", "3em", "3em"]} py="2em" my="0.8em" fontFamily="cpc.spaceMonoItalic" borderColor="cpc.pink" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left">
                         5 personas de la academia o sociedad civil, con experiencia en:transparencia, 
@@ -177,7 +177,29 @@ export default function AboutPage() {
 
                 {/* //FACES SECTION TWO */}
                  <Section bg="cpc.white" color="cpc.black">
+                    <Flex direction={["column", "row", "row", "row"]} border={["0px", "2px", "2px", "2px"]} borderRadius="lg" borderColor="cpc.black" p="2em" width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
+                        <Image src="/images/liliana2.svg" alt="liliana" width={["7em", "7em", "8em", "8em"]} mx={2}   my={2}/>            
+                        <Image src="/images/rene2.svg" alt="rene" width={["7em", "7em", "8em", "8em"]}  mx={2} my={2}/>            
+                        <Image src="/images/miguel2.svg" alt="miguel" width={["7em", "7em", "8em", "8em"]}  mx={2} my={2}/>            
+                        <Image src="/images/carmen2.svg" alt="carmen" width={["7em", "7em", "8em", "8em"]}  mx={2} my={2}/>            
+                    </Flex>
+                    <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]}> + </Text>
+                    <Image src="/images/secretariaejecutiva.svg" alt="secretaria ejecutiva" width={["15em", "18em", "20em", "20em"]} my={5}/>            
+                    <Flex direction="column" border="2px" borderRadius="lg" borderColor="cpc.black" p="2em"  width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
+                        <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.15em", "1.15em", "1.5em", "2em"]}> Las 4 personas que no presiden el Comité de Participación Ciudadana (integrantes) junto con la persona titular de la Secretaría Ejecutiva proponen proyectos de política pública, metodologías e indicadores a ser implementados a nivel estatal. </Text>
+                    </Flex>
+
+                    <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]}> = </Text>
+                    <Flex direction="column" border="2px" borderRadius="lg" borderColor="cpc.black" p="2em"  width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
+                        <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.15em", "1.15em", "1.5em", "2em"]}> Este espacio de trabajo se conoce como: </Text>
+                        <Image src="/images/comisionejecutiva.svg" alt="comision ejecutiva" width={["15em", "18em", "20em", "20em"]} my={5}/>            
+                    </Flex>
+                    <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]}> ↓ </Text>
                     
+                    <Flex direction="column" border="2px" borderRadius="lg" borderColor="cpc.black" p="2em"  width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
+                        <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.15em", "1.15em", "1.5em", "2em"]}> El trabajo que realiza la Comisión Ejecutiva Anticorrupción es enviado a la persona que preside el Comité de Participación Ciudadana para que cabildee y defienda esos proyectos de política pública, metodologías e indicadores en el Comité Coordinador del Sistema Estatal Anticorrupción. </Text>
+                        <Image src="/images/ana2.svg" alt="ana terrazas" width={["7em", "10em", "10em", "10em"]} my={5}/>            
+                    </Flex>
                 </Section>   
                 
             </Content>
