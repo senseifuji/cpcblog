@@ -51,7 +51,7 @@ const Section = ({
                 background-color: ${splitBiBottomColorTwo};
                 fill: ${splitBiBottomColorOne};
                 height: 24px;
-                width: 100%;
+                width: 116%;
             }
 
             .splitBiBottomNormal {
@@ -60,14 +60,20 @@ const Section = ({
 
             .splitBiBottomInverse{
                 transform: translateX(-50px) rotateY(380deg);
+
             }
 
             .miniTriangleDownContainer{
                 width: 100%;
             }
+
+            @media only screen and (max-width: 500px) {
+                {/* diagonal not working on mobile */}
+                .splittriangleContainer{
+                    display: none;
+                }
+            }
         `}</style>
-
-
         </>
      );
 }

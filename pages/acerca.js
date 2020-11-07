@@ -43,13 +43,14 @@ export default function AboutPage() {
                    </Flex>
                 </Section>    
                 {/* Definicion de Corrupcion section*/}
-                <Section bg="cpc.white" color="cpc.black" desktopWidth="58%" miniTriangleDown="true" miniTriangleColor={colors.cpc.blueDark}>
+                <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
                     <Flex direction="column" alignItems="center" textAlign="center">
                         <Text color="cpc.black" fontFamily="cpc.gothamCondensedLight" fontSize={["1.5em", "2em", "2em", "3em"]}><b>Está formado por</b></Text>
                         <Text width={["300px", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px="1.5em" py="0.5em" fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.4em", "1.7em", "2.5em"]} >
                            Los <b>67 municipios</b><br/> del estado <br/> de Chihuahua
                         </Text>
                         <Text color="cpc.black" fontSize={["1.5em", "2em", "2em", "4em"]} > + </Text>
+                        <Image src="/images/comitecoordinador.svg" alt="comite coordinador" width={["15em", "18em", "20em", "20em"]} my={5}/>            
                         <Text width={["300px", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1em", "1em", "3em", "3em"]} py="2em" fontFamily="cpc.spaceMonoItalic" borderColor="cpc.pink" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left">
                             Integrado por:
                             <List styleType="disc">
@@ -62,57 +63,57 @@ export default function AboutPage() {
                                 <ListItem>y presidido por el Comité de Participación Ciudadana</ListItem>
                             </List>
                         </Text>
-                         <Text color="cpc.black" fontSize={["1.5em", "2em", "2em", "4em"]} > + </Text>
-                        <Text width={["300px", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1em", "1em", "3em", "3em"]} py="2em" my="0.8em" fontFamily="cpc.spaceMonoItalic" borderColor="cpc.pink" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left">
-                            5 personas de la academia o sociedad civil, con experiencia en:transparencia, 
-                            participación ciudadana y anticorrupción
-                        </Text>
                     </Flex>
                 </Section>
+                <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
+                    <Text color="cpc.black" fontSize={["1.5em", "2em", "2em", "4em"]} mt="-1em"> + </Text>
+                    <Image src="/images/comiteparticipacion.svg" alt="comite participacion" width={["15em", "18em", "20em", "20em"]} my={5}/>            
+                    <Text width={["300px", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1em", "1em", "3em", "3em"]} py="2em" my="0.8em" fontFamily="cpc.spaceMonoItalic" borderColor="cpc.pink" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left">
+                        5 personas de la academia o sociedad civil, con experiencia en:transparencia, 
+                        participación ciudadana y anticorrupción
+                    </Text>
+                </Section>
+
                 {/* FUNCION DEL COMITE  */}
                 <Section bg="cpc.red" color="cpc.white">
                     <Text fontSize={["1em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
                         <b>¿Cuál es la función del Comité de Participación Ciudadana?</b>
                     </Text>
                     <Image src="/images/cpc.svg" alt="Manitas" my="3em" width={["10em", "15em", "17em", "17em"]} />   
-                    <Text width={["300px", "400px", "500px", "750px"]} color="cpc.black" border="2px" borderRadius="lg" px={["1em", "1em", "3em", "3em"]} py="2em" fontFamily="cpc.spaceMonoItalic" borderColor="cpc.white" fontSize={["1em", "1em", "1em", "1.25em"]} textAlign="left">
-                        Integrado por:
+                    <Text fontFamily="cpc.gothamCondensed" fontSize={["2.5em", "2em", "2em", "3.5em"]} >
+                        ¿Qué <b>no</b> hacemos?
+                    </Text>
+                    <Text width={["90%", "80%", "500px", "750px"]} color="cpc.black" border="2px" borderRadius="lg" px={["1.25em", "1em", "2em", "2.5em"]} py="2em" fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.15em", "1.15em", "1.5em", "2em"]} textAlign="left">
                         <List styleType="disc">
                             <ListItem><b>No</b> metemos gente a la cárcel</ListItem>
                             <ListItem><b>No</b> llevamos expedientes de investigación </ListItem>
                             <ListItem><b>No</b> investigamos, substanciamos ni sancionamos </ListItem>
                         </List>
                     </Text>   
-                     <Text width={["300px", "400px", "500px", "750px"]} color="cpc.black" border="2px" borderRadius="lg" px={["1em", "1em", "3em", "3em"]} py="2em" mt="2em" fontFamily="cpc.spaceMonoItalic" borderColor="cpc.white" fontSize={["1em", "1em", "1em", "1.25em"]} textAlign="left">
-                        <List styleType="disc">
-                            <ListItem my={5}>Proponer políticas anticorrupción, metodologías e 
-                                indicadores de medición que permitan prevenir,
-                                detectar y sancionar faltas administrativas graves y no
-                                graves así como actos de corrupción.
-                            </ListItem>
-                            <ListItem my={5}>
-                                Vigilar el funcionamiento del Sistema EstatalAnticorrupción.
-                            </ListItem>
-                            <ListItem my={5}>
-                                Vincular a sociedad civil, academia y sector empresarial
-                                a través de: participación y vigilancia ciudadana.
-                            </ListItem>
-                             <ListItem my={5}>
-                               Proponer mecanismos para que la sociedad participe en
-                                la prevención y denuncia de faltas administrativas y
-                                hechos de corrupción.
-                            </ListItem>
-                             <ListItem my={5}>
-                                Llevar registro voluntario de las OSC que deseen
-                                colaborar de manera coordinada con el Comité de
-                                Participación Ciudadana.
-                            </ListItem>
-                        </List>
-                    </Text>                        
                 </Section>  
 
-                {/* FOURTH SECTION */}
-                 <Section bg="cpc.white" color="cpc.red"  desktopWidth="100%">
+                <Section bg="cpc.red" color="cpc.white">
+                    <Text fontFamily="cpc.gothamCondensed" fontSize={["2.5em", "2em", "2em", "3.5em"]} >
+                        ¿Qué <b>sí</b> hacemos?
+                    </Text>
+                    <Text width={["90%", "80%", "500px", "750px"]} color="cpc.black" border="2px" borderRadius="lg" px={["1.25em", "1em", "2em", "2.5em"]} py="1em" fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.5em", "1.15em", "1.5em", "2em"]} textAlign="left">
+                        <List styleType="disc">
+                            <ListItem my={5}>Proponer políticas anticorrupción, metodologías e indicadores de medición que permitan prevenir, detectar y sancionar faltas administrativas graves y no graves así como actos de corrupción.</ListItem>
+                            <ListItem my={5}>Vigilar el funcionamiento del Sistema Estatal Anticorrupción.</ListItem>
+                            <ListItem my={5}>Vincular a sociedad civil, academia y sector empresarial a través de: participación y vigilancia ciudadana. </ListItem>
+                            <ListItem my={5}>Proponer mecanismos para que la sociedad participe en la prevención y denuncia de faltas administrativas y hechos de corrupción.</ListItem>
+                            <ListItem my={5}>Llevar registro voluntario de las OSC que deseen colaborar de manera coordinada con el Comité de Participación Ciudadana.</ListItem>
+                        </List>
+                    </Text>   
+                </Section>  
+
+                {/* FOURTH SECTION FACES CIRCLES*/}
+                 <Section bg="cpc.white" color="cpc.red"  desktopWidth="100%"
+                    splitBiBottom="true"
+                    splitBiBottomColorOne={colors.cpc.white}
+                    splitBiBottomColorTwo={colors.cpc.yellow}
+                    splitBiBottomInverse="fal"
+                >
                     <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em" width={["90%","90%", "100%", "50%" ]}>
                         <b>¿Quienes integran al Comité de Participación Ciudadana?</b>
                     </Text> 
@@ -160,7 +161,24 @@ export default function AboutPage() {
                             </Flex>  
                         </Flex>    
                     </Flex>
-                </Section>  
+                </Section> 
+
+                {/* COMO HACEMOS POLITICA PUBLICA */}
+                <Section bg="cpc.yellow" color="cpc.white" 
+                    splitBiBottom="true"
+                    splitBiBottomColorOne={colors.cpc.yellow}
+                    splitBiBottomColorTwo={colors.cpc.white}
+                    splitBiBottomInverse="true"
+                >
+                    <Text fontSize={["1em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
+                       ¿Cómo hacemos política pública?
+                    </Text>
+                </Section> 
+
+                {/* //FACES SECTION TWO */}
+                 <Section bg="cpc.white" color="cpc.black">
+                    
+                </Section>   
                 
             </Content>
             <style jsx>{`

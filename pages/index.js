@@ -108,7 +108,7 @@ export default function Home() {
             </Flex>
             <Flex fontFamily="cpc.gothamCondensed" lineHeight="1.1em" fontSize="1.2em" direction="column" width="100%" textAlign="center" alignItems="center" px="1em">
               <Text fontFamily="cpc.gothamCondensed" mb={3}>
-                Sabemos que estamos en un momento complicado EDITADO como planeta y 
+                Sabemos que estamos en un momento complicado como planeta y 
                 como especie. Son justo estos momentos en los que necesitamos 
                 respuestas públicas a la altura.
               </Text>
