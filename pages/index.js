@@ -65,7 +65,7 @@ export default function Home() {
       {/* ----------TOP BANNER ------ */}
       <Layout direction="column" title="CPC Anticorrupción – En Chihuahua las personas juntas buscamos combatir la corrupción.">
           <Section bg="cpc.white" color="cpc.blackLight" desktopWidth="100%">
-            <Flex direction="column" fontFamily="cpc.gothamMedium" alignItems="center" textAlign="center" px="2em">
+            <Flex direction="column" fontFamily="cpc.gothamMedium" alignItems="center" textAlign="center" px="2em" >
               <Text pb={4} fontSize={["2em", "2em", "2.7em", "2.7em"]} fontWeight="600" lineHeight="1em"><b>Las personas <span id="changinText">{currentHomeWord}</span> la corrupción</b></Text>
               <Text fontFamily="cpc.gothamCondensed" fontSize={["0.95em", "0.9em", "19.2px", "19.2px"]} mb="14px">
                 En el Comité de Participación Ciudadana de Chihuahua (CPC) 
