@@ -29,7 +29,7 @@ export default function PublicacionesPage({posts}) {
 
                 </Section>
                 <Section bg="cpc.white" color="cpc.red" desktopWidth="95%">
-                   <Flex height="100vh" width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]}>
+                   <Flex  width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]}>
                         { posts.map(post => 
                             <ListItem key={post._id} 
                                 title={post.title} 
