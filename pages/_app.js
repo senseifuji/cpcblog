@@ -7,6 +7,7 @@ const MyApp = ({Component, pageProps}) => {
         <ThemeProvider theme={customtheme}>
             <CSSReset/>
             <Component {...pageProps} />
+           
         </ThemeProvider>
     )
 }

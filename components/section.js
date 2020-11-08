@@ -13,7 +13,7 @@ const Section = ({
     splitBiBottomInverse = false,
     desktopWidth = "80%",
     tabletWidth= "90%",
-    justify="center"
+    justify="center",
     
 }) => {
     const {colors} = customtheme
