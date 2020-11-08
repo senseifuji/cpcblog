@@ -3,13 +3,34 @@ import Header from '../../components/header'
 import Content from '../../components/content';
 import ListItem from '../../components/listitem';
 import Section from '../../components/section'
-import {Flex, Text} from '@chakra-ui/core';
+import {Flex, Text, Input} from '@chakra-ui/core';
 import { getAllPosts } from '../../lib/api';
 import customtheme from '../../customtheme.js'
+import {useState, useEffect} from 'react';
 
 
 export default function PublicacionesPage({posts}) {
     const {colors} = customtheme
+
+    const [filteredPosts, setFilteredposts] = useState(posts);
+
+    const handleFilter = (value) => {
+
+        const postsCopy = [...posts]
+
+        if(value !== ''){
+            let parsedValue = value.toLowerCase()
+            let newPosts = postsCopy.filter(post =>  {
+                let parsedTitle = post.title.toLowerCase()
+                return parsedTitle.includes(parsedValue)
+            })
+
+            setFilteredposts(newPosts)
+
+        } else {
+            setFilteredposts(postsCopy)
+        }
+    }
 
     return (
         <Layout title="Publicaciones de CPC Anticorrupcion">
@@ -29,17 +50,22 @@ export default function PublicacionesPage({posts}) {
 
                 </Section>
                 <Section bg="cpc.white" color="cpc.red" desktopWidth="95%">
-                   <Flex  width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]}>
-                        { posts.map(post => 
-                            <ListItem key={post._id} 
-                                title={post.title} 
-                                author={post.author} 
-                                date={post.date}
-                                image={post.coverImage}
-                                url={`/publicaciones/${post.slug}`}
-                            />
-                        )}
-                   </Flex>
+                <Input placeholder="Busca una publicación" borderColor="cpc.red" focusBorderColor="cpc.red" size="lg" width="90%" onChange={e => handleFilter(e.target.value)}/>
+                    <Flex  width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]} mt={[6, 6, 10, 10]}>
+                        {filteredPosts.length > 0 ? 
+                            filteredPosts.map(post => 
+                                <ListItem key={post._id} 
+                                    title={post.title} 
+                                    author={post.author} 
+                                    date={post.date}
+                                    image={post.coverImage}
+                                    url={`/publicaciones/${post.slug}`}
+                                />
+                            ) : (
+                                <Text width="100%" ml={["0em", "3em", "3em", "3em"]}><b>No existen resultados para tu busqueda</b></Text>
+                            )
+                        }
+                    </Flex>
                 </Section>
             </Content>
         </Layout>
