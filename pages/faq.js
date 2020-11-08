@@ -14,7 +14,7 @@ export default function FaqPage({faqs}) {
     const {colors} = customtheme
 
     return (
-        <Layout title="Preguntas frecuentes de - CPC Anticorrupcion">
+        <Layout >
             <Header position="fixed"/>
             <Content>
                 {/* Top SECTION */}
@@ -24,7 +24,7 @@ export default function FaqPage({faqs}) {
                     splitBiBottomColorTwo={colors.cpc.white}
                 >
                     <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
-                        <b>Preguntas <br/> frecuentes del cpc</b>
+                        <b>Preguntas <br/> frecuentes del CPC</b>
                     </Text>
                 </Section>  
                 <Section bg="cpc.white" color="cpc.red">

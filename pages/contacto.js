@@ -4,7 +4,7 @@ import Content from '../components/content';
 
 export default function Contact() {
     return (
-        <Layout title="Contacto de - CPC Anticorrupcion">
+        <Layout >
             <Header position="fixed"/>
             <Content>
                 <h1>Contacto</h1>

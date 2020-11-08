@@ -19,6 +19,7 @@
     "get-youtube-id": "^1.0.1",
     "moment": "^2.29.1",
     "next": "10.0.0",
+    "next-seo": "^4.15.1",
     "react": "16.13.1",
     "react-countup": "^4.3.3",
     "react-dom": "16.13.1",

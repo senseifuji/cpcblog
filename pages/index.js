@@ -14,6 +14,9 @@ import CountUp from 'react-countup';
 import useWindowSize from '../hooks/usewindowsize';
 import useScrollPosition from '@react-hook/window-scroll'
 
+import { NextSeo } from 'next-seo';
+
+
 export default function Home() {
   
   const homeWords = ["vigilamos", "combatimos", "eliminamos"];
@@ -61,9 +64,41 @@ export default function Home() {
  
   return (
     <>
+      <NextSeo
+        title="Aquí va el titulo"
+        description="Aquí va la descripcion"
+        canonical="https://www.canonical.ie/"
+        openGraph={{
+          url: 'https://www.url.ie/a',
+          title: 'Open Graph Title',
+          description: 'Open Graph Description',
+          images: [
+            {
+              url: 'https://www.example.ie/og-image-01.jpg',
+              width: 800,
+              height: 600,
+              alt: 'Og Image Alt',
+            },
+            {
+              url: 'https://www.example.ie/og-image-02.jpg',
+              width: 900,
+              height: 800,
+              alt: 'Og Image Alt Second',
+            },
+            { url: 'https://www.example.ie/og-image-03.jpg' },
+            { url: 'https://www.example.ie/og-image-04.jpg' },
+          ],
+          site_name: 'SiteName',
+        }}
+        twitter={{
+          handle: '@handle',
+          site: '@site',
+          cardType: 'summary_large_image',
+        }}
+      />
 
       {/* ----------TOP BANNER ------ */}
-      <Layout direction="column" title="CPC Anticorrupción – En Chihuahua las personas juntas buscamos combatir la corrupción.">
+      <Layout direction="column">
           <Section bg="cpc.white" color="cpc.blackLight" desktopWidth="100%">
             <Flex direction="column" fontFamily="cpc.gothamMedium" alignItems="center" textAlign="center" px="2em" >
               <Text pb={4} fontSize={["2em", "2em", "2.7em", "2.7em"]} fontWeight="600" lineHeight="1em"><b>Las personas <span id="changinText">{currentHomeWord}</span> la corrupción</b></Text>

@@ -9,7 +9,7 @@ const PostDetail = ({post}) => {
     const title = `${post.title} - CPC Anticorrupcion`
     return ( 
 
-        <Layout title={title}>
+        <Layout >
             <Header position="fixed"/>
             <Content>
                 <DetailItem 

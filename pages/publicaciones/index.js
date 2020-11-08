@@ -33,7 +33,7 @@ export default function PublicacionesPage({posts}) {
     }
 
     return (
-        <Layout title="Publicaciones de CPC Anticorrupcion">
+        <Layout>
             <Header position="fixed"/>
             <Content>
                 <Section bg="cpc.red" color="cpc.white" 

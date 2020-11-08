@@ -8,7 +8,7 @@ const SessionDetail = ({session}) => {
     const title = `${session.title} - CPC Anticorrupcion`
     return ( 
 
-        <Layout title={title}>
+        <Layout >
             <Header position="fixed"/>
             <Content>
                 <DetailItem 

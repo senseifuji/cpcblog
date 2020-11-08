@@ -11,7 +11,7 @@ export default function Custom404() {
     return (
        <>
 
-            <Layout title="Contacto de - CPC Anticorrupcion">
+            <Layout>
                 <Header position="fixed" />
                 <Content>
                     <Flex height="100vh" bg="cpc.blueDark" color="cpc.white" justify="center" alignItems="center"> 
