@@ -6,7 +6,7 @@ import Section from '../../components/section'
 import {Flex, Text, Input} from '@chakra-ui/core';
 import { getAllPosts } from '../../lib/api';
 import customtheme from '../../customtheme.js'
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 
 export default function PublicacionesPage({posts}) {

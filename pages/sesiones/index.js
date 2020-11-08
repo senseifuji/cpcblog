@@ -5,14 +5,31 @@ import ListItem from '../../components/listitem';
 import Section from '../../components/section'
 import customtheme from '../../customtheme.js'
 import { getAllSessions } from '../../lib/api';
-import {Flex, Text, Image} from '@chakra-ui/core'
-
-
-
-
+import {Flex, Text, Input} from '@chakra-ui/core'
+import {useState} from 'react';
 
 export default function SesionesPage({sessions}) {
     const {colors} = customtheme
+
+        const [filteredSessions, setFilteredSessions] = useState(sessions);
+
+        const handleFilter = (value) => {
+            const sessionsCopy = [...sessions]
+
+            if(value !== ''){
+                let parsedValue = value.toLowerCase()
+                let newSessions = sessionsCopy.filter(session =>  {
+                    let parsedTitle = session.title.toLowerCase()
+                    return parsedTitle.includes(parsedValue)
+                })
+
+                setFilteredSessions(newSessions)
+
+            } else {
+                setFilteredSessions(sessionsCopy)
+            }
+        }
+
     return (
         <Layout title="Publicaciones de CPC Anticorrupcion">
             <Header position="fixed"/>
@@ -31,16 +48,23 @@ export default function SesionesPage({sessions}) {
 
                 </Section>
                 <Section bg="cpc.white" color="cpc.red" desktopWidth="95%">
-                   <Flex width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]}>
-                        { sessions.map(session => 
-                            <ListItem key={session._id} 
-                                title={session.title} 
-                                author={session.author} 
-                                date={session.date}
-                                image={session.coverImage}
-                                url={`/sesiones/${session.slug}`}
-                            />
-                        )}
+                    <Input placeholder="Busca una sesión" borderColor="cpc.red" focusBorderColor="cpc.red" size="lg" width="90%" onChange={e => handleFilter(e.target.value)}/>
+                   <Flex width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]} mt={[6, 6, 10, 10]}>
+                        {filteredSessions.length > 0 ? 
+                            filteredSessions.map(session => 
+                                <ListItem key={session._id} 
+                                    title={session.title} 
+                                    author={session.author} 
+                                    date={session.date}
+                                    image={session.coverImage}
+                                    url={`/sesiones/${session.slug}`}
+                                />
+                            ) 
+                            : 
+                            (
+                                <Text width="100%" ml={["0em", "3em", "3em", "3em"]}><b>No existen resultados para tu busqueda</b></Text>
+                            )
+                        }
                    </Flex>
                 </Section>
             </Content>
