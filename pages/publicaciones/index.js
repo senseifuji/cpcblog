@@ -22,7 +22,7 @@ export default function PublicacionesPage({posts}) {
                 >
                     <Flex direction="column" justify="center" alignItems="center" textAlign="center">
                         <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
-                            <b>Publicaciones del cpc</b>
+                            <b>Publicaciones del CPC</b>
                         </Text>
                         <Text lineheight="1em" px={5} display={{xs: "none", md: "inherit"}}>Aquí puedes encontrar las publicaciones que hacemos comunmente en el cpc</Text>
                     </Flex>

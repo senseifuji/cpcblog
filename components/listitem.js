@@ -11,7 +11,7 @@ const ListItem = ({title, author, date, image, url}) => {
 
     return ( 
         <>
-         <Flex my={5} direction="column"  width={["100%", "400px", "350px", "350px"]} height="auto" bg="cpc.white" m={2} borderWidth="2px" borderColor="cpc.black" rounded="3px">
+         <Flex my={5} direction="column"  width={["100%", "400px", "350px", "350px"]} height="auto" bg="cpc.white" m={2} borderWidth="2px" borderColor="cpc.red" rounded="3px">
             <Link href={url}>
                 <a>
                     <Image
@@ -31,7 +31,7 @@ const ListItem = ({title, author, date, image, url}) => {
                             />
                             <Text mx={2} fontSize={["1em", "1em", "1.15em", "1em"]} color="cpc.black"><b>{author.name}</b></Text>
                         </Flex>
-                        <Text color="cpc.black" fontSize={["0.8em", "1em", "1em", "1em"]}><b>Publicado el {parsedDate}</b></Text>
+                        <Text color="cpc.black" fontFamily="cpc.gothamCondensedBook" fontSize={["0.8em", "1em", "1em", "1em"]}><b>Publicado el {parsedDate}</b></Text>
                    </Flex>
                 </a>
             </Link>
