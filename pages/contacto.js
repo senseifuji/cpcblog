@@ -12,10 +12,10 @@ export default function Contact() {
     return (
         <>
             <CpcSeo 
-                title="Acerca del CPC - Comité Participativo Ciudadano de Chihuahua"
-                description="Conocé que es lo que hacemos en el Comité Participativo Ciudadano de Chihuahua"
+                title="Contacto del CPC - Comité Participativo Ciudadano de Chihuahua"
+                description="Contacta al Comité Participativo Ciudadano de Chihuahua"
                 url={path}
-                imageUrl=""
+                imageUrl="../public/images/OpenGraph.jpg"
             /> 
             <Layout >
                 

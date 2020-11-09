@@ -4,10 +4,12 @@ import Content from '../../components/content'
 import Header from '../../components/header'
 import DetailItem from '../../components/detailItem';
 
+
 const SessionDetail = ({session}) => {
     const title = `${session.title} - CPC Anticorrupcion`
     return ( 
-
+        <>
+         
         <Layout >
             <Header position="fixed"/>
             <Content>
@@ -20,6 +22,7 @@ const SessionDetail = ({session}) => {
                 /> 
             </Content>
         </Layout>
+        </>
         
      );
 }

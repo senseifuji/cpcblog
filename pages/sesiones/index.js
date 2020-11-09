@@ -7,9 +7,14 @@ import customtheme from '../../customtheme.js'
 import { getAllSessions } from '../../lib/api';
 import {Flex, Text, Input} from '@chakra-ui/core'
 import {useState} from 'react';
+import { useRouter } from 'next/router'
+import CpcSeo from '../../components/cpcseo'
 
 export default function SesionesPage({sessions}) {
     const {colors} = customtheme
+    const router = useRouter()
+    const path = process.env.NEXT_PUBLIC_BASE_URL + router.asPath
+
 
         const [filteredSessions, setFilteredSessions] = useState(sessions);
 
@@ -31,6 +36,13 @@ export default function SesionesPage({sessions}) {
         }
 
     return (
+        <>
+            <CpcSeo 
+            title="Sesiones CPC - Comité Participativo Ciudadano de Chihuahua"
+            description="Listado de sesiones del Comité Participativo Ciudadano de Chihuahua (CPC)."
+            url={path}
+            imageUrl="/images/OpenGraph.jpg"
+        />
         <Layout>
             <Header position="fixed"/>
             <Content>
@@ -63,12 +75,13 @@ export default function SesionesPage({sessions}) {
                             : 
                             (
                                 <Text width="100%" ml={["0em", "3em", "3em", "3em"]}><b>No existen resultados para tu busqueda</b></Text>
-                            )
+                            ) 
                         }
                    </Flex>
                 </Section>
             </Content>
         </Layout>
+        </>
     )
 }
 

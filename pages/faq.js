@@ -6,14 +6,24 @@ import Section from '../components/section';
 import {getAllFaqs} from '../lib/api'
 import customtheme from '../customtheme.js'
 import { Flex, Text } from '@chakra-ui/core';
-
+import { useRouter } from 'next/router'
+import CpcSeo from '../components/cpcseo'
 
 
 
 export default function FaqPage({faqs}) {
     const {colors} = customtheme
+    const router = useRouter()
+    const path = process.env.NEXT_PUBLIC_BASE_URL + router.asPath
 
     return (
+       <>
+         <CpcSeo 
+            title="Preguntas frecuentes CPC - Comité Participativo Ciudadano de Chihuahua"
+            description="Preguntas más frecuentes acerca del Comité Participativo Ciudadano de Chihuahua (CPC)."
+            url={path}
+            imageUrl="/images/OpenGraph.jpg"
+         />
         <Layout >
             <Header position="fixed"/>
             <Content>
@@ -34,6 +44,7 @@ export default function FaqPage({faqs}) {
                 </Section>
             </Content>
         </Layout>
+       </>
     )
 }
 
