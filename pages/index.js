@@ -16,8 +16,6 @@ import useScrollPosition from '@react-hook/window-scroll'
 import CpcSeo from '../components/cpcseo';
 
 
-
-
 export default function Home() {
   const homeWords = ["vigilamos", "combatimos", "eliminamos"];
   const [currentHomeWord, setCurrentHomeWord] = useState(homeWords[0]);
