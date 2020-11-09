@@ -18,7 +18,6 @@ export default function Contact() {
                 imageUrl=""
             /> 
             <Layout >
-                
                 <Header position="fixed"/>
                 <Content>
                     <h1>Contacto</h1>

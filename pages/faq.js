@@ -7,9 +7,6 @@ import {getAllFaqs} from '../lib/api'
 import customtheme from '../customtheme.js'
 import { Flex, Text } from '@chakra-ui/core';
 
-
-
-
 export default function FaqPage({faqs}) {
     const {colors} = customtheme
 
