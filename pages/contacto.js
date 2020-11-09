@@ -11,9 +11,7 @@ import Link from 'next/link'
 import { useForm } from "react-hook-form";
 import axios from 'axios';
 
-
 export default function Contact() {
-    
     const {colors} = customtheme
     const router = useRouter()
     const path = process.env.NEXT_PUBLIC_BASE_URL + router.asPath
@@ -22,7 +20,6 @@ export default function Contact() {
     const [isLoading, setIsloading] = useState(false);
     const [isOk, setIsOk] = useState(false);
     const [error, setError] = useState(false);
-
 
     const onSubmit = async values => {
         setIsloading(true)
