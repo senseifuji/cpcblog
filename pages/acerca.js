@@ -31,7 +31,7 @@ export default function AboutPage() {
              title="Acerca del CPC - Comité Participativo Ciudadano de Chihuahua"
             description="Conoce lo que hacemos en el Comité de Participación Ciudadana de Chihuahua (CPC)."
             url={path}
-            imageUrl="/images/opengraph.jpg"
+            imageUrl={process.env.NEXT_PUBLIC_OPENGRAPH_IMAGE_URL}
          /> 
         <Layout>
             <Header position="fixed"/>

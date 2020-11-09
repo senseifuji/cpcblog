@@ -41,7 +41,7 @@ export default function SesionesPage({sessions}) {
                 title="Sesiones CPC - Comité Participativo Ciudadano de Chihuahua"
                 description="Listado de sesiones del Comité Participativo Ciudadano de Chihuahua (CPC)."
                 url={path}
-                imageUrl="/images/opengraph.jpg"
+                imageUrl={process.env.NEXT_PUBLIC_OPENGRAPH_IMAGE_URL}
             />
             <Layout>
                 <Header position="fixed"/>

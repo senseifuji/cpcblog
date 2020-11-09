@@ -65,7 +65,7 @@ export default function Home() {
             description="En el Comité de Participación Ciudadana de Chihuahua (CPC) sabemos que solo juntas, las personas,
             podremos hacerle frente a la corrupción."
             url={process.env.NEXT_PUBLIC_BASE_URL}
-            imageUrl="/images/opengraph.jpg"
+            imageUrl={process.env.NEXT_PUBLIC_OPENGRAPH_IMAGE_URL}
         /> 
         {/* ----------TOP BANNER ------ */}
         <Layout direction="column">

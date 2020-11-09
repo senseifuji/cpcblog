@@ -20,7 +20,7 @@ export default function FaqPage({faqs}) {
                 title="Preguntas frecuentes CPC - Comité Participativo Ciudadano de Chihuahua"
                 description="Preguntas más frecuentes acerca del Comité Participativo Ciudadano de Chihuahua (CPC)."
                 url={path}
-                imageUrl="/images/opengraph.jpg"
+                imageUrl={process.env.NEXT_PUBLIC_OPENGRAPH_IMAGE_URL}
             />
             <Layout >
                 <Header position="fixed"/>

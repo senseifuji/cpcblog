@@ -43,7 +43,7 @@ export default function PublicacionesPage({posts}) {
             title="Publicaciones CPC - Comité Participativo Ciudadano de Chihuahua"
             description="Listado de publicaciones del Comité Participativo Ciudadano de Chihuahua (CPC)."
             url={path}
-            imageUrl="/images/OpenGraph.jpg"
+            imageUrl={process.env.NEXT_PUBLIC_OPENGRAPH_IMAGE_URL}
         /> 
         <Layout>
             <Header position="fixed"/>
