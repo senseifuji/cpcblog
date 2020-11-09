@@ -11,7 +11,6 @@ const MiguelGomezPage = () => {
         {title: "Enlace de prueba 2", url: "#"}
     ]
 
-
     return ( 
         <Layout>
             <Header position="fixed"/>
