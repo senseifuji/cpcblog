@@ -4,13 +4,10 @@ import Content from '../components/content';
 import  {Flex, Image, Text, Box} from '@chakra-ui/core';
 
 
-
 // pages/404.js
-export default function Custom404() {
-    
+export default function Custom404() {    
     return (
        <>
-
             <Layout>
                 <Header position="fixed" />
                 <Content>

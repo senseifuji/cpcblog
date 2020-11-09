@@ -6,7 +6,7 @@ import Section from '../components/section'
 
 import customtheme from '../customtheme.js'
 
-import {Flex, Text, Image, List, ListItem, Box} from '@chakra-ui/core';
+import {Flex, Text, Image, List, ListItem, Box, PseudoBox} from '@chakra-ui/core';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import CpcSeo from '../components/cpcseo';
@@ -203,10 +203,12 @@ export default function AboutPage() {
                         <b>¿Quienes integran al Comité de Participación Ciudadana?</b>
                     </Text> 
                     <Flex mt={10} direction="column" color="cpc.black" alignItems="center">
-                        <Flex  direction="column" alignItems="center" my={["1em", "0.5em", "0em", "0em"]}>
+                        <Flex  direction="column" alignItems="center" my={["1em", "0.5em", "0em", "0em"]} >
                             <Link href="/integrantes/anaterrazas">
                                 <a>
-                                    <Image src="/images/anaterrazas.svg" alt="ana terrazas" width={["15em", "15em", "18em", "18em"]} />            
+                                    <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
+                                        <Image src="/images/anaterrazas.svg" alt="ana terrazas" width={["15em", "15em", "18em", "18em"]} />            
+                                    </PseudoBox>
                                     <Flex direction="column"  alignItems="center" mt={[-10]}>
                                         <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>Ana Terrazas</b></Text>    
                                         <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Presidenta</Text> 
@@ -221,7 +223,9 @@ export default function AboutPage() {
                         <Flex  direction="column" alignItems="center" my={["1em", "0.5em", "0em", "0em"]}>
                             <Link href="/integrantes/lilianaochoa">
                                 <a>
-                                    <Image src="/images/lilianaochoa.svg" alt="ana terrazas" width={["15em", "15em", "18em", "18em"]} />             
+                                    <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
+                                        <Image src="/images/lilianaochoa.svg" alt="ana terrazas" width={["15em", "15em", "18em", "18em"]} />             
+                                    </PseudoBox>
                                     <Flex direction="column"  alignItems="center" mt={[-5]}>
                                         <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>Liliana Ochoa</b></Text>    
                                         <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Integrante - 2 Años</Text> 
@@ -233,7 +237,9 @@ export default function AboutPage() {
                          <Flex  direction="column" alignItems="center" my={["1em", "0.5em", "0em", "0em"]}>
                              <Link href="/integrantes/renemoreno">
                                 <a>
-                                    <Image src="/images/renemoreno.svg" alt="rene moreno" width={["15em", "15em", "18em", "18em"]} />            
+                                    <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
+                                        <Image src="/images/renemoreno.svg" alt="rene moreno" width={["15em", "15em", "18em", "18em"]} />            
+                                    </PseudoBox>
                                     <Flex direction="column"  alignItems="center" mt={[-5]}>
                                         <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>René Moreno</b></Text>    
                                         <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Integrante - 3 Años</Text> 
@@ -247,7 +253,9 @@ export default function AboutPage() {
                         <Flex  direction="column" alignItems="center" mx={[10]} my={["1em", "0.5em", "0em", "0em"]}>
                             <Link href="/integrantes/miguelgomez">
                                 <a>
-                                    <Image src="/images/miguelgomez.svg" alt="miguel gomez" width={["15em", "15em", "18em", "18em"]} />            
+                                    <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
+                                        <Image src="/images/miguelgomez.svg" alt="miguel gomez" width={["15em", "15em", "18em", "18em"]} />            
+                                    </PseudoBox>
                                     <Flex direction="column"  alignItems="center" mt={[-5]}>
                                         <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>Miguel Gómez</b></Text>    
                                         <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Integrante - 4 Años</Text> 
@@ -258,7 +266,9 @@ export default function AboutPage() {
                         <Flex  direction="column" alignItems="center" mx={[10]} my={["1em", "0.5em", "0em", "0em"]}>
                             <Link href="/integrantes/carmenalvarez">
                                 <a>
-                                    <Image src="/images/carmenalvarez.svg" alt="carmen alvarez" width={["15em", "15em", "18em", "18em"]} />            
+                                    <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
+                                        <Image src="/images/carmenalvarez.svg" alt="carmen alvarez" width={["15em", "15em", "18em", "18em"]} />            
+                                    </PseudoBox>
                                     <Flex direction="column"  alignItems="center" mt={[-5]}>
                                         <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>Carmen Álvarez</b></Text>    
                                         <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Integrante - 5 Años</Text> 

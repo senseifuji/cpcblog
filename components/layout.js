@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Flex } from '@chakra-ui/core';
 
-const Layout = ({children, title, direction="row"}) => {
+const Layout = ({children, direction="row"}) => {
     return ( 
         <>
             <Head>

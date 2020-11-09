@@ -18,7 +18,6 @@ export default function Contact() {
                 imageUrl="../public/images/OpenGraph.jpg"
             /> 
             <Layout >
-                
                 <Header position="fixed"/>
                 <Content>
                     <h1>Contacto</h1>
