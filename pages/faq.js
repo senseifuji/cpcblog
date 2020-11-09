@@ -6,31 +6,43 @@ import Section from '../components/section';
 import {getAllFaqs} from '../lib/api'
 import customtheme from '../customtheme.js'
 import { Flex, Text } from '@chakra-ui/core';
+import { useRouter } from 'next/router'
+import CpcSeo from '../components/cpcseo'
 
 export default function FaqPage({faqs}) {
     const {colors} = customtheme
+    const router = useRouter()
+    const path = process.env.NEXT_PUBLIC_BASE_URL + router.asPath
 
     return (
-        <Layout >
-            <Header position="fixed"/>
-            <Content>
-                {/* Top SECTION */}
-                <Section bg="cpc.red" color="cpc.white" 
-                    splitBiBottom="true"
-                    splitBiBottomColorOne={colors.cpc.red}
-                    splitBiBottomColorTwo={colors.cpc.white}
-                >
-                    <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
-                        <b>Preguntas <br/> frecuentes del CPC</b>
-                    </Text>
-                </Section>  
-                <Section bg="cpc.white" color="cpc.red">
-                    <Flex direction="column" height="100vh">
-                        {faqs.map(faq => <FaqItem key={faq._id} question={faq.question} answer={faq.answer}/>)}
-                    </Flex>
-                </Section>
-            </Content>
-        </Layout>
+        <>
+            <CpcSeo 
+                title="Preguntas frecuentes CPC - Comité Participativo Ciudadano de Chihuahua"
+                description="Preguntas más frecuentes acerca del Comité Participativo Ciudadano de Chihuahua (CPC)."
+                url={path}
+                imageUrl="/images/opengraph.jpg"
+            />
+            <Layout >
+                <Header position="fixed"/>
+                <Content>
+                    {/* Top SECTION */}
+                    <Section bg="cpc.red" color="cpc.white" 
+                        splitBiBottom="true"
+                        splitBiBottomColorOne={colors.cpc.red}
+                        splitBiBottomColorTwo={colors.cpc.white}
+                    >
+                        <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
+                            <b>Preguntas <br/> frecuentes del CPC</b>
+                        </Text>
+                    </Section>  
+                    <Section bg="cpc.white" color="cpc.red">
+                        <Flex direction="column" height="100vh">
+                            {faqs.map(faq => <FaqItem key={faq._id} question={faq.question} answer={faq.answer}/>)}
+                        </Flex>
+                    </Section>
+                </Content>
+            </Layout>
+        </>
     )
 }
 

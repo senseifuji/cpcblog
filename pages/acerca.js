@@ -8,6 +8,8 @@ import customtheme from '../customtheme.js'
 
 import {Flex, Text, Image, List, ListItem, Box, PseudoBox} from '@chakra-ui/core';
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+import CpcSeo from '../components/cpcseo';
 
 // SVGS
 import ManitasDineros from '../components/svgs/manitasdineros';
@@ -18,9 +20,20 @@ import Camino from '../components/svgs/camino';
 export default function AboutPage() {
 
     const {colors} = customtheme
+    const router = useRouter()
+    const path = process.env.NEXT_PUBLIC_BASE_URL + router.asPath
+
 
     return (
-        <Layout title="Acerca de - CPC Anticorrupcion">
+        <>
+            {/* SEO OF ABOUT PAGE */}        
+         <CpcSeo 
+             title="Acerca del CPC - Comité Participativo Ciudadano de Chihuahua"
+            description="Conoce lo que hacemos en el Comité de Participación Ciudadana de Chihuahua (CPC)."
+            url={path}
+            imageUrl="/images/opengraph.jpg"
+         /> 
+        <Layout>
             <Header position="fixed"/>
             <Content>
                 <Section bg="cpc.red" color="cpc.white" 
@@ -317,6 +330,7 @@ export default function AboutPage() {
                 }
             `}</style>
         </Layout>
+        </>
     )
 }
 

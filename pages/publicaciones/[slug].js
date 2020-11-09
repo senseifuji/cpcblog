@@ -1,26 +1,36 @@
 import { getPostBySlug, getAllPosts } from '../../lib/api';
-import { Heading, Text } from '@chakra-ui/core';
 import Layout from '../../components/layout'
 import Content from '../../components/content'
 import Header from '../../components/header'
 import DetailItem from '../../components/detailItem';
+import CpcSeo from '../../components/cpcseo';
+import {urlFor} from '../../lib/api';
+
 
 const PostDetail = ({post}) => {
     const title = `${post.title} - CPC Anticorrupcion`
-    return ( 
+    const openGraphImage = urlFor(post.coverImage).height(600).width(800).url()
 
-        <Layout >
-            <Header position="fixed"/>
-            <Content>
-                <DetailItem 
-                    title={post.title} 
-                    author={post.author.name} 
-                    date={post.date}
-                    coverImage={post.coverImage}
-                    content={post.content}
-                /> 
-            </Content>
-        </Layout>
+    return ( 
+        <>
+            <CpcSeo 
+                title={title}
+                url={`${process.env.NEXT_PUBLIC_BASE_URL}/publicaciones/${post.slug}`}
+                imageUrl={openGraphImage}
+            />
+            <Layout >
+                <Header position="fixed"/>
+                <Content>
+                    <DetailItem 
+                        title={post.title} 
+                        author={post.author.name} 
+                        date={post.date}
+                        coverImage={post.coverImage}
+                        content={post.content}
+                    /> 
+                </Content>
+            </Layout>
+        </>
      );
 }
 

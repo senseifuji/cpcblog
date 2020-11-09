@@ -7,9 +7,14 @@ import customtheme from '../../customtheme.js'
 import { getAllSessions } from '../../lib/api';
 import {Flex, Text, Input} from '@chakra-ui/core'
 import {useState} from 'react';
+import { useRouter } from 'next/router'
+import CpcSeo from '../../components/cpcseo'
 
 export default function SesionesPage({sessions}) {
     const {colors} = customtheme
+    const router = useRouter()
+    const path = process.env.NEXT_PUBLIC_BASE_URL + router.asPath
+
 
         const [filteredSessions, setFilteredSessions] = useState(sessions);
 
@@ -31,44 +36,52 @@ export default function SesionesPage({sessions}) {
         }
 
     return (
-        <Layout>
-            <Header position="fixed"/>
-            <Content>
-                <Section bg="cpc.red" color="cpc.white" 
-                    splitBiBottom="true"
-                    splitBiBottomColorOne={colors.cpc.red}
-                    splitBiBottomColorTwo={colors.cpc.white}
-                >
-                    <Flex direction="column" justify="center" alignItems="center" textAlign="center">
-                        <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
-                            <b>Sesiones del CPC</b>
-                        </Text>
-                        <Text lineheight="1em" px={5} display={{xs: "none", md: "inherit"}}>Aquí puedes encontrar las sesiones que hacemos comunmente en el cpc</Text>
-                    </Flex>
+        <>
+            <CpcSeo 
+                title="Sesiones CPC - Comité Participativo Ciudadano de Chihuahua"
+                description="Listado de sesiones del Comité Participativo Ciudadano de Chihuahua (CPC)."
+                url={path}
+                imageUrl="/images/opengraph.jpg"
+            />
+            <Layout>
+                <Header position="fixed"/>
+                <Content>
+                    <Section bg="cpc.red" color="cpc.white" 
+                        splitBiBottom="true"
+                        splitBiBottomColorOne={colors.cpc.red}
+                        splitBiBottomColorTwo={colors.cpc.white}
+                    >
+                        <Flex direction="column" justify="center" alignItems="center" textAlign="center">
+                            <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
+                                <b>Sesiones del CPC</b>
+                            </Text>
+                            <Text lineheight="1em" px={5} display={{xs: "none", md: "inherit"}}>Aquí puedes encontrar las sesiones que hacemos comunmente en el cpc</Text>
+                        </Flex>
 
-                </Section>
-                <Section bg="cpc.white" color="cpc.red" desktopWidth="95%">
-                    <Input placeholder="Busca una sesión" borderColor="cpc.red" focusBorderColor="cpc.red" size="lg" width="90%" onChange={e => handleFilter(e.target.value)}/>
-                   <Flex width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]} mt={[6, 6, 10, 10]}>
-                        {filteredSessions.length > 0 ? 
-                            filteredSessions.map(session => 
-                                <ListItem key={session._id} 
-                                    title={session.title} 
-                                    author={session.author} 
-                                    date={session.date}
-                                    image={session.coverImage}
-                                    url={`/sesiones/${session.slug}`}
-                                />
-                            ) 
-                            : 
-                            (
-                                <Text width="100%" ml={["0em", "3em", "3em", "3em"]}><b>No existen resultados para tu busqueda</b></Text>
-                            )
-                        }
-                   </Flex>
-                </Section>
-            </Content>
-        </Layout>
+                    </Section>
+                    <Section bg="cpc.white" color="cpc.red" desktopWidth="95%">
+                        <Input placeholder="Busca una sesión" borderColor="cpc.red" focusBorderColor="cpc.red" size="lg" width="90%" onChange={e => handleFilter(e.target.value)}/>
+                    <Flex width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]} mt={[6, 6, 10, 10]}>
+                            {filteredSessions.length > 0 ? 
+                                filteredSessions.map(session => 
+                                    <ListItem key={session._id} 
+                                        title={session.title} 
+                                        author={session.author} 
+                                        date={session.date}
+                                        image={session.coverImage}
+                                        url={`/sesiones/${session.slug}`}
+                                    />
+                                ) 
+                                : 
+                                (
+                                    <Text width="100%" ml={["0em", "3em", "3em", "3em"]}><b>No existen resultados para tu busqueda</b></Text>
+                                ) 
+                            }
+                    </Flex>
+                    </Section>
+                </Content>
+            </Layout>
+        </>
     )
 }
 

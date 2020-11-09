@@ -1,13 +1,12 @@
 import { NextSeo } from 'next-seo';
 
 
-const CpcSeo = ({title, description, url, imageUrl}) => {
+const CpcSeo = ({title, description = "", url, imageUrl}) => {
     return ( 
-
         <NextSeo
             title={title}
             description={description}
-            canonical="http://comiteanticorrupcion.mx/"
+            canonical={url}
             openGraph={{
             url: url,
             locale: 'es_mx',

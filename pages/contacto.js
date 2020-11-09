@@ -38,7 +38,7 @@ export default function Contact() {
                 title="Contacto CPC - Comité Participativo Ciudadano de Chihuahua"
                 description="Contacta a los integrantes del Comité Participativo Ciudadano de Chihuahua"
                 url={path}
-                imageUrl=""
+                imageUrl="/images/opengraph.jpg"
             /> 
             <Layout >
                 <Header position="fixed"/>

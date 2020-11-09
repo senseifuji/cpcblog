@@ -3,11 +3,21 @@ import Layout from '../../components/layout'
 import Content from '../../components/content'
 import Header from '../../components/header'
 import DetailItem from '../../components/detailItem';
+import CpcSeo from '../../components/cpcseo';
+import {urlFor} from '../../lib/api';
+
+
 
 const SessionDetail = ({session}) => {
     const title = `${session.title} - CPC Anticorrupcion`
+    const openGraphImage = urlFor(session.coverImage).height(600).width(800).url()
     return ( 
-
+        <>
+        <CpcSeo 
+            title={title}
+            url={`${process.env.NEXT_PUBLIC_BASE_URL}/sesiones/${session.slug}`}
+            imageUrl={openGraphImage}
+        />
         <Layout >
             <Header position="fixed"/>
             <Content>
@@ -20,6 +30,7 @@ const SessionDetail = ({session}) => {
                 /> 
             </Content>
         </Layout>
+        </>
         
      );
 }

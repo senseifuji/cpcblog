@@ -7,10 +7,15 @@ import {Flex, Text, Input} from '@chakra-ui/core';
 import { getAllPosts } from '../../lib/api';
 import customtheme from '../../customtheme.js'
 import {useState} from 'react';
+import { useRouter } from 'next/router'
+import CpcSeo from '../../components/cpcseo'
 
 
 export default function PublicacionesPage({posts}) {
     const {colors} = customtheme
+    const router = useRouter()
+    const path = process.env.NEXT_PUBLIC_BASE_URL + router.asPath
+
 
     const [filteredPosts, setFilteredposts] = useState(posts);
 
@@ -33,6 +38,13 @@ export default function PublicacionesPage({posts}) {
     }
 
     return (
+       <>
+        <CpcSeo 
+            title="Publicaciones CPC - Comité Participativo Ciudadano de Chihuahua"
+            description="Listado de publicaciones del Comité Participativo Ciudadano de Chihuahua (CPC)."
+            url={path}
+            imageUrl="/images/OpenGraph.jpg"
+        /> 
         <Layout>
             <Header position="fixed"/>
             <Content>
@@ -69,6 +81,7 @@ export default function PublicacionesPage({posts}) {
                 </Section>
             </Content>
         </Layout>
+       </>
     )
 }
 
