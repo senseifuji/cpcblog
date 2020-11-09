@@ -24,7 +24,7 @@ Agrega tu projectid y dataset de sanity.io
 ```
 SANITY_DATASET_NAME=tudatasetname
 SANITY_PROJECT_ID=tuprojectid
-
+NEXT_PUBLIC_BASE_URL=https://comiteanticorrupcion.mx //o remplazalo con el baseurl de tu dominio
 ```
 
 

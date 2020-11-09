@@ -13,21 +13,19 @@ import Link from 'next/link'
 import CountUp from 'react-countup';
 import useWindowSize from '../hooks/usewindowsize';
 import useScrollPosition from '@react-hook/window-scroll'
+import CpcSeo from '../components/cpcseo';
 
-import { NextSeo } from 'next-seo';
+
 
 
 export default function Home() {
-  
   const homeWords = ["vigilamos", "combatimos", "eliminamos"];
   const [currentHomeWord, setCurrentHomeWord] = useState(homeWords[0]);
   const [headerPosition, setHeaderPosition] = useState(false)
   const {yellow, white, black, red, yellowLight, blue, purple} = customtheme.colors.cpc
 
 
-  let configsDefault = {
-    regidorSize: "350px"
-  }
+  let configsDefault = { regidorSize: "350px"};
 
   const [configs, setConfigs] = useState(configsDefault)
   let size = useWindowSize() //window hook, to resize logo...
@@ -64,39 +62,11 @@ export default function Home() {
  
   return (
     <>
-      <NextSeo
-        title="Aquí va el titulo"
-        description="Aquí va la descripcion"
-        canonical="https://www.canonical.ie/"
-        openGraph={{
-          url: 'https://www.url.ie/a',
-          title: 'Open Graph Title',
-          description: 'Open Graph Description',
-          images: [
-            {
-              url: 'https://www.example.ie/og-image-01.jpg',
-              width: 800,
-              height: 600,
-              alt: 'Og Image Alt',
-            },
-            {
-              url: 'https://www.example.ie/og-image-02.jpg',
-              width: 900,
-              height: 800,
-              alt: 'Og Image Alt Second',
-            },
-            { url: 'https://www.example.ie/og-image-03.jpg' },
-            { url: 'https://www.example.ie/og-image-04.jpg' },
-          ],
-          site_name: 'SiteName',
-        }}
-        twitter={{
-          handle: '@handle',
-          site: '@site',
-          cardType: 'summary_large_image',
-        }}
-      />
-
+      {/* SEO OF INDEX PAGE */}
+      <CpcSeo 
+        title="CPC - Comité participativo ciudadano de Chihuahua"
+        description="En el Comité de Participación Ciudadana de Chihuahua (CPC) sabemos que solo juntas, las personas, podremos hacerle frente a la corrupción."
+      /> 
       {/* ----------TOP BANNER ------ */}
       <Layout direction="column">
           <Section bg="cpc.white" color="cpc.blackLight" desktopWidth="100%">
@@ -213,7 +183,7 @@ export default function Home() {
                   </Text>
                   <Link href="http://regidor.mx/yoelijo">
                     <Button fontFamily="cpc.gothamCondensed" mt="1em" size="lg" bg={red} color={white} rounded="10px" _hover={{ bg: "cpc.redLight" }} width="150px">
-                      <i aria-hidden="true" class="fas fa-vote-yea"></i>
+                      <i aria-hidden="true" className="fas fa-vote-yea"></i>
                       &nbsp; Conoce Más
                     </Button>
                   </Link>
@@ -273,7 +243,7 @@ export default function Home() {
                   </Text>
                   <Link href="http://informe2019.anticorrupcion.org/">
                     <Button fontFamily="cpc.gothamCondensed" mt="1em" size="lg" bg={yellow} color={white} rounded="10px" _hover={{ bg: "cpc.yellowLight" }} width="150px">
-                      <i aria-hidden="true" class="fab fa-readme"></i>
+                      <i aria-hidden="true" className="fab fa-readme"></i>
                       &nbsp; Lee el informe
                     </Button>
                   </Link>
