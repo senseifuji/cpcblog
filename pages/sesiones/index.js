@@ -9,6 +9,9 @@ import {Flex, Text, Input} from '@chakra-ui/core'
 import {useState} from 'react';
 import { useRouter } from 'next/router'
 import CpcSeo from '../../components/cpcseo'
+import moment from 'moment'
+import 'moment/locale/es'
+moment.locale('es')
 
 export default function SesionesPage({sessions}) {
     const {colors} = customtheme
@@ -25,7 +28,8 @@ export default function SesionesPage({sessions}) {
                 let parsedValue = value.toLowerCase()
                 let newSessions = sessionsCopy.filter(session =>  {
                     let parsedTitle = session.title.toLowerCase()
-                    return parsedTitle.includes(parsedValue)
+                    let parsedDate = moment(session.date, 'YYYY-MM-DD').format('D [de] MMMM  YYYY')
+                    return parsedTitle.includes(parsedValue) || parsedDate.includes(parsedValue)
                 })
 
                 setFilteredSessions(newSessions)

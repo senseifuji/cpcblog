@@ -9,29 +9,31 @@ import customtheme from '../../customtheme.js'
 import {useState} from 'react';
 import { useRouter } from 'next/router'
 import CpcSeo from '../../components/cpcseo'
+import moment from 'moment'
+import 'moment/locale/es'
+moment.locale('es')
 
 
 export default function PublicacionesPage({posts}) {
     const {colors} = customtheme
     const router = useRouter()
     const path = process.env.NEXT_PUBLIC_BASE_URL + router.asPath
-
-
     const [filteredPosts, setFilteredposts] = useState(posts);
 
-    const handleFilter = (value) => {
+    
 
+    const handleFilter = (value) => {
         const postsCopy = [...posts]
 
         if(value !== ''){
             let parsedValue = value.toLowerCase()
             let newPosts = postsCopy.filter(post =>  {
                 let parsedTitle = post.title.toLowerCase()
-                return parsedTitle.includes(parsedValue)
+                let parsedDate = moment(post.date, 'YYYY-MM-DD').format('D [de] MMMM  YYYY')
+                return parsedTitle.includes(parsedValue) || parsedDate.includes(parsedValue)
             })
 
             setFilteredposts(newPosts)
-
         } else {
             setFilteredposts(postsCopy)
         }
