@@ -40,7 +40,9 @@ const PostDetail = ({post}) => {
 export async function getStaticProps({params}){
     const post = await getPostBySlug(params.slug);
     return {
-        props: {post}
+        props: {post},
+        revalidate: 10
+
     }
 }
 

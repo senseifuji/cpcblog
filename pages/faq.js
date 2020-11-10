@@ -60,7 +60,9 @@ export async function getStaticProps(){
     return {
         props: {
             faqs
-        }
+        },
+        revalidate: 10
+
     }
 
 }

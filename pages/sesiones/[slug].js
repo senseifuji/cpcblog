@@ -41,7 +41,10 @@ const SessionDetail = ({session}) => {
 export async function getStaticProps({params}){
     const session = await getSessionBySlug(params.slug);
     return {
-        props: {session}
+        props: {session},
+        revalidate: 10
+
+
     }
 }
 

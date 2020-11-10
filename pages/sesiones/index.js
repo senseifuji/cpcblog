@@ -104,7 +104,8 @@ export async function getStaticProps(context){
     return {
         props: {
             sessions
-        }
+        },
+        revalidate: 10
     }
 
 }
