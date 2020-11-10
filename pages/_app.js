@@ -17,7 +17,8 @@ const MyApp = ({Component, pageProps}) => {
                 }
 
                 .blogcontent figure {
-                     width: 100% !important;
+                    margin: 2em 0;
+                    width: 100% !important;
                     height: auto !important;
                     display: flex !important;
                     justify-content: center !important;

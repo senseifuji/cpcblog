@@ -50,7 +50,7 @@ const IntegranteDetail = ({title, role, membersince, photouRL, mail, twitter, ph
                 <Flex fontSize={["1.5em", "2.25em", "3em", "3em"]} lineHeight={["1.5em", "1.5em", "1.25em", "1.25em"]} direction="column">
                 {links && links.length > 0 && 
                     links.map(link => {
-                        return <Link href={link.url}><a><Text fontFamily="cpc.gothamCondensed" as="u">{link.title}</Text></a></Link>
+                        return <Link href={link.url} key={link.title} ><a><Text fontFamily="cpc.gothamCondensed" as="u">{link.title}</Text></a></Link>
                     })
                 }
                 </Flex>

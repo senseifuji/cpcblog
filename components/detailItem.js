@@ -7,6 +7,7 @@ import YouTube from 'react-youtube'
 import moment from 'moment'
 import 'moment/locale/es'
 moment.locale('es')
+import {useRouter} from 'next/router'
 
 
 const serializers = {
@@ -20,10 +21,16 @@ const serializers = {
 }
 
 
+// COMPONENT
 const DetailItem = ({title, author, date, coverImage, content}) => {
     let parsedDate = moment(date, 'YYYY-MM-DD').format('D [de] MMMM  YYYY')
+    const router = useRouter()
+    const currentUrl = process.env.NEXT_PUBLIC_BASE_URL + router.asPath
 
-
+    const twShareUrl = encodeURI(`https://twitter.com/share?text=${title} ${currentUrl}`)
+    const fbShareUrl = encodeURI(`https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`)
+    const waShareUrl = encodeURI(`https://wa.me/?text=${title} ${currentUrl}`)
+    
     return ( 
        <>
         <Flex direction="column" justify="center" alignItems="center">
@@ -43,20 +50,31 @@ const DetailItem = ({title, author, date, coverImage, content}) => {
                     <Text mx={2} fontSize={["1em", "1em", "1.15em", "1.15em"]} fontFamily="cpc.gothamCondensedBook" color="cpc.black" lineHeight="1em">Publicado el día {parsedDate}</Text>
                   </Flex>
                 </Flex>
-                <Flex direction="row" alignItems="center">
+                <Flex direction="row" alignItems="center" justify="center" textAlign="center">
                   <Text fontSize={["1em", "1em", "1.15em", "1.25em"]} fontFamily="cpc.gothamCondensed">Compartir:</Text>
-                  <Link href="#">
-                    <a><Text mx={2}>FB</Text></a>
+                  <Link href={fbShareUrl}>
+                    <a target="_blank">
+                      <Text mx={2}>
+                        <Image src="/images/facebook.svg" alt="mailicon" width="40px" mx={["0.25em"]}/>            
+                      </Text>
+                    </a>
                   </Link>
-                  <Link href="#">
-                     <a><Text mx={2}>FB</Text></a>
+                  <Link href={twShareUrl}>
+                     <a target="_blank">
+                       <Text mx={2}>
+                          <Image src="/images/twittericon.svg" alt="mailicon"  width="40px" mx={["0.25em"]}/>            
+                       </Text>
+                      </a>
                   </Link>
-                  <Link href="#">
-                     <a><Text mx={2}>FB</Text></a>
+                  <Link href={waShareUrl}>
+                      <a target="_blank">
+                       <Text mx={2}>
+                        <Image src="/images/whatsapp.svg" alt="mailicon" width="40px" mx={["0.25em"]}/>            
+                       </Text>
+                      </a>
                   </Link>
                 </Flex>
               </Flex>
-              
               {/* cover image */}
                 <Image
                   src={urlFor(coverImage).height(500).url()}
