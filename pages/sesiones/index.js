@@ -93,7 +93,6 @@ export default function SesionesPage({sessions}) {
 //this functions run on build time on server.
 //provides props to your page, and makes it static
 export async function getStaticProps(context){
-    console.log("context =>", context)
     let sessions;
     try{
         const response = await getAllSessions();
