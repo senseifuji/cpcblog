@@ -36,7 +36,7 @@ export default function FaqPage({faqs}) {
                         </Text>
                     </Section>  
                     <Section bg="cpc.white" color="cpc.red">
-                        <Flex direction="column" height="100vh">
+                        <Flex direction="column" height="auto">
                             {faqs.map(faq => <FaqItem key={faq._id} question={faq.question} answer={faq.answer}/>)}
                         </Flex>
                     </Section>
