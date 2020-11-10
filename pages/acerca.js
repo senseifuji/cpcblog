@@ -55,7 +55,7 @@ export default function AboutPage() {
                             <Text fontFamily='cpc.gothamCondensed' fontSize={["1em", "1.4em", "1.7em", "1.7em"]} mt="-1em">Creemos que las suficientes como para afirmar que</Text>
                         </Flex>
                         <Text my="0.5em" fontFamily="cpc.gothamMedium" fontSize={["1.25em", "2em", "2em", "2.5em"]} lineHeight="1.2" textAlign="center">
-                            <b>Nos urge una mejor <br/>definición de corrupción editado</b>
+                            <b>Nos urge una mejor <br/>definición de corrupción</b>
                         </Text>
                 </Section> 
                 {/* CARRITO-CAMINO-MONOVACUNAS SECTION */}
