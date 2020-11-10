@@ -23,13 +23,15 @@ const PostDetail = ({post}) => {
                 <Content>
                     <DetailItem 
                         title={post.title} 
-                        author={post.author.name} 
+                        author={post.author} 
                         date={post.date}
                         coverImage={post.coverImage}
                         content={post.content}
                     /> 
                 </Content>
+                
             </Layout>
+             
         </>
      );
 }

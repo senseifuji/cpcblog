@@ -7,7 +7,23 @@ const MyApp = ({Component, pageProps}) => {
         <ThemeProvider theme={customtheme}>
             <CSSReset/>
             <Component {...pageProps} />
-           
+           <style global jsx>{`
+                .youtubecontainer {
+                  width: 100% !important;
+                  height: auto !important;
+                  display: flex !important;
+                  justify-content: center !important;
+                  align-items: center !important;
+                }
+
+                .blogcontent figure {
+                     width: 100% !important;
+                    height: auto !important;
+                    display: flex !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+                }
+            `}</style>
         </ThemeProvider>
     )
 }

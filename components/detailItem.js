@@ -1,9 +1,12 @@
-import { Heading, Text } from '@chakra-ui/core';
-import Image from 'next/image'
+import { Box, Text, Flex, Image} from '@chakra-ui/core';
 import {urlFor} from '../lib/api'
+import Link from 'next/link'
 import BlockContent from '@sanity/block-content-to-react'
 import getYouTubeId from 'get-youtube-id'
 import YouTube from 'react-youtube'
+import moment from 'moment'
+import 'moment/locale/es'
+moment.locale('es')
 
 
 const serializers = {
@@ -11,28 +14,74 @@ const serializers = {
       youtube: ({node}) => {
         const { url } = node
         const id = getYouTubeId(url)
-        return (<YouTube videoId={id} />)
+        return (<YouTube videoId={id} containerClassName="youtubecontainer"/>)
       }
     }
 }
 
 
 const DetailItem = ({title, author, date, coverImage, content}) => {
+    let parsedDate = moment(date, 'YYYY-MM-DD').format('D [de] MMMM  YYYY')
+
+
     return ( 
        <>
-        <Heading>{title}</Heading>
-        <Text>Escrito por {author}</Text>
-        <Text>Fecha {date}</Text>
-        <Image
-            src={urlFor(coverImage).height(400).url()}
-            alt={title}
-            unsized="true"
-        />
-        <BlockContent 
-            imageOptions={{w: 320, h:240, fit: 'max'}}
-            blocks={content}
-            serializers={serializers}
-        />
+        <Flex direction="column" justify="center" alignItems="center">
+          {/* header */}
+          <Flex direction="column" p={4} justify="center" alignItems="center" width={["100%", "100%", "100%", "900px"]}>
+              <Text mt={["0.5em", "0.5em", "1.25em", "1.25em"]} fontFamily="cpc.gothamCondensed" lineHeight="1em" fontSize={["1.5em", "2.5em", "2.75em", "3em"]}><b>{title}</b></Text>
+              <Flex direction={["column", "row", "row", "row"]} justify="space-evenly" width="100%" alignItems="center" mt={["1.25em", "1.25em", "1.25em", "1.25em"]} mb={["1em"]}>
+                <Flex direction={["column","row", "row", "row"]} justify="flex-start" alignItems="center" my={4} mt={3} width="100%">
+                  <Image
+                      src={urlFor(author.avatar).height(48).width(48).url()}
+                      alt={author.name}
+                      rounded="full"
+                      unsized="true"
+                  />
+                  <Flex direction="column" alignItems={["center", "flex-start", "flex-start", "flex-start"]}>
+                    <Text mx={2}  fontSize={["1em", "1em", "1.15em", "1em"]} color="cpc.black"><b>{author.name}</b></Text>
+                    <Text mx={2} fontSize={["1em", "1em", "1.15em", "1.15em"]} fontFamily="cpc.gothamCondensedBook" color="cpc.black" lineHeight="1em">Publicado el día {parsedDate}</Text>
+                  </Flex>
+                </Flex>
+                <Flex direction="row" alignItems="center">
+                  <Text fontSize={["1em", "1em", "1.15em", "1.25em"]} fontFamily="cpc.gothamCondensed">Compartir:</Text>
+                  <Link href="#">
+                    <a><Text mx={2}>FB</Text></a>
+                  </Link>
+                  <Link href="#">
+                     <a><Text mx={2}>FB</Text></a>
+                  </Link>
+                  <Link href="#">
+                     <a><Text mx={2}>FB</Text></a>
+                  </Link>
+                </Flex>
+              </Flex>
+              
+              {/* cover image */}
+                <Image
+                  src={urlFor(coverImage).height(500).url()}
+                  alt={title}
+                  unsized="true"
+                />
+          </Flex>
+
+
+          {/* //content */}
+          <Flex direction="column" justify="center" alignItems="center" width={["100%", "100%", "100%", "900px"]} p={4}>
+            <Box fontFamily="cpc.gothamMedium" fontSize={["1.15em", "1.15em", "1.25em", "1.25em"]} lineHeight="1.7" my={["1em", "0em", "0em", "1em"]} width="100%">
+              <BlockContent 
+                imageOptions={{w: 900, h:500, fit: 'max'}}
+                blocks={content}
+                serializers={serializers}
+                className="blogcontent"
+            />
+            </Box>
+          </Flex>
+            
+        </Flex>
+        
+        
+
        </>
      );
 }

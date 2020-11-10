@@ -83,6 +83,7 @@ export default function PublicacionesPage({posts}) {
                 </Section>
             </Content>
         </Layout>
+       
        </>
     )
 }
