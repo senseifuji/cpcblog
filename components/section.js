@@ -12,8 +12,9 @@ const Section = ({
     splitBiBottomColorTwo,
     splitBiBottomInverse = false,
     desktopWidth = "80%",
-    tabletWidth= "90%",
+    tabletWidth= "70%",
     justify="center",
+    triangleWidth="116%"
     
 }) => {
     const {colors} = customtheme
@@ -47,12 +48,13 @@ const Section = ({
         )}
 
         <style jsx>{`
-            .splittriangleContainer{
+            {
                 background-color: ${splitBiBottomColorTwo};
                 fill: ${splitBiBottomColorOne};
                 height: 24px;
-                width: 116%;
+                width: ${triangleWidth};
             }
+
 
             .splitBiBottomNormal {
                 transform: translateX(0) rotateY(180deg);
@@ -67,7 +69,7 @@ const Section = ({
                 width: 100%;
             }
 
-            @media only screen and (max-width: 500px) {
+            @media only screen and (max-width: 1024px) {
                 {/* diagonal not working on mobile */}
                 .splittriangleContainer{
                     display: none;

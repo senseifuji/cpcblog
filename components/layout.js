@@ -13,7 +13,7 @@ const Layout = ({children, direction="row"}) => {
                     __html: `window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());
-                        gtag('config', G-LE69ZN8M4Q);`
+                        gtag('config', 'G-LE69ZN8M4Q');`
                     }}
                 />
 

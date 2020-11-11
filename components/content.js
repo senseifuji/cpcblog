@@ -1,10 +1,10 @@
-import { Box } from '@chakra-ui/core';
+import { Flex } from '@chakra-ui/core';
 
 const Content = ({children}) => {
     return ( 
-        <Box mt={["4em", "4em", "5em", "6em"]} width="100%"> 
+        <Flex direction="column" mt={["4em", "4em", "5em", "6em"]} width="100%"> 
             {children}
-        </Box>
+        </Flex>
     );
 }
  

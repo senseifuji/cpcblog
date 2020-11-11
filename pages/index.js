@@ -81,7 +81,7 @@ export default function Home() {
                   #changinText{
                     color: ${customtheme.colors.cpc.red}
                   }
-                `}</style>
+              `}</style>
             </Section>
         </Layout>
 
@@ -254,7 +254,7 @@ export default function Home() {
           </Flex>
           </Section>
           {/*------------ESTADO DE CHIHUAHUA------------*/}
-          <Section bg="cpc.purple" color="cpc.white" desktopWidth="80%"
+          <Section bg="cpc.purple" color="cpc.white" desktopWidth="810%"
             splitBiBottom={true} 
             splitBiBottomColorOne={purple}
             splitBiBottomColorTwo={purple}
