@@ -111,7 +111,7 @@ export default function AboutPage() {
                 </Section>  
 
                 {/* Sistema Estatal SECTION */}
-                <Section bg="cpc.blueDark" color="cpc.white" miniTriangleDown="true" miniTriangleColor={colors.cpc.blueDark}>
+                <Section bg="cpc.blueDark" color="cpc.white">
                    <Flex justify="space-evenly" direction={["column", 'column', 'row', 'row']}>
                         <Flex direction="column" alignItems="center" width={["100%", "100%", "70%", "60%" ]}>
                             <Image src="/images/sistemaestatal.svg" alt="Manitas" width={["15em", "15em", "20em", "20em"]} />                            
