@@ -41,7 +41,7 @@ export async function getStaticProps({params}){
     const post = await getPostBySlug(params.slug);
     return {
         props: {post},
-        revalidate: 5
+        revalidate: 1
 
     }
 }
@@ -51,7 +51,7 @@ export async function getStaticPaths(){
     const paths = posts?.map(post => { return {params: {slug: post.slug}} })
     return {
         paths: paths,
-        fallback: false
+        fallback: 'blocking'
     }
 }
 

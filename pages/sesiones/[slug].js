@@ -53,7 +53,7 @@ export async function getStaticPaths(){
     const paths = sessions?.map(session => { return {params: {slug: session.slug}} })
     return {
         paths: paths,
-        fallback: false
+        fallback: 'blocking'
     }
 }
 

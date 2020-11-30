@@ -12,7 +12,7 @@ const ListItem = ({title, author, date, image, url}) => {
     return ( 
         <>
          <Flex my={5} direction="column"  width={["100%", "400px", "350px", "350px"]} height="auto" bg="cpc.white" m={2} borderWidth="2px" borderColor="cpc.red" rounded="3px">
-            <Link href={url}>
+            <Link href={url} as={url}>
                 <a>
                     <Image
                     src={urlFor(image).height(200).width(300).url()}
