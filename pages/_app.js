@@ -1,4 +1,5 @@
 import customtheme from '../customtheme';
+import { styles } from '../.next/static/chunks/main';
 import { ThemeProvider, CSSReset} from "@chakra-ui/core";
 
 const MyApp = ({Component, pageProps}) => {
@@ -6,13 +7,13 @@ const MyApp = ({Component, pageProps}) => {
         <ThemeProvider theme={customtheme}>
             <CSSReset/>
             <Component {...pageProps} />
-           <style global jsx>{`
+            <style global jsx>{`
                 .youtubecontainer {
-                  width: 100% !important;
-                  height: auto !important;
-                  display: flex !important;
-                  justify-content: center !important;
-                  align-items: center !important;
+                    width: 100% !important;
+                    height: auto !important;
+                    display: flex !important;
+                    justify-content: center !important;
+                    align-items: center !important;
                 }
 
                 .blogcontent figure {
@@ -53,6 +54,15 @@ const MyApp = ({Component, pageProps}) => {
                     font-size: 0.67em !important;
                     font-weight: bold !important;
                 }
+
+                .blogcontent blockquote {
+                    background: #f9f9f9;
+                    border-left: 10px solid #ccc;
+                    margin: 1.5em 0px;
+                    padding: 0.5em 10px;
+                    font-style: italic;
+                    font-size: 0.9em;
+                }               
             `}</style>
         </ThemeProvider>
     )
