@@ -91,13 +91,7 @@ export default function Home() {
 
         {/* --------VACUNA A LA CORRUPCIÓN-------- */}
         <Layout direction="column">
-          <Section bg="cpc.yellowLight" color="cpc.blackLight" desktopWidth="100%"
-            splitBiBottom={true} 
-            splitBiBottomColorOne={yellowLight}
-            splitBiBottomColorTwo={black}
-            splitBiBottomInverse={false}
-          >
-
+          <Section bg="cpc.yellowLight" color="cpc.blackLight" desktopWidth="100%">
             <Flex direction={["column", "column", "row", "row"]} alignItems="center">
               <Flex direction="column" width="100%" justify="center" alignItems="center" py={["2em"]}>
                 <Flex direction="column" alignItems="center" transform="translateY(150px)" zIndex="50" mt="-10em">
@@ -140,13 +134,7 @@ export default function Home() {
 
         {/* --------- YO ELIJO REGIDOR SECTION-------- */}
 
-          <Section bg="cpc.black" color="cpc.white" desktopWidth="80%"
-            splitBiBottom={true} 
-            splitBiBottomColorOne={black}
-            splitBiBottomColorTwo={blue}
-            splitBiBottomInverse={false}
-          >
-
+          <Section bg="cpc.black" color="cpc.white" desktopWidth="80%">
           <Flex justify="space-around" direction={["column", "column", "column", "row"]}>
             {/* //wrapper one  */}
               <Flex direction="column" fontFamily="cpc.gothamMedium" lineHeight="1.2em" alignItems={["center"]} fontSize={["1.5em", "2em", "2em", "2em"]} >
@@ -196,13 +184,7 @@ export default function Home() {
 
 
           {/* --------ANUAL ANTICORRUPCION -------- */}
-          <Section bg="cpc.blue" color="cpc.white" desktopWidth="80%"
-            splitBiBottom={true} 
-            splitBiBottomColorOne={blue}
-            splitBiBottomColorTwo={purple}
-            splitBiBottomInverse={true}
-          >
-
+          <Section bg="cpc.blue" color="cpc.white" desktopWidth="80%">
           <Flex justify="space-around" direction={["column", "column", "column", "row"]}>
             {/* //wrapper one  */}
               <Flex direction="column" fontFamily="cpc.gothamMedium" lineHeight="1.2em" alignItems={["center"]} fontSize={["1.5em", "2em", "2em", "2em"]} >
@@ -254,11 +236,7 @@ export default function Home() {
           </Flex>
           </Section>
           {/*------------ESTADO DE CHIHUAHUA------------*/}
-          <Section bg="cpc.purple" color="cpc.white" desktopWidth="810%"
-            splitBiBottom={true} 
-            splitBiBottomColorOne={purple}
-            splitBiBottomColorTwo={purple}
-            splitBiBottomInverse={true}>
+          <Section bg="cpc.purple" color="cpc.white" desktopWidth="810%">
               
             <Flex justify="space-between" direction={["column", "column", "column", "row"]}>
               <Flex direction="column"  fontFamily="cpc.gothamMedium" lineHeight="1.2em" alignItems={["center"]} fontSize={["1.5em", "2em", "2em", "2em"]} >

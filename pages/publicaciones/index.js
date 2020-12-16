@@ -50,11 +50,7 @@ export default function PublicacionesPage({posts}) {
         <Layout>
             <Header position="fixed"/>
             <Content>
-                <Section bg="cpc.red" color="cpc.white" 
-                    splitBiBottom="true"
-                    splitBiBottomColorOne={colors.cpc.red}
-                    splitBiBottomColorTwo={colors.cpc.white}
-                >
+                <Section bg="cpc.red" color="cpc.white">
                     <Flex direction="column" justify="center" alignItems="center" textAlign="center">
                         <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
                             <b>Publicaciones del CPC</b>

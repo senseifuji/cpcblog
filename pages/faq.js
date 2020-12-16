@@ -26,11 +26,7 @@ export default function FaqPage({faqs}) {
                 <Header position="fixed"/>
                 <Content>
                     {/* Top SECTION */}
-                    <Section bg="cpc.red" color="cpc.white" 
-                        splitBiBottom="true"
-                        splitBiBottomColorOne={colors.cpc.red}
-                        splitBiBottomColorTwo={colors.cpc.white}
-                    >
+                    <Section bg="cpc.red" color="cpc.white">
                         <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
                             <b>Preguntas <br/> frecuentes del CPC</b>
                         </Text>

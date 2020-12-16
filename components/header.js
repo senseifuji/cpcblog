@@ -11,9 +11,7 @@ import Link from 'next/link'
 import {useState} from 'react';
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import { useForm } from "react-hook-form";
 import useWindowSize from '../hooks/usewindowsize';
-import axios from 'axios'
 
 
 const Header = ({position}) => {
@@ -63,8 +61,6 @@ const Header = ({position}) => {
                             <Text fontFamily={gothamCondensed} fontSize="m">Menú</Text>
                         </div>
                     )}
-
-
                     {/* LOGO SECTION*/}
                    {logoSize && (
                         <Box>
@@ -194,7 +190,7 @@ const Header = ({position}) => {
                 .modalitem{
                     color: ${white};
                     margin: 0.4em 0;
-z                    font-family: ${gothamCondensed};
+                    font-family: ${gothamCondensed};
                     font-size: 1.25em;
                     cursor: pointer;
                     border-bottom: 3px solid ${red};
@@ -209,7 +205,6 @@ z                    font-family: ${gothamCondensed};
                 #logo{
                     font-size: 5em;
                 }
-
 
                 .item{
                     cursor: pointer;
@@ -240,8 +235,6 @@ z                    font-family: ${gothamCondensed};
                 }
                                               
             `}</style>
-
-
         </header>
     );
 }

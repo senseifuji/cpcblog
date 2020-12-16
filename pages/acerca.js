@@ -34,11 +34,7 @@ export default function AboutPage() {
         <Layout>
             <Header position="fixed"/>
             <Content>
-                <Section bg="cpc.red" color="cpc.white" 
-                    splitBiBottom="true"
-                    splitBiBottomColorOne={colors.cpc.red}
-                    splitBiBottomColorTwo={colors.cpc.yellowLight}
-                >
+                <Section bg="cpc.red" color="cpc.white">
                     <Text fontSize={["1.25em", "2em", "2em", "2em"]} fontFamily="cpc.gothamMedium" textAlign="center" lineHeight="1.18em">
                         <b>¿Has buscado en Google <br/> imágenes de la palabra corrupción?</b>
                     </Text>
@@ -57,7 +53,7 @@ export default function AboutPage() {
                     </Text>
                 </Section> 
                 {/* CARRITO-CAMINO-MONOVACUNAS SECTION */}
-                <Section bg="cpc.yellowLight" color="cpc.black" miniTriangleDown="true" miniTriangleColor={colors.cpc.yellowLight}>
+                <Section bg="cpc.yellowLight" color="cpc.black">
                    <Flex justify="space-evenly" direction={["column", 'column', 'column', 'row']}>
                         <Flex alignItems="center" direction={["column", 'column', 'column', 'row']}  mx={4}>
                             <Box mx={["0em", "0em", "1em", "1.5em"]}>
@@ -100,11 +96,7 @@ export default function AboutPage() {
                     </Flex>
                 </Section>
                 {/* Second top SECTION */}
-                <Section bg="cpc.red" color="cpc.white" 
-                    splitBiBottom="true"
-                    splitBiBottomColorOne={colors.cpc.red}
-                    splitBiBottomColorTwo={colors.cpc.blueDark}
-                >
+                <Section bg="cpc.red" color="cpc.white" >
                     <Text fontSize={["1em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
                         <b>es por eso que para combatir la <br/> corrupción, trabajamos en el</b>
                     </Text>
@@ -191,12 +183,7 @@ export default function AboutPage() {
                 </Section>  
 
                 {/* FOURTH SECTION FACES CIRCLES*/}
-                 <Section bg="cpc.white" color="cpc.red"  desktopWidth="100%"
-                    splitBiBottom="true"
-                    splitBiBottomColorOne={colors.cpc.white}
-                    splitBiBottomColorTwo={colors.cpc.yellow}
-                    splitBiBottomInverse="fal"
-                >
+                 <Section bg="cpc.white" color="cpc.red"  desktopWidth="100%">
                     <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em" width={["90%","90%", "100%", "50%" ]}>
                         <b>¿Quienes integran al Comité de Participación Ciudadana?</b>
                     </Text> 
@@ -278,12 +265,7 @@ export default function AboutPage() {
                 </Section> 
 
                 {/* COMO HACEMOS POLITICA PUBLICA */}
-                <Section bg="cpc.yellow" color="cpc.white" 
-                    splitBiBottom="true"
-                    splitBiBottomColorOne={colors.cpc.yellow}
-                    splitBiBottomColorTwo={colors.cpc.white}
-                    splitBiBottomInverse="true"
-                >
+                <Section bg="cpc.yellow" color="cpc.white">
                     <Text fontSize={["1em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
                        ¿Cómo hacemos política pública?
                     </Text>
