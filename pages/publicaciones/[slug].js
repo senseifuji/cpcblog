@@ -29,9 +29,7 @@ const PostDetail = ({post}) => {
                         content={post.content}
                     /> 
                 </Content>
-                
-            </Layout>
-             
+            </Layout> 
         </>
      );
 }

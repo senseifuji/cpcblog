@@ -9,6 +9,7 @@ import {Flex, Text, Input} from '@chakra-ui/core'
 import {useState} from 'react';
 import { useRouter } from 'next/router'
 import CpcSeo from '../../components/cpcseo'
+
 import moment from 'moment'
 import 'moment/locale/es'
 moment.locale('es')

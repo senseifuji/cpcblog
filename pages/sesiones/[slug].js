@@ -13,25 +13,24 @@ const SessionDetail = ({session}) => {
     const openGraphImage = urlFor(session.coverImage).height(600).width(800).url()
     return ( 
         <>
-        <CpcSeo 
-            title={title}
-            url={`${process.env.NEXT_PUBLIC_BASE_URL}/sesiones/${session.slug}`}
-            imageUrl={openGraphImage}
-        />
-        <Layout >
-            <Header position="fixed"/>
-            <Content>
-                <DetailItem 
-                    title={session.title} 
-                    author={session.author.name} 
-                    date={session.date}
-                    coverImage={session.coverImage}
-                    content={session.content}
-                /> 
-            </Content>
-        </Layout>
+            <CpcSeo 
+                title={title}
+                url={`${process.env.NEXT_PUBLIC_BASE_URL}/sesiones/${session.slug}`}
+                imageUrl={openGraphImage}
+            />
+            <Layout >
+                <Header position="fixed"/>
+                <Content>
+                    <DetailItem 
+                        title={session.title} 
+                        author={session.author.name} 
+                        date={session.date}
+                        coverImage={session.coverImage}
+                        content={session.content}
+                    /> 
+                </Content>
+            </Layout>
         </>
-        
      );
 }
 

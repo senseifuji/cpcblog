@@ -2,7 +2,6 @@ import customtheme from '../customtheme';
 import { ThemeProvider, CSSReset} from "@chakra-ui/core";
 
 const MyApp = ({Component, pageProps}) => {
-
     return (
         <ThemeProvider theme={customtheme}>
             <CSSReset/>
@@ -23,6 +22,36 @@ const MyApp = ({Component, pageProps}) => {
                     display: flex !important;
                     justify-content: center !important;
                     align-items: center !important;
+                }
+
+                .blogcontent h1 {
+                    font-size: 2em !important;
+                    font-weight: bold !important;
+                }
+
+                .blogcontent h2 {
+                    font-size: 1.5em !important;
+                    font-weight: bold !important;
+                }
+
+                .blogcontent h3 {
+                    font-size: 1.17em !important;
+                    font-weight: bold !important;
+                }
+
+                .blogcontent h4 {
+                    font-size: 1em !important;
+                    font-weight: bold !important;
+                }
+
+                .blogcontent h5 {
+                    font-size: 0.83em !important;
+                    font-weight: bold !important;
+                }
+
+                .blogcontent h6 {
+                    font-size: 0.67em !important;
+                    font-weight: bold !important;
                 }
             `}</style>
         </ThemeProvider>
