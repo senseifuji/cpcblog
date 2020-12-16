@@ -63,8 +63,9 @@ const MyApp = ({Component, pageProps}) => {
                     font-size: 0.9em;
                 }
 
+                {/* aqui se cambia el color de los enlaces de sesiones/publicaciones */}
                 .blogcontent a {
-                    color: #ef748a;
+                    color: #ef748a; 
                 }          
             `}</style>
         </ThemeProvider>
