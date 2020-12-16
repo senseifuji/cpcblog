@@ -29,7 +29,9 @@ export default function SesionesPage({sessions}) {
                 let newSessions = sessionsCopy.filter(session =>  {
                     let parsedTitle = session.title.toLowerCase()
                     let parsedDate = moment(session.date, 'YYYY-MM-DD').format('D [de] MMMM  YYYY')
-                    return parsedTitle.includes(parsedValue) || parsedDate.includes(parsedValue)
+                    let parsedAuthor = post.author.name.toLowerCase()
+                    let textContent = toPlainText(post.content)
+                    return parsedTitle.includes(parsedValue) || parsedDate.includes(parsedValue) || textContent.includes(parsedValue) || parsedAuthor.includes(parsedValue)
                 })
 
                 setFilteredSessions(newSessions)
@@ -60,7 +62,7 @@ export default function SesionesPage({sessions}) {
 
                     </Section>
                     <Section bg="cpc.white" color="cpc.red" desktopWidth="95%">
-                        <Input placeholder="Busca una sesión" borderColor="cpc.red" focusBorderColor="cpc.red" size="lg" width="90%" onChange={e => handleFilter(e.target.value)}/>
+                        <Input placeholder="Filtra una sesión por titulo, fecha, autor o contenido." borderColor="cpc.red" focusBorderColor="cpc.red" size="lg" width="90%" onChange={e => handleFilter(e.target.value)}/>
                     <Flex width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]} mt={[6, 6, 10, 10]}>
                             {filteredSessions.length > 0 ? 
                                 filteredSessions.map(session => 
@@ -83,6 +85,23 @@ export default function SesionesPage({sessions}) {
             </Layout>
         </>
     )
+}
+
+let toPlainText = (blocks = []) => {
+  return blocks
+    // loop through each block
+    .map(block => {
+      // if it's not a text block with children, 
+      // return nothing
+      if (block._type !== 'block' || !block.children) {
+        return ''
+      }
+      // loop through the children spans, and join the
+      // text strings
+      return block.children.map(child => child.text).join('')
+    })
+    // join the paragraphs leaving split by two linebreaks
+    .join('\n\n')
 }
 
 

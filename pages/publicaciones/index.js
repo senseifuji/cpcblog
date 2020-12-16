@@ -20,8 +20,6 @@ export default function PublicacionesPage({posts}) {
     const path = process.env.NEXT_PUBLIC_BASE_URL + router.asPath
     const [filteredPosts, setFilteredposts] = useState(posts);
 
-    
-
     const handleFilter = (value) => {
         const postsCopy = [...posts]
 
@@ -30,7 +28,9 @@ export default function PublicacionesPage({posts}) {
             let newPosts = postsCopy.filter(post =>  {
                 let parsedTitle = post.title.toLowerCase()
                 let parsedDate = moment(post.date, 'YYYY-MM-DD').format('D [de] MMMM  YYYY')
-                return parsedTitle.includes(parsedValue) || parsedDate.includes(parsedValue)
+                let textContent = toPlainText(post.content).toLowerCase()
+                let parsedAuthor = post.author.name.toLowerCase()
+                return parsedTitle.includes(parsedValue) || parsedDate.includes(parsedValue) || textContent.includes(parsedValue) || parsedAuthor.includes(parsedValue)
             })
 
             setFilteredposts(newPosts)
@@ -60,7 +60,7 @@ export default function PublicacionesPage({posts}) {
 
                 </Section>
                 <Section bg="cpc.white" color="cpc.red" desktopWidth="95%">
-                <Input placeholder="Busca una publicación por titulo, fecha o contenido." borderColor="cpc.red" focusBorderColor="cpc.red" size="lg" width="90%" onChange={e => handleFilter(e.target.value)}/>
+                <Input placeholder="Filtra una publicación por titulo, fecha, autor o contenido" borderColor="cpc.red" focusBorderColor="cpc.red" size="lg" width="90%" onChange={e => handleFilter(e.target.value)}/>
                     <Flex  width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]} mt={[6, 6, 10, 10]}>
                         {filteredPosts.length > 0 ? 
                             filteredPosts.map(post => 
@@ -82,6 +82,23 @@ export default function PublicacionesPage({posts}) {
        
        </>
     )
+}
+
+let toPlainText = (blocks = []) => {
+  return blocks
+    // loop through each block
+    .map(block => {
+      // if it's not a text block with children, 
+      // return nothing
+      if (block._type !== 'block' || !block.children) {
+        return ''
+      }
+      // loop through the children spans, and join the
+      // text strings
+      return block.children.map(child => child.text).join('')
+    })
+    // join the paragraphs leaving split by two linebreaks
+    .join('\n\n')
 }
 
 
