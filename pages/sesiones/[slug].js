@@ -7,7 +7,6 @@ import CpcSeo from '../../components/cpcseo';
 import {urlFor} from '../../lib/api';
 
 
-
 const SessionDetail = ({session}) => {
     const title = `${session.title} - CPC Anticorrupcion`
     const openGraphImage = urlFor(session.coverImage).height(600).width(800).url()

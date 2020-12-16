@@ -6,17 +6,10 @@ const Layout = ({children, direction="row"}) => {
         <>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
-                <link rel="preload" href="/fonts/GothamBold.otf" as="font" crossOrigin=""/>
-                <link rel="preload" href="/fonts/GothamCondensedBook.otf" as="font" crossOrigin=""/>
-                <link rel="preload" href="/fonts/GothamCondensedLight.otf" as="font" crossOrigin=""/>
-                <link rel="preload" href="/fonts/GothamCondensedMedium.otf" as="font" crossOrigin=""/>
-                <link rel="preload" href="/fonts/GothamMedium.otf" as="font" crossOrigin=""/>
-                <link rel="preload" href="/fonts/SpaceMonoBold.ttf" as="font" crossOrigin=""/>
-                <link rel="preload" href="/fonts/SpaceMonoItalic.ttf" as="font" crossOrigin=""/>
-                <link rel="preload" href="/fonts/SpaceMonoRegular.ttf" as="font" crossOrigin=""/>
+               
 
 
-                <link rel="stylesheet" href="css/fontface.css"/>
+                <link rel="stylesheet" href="/css/fontface.css"/>
                 <script src="https://kit.fontawesome.com/03f0c5f1a0.js" crossorigin="anonymous"></script>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LE69ZN8M4Q"></script>
                 <script async dangerouslySetInnerHTML={{
