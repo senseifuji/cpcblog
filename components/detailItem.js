@@ -33,23 +33,9 @@ const serializers = {
           return <p className="textcenter">{props.children}</p>
         } else if(props.node.style === 'normalleft'){
           return <p className="textleft">{props.children}</p>
-        } else if(props.node.style === 'h1'){
-          return <h1>{props.children}</h1>
-        } else if(props.node.style === 'h2'){
-          return <h2>{props.children}</h2>
-        } else if(props.node.style === 'h3'){
-          return <h3>{props.children}</h3>
-        } else if(props.node.style === 'h4'){
-          return <h4>{props.children}</h4>
-        } else if(props.node.style === 'h5'){
-          return <h5>{props.children}</h5>
-        } else if(props.node.style === 'h6'){
-          return <h6>{props.children}</h6>
-        } else if(props.node.style === 'blockquote'){
-          return <blockquote>{props.children}</blockquote>
         }
         else {
-          return props.children
+          return BlockContent.defaultSerializers.types.block(props)
         }
       }      
     }
