@@ -7,6 +7,7 @@ import CpcSeo from '../../components/cpcseo';
 import {urlFor} from '../../lib/api';
 
 
+
 const PostDetail = ({post}) => {
     const title = `${post.title} - CPC Anticorrupcion`
     const openGraphImage = urlFor(post.coverImage).height(600).width(800).url()

@@ -66,7 +66,25 @@ const MyApp = ({Component, pageProps}) => {
                 {/* aqui se cambia el color de los enlaces de sesiones/publicaciones */}
                 .blogcontent a {
                     color: #ef748a; 
-                }          
+                    text-decoration: underline;
+                } 
+
+                .blog-image {
+                    display: flex !important;
+                    margin: 1em 0 !important;
+                }
+
+                .imageleft{
+                    justify-content: flex-start !important;
+                }
+
+                .imageright{
+                    justify-content: flex-end !important;
+                }
+
+                .imagecenter{
+                    justify-content: center !important;
+                }
             `}</style>
         </ThemeProvider>
     )

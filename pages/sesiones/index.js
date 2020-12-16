@@ -19,7 +19,6 @@ export default function SesionesPage({sessions}) {
     const router = useRouter()
     const path = process.env.NEXT_PUBLIC_BASE_URL + router.asPath
 
-
         const [filteredSessions, setFilteredSessions] = useState(sessions);
 
         const handleFilter = (value) => {
@@ -104,7 +103,6 @@ let toPlainText = (blocks = []) => {
     // join the paragraphs leaving split by two linebreaks
     .join('\n\n')
 }
-
 
 //this functions run on build time on server.
 //provides props to your page, and makes it static

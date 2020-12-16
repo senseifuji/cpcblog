@@ -16,9 +16,20 @@ const serializers = {
         const { url } = node
         const id = getYouTubeId(url)
         return (<YouTube videoId={id} containerClassName="youtubecontainer"/>)
+      },
+      image: ({node}) => {
+        const {asset, imageposition = 'imagecenter'} = node
+      
+        return (
+            <div className={`blog-image ${imageposition}`}>
+              <img src={urlFor(asset).url()} alt=""/>
+            </div>
+        )
       }
+      
     }
 }
+
 
 
 // COMPONENT
