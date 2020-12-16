@@ -1,5 +1,4 @@
 import customtheme from '../customtheme';
-import { styles } from '../.next/static/chunks/main';
 import { ThemeProvider, CSSReset} from "@chakra-ui/core";
 
 const MyApp = ({Component, pageProps}) => {
@@ -62,7 +61,11 @@ const MyApp = ({Component, pageProps}) => {
                     padding: 0.5em 10px;
                     font-style: italic;
                     font-size: 0.9em;
-                }               
+                }
+
+                .blogcontent a {
+                    color: #ef748a;
+                }          
             `}</style>
         </ThemeProvider>
     )
