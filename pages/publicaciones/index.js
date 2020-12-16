@@ -64,7 +64,7 @@ export default function PublicacionesPage({posts}) {
 
                 </Section>
                 <Section bg="cpc.white" color="cpc.red" desktopWidth="95%">
-                <Input placeholder="Busca una publicación" borderColor="cpc.red" focusBorderColor="cpc.red" size="lg" width="90%" onChange={e => handleFilter(e.target.value)}/>
+                <Input placeholder="Busca una publicación por titulo, fecha o contenido." borderColor="cpc.red" focusBorderColor="cpc.red" size="lg" width="90%" onChange={e => handleFilter(e.target.value)}/>
                     <Flex  width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]} mt={[6, 6, 10, 10]}>
                         {filteredPosts.length > 0 ? 
                             filteredPosts.map(post => 

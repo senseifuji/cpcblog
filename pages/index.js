@@ -124,7 +124,7 @@ export default function Home() {
 
                 <Button size="lg" bg={blue} color={yellow} rounded="10px" _hover={{ bg: "cpc.blueMedium" }} width={["250px", "200px", "200px", "200px"]}>
                   <i aria-hidden="true" className="far fa-file-alt"></i>
-                    &nbsp; Conocé nuestra investigación
+                    &nbsp; Conoce la investigación
                 </Button>
                 <Text fontFamily="cpc.gothamCondensed" my={4}>¿Ya conoces nuestras exigencias y quieres aportar?</Text>
                 <Link href="/contacto">
@@ -232,7 +232,7 @@ export default function Home() {
                 <Flex direction="column" justify="center"  alignItems="center" width={["100%", "100%", "35%", "15em"]} mx={["2em"]}>
                     <Text fontFamily="cpc.gothamCondensed" textAlign="center" fontSize="1.2em" lineHeight="1.3em">
                       <b>
-                        La hipótesis es simple: 
+                        La hipótesis es simple: 	&nbsp;
                         <span className="yellowText">
                           si al CPC no le hacen caso ¿Qué le espera al resto de las personas?
                         </span>   
