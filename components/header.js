@@ -22,12 +22,6 @@ const Header = ({position}) => {
     const {yellow, white, red, black} = customTheme.colors.cpc
     const {gothamCondensed} = customTheme.fonts.cpc
 
-    //send question states...
-    const { handleSubmit, register } = useForm();
-    const [isLoading, setIsloading] = useState(false);
-    const [isOk, setIsOk] = useState(false);
-    const [error, setError] = useState(false);
-
     //state that is passed to the logo component on hover and unhover
     const [logoColor, setLogoColor] = useState(white)
     const [logoSize, setLogoSize] = useState("1.2em")
@@ -36,23 +30,6 @@ const Header = ({position}) => {
     const router = useRouter() //router of app, to know in which page we're in
     let size = useWindowSize() //window hook, to resize logo...
     const { isOpen, onOpen, onClose } = useDisclosure(); //hook for states in modal
-
-
-    //MODAL SUBMITTING
-    const onSubmit = async values => {
-        setIsloading(true)
-        try {
-            await axios.post("https://formspree.io/f/xwkwbgpd", values)
-            setIsOk(true)
-            setTimeout(() => {
-                onClose();
-                router.push('/')
-            }, 3000);
-        } catch (error) {
-            error(true)
-        }
-        setIsloading(false)
-    }
 
 
     // MEDIA QUERIES FOR CUSTOM RESIZINGS
@@ -176,38 +153,6 @@ const Header = ({position}) => {
                                         <Link href="/contacto"><a >Contacto</a></Link>
                                     </li>
                                 </List>
-                            </Flex>
-                            <Flex direction="column" width="100%">
-
-                                {isOk ? (
-                                        <Text fontSize={["2em"]} my={2} lineHeight="1em" color="cpc.white" fontFamily="cpc.gothamCondensed" textAlign="center">Tu mensaje ha sido recibido <br/>Gracias por contactarnos!</Text>
-                                ): 
-                                
-                                    error ? (
-                                        <Text fontSize={["2em"]} my={2} lineHeight="1em" color="cpc.white" fontFamily="cpc.gothamCondensed" textAlign="center">Lo sentimos, ha ocurrido un error recibiendo tu mensaje.</Text>
-                                    )
-                                    : 
-                                    (
-                                        <form onSubmit={handleSubmit(onSubmit)}>
-                                            <FormControl isRequired>
-                                                <Input size="lg" my={3} type="email" placeholder="Email" name="email" ref={register()}/>
-                                            </FormControl>
-                                            <FormControl isRequired>
-                                                <Textarea mb={2} p={3} size="lg" fontSize="sm" placeholder="Escribe aquí tu pregunta. Cada mes subiremos las preguntas hechas aquí al sitio de Preguntas Frecuentes" name="message" ref={register()}/>
-                                            </FormControl>
-                                            <Button bg={yellow} color={black}  _hover={{bg: "cpc.black", color: "cpc.yellow"}}  isLoading={isLoading} type="submit" width="100%">
-                                                <i aria-hidden="true" className="fas fa-question-circle"></i> <Text ml={2} fontFamily={gothamCondensed} fontSize="1.25em" >Pregunta al CPC</Text>
-                                            </Button>
-                                        </form>  
-                                    )
-                                
-                                }
-                                  
-                                          
-                                    
-                                
-                                
-                                                                     
                             </Flex>
                         </Flex>
                     </ModalBody>
