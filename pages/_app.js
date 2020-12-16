@@ -8,6 +8,7 @@ const MyApp = ({Component, pageProps}) => {
             <Component {...pageProps} />
             <style global jsx>{`
                 .youtubecontainer {
+                    margin: 2em 0 !important;
                     width: 100% !important;
                     height: auto !important;
                     display: flex !important;
@@ -27,31 +28,49 @@ const MyApp = ({Component, pageProps}) => {
                 .blogcontent h1 {
                     font-size: 2em !important;
                     font-weight: bold !important;
+                    margin: 2em 0 !important;
+                    line-height: 1em !important;
+                    text-align: center !important;
                 }
 
                 .blogcontent h2 {
                     font-size: 1.5em !important;
                     font-weight: bold !important;
+                    margin: 2em 0 !important;
+                    line-height: 1em !important;
+                    text-align: center !important;
                 }
 
                 .blogcontent h3 {
                     font-size: 1.17em !important;
                     font-weight: bold !important;
+                    margin: 2em 0 !important;
+                    line-height: 1em !important;
+                    text-align: center !important;
                 }
 
                 .blogcontent h4 {
                     font-size: 1em !important;
                     font-weight: bold !important;
+                    margin: 2em 0 !important;
+                    line-height: 1em !important;
+                    text-align: center !important;
                 }
 
                 .blogcontent h5 {
                     font-size: 0.83em !important;
                     font-weight: bold !important;
+                    margin: 2em 0 !important;
+                    line-height: 1em !important;
+                    text-align: center !important;
                 }
 
                 .blogcontent h6 {
                     font-size: 0.67em !important;
                     font-weight: bold !important;
+                    margin: 2em 0 !important;
+                    line-height: 1em !important;
+                    text-align: center !important;
                 }
 
                 .blogcontent blockquote {
@@ -84,6 +103,18 @@ const MyApp = ({Component, pageProps}) => {
 
                 .imagecenter{
                     justify-content: center !important;
+                }
+
+                .textcenter{
+                    text-align: center;
+                }
+
+                .textleft {
+                    text-align: left;
+                }
+
+                .textright {
+                    text-align: right;
                 }
             `}</style>
         </ThemeProvider>
