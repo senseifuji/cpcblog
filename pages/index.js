@@ -114,8 +114,7 @@ export default function Home() {
                 <Text fontFamily="cpc.gothamCondensed" mb={3}>
                   Es por eso que desde el CPC estamos vigilando como está reaccionando 
                   el gobierno estatal ante la emergencia.
-                </Text>
-                 <Link href="http://comiteanticorrupcion.mx/publicaciones/investigacioncovid">
+                </Text>              
                 <Button size="lg" bg={blue} color={yellow} rounded="10px" _hover={{ bg: "cpc.blueMedium" }} width={["250px", "200px", "200px", "200px"]}>
                   <i aria-hidden="true" className="far fa-file-alt"></i>
                     &nbsp; Conoce la investigación
