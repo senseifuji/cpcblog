@@ -115,13 +115,13 @@ export default function Home() {
                   Es por eso que desde el CPC estamos vigilando como está reaccionando 
                   el gobierno estatal ante la emergencia.
                 </Text>
-
+                  <Link href="https://comiteanticorrupcion.mx/publicaciones/investigacioncovid">
                 <Button size="lg" bg={blue} color={yellow} rounded="10px" _hover={{ bg: "cpc.blueMedium" }} width={["250px", "200px", "200px", "200px"]}>
                   <i aria-hidden="true" className="far fa-file-alt"></i>
                     &nbsp; Conoce la investigación
                 </Button>
                 <Text fontFamily="cpc.gothamCondensed" my={4}>¿Ya conoces nuestras exigencias y quieres aportar?</Text>
-                <Link href="https://comiteanticorrupcion.mx/publicaciones/investigacioncovid">
+                <Link href="/contacto">
                   <Button size="lg" bg={yellowLight} color={blue} borderColor={blue} border="2px" rounded="10px" _hover={{ bg: "cpc.blueLight" }} width="200px">
                     <i aria-hidden="true" className="fas fa-hand-peace"></i>
                     &nbsp; Me interesa sumarme
