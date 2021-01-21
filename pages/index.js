@@ -120,6 +120,7 @@ export default function Home() {
                   <i aria-hidden="true" className="far fa-file-alt"></i>
                     &nbsp; Conoce la investigación
                 </Button>
+                </Link>
                 <Text fontFamily="cpc.gothamCondensed" my={4}>¿Ya conoces nuestras exigencias y quieres aportar?</Text>
                 <Link href="/contacto">
                   <Button size="lg" bg={yellowLight} color={blue} borderColor={blue} border="2px" rounded="10px" _hover={{ bg: "cpc.blueLight" }} width="200px">
