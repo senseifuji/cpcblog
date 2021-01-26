@@ -87,7 +87,7 @@ export default function Contact() {
                                 </Link>
                             </PseudoBox>          
                             <Box fontSize={["1.5em", "1.5em", "1.5em", "1.5em"]} lineHeight={["1em"]} textAlign="center">
-                                <Text fontFamily="cpc.gothamMedium" ><b>Ale Terrazas</b></Text>
+                                <Text fontFamily="cpc.gothamMedium" ><b>Ana Terrazas</b></Text>
                             </Box>
                         </Flex>
                          <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
