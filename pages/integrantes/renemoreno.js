@@ -32,7 +32,7 @@ const ReneMorenoPage = () => {
                         membersince="3 años"
                         photouRL="/images/renemoreno.svg" 
                         mail="rene@anticorrupcion.mx"
-                        twitter="@elperrogacho" 
+                        twitter="elperrogacho" 
                         phone="+526142476818"
                         links={links}
                     />
