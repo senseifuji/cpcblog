@@ -191,7 +191,7 @@ const Header = ({position}) => {
                     color: ${white};
                     margin: 0.4em 0;
                     font-family: ${gothamCondensed};
-                    font-size: 1.25em;
+                    font-size: 1.5em;
                     cursor: pointer;
                     border-bottom: 3px solid ${red};
                 }
