@@ -26,7 +26,7 @@ const customtheme = {
       gothamCondensed: "Gotham Condensed, Sans-serif ",
       gothamMedium: "Gotham Medium, Sans-serif",
       gothamBold: "Gotham Bold, Sans-serif",
-      gothamBook: "Gotham Book, Sans-serif",
+      gothamBook: "Gotham-Book, Sans-serif",
       gothamCondensedLight: "Gotham Condensed Light, Sans-serif",
       gothamCondensedBook: "Gotham Condensed Book, Sans-serif",
       spaceMonoBold: "SpaceMono Bold, Sans-serif",
