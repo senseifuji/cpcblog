@@ -17,7 +17,7 @@ const FaqItem = ({question, answer}) => {
                 
             </Flex>
             <Flex direction="column" alignItems="center">
-                <Collapse  px={10} isOpen={show} fontSize={["1.2em", "1.25em", "1.25em","1.5em"]} color="cpc.black"fontFamily="cpc.gothamCondensed" my={[5, 3, 3, 3]}>
+                <Collapse  px={10} isOpen={show} fontSize={["1.3em", "1.25em", "1.25em","1.5em"]} color="cpc.black"fontFamily="cpc.gothamCondensed" my={[5, 3, 3, 3]}>
                     <BlockContent 
                         blocks={answer}
                     />
