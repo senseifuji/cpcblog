@@ -22,7 +22,7 @@ const FaqItem = ({question, answer}) => {
                         blocks={answer}
                     />
                 </Collapse>
-                <Button bg="cpc.red" color="cpc.white" _hover={{bg: "cpc.red"}} size="sm" onClick={handleToggle} mt={["0rem", "1rem", "1rem", "1rem"]} width={["100%", "50%", "200px", "150px"]}>
+                <Button bg="cpc.yellow" color="cpc.black" _hover={{bg: "cpc.yellowLight"}} size="sm" onClick={handleToggle} mt={["0rem", "1rem", "1rem", "1rem"]} width={["100%", "50%", "200px", "150px"]}>
                      {show ? "Cerrar" : "Ver Respuesta"}
                 </Button>
             </Flex>
