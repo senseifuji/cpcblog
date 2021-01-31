@@ -9,7 +9,7 @@ const ReneMorenoPage = () => {
     const links = [
         {title: "Contrato Anual", url: "#"},
         {title: "Declaraciones 3 de 3 ", url: "#"},
-        {title: "Entrevista", url: "#"},
+        {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/EntrevistaReneMoreno"},
         {title: "Curriculum", url: "#"},
         {title: "Nombramiento", url: "#"},
         {title: "Carta de Intención", url: "#"}
