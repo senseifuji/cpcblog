@@ -108,7 +108,7 @@ const DetailItem = ({title, author, date, coverImage, content}) => {
 
           {/* //content */}
           <Flex direction="column" justify="center" alignItems="center" width={["100%", "100%", "100%", "900px"]} p={4}>
-            <Box fontFamily="cpc.gothamMedium" fontSize={["1.15em", "1.15em", "1.25em", "1.25em"]} lineHeight="1.7" my={["1em", "0em", "0em", "1em"]} width="100%">
+            <Box fontFamily="cpc.gothamCondensedBook" fontSize={["1.5em", "1.15em", "1.25em", "1.25em"]} lineHeight="1.7" my={["1em", "0em", "0em", "1em"]} width="100%">
               <BlockContent 
                 imageOptions={{w: 900, h:500, fit: 'max'}}
                 blocks={content}
