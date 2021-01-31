@@ -7,7 +7,7 @@ import CpcSeo from '../../components/cpcseo';
 const ReneMorenoPage = () => {
 
     const links = [
-        {title: "Contrato Anual", url: "#"},
+        {title: "Contrato Anual", url: "https://comiteanticorrupcion.mx/publicaciones/ContratosRene"},
         {title: "Declaraciones 3 de 3 ", url: "#"},
         {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/EntrevistaReneMoreno"},
         {title: "Currículum", url: "#"},
