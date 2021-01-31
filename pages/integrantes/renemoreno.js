@@ -10,7 +10,7 @@ const ReneMorenoPage = () => {
         {title: "Contrato Anual", url: "https://comiteanticorrupcion.mx/publicaciones/ContratosRene"},
         {title: "Declaraciones 3 de 3 ", url: "#"},
         {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/EntrevistaReneMoreno"},
-        {title: "Currículum", url: "#"},
+        {title: "Currículum", url: "https://comiteanticorrupcion.mx/publicaciones/CVReneMoreno"},
         {title: "Nombramiento", url: "#"},
         {title: "Carta de Intención", url: "#"}
     ]
