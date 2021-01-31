@@ -58,7 +58,7 @@ const DetailItem = ({title, author, date, coverImage, content}) => {
         <Flex direction="column" justify="center" alignItems="center">
           {/* header */}
           <Flex direction="column" p={4} justify="center" alignItems="center" width={["100%", "100%", "100%", "900px"]}>
-              <Text mt={["0.5em", "0.5em", "1.25em", "1.25em"]} fontFamily="cpc.gothamCondensed" lineHeight="1em" fontSize={["1.5em", "2.5em", "2.75em", "3em"]}><b>{title}</b></Text>
+              <Text mt={["0.5em", "0.5em", "1.25em", "1.25em"]} fontFamily="cpc.gothamCondensed" lineHeight="1em" fontSize={["2em", "2.5em", "2.75em", "3em"]}><b>{title}</b></Text>
               <Flex direction={["column", "row", "row", "row"]} justify="space-evenly" width="100%" alignItems="center" mt={["1.25em", "1.25em", "1.25em", "1.25em"]} mb={["1em"]}>
                 <Flex direction={["column","row", "row", "row"]} justify="flex-start" alignItems="center" my={4} mt={3} width="100%">
                   <Image
