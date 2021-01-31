@@ -12,7 +12,7 @@ const IntegranteDetail = ({title, role, membersince, photouRL, mail, twitter, ph
                     <Text fontFamily="cpc.gothamMedium" ><b>{membersince}</b></Text>
                 </Box>
                 <Image src={photouRL} alt={title} mt={[3]} width={["15em", "15em", "18em", "18em"]} />            
-                <Box fontSize={["1em", "2em", "2em", "2em"]} lineHeight={["1em"]}>
+                <Box fontSize={["1.5em", "2em", "2em", "2em"]} lineHeight={["1em"]}>
                     {mail && (
                         <Link href={`mailto:${mail}`}>
                             <a>
