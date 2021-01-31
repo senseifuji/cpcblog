@@ -27,8 +27,8 @@ export default function FaqPage({faqs}) {
                 <Content>
                     {/* Top SECTION */}
                     <Section bg="cpc.red" color="cpc.white">
-                        <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
-                            <b>Preguntas <br/> frecuentes del CPC</b>
+                        <Text fontSize={["2em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
+                            <b>Preguntas <br/> frecuentes al CPC</b>
                         </Text>
                     </Section>  
                     <Section bg="cpc.white" color="cpc.red">
