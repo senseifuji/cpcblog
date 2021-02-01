@@ -106,7 +106,7 @@ export default function AboutPage() {
                    <Flex justify="space-evenly" direction={["column", 'column', 'row', 'row']}>
                         <Flex direction="column" alignItems="center" width={["100%", "100%", "70%", "60%" ]}>
                             <Image src="/images/sistemaestatal.svg" alt="SEA" width={["15em", "15em", "20em", "20em"]} mb={["0", "0", "0em", "1.2em"]} />                            
-                            <Text lineHeight="1.1em" fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1em", "1em", "1em"]} fontWeight="300" textAlign={["left", "center", "center", "left"]} my={["1rem", "1em", "0", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} width={["100%", "80%", "70%", "60%"]}>
+                            <Text lineHeight="1.1em" fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1em", "1em", "1em"]} fontWeight="300" textAlign={["left", "center", "center", "left"]} my={["1rem", "1em", "0", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} width={["100%", "80%", "70%", "75%"]}>
                                 Ente creado para coordinar acciones
                                 interinstitucionales orientadas a:
                                 combatir, prevenir, disuadir, sancionar
