@@ -35,7 +35,7 @@ export default function AboutPage() {
             <Header position="fixed"/>
             <Content>
                 <Section bg="cpc.red" color="cpc.white">
-                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]}>
+                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]}>
                         ¿Has buscado en Google imágenes de la palabra corrupción?
                     </Text>
                     <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.4em", "1.7em", "1.7em"]} fontWeight="300" textAlign="center" d="inline-flex" alignItems="center" mt={["1em", "0em", "0em", "0em"]}>
@@ -45,7 +45,7 @@ export default function AboutPage() {
                         <ManitasDineros manitasSize="146px"/>
                         <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.4em", "1.7em", "1.7em"]} fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} mt="-1em">Creemos que las suficientes como para afirmar que</Text>
                     </Flex>
-                    <Text my="0.5em" fontFamily="cpc.gothamBold" fontSize={["1.75em", "2em", "2em", "2.5em"]} fontWeight="300" lineHeight={["1em", "1em", "1.18em", "1.18em"]} textAlign="center">
+                    <Text my="0.5em" fontFamily="cpc.gothamBold" fontSize={["1.75em", "2em", "2em", "2.5em"]} fontWeight="300" lineHeight={["1em", "1em", "1.18em", "1.18em"]} textAlign="center" letterSpacing={["-.05em", "0", "0", "0"]}>
                         Nos urge una mejor <br/>definición de corrupción
                     </Text>
                 </Section> 
@@ -78,7 +78,7 @@ export default function AboutPage() {
                  {/* Definicion de Corrupcion section*/}
                 <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
                     <Flex direction="column" alignItems="center" textAlign="center">
-                        <Text color="cpc.red" fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]}>Nuestra definición de corrupción*</Text>
+                        <Text color="cpc.red" fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]}>Nuestra definición de corrupción*</Text>
                         <Text my="0.8em" fontFamily="cpc.gothamCondensedBook" fontSize={["1.3em", "1.2em", "1.1em", "1.2em"]} textAlign={["left", "center", "left", "left"]} mt={["1em", "0", "0", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} lineHeight={["1.2em", "0", "0", "0"]}>Es un problema de <b>captura</b> que se traduce en la incapacidad del Estado para 
                             controlar el <b>particularismo</b>. Se trata de una <b>forma de organización social</b> que 
                             se caracteriza por la distribución de bienes sobre una base no universalista que 
@@ -94,8 +94,8 @@ export default function AboutPage() {
                 </Section>
                 {/* Second top SECTION */}
                 <Section bg="cpc.red" color="cpc.white" >
-                    <Text fontSize={["1em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
-                        <b>es por eso que para combatir la <br/> corrupción, trabajamos en el</b>
+                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]}>
+                        es por eso que para combatir la corrupción, trabajamos en el
                     </Text>
                 </Section>  
 
