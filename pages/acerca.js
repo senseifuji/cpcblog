@@ -117,7 +117,7 @@ export default function AboutPage() {
                 {/* Partes del SEA section*/}
                 <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
                     <Flex direction="column" alignItems="center" textAlign="center">
-                        <Text color="cpc.black" fontFamily="cpc.gothamCondensedBook" textWeight="300" fontSize={["1.5em", "2em", "2em", "3em"]}>Está formado por</Text>
+                        <Text color="cpc.black" pb={[".4em", "0", "0", "0"]} fontFamily="cpc.gothamCondensedBook" textWeight="300" fontSize={["1.5em", "2em", "2em", "3em"]}>Está formado por</Text>
                         <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "3em", "3em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.4em", "1.7em", "2.5em"]} lineHeight={["1.2em", "0", "0", "0"]}>
                            Los <b>67 municipios</b> del estado de Chihuahua
                         </Text>
