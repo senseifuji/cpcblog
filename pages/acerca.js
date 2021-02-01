@@ -168,7 +168,7 @@ export default function AboutPage() {
                     <Text fontFamily="cpc.gothamCondensed" fontSize={["1.5em", "2em", "2em", "3.5em"]} fontWeight="300">
                         ¿Qué <b>sí</b> hacemos?
                     </Text>
-                    <Text width={["90%", "80%", "500px", "750px"]} color="cpc.white" border="2px" borderRadius="lg" px={[".7em", "1em", "2em", "2.5em"]} mb={["1.1em", "1em", "2em", "2em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.3em", "1.15em", "1.5em", "2em"]} textAlign="left" lineHeight={["1.2em", "0", "0", "0"]}>
+                    <Text width={["90%", "80%", "500px", "750px"]} color="cpc.white" border="2px" borderRadius="lg" px={[".7em", "1em", "2em", "2.5em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.3em", "1.15em", "1.5em", "2em"]} textAlign="left" lineHeight={["1.2em", "0", "0", "0"]}>
                         <List styleType="square">
                             <ListItem>Proponemos políticas públicas que permitan prevenir, detectar y sancionar actos de corrupción</ListItem>
                             <ListItem>Vigilamos el funcionamiento del Sistema Estatal Anticorrupción</ListItem>
@@ -180,8 +180,8 @@ export default function AboutPage() {
 
                 {/* FOURTH SECTION FACES CIRCLES*/}
                  <Section bg="cpc.white" color="cpc.red"  desktopWidth="100%">
-                    <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em" width={["90%","90%", "100%", "50%" ]}>
-                        <b>¿Quienes integran al Comité de Participación Ciudadana?</b>
+                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]}>
+                        ¿Quienes integran al Comité de Participación Ciudadana?
                     </Text> 
                     <Flex mt={10} direction="column" color="cpc.black" alignItems="center">
                         <Flex  direction="column" alignItems="center" my={["1em", "0.5em", "0em", "0em"]} >
