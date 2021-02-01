@@ -141,7 +141,7 @@ export default function AboutPage() {
                     </Flex>
                 </Section>
                 <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
-                    <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]} mt={["-1.5em", "-1.5em", "-.8em", "-.8em"]}> + </Text>
+                    <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]} mt={["-1.5em", "-1em", "-.8em", "-.8em"]}> + </Text>
                     <Image src="/images/comiteparticipacion.svg" alt="Comité de Participación Ciudadana" width={["15em", "18em", "20em", "20em"]} mt={["0", "1.25em", "1.25em", "1.25em"]} mb={["0", "0em", "0em", "0em"]}/>            
                     <Text width={["90%", "400px", "400px", "400px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "1.2em", "1.2em"]} py={["0.5em", "1em", ".5em", ".5em"]} my="0.8em" fontFamily="cpc.spaceMonoRegular" borderColor="cpc.red" fontSize={["1em", "1em", "1em", "1em"]} textAlign={["center", "left", "center", "center"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                         5 personas de la academia o sociedad civil, con experiencia en: transparencia, 
