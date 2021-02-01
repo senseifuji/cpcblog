@@ -80,7 +80,7 @@ export default function AboutPage() {
                 <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
                     <Flex direction="column" alignItems="center" textAlign="center">
                         <Text color="cpc.red" fontSize={["1.75em", "1.75em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]}>Nuestra definición de corrupción*</Text>
-                        <Text my="0.8em" fontFamily="cpc.gothamCondensedBook" fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} textAlign={["left", "center", "left", "left"]} mt={["1em", "1em", "1em", "1em"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]} width={["100%", "100%", "80%", "80%"]}>
+                        <Text my="0.8em" fontFamily="cpc.gothamCondensedBook" fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} textAlign={["left", "left", "left", "left"]} mt={["1em", "1em", "1em", "1em"]} pl={["1em", "1em", "0", "0"]} pr={[".5em", "0.5em", "0", "0"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]} width={["100%", "100%", "80%", "80%"]}>
                             Es un problema de <b>captura</b> que se traduce en la incapacidad del Estado para 
                             controlar el <b>particularismo</b>. Se trata de una <b>forma de organización social</b> que 
                             se caracteriza por la distribución de bienes sobre una base no universalista que 
