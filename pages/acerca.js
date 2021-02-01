@@ -153,11 +153,11 @@ export default function AboutPage() {
                     <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]}>
                         ¿Cuál es la función del Comité de Participación Ciudadana?
                     </Text>
-                    <Image src="/images/cpc.svg" alt="CPC logo" my="3em" width={["10em", "15em", "17em", "17em"]} mt={["1em", "0", "0", "0"]}/>   
+                    <Image src="/images/cpc.svg" alt="CPC logo" my="3em" width={["10em", "15em", "17em", "17em"]} mt={["1em", "1em", "1em", "1em"]}/>   
                     <Text fontFamily="cpc.gothamCondensed" fontSize={["1.5em", "2em", "1.7em", "1.7em"]} fontWeight="300">
                         ¿Qué <b>no</b> hacemos?
                     </Text>
-                    <Text width={["90%", "400px", "400px", "400px"]} color="cpc.white" border="2px" borderRadius="lg" px={[".7em", "1em", "2em", "2.5em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.3em", "1.15em", "1.2em", "1.2em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                    <Text width={["90%", "400px", "400px", "400px"]} color="cpc.white" border="2px" borderRadius="lg" px={[".7em", "1em", "1em", "1em"]} py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.3em", "1.15em", "1.2em", "1.2em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                         <List styleType="square">
                             <ListItem><b>No</b> metemos gente a la cárcel</ListItem>
                             <ListItem><b>No</b> llevamos expedientes de investigación </ListItem>
@@ -170,7 +170,7 @@ export default function AboutPage() {
                     <Text fontFamily="cpc.gothamCondensed" fontSize={["1.5em", "2em", "1.7em", "1.7em"]} fontWeight="300" mt="-1em">
                         ¿Qué <b>sí</b> hacemos?
                     </Text>
-                    <Text width={["90%", "400px", "400px", "400px"]} color="cpc.white" border="2px" borderRadius="lg" mb="1.5em" px={[".7em", "1em", "2em", "2.5em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.3em", "1.15em", "1.2em", "1.2em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                    <Text width={["90%", "400px", "400px", "400px"]} color="cpc.white" border="2px" borderRadius="lg" mb="1.5em" px={[".7em", "1em", "1em", "1em"]} py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.3em", "1.15em", "1.2em", "1.2em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                         <List styleType="square">
                             <ListItem>Proponemos políticas públicas que permitan prevenir, detectar y sancionar actos de corrupción</ListItem>
                             <ListItem>Vigilamos el funcionamiento del Sistema Estatal Anticorrupción</ListItem>
