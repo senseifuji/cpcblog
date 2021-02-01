@@ -164,7 +164,7 @@ export default function AboutPage() {
                     </Text>   
                 </Section>  
 
-                <Section bg="cpc.red" color="cpc.white">
+                <Section bg="cpc.red" color="cpc.white" mt={["0", "0", "0", "0"]} mt={["2em", "0", "0", "0"]}>
                     <Text fontFamily="cpc.gothamCondensed" fontSize={["1.5em", "2em", "2em", "3.5em"]} fontWeight="300">
                         ¿Qué <b>sí</b> hacemos?
                     </Text>
