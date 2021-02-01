@@ -148,33 +148,32 @@ export default function AboutPage() {
 
                 {/* FUNCION DEL COMITE  */}
                 <Section bg="cpc.red" color="cpc.white">
-                    <Text fontSize={["1em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
-                        <b>¿Cuál es la función del Comité de Participación Ciudadana?</b>
+                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]}>
+                        ¿Cuál es la función del Comité de Participación Ciudadana?
                     </Text>
-                    <Image src="/images/cpc.svg" alt="Manitas" my="3em" width={["10em", "15em", "17em", "17em"]} />   
-                    <Text fontFamily="cpc.gothamCondensed" fontSize={["2.5em", "2em", "2em", "3.5em"]} >
+                    <Image src="/images/cpc.svg" alt="CPC logo" my="3em" width={["10em", "15em", "17em", "17em"]} mt={["1em", "0", "0", "0"]} mb={["1.5em", "0", "0", "0"]} />   
+                    <Text fontFamily="cpc.gothamCondensed" fontSize={["1.5em", "2em", "2em", "3.5em"]} fontWeight="300">
                         ¿Qué <b>no</b> hacemos?
                     </Text>
-                    <Text width={["90%", "80%", "500px", "750px"]} color="cpc.black" border="2px" borderRadius="lg" px={["1.25em", "1em", "2em", "2.5em"]} py="2em" fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.15em", "1.15em", "1.5em", "2em"]} textAlign="left">
-                        <List styleType="disc">
+                    <Text width={["90%", "80%", "500px", "750px"]} color="cpc.white" border="2px" borderRadius="lg" px={["1.25em", "1em", "2em", "2.5em"]} py="2em" fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.3em", "1.15em", "1.5em", "2em"]} textAlign="left" lineHeight={["1.2em", "0", "0", "0"]}>
+                        <List styleType="square">
                             <ListItem><b>No</b> metemos gente a la cárcel</ListItem>
                             <ListItem><b>No</b> llevamos expedientes de investigación </ListItem>
-                            <ListItem><b>No</b> investigamos, substanciamos ni sancionamos </ListItem>
+                            <ListItem><b>No</b> investigamos, substanciamos ni sancionamos</ListItem>
                         </List>
                     </Text>   
                 </Section>  
 
                 <Section bg="cpc.red" color="cpc.white">
-                    <Text fontFamily="cpc.gothamCondensed" fontSize={["2.5em", "2em", "2em", "3.5em"]} >
+                    <Text fontFamily="cpc.gothamCondensed" fontSize={["1.5em", "2em", "2em", "3.5em"]} fontWeight="300">
                         ¿Qué <b>sí</b> hacemos?
                     </Text>
-                    <Text width={["90%", "80%", "500px", "750px"]} color="cpc.black" border="2px" borderRadius="lg" px={["1.25em", "1em", "2em", "2.5em"]} py="1em" fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.5em", "1.15em", "1.5em", "2em"]} textAlign="left">
-                        <List styleType="disc">
-                            <ListItem my={5}>Proponer políticas anticorrupción, metodologías e indicadores de medición que permitan prevenir, detectar y sancionar faltas administrativas graves y no graves así como actos de corrupción.</ListItem>
-                            <ListItem my={5}>Vigilar el funcionamiento del Sistema Estatal Anticorrupción.</ListItem>
-                            <ListItem my={5}>Vincular a sociedad civil, academia y sector empresarial a través de: participación y vigilancia ciudadana. </ListItem>
-                            <ListItem my={5}>Proponer mecanismos para que la sociedad participe en la prevención y denuncia de faltas administrativas y hechos de corrupción.</ListItem>
-                            <ListItem my={5}>Llevar registro voluntario de las OSC que deseen colaborar de manera coordinada con el Comité de Participación Ciudadana.</ListItem>
+                    <Text width={["90%", "80%", "500px", "750px"]} color="cpc.white" border="2px" borderRadius="lg" px={["1.25em", "1em", "2em", "2.5em"]} py="2em" fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.3em", "1.15em", "1.5em", "2em"]} textAlign="left" lineHeight={["1.2em", "0", "0", "0"]}>
+                        <List styleType="square">
+                            <ListItem>Proponer políticas públicas que permitan prevenir, detectar y sancionar actos de corrupción</ListItem>
+                            <ListItem>Vigilamos el funcionamiento del Sistema Estatal Anticorrupción</ListItem>
+                            <ListItem>Vinculamos a sociedad civil, academia, profesionistas y empresas a través de la Red Ciudadana Anticorrupción</ListItem>
+                            <ListItem>Acompañamos a denunciantes de corrupción</ListItem>
                         </List>
                     </Text>   
                 </Section>  
