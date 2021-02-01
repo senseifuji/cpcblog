@@ -173,7 +173,7 @@ export default function AboutPage() {
                             <ListItem>Proponemos políticas públicas que permitan prevenir, detectar y sancionar actos de corrupción</ListItem>
                             <ListItem>Vigilamos el funcionamiento del Sistema Estatal Anticorrupción</ListItem>
                             <ListItem>Vinculamos a sociedad civil, academia, profesionistas y empresas a través de la Red Ciudadana Anticorrupción</ListItem>
-                            <ListItem>Acompañamos a denunciantes de corrupción</ListItem>
+                            <ListItem>Acompañamos a denunciantes de actos de corrupción</ListItem>
                         </List>
                     </Text>   
                 </Section>  
