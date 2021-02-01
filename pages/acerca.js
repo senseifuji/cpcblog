@@ -103,13 +103,13 @@ export default function AboutPage() {
                 <Section bg="cpc.blueDark" color="cpc.white">
                    <Flex justify="space-evenly" direction={["column", 'column', 'row', 'row']}>
                         <Flex direction="column" alignItems="center" width={["100%", "100%", "70%", "60%" ]}>
-                            <Image src="/images/sistemaestatal.svg" alt="Manitas" width={["15em", "15em", "20em", "20em"]} />                            
+                            <Image src="/images/sistemaestatal.svg" alt="SEA" width={["15em", "15em", "20em", "20em"]} />                            
                             <Text my={4} lineHeight="1.1em" fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.2em", "1.5em", "1.5em"]} fontWeight="300" textAlign={["left", "center", "center", "left"]} my={["1rem", "0", "0", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]}>
                                 Ente creado para coordinar acciones
                                 interinstitucionales orientadas a:
                                 combatir, prevenir, disuadir, sancionar
                                 y reducir <span color="cpc.redAnti">los niveles de corrupción</span>
-                                 &nbsp;en el Estado.
+                                en el Estado.
                             </Text>
                         </Flex>
                    </Flex>
