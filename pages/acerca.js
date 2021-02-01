@@ -78,8 +78,8 @@ export default function AboutPage() {
                  {/* Definicion de Corrupcion section*/}
                 <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
                     <Flex direction="column" alignItems="center" textAlign="center">
-                        <Text color="cpc.red" fontFamily="cpc.gothamMedium" fontSize={["1.5em", "2em", "2em", "2em"]}><b>Nuestra definición de corrupción*</b></Text>
-                        <Text my="0.8em" fontFamily="cpc.gothamCondensedBook" fontSize={["1em", "1.4em", "1.7em", "1.7em"]} >Es un problema de <b>captura</b> que se traduce en la incapacidad del Estado para 
+                        <Text color="cpc.red" fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]}>Nuestra definición de corrupción*</Text>
+                        <Text my="0.8em" fontFamily="cpc.gothamCondensedBook" fontSize={["1.3em", "1.2em", "1.1em", "1.2em"]} textAlign={["left", "center", "left", "left"]} mt={["1em", "0", "0", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} lineHeight={["1.2em", "0", "0", "0"]}>Es un problema de <b>captura</b> que se traduce en la incapacidad del Estado para 
                             controlar el <b>particularismo</b>. Se trata de una <b>forma de organización social</b> que 
                             se caracteriza por la distribución de bienes sobre una base no universalista que 
                             <b> refleja el acceso y distribución restringida al poder.</b>
