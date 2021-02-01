@@ -52,7 +52,7 @@ export default function AboutPage() {
                 </Section> 
                 {/* CARRITO-CAMINO-MONOVACUNAS SECTION */}
                 <Section bg="cpc.yellowLight" color="cpc.black">
-                   <Flex justify="space-evenly" direction={["column", 'column', 'row', 'row']}>
+                   <Flex justify="space-evenly" direction={["column", 'row', 'row', 'row']}>
                         <Flex alignItems="center" alignSelf="center" direction={["column", 'column', 'row', 'row']}  mx={4}>
                             <Box mx={["0em", "0em", "1em", "1.5em"]}>
                                 <Camino size="100px"/>
