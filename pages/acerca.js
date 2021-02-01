@@ -43,10 +43,11 @@ export default function AboutPage() {
                     </Text>
                     <Flex direction="column" alignItems="center">
                         <ManitasDineros manitasSize="146px"/>
-                        <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.4em", "1.7em", "1.7em"]} fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} mt="-1em">Creemos que las suficientes como para afirmar que</Text>
+                        <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.4em", "1.7em", "1.7em"]} fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} mt="-1em">
+                        Creemos que las suficientes como para afirmar que</Text>
                     </Flex>
-                    <Text my="0.5em" fontFamily="cpc.gothamBold" fontSize={["1.75em", "2em", "2em", "2.5em"]} fontWeight="300" lineHeight={["1em", "1em", "1.18em", "1.18em"]} textAlign="center" letterSpacing={["-.05em", "0", "0", "0"]}>
-                        Nos urge una mejor <br/>definición de corrupción
+                    <Text my="0.5em" fontFamily="cpc.gothamBold" fontSize={["1.75em", "2em", "2em", "2em"]} fontWeight="300" lineHeight={["1em", "1em", "1.18em", "1.18em"]} textAlign="center" letterSpacing={["-.05em", "0", "0", "0"]}>
+                        Nos urge una mejor definición de corrupción
                     </Text>
                 </Section> 
                 {/* CARRITO-CAMINO-MONOVACUNAS SECTION */}
@@ -64,7 +65,7 @@ export default function AboutPage() {
                             </Box>
                         </Flex>
                         <Flex width={["100%", "100%", "%", "46%" ]}>
-                            <Text my={4} fontFamily="cpc.gothamCondensedBook" fontSize={["1.3em", "1.2em", "1.1em", "1.2em"]} textAlign={["left", "center", "left", "left"]} mt={["1em", "0", "0", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                            <Text my={4} fontFamily="cpc.gothamCondensedBook" fontSize={["1.3em", "1.2em", "1.2em", "1.2em"]} textAlign={["left", "center", "left", "left"]} mt={["1em", "0", "0", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                                 Agua destilada disfrazada de medicinas para el cáncer; carreteras que se abren en dos por tener materiales de segunda; 
                                 personas arrolladas por no tener la seguridad mínima en eventos deportivos; niñas y niños enfermos por habitar en viviendas 
                                 populares construidas en una zona contaminada; edificios colapsados por no cumplir con las regulaciones de construcción antisismos. 
@@ -103,8 +104,8 @@ export default function AboutPage() {
                 <Section bg="cpc.blueDark" color="cpc.white">
                    <Flex justify="space-evenly" direction={["column", 'column', 'row', 'row']}>
                         <Flex direction="column" alignItems="center" width={["100%", "100%", "70%", "60%" ]}>
-                            <Image src="/images/sistemaestatal.svg" alt="SEA" width={["15em", "15em", "20em", "20em"]} />                            
-                            <Text lineHeight="1.1em" fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.2em", "1.5em", "1.5em"]} fontWeight="300" textAlign={["left", "center", "center", "left"]} my={["1rem", "0", "0", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]}>
+                            <Image src="/images/sistemaestatal.svg" alt="SEA" width={["15em", "15em", "20em", "20em"]} mb={["0", "0", "0em", "1.2em"]} />                            
+                            <Text lineHeight="1.1em" fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.2em", "1.1em", "1.1em"]} fontWeight="300" textAlign={["left", "center", "center", "left"]} my={["1rem", "0", "0", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]}>
                                 Ente creado para coordinar acciones
                                 interinstitucionales orientadas a:
                                 combatir, prevenir, disuadir, sancionar
@@ -117,13 +118,14 @@ export default function AboutPage() {
                 {/* Partes del SEA section*/}
                 <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
                     <Flex direction="column" alignItems="center" textAlign="center">
-                        <Text color="cpc.black" pb={[".4em", "0", "0", "0"]} fontFamily="cpc.gothamCondensedBook" textWeight="300" fontSize={["1.5em", "2em", "2em", "3em"]}>Está formado por</Text>
-                        <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "3em", "3em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.4em", "1.7em", "2.5em"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                        <Text color="cpc.black" pb={[".4em", "0", "0", "0"]} fontFamily="cpc.gothamCondensedBook" textWeight="300" fontSize={["1.5em", "2em", "2em", "3em"]}>
+                        Está formado por</Text>
+                        <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "1.2em", "1.2em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.4em", "1.7em", "1.7em"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                            Los <b>67 municipios</b> del estado de Chihuahua
                         </Text>
                         <Text color="cpc.black" mt={["-.1em", "0", "0", "0"]} mb={["-.4em", "0", "0", "0"]} fontSize={["3em", "4em", "4em", "4em"]} > + </Text>
                         <Image src="/images/comitecoordinador.svg" alt="Comité Coordinador" width={["15em", "18em", "20em", "20em"]} mt={["1em", "0", "0", "0"]} mb={[".6em", "0", "0", "0"]} />            
-                        <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "3em", "3em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" borderColor="cpc.redCoor" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                        <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "1.2em", "1.2em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" borderColor="cpc.redCoor" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                             Integrado por:
                             <List styleType="disc">
                                 <ListItem>Secretaría de la Función Pública</ListItem>
@@ -140,7 +142,7 @@ export default function AboutPage() {
                 <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
                     <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]} mt="-1.5em"> + </Text>
                     <Image src="/images/comiteparticipacion.svg" alt="Comité de Participación Ciudadana" width={["15em", "18em", "20em", "20em"]} my={["0", "5", "5", "5"]}/>            
-                    <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "3em", "3em"]} py={["0.5em", "1em", "2em", "2em"]} my="0.8em" fontFamily="cpc.spaceMonoRegular" borderColor="cpc.red" fontSize={["1em", "1em", "1em", "1em"]} textAlign={["center", "left", "left", "left"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                    <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "1.7em", "1.7em"]} py={["0.5em", "1em", "2em", "2em"]} my="0.8em" fontFamily="cpc.spaceMonoRegular" borderColor="cpc.red" fontSize={["1em", "1em", "1em", "1em"]} textAlign={["center", "left", "center", "center"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                         5 personas de la academia o sociedad civil, con experiencia en: transparencia, 
                         participación ciudadana y anticorrupción
                     </Text>
@@ -152,10 +154,10 @@ export default function AboutPage() {
                         ¿Cuál es la función del Comité de Participación Ciudadana?
                     </Text>
                     <Image src="/images/cpc.svg" alt="CPC logo" my="3em" width={["10em", "15em", "17em", "17em"]} mt={["1em", "0", "0", "0"]}/>   
-                    <Text fontFamily="cpc.gothamCondensed" fontSize={["1.5em", "2em", "2em", "3.5em"]} fontWeight="300">
+                    <Text fontFamily="cpc.gothamCondensed" fontSize={["1.5em", "2em", "1.7em", "1.7em"]} fontWeight="300">
                         ¿Qué <b>no</b> hacemos?
                     </Text>
-                    <Text width={["90%", "80%", "500px", "750px"]} color="cpc.white" border="2px" borderRadius="lg" px={[".7em", "1em", "2em", "2.5em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.3em", "1.15em", "1.5em", "2em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                    <Text width={["90%", "80%", "500px", "750px"]} color="cpc.white" border="2px" borderRadius="lg" px={[".7em", "1em", "2em", "2.5em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.3em", "1.15em", "1.2em", "1.2em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                         <List styleType="square">
                             <ListItem><b>No</b> metemos gente a la cárcel</ListItem>
                             <ListItem><b>No</b> llevamos expedientes de investigación </ListItem>
@@ -165,10 +167,10 @@ export default function AboutPage() {
                 </Section>  
 
                 <Section bg="cpc.red" color="cpc.white">
-                    <Text fontFamily="cpc.gothamCondensed" fontSize={["1.5em", "2em", "2em", "3.5em"]} fontWeight="300" mt="-1em">
+                    <Text fontFamily="cpc.gothamCondensed" fontSize={["1.5em", "2em", "1.7em", "1.7em"]} fontWeight="300" mt="-1em">
                         ¿Qué <b>sí</b> hacemos?
                     </Text>
-                    <Text width={["90%", "80%", "500px", "750px"]} color="cpc.white" border="2px" borderRadius="lg" mb="1.5em" px={[".7em", "1em", "2em", "2.5em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.3em", "1.15em", "1.5em", "2em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                    <Text width={["90%", "80%", "500px", "750px"]} color="cpc.white" border="2px" borderRadius="lg" mb="1.5em" px={[".7em", "1em", "2em", "2.5em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.gothamCondensedBook" borderColor="cpc.white" fontSize={["1.3em", "1.15em", "1.2em", "1.2em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                         <List styleType="square">
                             <ListItem>Proponemos políticas públicas que permitan prevenir, detectar y sancionar actos de corrupción</ListItem>
                             <ListItem>Vigilamos el funcionamiento del Sistema Estatal Anticorrupción</ListItem>
