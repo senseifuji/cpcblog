@@ -52,8 +52,8 @@ export default function AboutPage() {
                 </Section> 
                 {/* CARRITO-CAMINO-MONOVACUNAS SECTION */}
                 <Section bg="cpc.yellowLight" color="cpc.black">
-                   <Flex justify="space-evenly" direction={["column", 'row', 'column', 'row']}>
-                        <Flex alignItems="center" alignSelf="center" direction={["column", 'row', 'column', 'row']}  mx={4}>
+                   <Flex justify="space-evenly" direction={["column", 'column', 'row', 'row']}>
+                        <Flex alignItems="center" alignSelf="center" direction={["column", 'column', 'row', 'row']}  mx={4}>
                             <Box mx={["0em", "0em", "1em", "1.5em"]}>
                                 <Camino size="100px"/>
                             </Box>
@@ -65,7 +65,7 @@ export default function AboutPage() {
                             </Box>
                         </Flex>
                         <Flex width={["100%", "100%", "%", "46%" ]}>
-                            <Text my={4} fontFamily="cpc.gothamCondensedBook" fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} textAlign={["left", "center", "left", "left"]} mt={["1em", "1em", "0", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                            <Text my={4} fontFamily="cpc.gothamCondensedBook" fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} textAlign={["left", "center", "left", "left"]} mt={["1em", "0", "1em", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                                 Agua destilada disfrazada de medicinas para el cáncer; carreteras que se abren en dos por tener materiales de segunda; 
                                 personas arrolladas por no tener la seguridad mínima en eventos deportivos; niñas y niños enfermos por habitar en viviendas 
                                 populares construidas en una zona contaminada; edificios colapsados por no cumplir con las regulaciones de construcción antisismos. 
