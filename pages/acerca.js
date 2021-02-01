@@ -120,7 +120,7 @@ export default function AboutPage() {
                     <Flex direction="column" alignItems="center" textAlign="center">
                         <Text color="cpc.black" pb={[".4em", "0", "0", "0"]} fontFamily="cpc.gothamCondensedBook" textWeight="300" fontSize={["1.5em", "2em", "1.7em", "1.7em"]}>
                         Está formado por</Text>
-                        <Text width={["90%", "400px", "400px", "400px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "1.2em", "1.2em"]} py={["0.5em", "1em", ".5em", ".5em"]} fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.4em", "1.2em", "1.2em"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                        <Text width={["90%", "400px", "400px", "400px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "1em", "1em"]} py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1em", "1em", "1em"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                            Los <b>67 municipios</b> del estado de Chihuahua
                         </Text>
                         <Text color="cpc.black" mt={["-.1em", "0", "0", "0"]} mb={["-.4em", "0", "0", "0"]} fontSize={["3em", "4em", "4em", "4em"]} > + </Text>
