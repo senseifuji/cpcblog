@@ -164,7 +164,7 @@ export default function AboutPage() {
                     </Text>   
                 </Section>  
 
-                <Section bg="cpc.red" color="cpc.white" pt={["0", "0", "0", "0"]} pb={["2em", "0", "0", "0"]}>
+                <Section bg="cpc.red" color="cpc.white" pt={["0em", "0", "0", "0"]} pb={["4em", "0", "0", "0"]}>
                     <Text fontFamily="cpc.gothamCondensed" fontSize={["1.5em", "2em", "2em", "3.5em"]} fontWeight="300">
                         ¿Qué <b>sí</b> hacemos?
                     </Text>
@@ -188,10 +188,10 @@ export default function AboutPage() {
                             <Link href="/integrantes/anaterrazas">
                                 <a>
                                     <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
-                                        <Image src="/images/anaterrazas.svg" alt="ana terrazas" width={["15em", "15em", "18em", "18em"]} />            
+                                        <Image src="/images/anaterrazas.svg" alt="Ana Terrazas" width={["13em", "15em", "18em", "18em"]} />            
                                     </PseudoBox>
                                     <Flex direction="column"  alignItems="center" mt={[-10]}>
-                                        <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>Ana Terrazas</b></Text>    
+                                        <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed">Ana Isabel Terrazas Cerros</Text>    
                                         <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Presidenta</Text> 
                                         <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>1 Año</Text>   
                                     </Flex>  
@@ -205,7 +205,7 @@ export default function AboutPage() {
                             <Link href="/integrantes/lilianaochoa">
                                 <a>
                                     <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
-                                        <Image src="/images/lilianaochoa.svg" alt="ana terrazas" width={["15em", "15em", "18em", "18em"]} />             
+                                        <Image src="/images/lilianaochoa.svg" alt="Liliana Ochoa" width={["15em", "15em", "18em", "18em"]} />             
                                     </PseudoBox>
                                     <Flex direction="column"  alignItems="center" mt={[-5]}>
                                         <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>Liliana Ochoa</b></Text>    
