@@ -64,7 +64,7 @@ export default function AboutPage() {
                             </Box>
                         </Flex>
                         <Flex width={["100%", "100%", "%", "46%" ]}>
-                            <Text my={4} fontFamily="cpc.gothamCondensedBook" fontSize={["1.3em", "1.2em", "1.1em", "1.2em"]} textAlign={["left", "center", "left", "left"]} mt={["1em", "0", "0", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} >
+                            <Text my={4} fontFamily="cpc.gothamCondensedBook" fontSize={["1.3em", "1.2em", "1.1em", "1.2em"]} textAlign={["left", "center", "left", "left"]} mt={["1em", "0", "0", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} lineHeight={["1.2em", "0", "0", "0"]}>
                                 Agua destilada disfrazada de medicinas para el cáncer; carreteras que se abren en dos por tener materiales de segunda; 
                                 personas arrolladas por no tener la seguridad mínima en eventos deportivos; niñas y niños enfermos por habitar en viviendas 
                                 populares construidas en una zona contaminada; edificios colapsados por no cumplir con las regulaciones de construcción antisismos. 
