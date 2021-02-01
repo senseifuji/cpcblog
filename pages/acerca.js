@@ -119,7 +119,7 @@ export default function AboutPage() {
                 {/* Partes del SEA section*/}
                 <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
                     <Flex direction="column" alignItems="center" textAlign="center">
-                        <Text color="cpc.black" pb={[".4em", "0", "0", "0"]} fontFamily="cpc.gothamCondensedBook" textWeight="300" fontSize={["1.5em", "2em", "1.7em", "1.7em"]}>
+                        <Text color="cpc.black" pb={[".4em", "1em", "0", "0"]} fontFamily="cpc.gothamCondensedBook" textWeight="300" fontSize={["1.5em", "2em", "1.7em", "1.7em"]}>
                         Está formado por</Text>
                         <Text width={["90%", "400px", "400px", "400px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "1em", "1em"]} py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1em", "1em", "1em"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                            Los <b>67 municipios</b> del estado de Chihuahua
