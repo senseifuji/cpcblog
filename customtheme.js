@@ -18,8 +18,8 @@ const customtheme = {
         blueLight: "#84cad9",
         purple: "#a479b0",
         pink: "#ec5096",
-        redAnti: rgb(237, 68, 98),
-        redCoor: rgb(236, 71, 150)
+        redAnti: "#ed4462",
+        redCoor: "#ec4796"
     },
   },
   fonts: {
