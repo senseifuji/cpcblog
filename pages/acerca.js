@@ -123,7 +123,7 @@ export default function AboutPage() {
                         </Text>
                         <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]} > + </Text>
                         <Image src="/images/comitecoordinador.svg" alt="comite coordinador" width={["15em", "18em", "20em", "20em"]} my={5}/>            
-                        <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "3em", "3em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" borderColor="cpc.redAnti" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left" lineHeight={["1.2em", "0", "0", "0"]}>
+                        <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "3em", "3em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" borderColor="cpc.redCoor" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left" lineHeight={["1.2em", "0", "0", "0"]}>
                             Integrado por:
                             <List styleType="disc">
                                 <ListItem>La Secretaría de la Función Pública</ListItem>
