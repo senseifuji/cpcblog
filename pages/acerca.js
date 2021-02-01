@@ -108,7 +108,7 @@ export default function AboutPage() {
                                 Ente creado para coordinar acciones
                                 interinstitucionales orientadas a:
                                 combatir, prevenir, disuadir, sancionar
-                                y reducir <Text color="cpc.redAnti">los niveles de corrupción </Text>
+                                y reducir <Text fontFamily="cpc.spaceMonoRegular" d="inline" color="cpc.redAnti">los niveles de corrupción </Text>
                                 en el Estado.
                             </Text>
                         </Flex>
