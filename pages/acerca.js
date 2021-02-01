@@ -118,14 +118,14 @@ export default function AboutPage() {
                 {/* Partes del SEA section*/}
                 <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
                     <Flex direction="column" alignItems="center" textAlign="center">
-                        <Text color="cpc.black" pb={[".4em", "0", "0", "0"]} fontFamily="cpc.gothamCondensedBook" textWeight="300" fontSize={["1.5em", "2em", "2em", "3em"]}>
+                        <Text color="cpc.black" pb={[".4em", "0", "0", "0"]} fontFamily="cpc.gothamCondensedBook" textWeight="300" fontSize={["1.5em", "2em", "1.7em", "1.7em"]}>
                         Está formado por</Text>
-                        <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "1.2em", "1.2em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.4em", "1.7em", "1.7em"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                        <Text width={["90%", "400px", "400px", "400px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "1.2em", "1.2em"]} py={["0.5em", "1em", ".5em", ".5em"]} fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.4em", "1.2em", "1.2em"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                            Los <b>67 municipios</b> del estado de Chihuahua
                         </Text>
                         <Text color="cpc.black" mt={["-.1em", "0", "0", "0"]} mb={["-.4em", "0", "0", "0"]} fontSize={["3em", "4em", "4em", "4em"]} > + </Text>
-                        <Image src="/images/comitecoordinador.svg" alt="Comité Coordinador" width={["15em", "18em", "20em", "20em"]} mt={["1em", "0", "0", "0"]} mb={[".6em", "0", "0", "0"]} />            
-                        <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "1.2em", "1.2em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" borderColor="cpc.redCoor" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                        <Image src="/images/comitecoordinador.svg" alt="Comité Coordinador" width={["15em", "18em", "20em", "20em"]} mt={["1em", "0", "0", "0"]} mb={[".6em", "0.6em", "0.6em", "0.6em"]} />            
+                        <Text width={["90%", "400px", "400px", "400px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "1.2em", "1.2em"]} py={["0.5em", "1em", ".5em", ".5em"]} fontFamily="cpc.spaceMonoRegular" borderColor="cpc.redCoor" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                             Integrado por:
                             <List styleType="disc">
                                 <ListItem>Secretaría de la Función Pública</ListItem>
@@ -142,7 +142,7 @@ export default function AboutPage() {
                 <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
                     <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]} mt="-1.5em"> + </Text>
                     <Image src="/images/comiteparticipacion.svg" alt="Comité de Participación Ciudadana" width={["15em", "18em", "20em", "20em"]} my={["0", "5", "5", "5"]}/>            
-                    <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "1.7em", "1.7em"]} py={["0.5em", "1em", "2em", "2em"]} my="0.8em" fontFamily="cpc.spaceMonoRegular" borderColor="cpc.red" fontSize={["1em", "1em", "1em", "1em"]} textAlign={["center", "left", "center", "center"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                    <Text width={["90%", "400px", "400px", "400px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "1.2em", "1.2em"]} py={["0.5em", "1em", ".5em", ".5em"]} my="0.8em" fontFamily="cpc.spaceMonoRegular" borderColor="cpc.red" fontSize={["1em", "1em", "1em", "1em"]} textAlign={["center", "left", "center", "center"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                         5 personas de la academia o sociedad civil, con experiencia en: transparencia, 
                         participación ciudadana y anticorrupción
                     </Text>
