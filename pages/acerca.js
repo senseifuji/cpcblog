@@ -38,7 +38,7 @@ export default function AboutPage() {
                     <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]}>
                         ¿Has buscado en Google imágenes de la palabra corrupción?
                     </Text>
-                    <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.4em", "1.7em", "1.7em"]} fontWeight="300" textAlign="center" d="inline-flex" alignItems="center">
+                    <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.4em", "1.7em", "1.7em"]} fontWeight="300" textAlign="center" d="inline-flex" alignItems="center" mt={["1em", "0em", "0em", "0em"]}>
                         ¿Cuantas veces has visto este emoji 🤝 junto con este otro 💵?
                     </Text>
                     <Flex direction="column" alignItems="center">
