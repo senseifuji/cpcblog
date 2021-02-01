@@ -3,16 +3,16 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 234 84.9" style="enable-background:new 0 0 234 84.9;" xml:space="preserve">
 <style type="text/css">
-	.sealogo001{fill:#ED4462;}
-	.sealogo002{enable-background:new    ;}
-	.sealogo003{fill:#FFFFFF;}
-	.sealogo004{display:none;}
+	.st0{fill:#ED4462;}
+	.st1{enable-background:new    ;}
+	.st2{fill:#FFFFFF;}
+	.st3{display:none;}
 </style>
 <g id="Layer_1_1_">
 	<g>
-		<polygon class="sealogo001" points="126.8,25.8 0,25.8 2.1,9.6 128.7,9.6 		"/>
-		<g class="sealogo002">
-			<path class="sealogo003" d="M12.7,16.8c0-0.1,0-0.2,0-0.3c0-0.2,0-0.4-0.1-0.5c-0.1-0.1-0.2-0.3-0.3-0.4c-0.1-0.1-0.3-0.2-0.5-0.2
+		<polygon class="st0" points="126.8,25.8 0,25.8 2.1,9.6 128.7,9.6 		"/>
+		<g class="st1">
+			<path class="st2" d="M12.7,16.8c0-0.1,0-0.2,0-0.3c0-0.2,0-0.4-0.1-0.5c-0.1-0.1-0.2-0.3-0.3-0.4c-0.1-0.1-0.3-0.2-0.5-0.2
 				s-0.4-0.1-0.6-0.1c-0.2,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.1-0.6,0.2c-0.2,0.1-0.3,0.2-0.4,0.4c-0.1,0.1-0.2,0.3-0.2,0.5
 				c0,0.2,0,0.4,0.1,0.5c0.1,0.1,0.2,0.2,0.4,0.3c0.2,0.1,0.3,0.2,0.6,0.2c0.2,0.1,0.5,0.1,0.8,0.2c0.7,0.1,1.1,0.3,1.5,0.6
 				c0.3,0.3,0.5,0.7,0.5,1.2c0,0.4-0.1,0.7-0.2,1c-0.2,0.3-0.4,0.5-0.6,0.7c-0.3,0.2-0.6,0.3-1,0.4c-0.4,0.1-0.8,0.1-1.2,0.1
@@ -91,7 +91,5 @@
 		</g>
 		<polygon class="st0" points="234,84.3 229,84.3 70.9,42.7 70.9,36.4 234,79.2 		"/>
 	</g>
-</g>
-<g id="Layer_2_1_" class="sealogo004">
 </g>
 </svg>
