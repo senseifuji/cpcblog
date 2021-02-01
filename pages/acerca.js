@@ -121,7 +121,7 @@ export default function AboutPage() {
                         <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "3em", "3em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.4em", "1.7em", "2.5em"]} lineHeight={["1.2em", "0", "0", "0"]}>
                            Los <b>67 municipios</b> del estado de Chihuahua
                         </Text>
-                        <Text color="cpc.black" mt={["-.3em", "0", "0", "0"]} mb={["-.4em", "0", "0", "0"]} fontSize={["3em", "4em", "4em", "4em"]} > + </Text>
+                        <Text color="cpc.black" mt={["-.1em", "0", "0", "0"]} mb={["-.4em", "0", "0", "0"]} fontSize={["3em", "4em", "4em", "4em"]} > + </Text>
                         <Image src="/images/comitecoordinador.svg" alt="Comité Coordinador" width={["15em", "18em", "20em", "20em"]} mt={["1em", "0", "0", "0"]} mb={[".6em", "0", "0", "0"]} />            
                         <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "3em", "3em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" borderColor="cpc.redCoor" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left" lineHeight={["1.2em", "0", "0", "0"]}>
                             Integrado por:
@@ -138,10 +138,10 @@ export default function AboutPage() {
                     </Flex>
                 </Section>
                 <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
-                    <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]} mt="-1em"> + </Text>
-                    <Image src="/images/comiteparticipacion.svg" alt="comite participacion" width={["15em", "18em", "20em", "20em"]} my={5}/>            
-                    <Text width={["300px", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1em", "1em", "3em", "3em"]} py="2em" my="0.8em" fontFamily="cpc.spaceMonoItalic" borderColor="cpc.pink" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left">
-                        5 personas de la academia o sociedad civil, con experiencia en:transparencia, 
+                    <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]} mt="-1.5em"> + </Text>
+                    <Image src="/images/comiteparticipacion.svg" alt="Comité de Participación Ciudadana" width={["15em", "18em", "20em", "20em"]} my={["0", "5", "5", "5"]}/>            
+                    <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "3em", "3em"]} py={["0.5em", "1em", "2em", "2em"]} my="0.8em" fontFamily="cpc.spaceMonoRegular" borderColor="cpc.red" fontSize={["1em", "1em", "1em", "1em"]} textAlign={["center", "left", "left", "left"]} lineHeight={["1.2em", "0", "0", "0"]}>
+                        5 personas de la academia o sociedad civil, con experiencia en: transparencia, 
                         participación ciudadana y anticorrupción
                     </Text>
                 </Section>
