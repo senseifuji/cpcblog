@@ -117,13 +117,13 @@ export default function AboutPage() {
                 {/* Partes del SEA section*/}
                 <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
                     <Flex direction="column" alignItems="center" textAlign="center">
-                        <Text color="cpc.black" fontFamily="cpc.gothamCondensedLight" fontSize={["1.5em", "2em", "2em", "3em"]}><b>Está formado por</b></Text>
-                        <Text width={["300px", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px="1.5em" py="0.5em" fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.4em", "1.7em", "2.5em"]} >
-                           Los <b>67 municipios</b><br/> del estado <br/> de Chihuahua
+                        <Text color="cpc.black" fontFamily="cpc.gothamCondensedBook" textWeight="300" fontSize={["1.5em", "2em", "2em", "3em"]}>Está formado por</Text>
+                        <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "3em", "3em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.4em", "1.7em", "2.5em"]} lineHeight={["1.2em", "0", "0", "0"]}>
+                           Los <b>67 municipios</b> del estado de Chihuahua
                         </Text>
                         <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]} > + </Text>
                         <Image src="/images/comitecoordinador.svg" alt="comite coordinador" width={["15em", "18em", "20em", "20em"]} my={5}/>            
-                        <Text width={["300px", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1em", "1em", "3em", "3em"]} py="2em" fontFamily="cpc.spaceMonoItalic" borderColor="cpc.pink" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left">
+                        <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "3em", "3em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" borderColor="cpc.redAnti" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left" lineHeight={["1.2em", "0", "0", "0"]}>
                             Integrado por:
                             <List styleType="disc">
                                 <ListItem>La Secretaría de la Función Pública</ListItem>
