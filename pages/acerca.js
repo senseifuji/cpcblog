@@ -35,18 +35,18 @@ export default function AboutPage() {
             <Header position="fixed"/>
             <Content>
                 <Section bg="cpc.red" color="cpc.white">
-                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]}>
-                        <b>¿Has buscado en Google imágenes de la palabra corrupción?</b>
+                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]}>
+                        ¿Has buscado en Google imágenes de la palabra corrupción?
                     </Text>
-                    <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.4em", "1.7em", "1.7em"]} d="inline-flex" alignItems="center">
+                    <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.4em", "1.7em", "1.7em"]} fontWeight="300" textAlign="center" d="inline-flex" alignItems="center">
                         ¿Cuantas veces has visto este emoji 🤝 junto con este otro 💵?
                     </Text>
                     <Flex direction="column" alignItems="center">
                         <ManitasDineros manitasSize="146px"/>
-                        <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.4em", "1.7em", "1.7em"]} lineHeight={["1em", "1em", "1.18em", "1.18em"]} mt="-1em">Creemos que las suficientes como para afirmar que</Text>
+                        <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.4em", "1.7em", "1.7em"]} fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} mt="-1em">Creemos que las suficientes como para afirmar que</Text>
                     </Flex>
-                    <Text my="0.5em" fontFamily="cpc.gothamMedium" fontSize={["1.75em", "2em", "2em", "2.5em"]} lineHeight={["1em", "1em", "1.18em", "1.18em"]} textAlign="center">
-                        <b>Nos urge una mejor <br/>definición de corrupción</b>
+                    <Text my="0.5em" fontFamily="cpc.gothamBold" fontSize={["1.75em", "2em", "2em", "2.5em"]} fontWeight="300" lineHeight={["1em", "1em", "1.18em", "1.18em"]} textAlign="center">
+                        Nos urge una mejor <br/>definición de corrupción
                     </Text>
                 </Section> 
                 {/* CARRITO-CAMINO-MONOVACUNAS SECTION */}
