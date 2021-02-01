@@ -35,7 +35,7 @@ export default function AboutPage() {
             <Header position="fixed"/>
             <Content>
                 <Section bg="cpc.red" color="cpc.white">
-                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]}>
+                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "60%"]}>
                         ¿Has buscado en Google imágenes de la palabra corrupción?
                     </Text>
                     <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="center" d="inline-flex" alignItems="center" mt={["1em", "0em", "0em", "0em"]}>
@@ -46,7 +46,7 @@ export default function AboutPage() {
                         <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} mt="-1em">
                         Creemos que las suficientes como para afirmar que</Text>
                     </Flex>
-                    <Text my="0.5em" fontFamily="cpc.gothamBold" fontSize={["1.75em", "1.75em", "2em", "2em"]} fontWeight="300" lineHeight={["1em", "1em", "1.18em", "1.18em"]} textAlign="center" letterSpacing={["-.05em", "0", "0", "0"]}>
+                    <Text my="0.5em" fontFamily="cpc.gothamBold" fontSize={["1.75em", "1.75em", "2em", "2em"]} fontWeight="300" lineHeight={["1em", "1em", "1.18em", "1.18em"]} textAlign="center" letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "60%"]}>
                         Nos urge una mejor definición de corrupción
                     </Text>
                 </Section> 
@@ -96,7 +96,7 @@ export default function AboutPage() {
                 </Section>
                 {/* Second top SECTION */}
                 <Section bg="cpc.red" color="cpc.white" >
-                    <Text fontSize={["1.75em", "1.75em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]}>
+                    <Text fontSize={["1.75em", "1.75em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "60%"]}>
                         es por eso que para combatir la corrupción, trabajamos en el
                     </Text>
                 </Section>  
@@ -151,7 +151,7 @@ export default function AboutPage() {
 
                 {/* FUNCION DEL COMITE  */}
                 <Section bg="cpc.red" color="cpc.white">
-                    <Text fontSize={["1.75em", "1.75em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]}>
+                    <Text fontSize={["1.75em", "1.75em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "60%"]}>
                         ¿Cuál es la función del Comité de Participación Ciudadana?
                     </Text>
                     <Image src="/images/cpc.svg" alt="CPC logo" my="3em" width={["10em", "15em", "17em", "17em"]} mt={["1em", "1em", "1em", "1em"]}/>   
@@ -183,7 +183,7 @@ export default function AboutPage() {
 
                 {/* FOURTH SECTION FACES CIRCLES*/}
                  <Section bg="cpc.white" color="cpc.red"  desktopWidth="100%">
-                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]}>
+                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "60%"]}>
                         ¿Quienes integran al Comité de Participación Ciudadana?
                     </Text> 
                     <Flex mt={10} direction="column" color="cpc.black" alignItems="center">
