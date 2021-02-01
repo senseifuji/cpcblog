@@ -84,7 +84,7 @@ export default function AboutPage() {
                             se caracteriza por la distribución de bienes sobre una base no universalista que 
                             <b> refleja el acceso y distribución restringida al poder.</b>
                         </Text>
-                        <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1em", "1.2em", "1.1em", "1.2em"]}>
+                        <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.1em", "1.2em", "1.1em", "1.2em"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} textAlign="left">
                             *Basado en el trabajo de la 
                             <Link href="http://rendiciondecuentas.org.mx/wp-content/uploads/2018/06/PNA-AccountWordPressEduHdez.pdf">
                                 <a className="redlink"> Red por la Rendición de Cuentas.</a>
