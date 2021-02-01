@@ -121,18 +121,18 @@ export default function AboutPage() {
                         <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "3em", "3em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1.4em", "1.7em", "2.5em"]} lineHeight={["1.2em", "0", "0", "0"]}>
                            Los <b>67 municipios</b> del estado de Chihuahua
                         </Text>
-                        <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]} > + </Text>
-                        <Image src="/images/comitecoordinador.svg" alt="comite coordinador" width={["15em", "18em", "20em", "20em"]} my={5}/>            
+                        <Text color="cpc.black" mt={["-.3em", "0", "0", "0"]} mb={["-.4em", "0", "0", "0"]} fontSize={["3em", "4em", "4em", "4em"]} > + </Text>
+                        <Image src="/images/comitecoordinador.svg" alt="Comité Coordinador" width={["15em", "18em", "20em", "20em"]} mt={["1.25em", "0", "0", "0"]} mb={[".6em", "0", "0", "0"]} />            
                         <Text width={["90%", "400px", "500px", "600px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "3em", "3em"]} py={["0.5em", "1em", "2em", "2em"]} fontFamily="cpc.spaceMonoRegular" borderColor="cpc.redCoor" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left" lineHeight={["1.2em", "0", "0", "0"]}>
                             Integrado por:
                             <List styleType="disc">
-                                <ListItem>La Secretaría de la Función Pública</ListItem>
-                                <ListItem>La Auditoría Superior del Estado </ListItem>
-                                <ListItem>El Tribunal de Justicia Administrativa </ListItem>
-                                <ListItem>La Fiscalía Especializada Anticorrupción</ListItem>
-                                <ListItem>El Consejo de la Judicatura Estatal </ListItem>
-                                <ListItem>El ICHITAIP</ListItem>
-                                <ListItem>y presidido por el Comité de Participación Ciudadana</ListItem>
+                                <ListItem>Secretaría de la Función Pública</ListItem>
+                                <ListItem>Auditoría Superior del Estado </ListItem>
+                                <ListItem>Tribunal de Justicia Administrativa </ListItem>
+                                <ListItem>Fiscalía Especializada Anticorrupción</ListItem>
+                                <ListItem>Consejo de la Judicatura Estatal </ListItem>
+                                <ListItem>ICHITAIP</ListItem>
+                                <ListItem>Comité de Participación Ciudadana</ListItem>
                             </List>
                         </Text>
                     </Flex>
