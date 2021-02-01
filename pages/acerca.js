@@ -96,7 +96,7 @@ export default function AboutPage() {
                 </Section>
                 {/* Second top SECTION */}
                 <Section bg="cpc.red" color="cpc.white" >
-                    <Text fontSize={["1.75em", "1.75em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "80%", "70%", "60%"]}>
+                    <Text fontSize={["1.75em", "1.75em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "80%", "70%", "75%"]}>
                         es por eso que para combatir la corrupción, trabajamos en el
                     </Text>
                 </Section>  
@@ -151,7 +151,7 @@ export default function AboutPage() {
 
                 {/* FUNCION DEL COMITE  */}
                 <Section bg="cpc.red" color="cpc.white">
-                    <Text fontSize={["1.75em", "1.75em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "60%"]}>
+                    <Text fontSize={["1.75em", "1.75em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "75%"]}>
                         ¿Cuál es la función del Comité de Participación Ciudadana?
                     </Text>
                     <Image src="/images/cpc.svg" alt="CPC logo" my="3em" width={["10em", "15em", "17em", "17em"]} mt={["1em", "1em", "1em", "1em"]}/>   
@@ -183,7 +183,7 @@ export default function AboutPage() {
 
                 {/* FOURTH SECTION FACES CIRCLES*/}
                  <Section bg="cpc.white" color="cpc.red"  desktopWidth="100%">
-                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "60%"]}>
+                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "70%"]}>
                         ¿Quienes integran al Comité de Participación Ciudadana?
                     </Text> 
                     <Flex mt={10} direction="column" color="cpc.black" alignItems="center">
