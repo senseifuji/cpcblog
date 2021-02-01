@@ -35,10 +35,10 @@ export default function AboutPage() {
             <Header position="fixed"/>
             <Content>
                 <Section bg="cpc.red" color="cpc.white">
-                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "70%", "70%", "60%"]}>
+                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "-.05em", "0", "0"]} width={["100%", "90%", "70%", "60%"]}>
                         ¿Has buscado en Google imágenes de la palabra corrupción?
                     </Text>
-                    <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="center" d="inline-flex" alignItems="center" mt={["1em", "0em", "0em", "0em"]}>
+                    <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="center" d="inline-flex" alignItems="center" mt={["1em", "0.75em", "0em", "0em"]}>
                         ¿Cuantas veces has visto este emoji 🤝 junto con este otro 💵?
                     </Text>
                     <Flex direction="column" alignItems="center">
@@ -46,14 +46,14 @@ export default function AboutPage() {
                         <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} mt="-1em">
                         Creemos que las suficientes como para afirmar que</Text>
                     </Flex>
-                    <Text my="0.5em" fontFamily="cpc.gothamBold" fontSize={["1.75em", "1.75em", "2em", "2em"]} fontWeight="300" lineHeight={["1em", "1em", "1.18em", "1.18em"]} textAlign="center" letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "70%", "70%", "60%"]}>
+                    <Text my="0.5em" fontFamily="cpc.gothamBold" fontSize={["1.75em", "1.75em", "2em", "2em"]} fontWeight="300" lineHeight={["1em", "1em", "1.18em", "1.18em"]} textAlign="center" letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "90%", "70%", "60%"]}>
                         Nos urge una mejor definición de corrupción
                     </Text>
                 </Section> 
                 {/* CARRITO-CAMINO-MONOVACUNAS SECTION */}
                 <Section bg="cpc.yellowLight" color="cpc.black">
                    <Flex justify="space-evenly" direction={["column", 'row', 'row', 'row']}>
-                        <Flex alignItems="center" alignSelf="center" direction={["column", 'column', 'row', 'row']}  mx={4}>
+                        <Flex justify="space-evenly" width="-moz-available" alignItems="center" alignSelf="center" direction={["column", 'column', 'row', 'row']}  mx={4}>
                             <Box mx={["0em", "0em", "1em", "1.5em"]}>
                                 <Camino size="100px"/>
                             </Box>
@@ -65,7 +65,7 @@ export default function AboutPage() {
                             </Box>
                         </Flex>
                         <Flex width={["100%", "100%", "%", "46%" ]}>
-                            <Text my={4} fontFamily="cpc.gothamCondensedBook" fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} textAlign={["left", "center", "left", "left"]} mt={["1em", "0", "1em", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                            <Text my={4} fontFamily="cpc.gothamCondensedBook" fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} textAlign={["left", "left", "left", "left"]} mt={["1em", "1em", "1em", "0"]} pl={["1em", "1em", "0", "0"]} pr={[".5em", "0.5em", "0", "0"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                                 Agua destilada disfrazada de medicinas para el cáncer; carreteras que se abren en dos por tener materiales de segunda; 
                                 personas arrolladas por no tener la seguridad mínima en eventos deportivos; niñas y niños enfermos por habitar en viviendas 
                                 populares construidas en una zona contaminada; edificios colapsados por no cumplir con las regulaciones de construcción antisismos. 
