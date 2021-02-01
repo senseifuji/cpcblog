@@ -6,7 +6,7 @@ const customtheme = {
     ...theme.colors,
     cpc: {
         red: "#F1748A",
-        redLight: "f192a7",
+        redLight: "#f192a7",
         white: "#FFFFFF",
         black: "#000000",
         blackLight: "#333333",
