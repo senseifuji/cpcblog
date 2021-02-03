@@ -187,8 +187,7 @@ export default function AboutPage() {
                         ¿Quienes integran al Comité de Participación Ciudadana?
                     </Text>
                     /* Inicia codigo nuevo*/
-                    const IntegrantesArreglos = () => (
-  <Box overflow="scroll" display="flex">
+                    <Box overflow="scroll" display="flex">
     <Box maxWidth="275px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px">
         <Avatar size="2xl" />
@@ -229,7 +228,6 @@ export default function AboutPage() {
       </Box>
     </Box>
   </Box>
-)
      
         
                     /* Termina codigo nuevo*/
