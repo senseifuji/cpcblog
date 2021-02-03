@@ -198,7 +198,7 @@ export default function AboutPage() {
         </Text>
       </Box>
       <Box maxWidth="200px">
-        <Text is truncated>Aqui va otro texto largo kiiir</Text>
+        <Text isTruncated>Aqui va otro texto largo kiiir</Text>
       </Box>
     </Box>
     <Box display="flex" flexDirection="column" backgroundColor="white" p="16px">
@@ -211,7 +211,7 @@ export default function AboutPage() {
         </Text>
       </Box>
       <Box maxWidth="200px">
-        <Text is truncated>Aqui va otro texto largo kiiir</Text>
+        <Text isTruncated>Aqui va otro texto largo kiiir</Text>
       </Box>
     </Box>
     <Box display="flex" flexDirection="column" backgroundColor="white" p="16px">
@@ -224,7 +224,7 @@ export default function AboutPage() {
         </Text>
       </Box>
       <Box maxWidth="200px">
-        <Text is truncated>Aqui va otro texto largo kiiir</Text>
+        <Text isTruncated>Aqui va otro texto largo kiiir</Text>
       </Box>
     </Box>
   </Box>
