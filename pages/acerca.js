@@ -186,7 +186,7 @@ export default function AboutPage() {
                     <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "70%"]}>
                         ¿Quienes integran al Comité de Participación Ciudadana?
                     </Text>
-                    /* Inicia codigo nuevo*/
+        {/* Inicia codigo nuevo*/}
                     <Box overflow="scroll" display="flex">
     <Box maxWidth="275px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px">
@@ -230,7 +230,7 @@ export default function AboutPage() {
   </Box>
      
         
-                    /* Termina codigo nuevo*/
+        {/* Termina codigo nuevo*/}
                     <Flex mt={10} direction="column" color="cpc.black" alignItems="center">
                         <Flex  direction="column" alignItems="center" my={["1em", "0.5em", "0em", "0em"]} >
                             <Link href="/integrantes/anaterrazas">
