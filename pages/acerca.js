@@ -6,7 +6,7 @@ import Section from '../components/section'
 
 import customtheme from '../customtheme.js'
 
-import {Flex, Text, Image, List, ListItem, Box, PseudoBox} from '@chakra-ui/core';
+import {Flex, Text, Image, List, ListItem, Box, PseudoBox, Avatar} from '@chakra-ui/core';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import CpcSeo from '../components/cpcseo';
