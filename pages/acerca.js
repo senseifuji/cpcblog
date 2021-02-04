@@ -190,7 +190,7 @@ export default function AboutPage() {
                     <Box width={["300px", "600px", "850px", "850px"]} overflow="scroll" display="flex" pt="20px">
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px"pb="16px" textAlign="center">
-        <Avatar size="full" src="/images/anaterrazas.svg" alt="Ana Terrazas" />
+        <Image borderRadius="full" borderSize="200px" src="/images/anaterrazas.svg" alt="Ana Terrazas" />
       </Box>
       <Box maxWidth="200px">
         <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>
@@ -203,7 +203,7 @@ export default function AboutPage() {
     </Box>
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
-        <Avatar size="full" src="/images/LiliCPC.png" />
+        <Image borderRadius="full" borderSize="200px" src="/images/lilianaochoa.svg" />
       </Box>
       <Box maxWidth="200px">
         <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>
@@ -216,7 +216,7 @@ export default function AboutPage() {
     </Box>
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
-        <Avatar size="full" src="/images/ReneCPC.png" />
+        <Image borderRadius="full" borderSize="200px" src="/images/renemoreno.svg" />
       </Box>
       <Box maxWidth="200px">
         <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>
