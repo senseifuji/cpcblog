@@ -216,7 +216,7 @@ export default function AboutPage() {
                             <Link href="/integrantes/lilianaochoa">
                             <a>
                             <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
-                                <Image width="200px" height="200px" src="/images/lilianaochoa.svg" />
+                                <Image width="200px" height="200px" alt="Liliana Ochoa" src="/images/lilianaochoa.svg" />
                             </Box>
                             <Box maxWidth="200px">
                                 <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" 
@@ -238,7 +238,7 @@ export default function AboutPage() {
                             <Link href="/integrantes/renemoreno">
                             <a>
                             <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
-                                <Image width="200px" height="200px" src="/images/renemoreno.svg" />
+                                <Image width="200px" height="200px" alt="René Moreno" src="/images/renemoreno.svg" />
                             </Box>
                             <Box maxWidth="200px">
                                 <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" 
@@ -255,6 +255,50 @@ export default function AboutPage() {
                             </a>
                             </Link>
                         </Box>
+        
+                        <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
+                            <Link href="/integrantes/miguelgomez">
+                            <a>
+                            <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
+                                <Image width="200px" height="200px" alt="Miguel Gómez" src="/images/miguelgomez.svg" />
+                            </Box>
+                            <Box maxWidth="200px">
+                                <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" 
+                                fontWeight="300" textAlign="left" isTruncated>
+                                    Miguel Salvador Gómez González
+                                </Text>
+                            </Box>
+                            <Box maxWidth="200px">
+                                <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize="27px" 
+                                fontWeight="300" textAlign="left" isTruncated>
+                                    Integrante del CPC
+                                </Text>
+                            </Box>
+                            </a>
+                            </Link>
+                        </Box>
+        
+                        <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
+                            <Link href="/integrantes/carmenalvarez">
+                            <a>
+                            <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
+                                <Image width="200px" height="200px" alt="Miguel Gómez" src="/images/carmenalvarez.svg" />
+                            </Box>
+                            <Box maxWidth="200px">
+                                <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" 
+                                fontWeight="300" textAlign="left" isTruncated>
+                                    Carmen Lucila Álvarez González
+                                </Text>
+                            </Box>
+                            <Box maxWidth="200px">
+                                <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize="27px" 
+                                fontWeight="300" textAlign="left" isTruncated>
+                                    Integrante del CPC
+                                </Text>
+                            </Box>
+                            </a>
+                            </Link>
+                        </Box>        
         
                 </Box>
                 {/* Termina codigo nuevo*/}
