@@ -187,7 +187,7 @@ export default function AboutPage() {
                         ¿Quienes integran al Comité de Participación Ciudadana?
                     </Text>
                     
-                    <Box width={["300px", "500px", "740px", "740px"]} overflow="scroll" display="flex" pt="20px">
+                    <Box width={["300px", "500px", "700px", "700px"]} overflow="scroll" display="flex" pt="20px">
                         
                         <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
                             <Link href="/integrantes/anaterrazas">
