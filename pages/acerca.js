@@ -187,10 +187,10 @@ export default function AboutPage() {
                         ¿Quienes integran al Comité de Participación Ciudadana?
                     </Text>
         {/* Inicia codigo nuevo*/}
-                    <Box desktopWidth="100%" overflow="scroll" display="flex" pt="20px">
+                    <Box width={["300px", "600px", "850px", "850px"]} overflow="scroll" display="flex" pt="20px">
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px"pb="16px" textAlign="center">
-        <Avatar size="full" colorScheme="whiteAlpha" src="/images/AnaCPC.png" />
+        <Avatar size="full" src="/images/AnaCPC.png" />
       </Box>
       <Box maxWidth="200px">
         <Text fontFamily='cpc.gothamCondensed' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>
@@ -203,7 +203,7 @@ export default function AboutPage() {
     </Box>
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
-        <Avatar size="full" colorScheme="whiteAlpha" src="/images/LiliCPC.png" />
+        <Avatar size="full" src="/images/LiliCPC.png" />
       </Box>
       <Box maxWidth="200px">
         <Text fontFamily='cpc.gothamCondensed' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>
@@ -216,7 +216,7 @@ export default function AboutPage() {
     </Box>
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
-        <Avatar size="full" colorScheme="whiteAlpha" src="/images/ReneCPC.png" />
+        <Avatar size="full" src="/images/ReneCPC.png" />
       </Box>
       <Box maxWidth="200px">
         <Text fontFamily='cpc.gothamCondensed' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>
