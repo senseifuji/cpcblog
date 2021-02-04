@@ -187,9 +187,9 @@ export default function AboutPage() {
                         ¿Quienes integran al Comité de Participación Ciudadana?
                     </Text>
         {/* Inicia codigo nuevo*/}
-                    <Box width="275px" overflow="scroll" display="flex">
+                    <Box width="275px" overflow="scroll" display="flex" pt="20px">
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
-      <Box maxWidth="200px" maxHeight="200px">
+      <Box maxWidth="200px" maxHeight="200px"pb="16px">
         <Avatar size="2xl" />
       </Box>
       <Box maxWidth="200px">
@@ -202,7 +202,7 @@ export default function AboutPage() {
       </Box>
     </Box>
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
-      <Box maxWidth="200px" maxHeight="200px">
+      <Box maxWidth="200px" maxHeight="200px" pb="16px">
         <Avatar size="2xl" />
       </Box>
       <Box maxWidth="200px">
@@ -215,7 +215,7 @@ export default function AboutPage() {
       </Box>
     </Box>
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
-      <Box maxWidth="200px" maxHeight="200px">
+      <Box maxWidth="200px" maxHeight="200px" pb="16px">
         <Avatar size="2xl" />
       </Box>
       <Box maxWidth="200px">
