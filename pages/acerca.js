@@ -190,7 +190,7 @@ export default function AboutPage() {
                     <Box width="275px" overflow="scroll" display="flex" pt="20px">
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px"pb="16px" textAlign="center">
-        <Avatar size="2xl" src="/images/AnaCPC.png" />
+        <Avatar size="full" colorScheme="whiteAlpha" src="/images/AnaCPC.png" />
       </Box>
       <Box maxWidth="200px">
         <Text fontWeight="bold" textAlign="left" isTruncated>
@@ -203,7 +203,7 @@ export default function AboutPage() {
     </Box>
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
-        <Avatar size="2xl" src="/images/LiliCPC.png" />
+        <Avatar size="full" colorScheme="whiteAlpha" src="/images/LiliCPC.png" />
       </Box>
       <Box maxWidth="200px">
         <Text fontWeight="bold" textAlign="left" isTruncated>
@@ -216,7 +216,7 @@ export default function AboutPage() {
     </Box>
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
-        <Avatar size="2xl" src="/images/ReneCPC.png" />
+        <Avatar size="full" colorScheme="whiteAlpha" src="/images/ReneCPC.png" />
       </Box>
       <Box maxWidth="200px">
         <Text fontWeight="bold" textAlign="left" isTruncated>
