@@ -186,51 +186,70 @@ export default function AboutPage() {
                     <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "70%"]}>
                         ¿Quienes integran al Comité de Participación Ciudadana?
                     </Text>
-        {/* Inicia codigo nuevo*/}
+                    
+                    {/* Inicia codigo nuevo*/}
                     <Box width={["300px", "600px", "850px", "850px"]} overflow="scroll" display="flex" pt="20px">
-    <Box href="/integrantes/anaterrazas" maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
-      <Box maxWidth="200px" maxHeight="200px"pb="16px" textAlign="center">
-        <Image borderRadius="full" borderSize="200px" src="/images/anaterrazas.svg" alt="Ana Terrazas" />
-      </Box>
-      <Box maxWidth="200px">
-        <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>
-        Ana Isabel Terrazas Cerros
-        </Text>
-      </Box>
-      <Box maxWidth="200px">
-        <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>Presidenta del CPC</Text>
-      </Box>
-    </Box>
-    <Box href="/integrantes/lilianaochoa" maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
-      <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
-        <Image borderRadius="full" borderSize="200px" src="/images/lilianaochoa.svg" />
-      </Box>
-      <Box maxWidth="200px">
-        <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>
-          Liliana Ochoa Terrazas
-        </Text>
-      </Box>
-      <Box maxWidth="200px">
-        <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>Integrante del CPC</Text>
-      </Box>
-    </Box>
-    <Box href="/integrantes/renemoreno" maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
-      <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
-        <Image borderRadius="full" borderSize="200px" src="/images/renemoreno.svg" />
-      </Box>
-      <Box maxWidth="200px">
-        <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>
-          René Moreno Medina
-        </Text>
-      </Box>
-      <Box maxWidth="200px">
-        <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>Integrante del CPC</Text>
-      </Box>
-    </Box>
-  </Box>
-     
+                        
+                        <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
+                            <Link href="/integrantes/anaterrazas">
+                            <a>
+                            <Box maxWidth="200px" maxHeight="200px"pb="16px" textAlign="center">
+                                <Image borderRadius="full" borderSize="200px" src="/images/anaterrazas.svg" alt="Ana Terrazas" />
+                            </Box>
+                            <Box maxWidth="200px">
+                                <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" 
+                                fontWeight="300" textAlign="left" isTruncated>
+                                    Ana Isabel Terrazas Cerros
+                                </Text>
+                            </Box>
+                            <Box maxWidth="200px">
+                                <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize="27px" 
+                                fontWeight="300" textAlign="left" isTruncated>
+                                    Presidenta del CPC
+                                </Text>
+                            </Box>
+                            </a>
+                            </Link>
+                        </Box>
         
-        {/* Termina codigo nuevo*/}
+                        <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
+                            <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
+                                <Image borderRadius="full" borderSize="200px" src="/images/lilianaochoa.svg" />
+                            </Box>
+                            <Box maxWidth="200px">
+                                <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>
+                                    Liliana Ochoa Terrazas
+                                </Text>
+                            </Box>
+                            <Box maxWidth="200px">
+                                <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize="27px" 
+                                fontWeight="300" textAlign="left" isTruncated>
+                                    Integrante del CPC
+                                </Text>
+                            </Box>
+                        </Box>
+        
+                        <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
+                            <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
+                                <Image borderRadius="full" borderSize="200px" src="/images/renemoreno.svg" />
+                            </Box>
+                            <Box maxWidth="200px">
+                                <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" 
+                                fontWeight="300" textAlign="left" isTruncated>
+                                    René Moreno Medina
+                                </Text>
+                            </Box>
+                            <Box maxWidth="200px">
+                                <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize="27px" 
+                                fontWeight="300" textAlign="left" isTruncated>
+                                    Integrante del CPC
+                                </Text>
+                            </Box>
+                        </Box>
+        
+                </Box>
+                {/* Termina codigo nuevo*/}
+        
                     <Flex mt={10} direction="column" color="cpc.black" alignItems="center">
                         <Flex  direction="column" alignItems="center" my={["1em", "0.5em", "0em", "0em"]} >
                             <Link href="/integrantes/anaterrazas">
