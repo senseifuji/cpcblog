@@ -181,13 +181,12 @@ export default function AboutPage() {
                     </Text>   
                 </Section>  
 
-                {/* FOURTH SECTION FACES CIRCLES*/}
+                {/* Integrantes del CPC*/}
                  <Section bg="cpc.white" color="cpc.red"  desktopWidth="100%">
                     <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "70%"]}>
                         ¿Quienes integran al Comité de Participación Ciudadana?
                     </Text>
                     
-                    {/* Inicia codigo nuevo*/}
                     <Box width={["300px", "600px", "850px", "850px"]} overflow="scroll" display="flex" pt="20px">
                         
                         <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
@@ -301,82 +300,7 @@ export default function AboutPage() {
                         </Box>        
         
                 </Box>
-                {/* Termina codigo nuevo*/}
-        
-                    <Flex mt={10} direction="column" color="cpc.black" alignItems="center">
-                        <Flex  direction="column" alignItems="center" my={["1em", "0.5em", "0em", "0em"]} >
-                            <Link href="/integrantes/anaterrazas">
-                                <a>
-                                    <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
-                                        <Image src="/images/anaterrazas.svg" alt="Ana Terrazas" width={["13em", "15em", "18em", "18em"]} />            
-                                    </PseudoBox>
-                                    <Flex direction="column"  alignItems="center" mt={[-10]}>
-                                        <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed">Ana Isabel Terrazas Cerros</Text>    
-                                        <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Presidenta</Text> 
-                                        <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>1 Año</Text>   
-                                    </Flex>  
-                                </a>
-                            </Link>
-                        </Flex>     
-                    </Flex>
-
-                    <Flex direction={["column", "column", "row", "row"]} color="cpc.black" alignItems="center" justify="space-evenly" width="100%" mt={["0em", "0em", "-2em", "-8em"]}>
-                        <Flex  direction="column" alignItems="center" my={["1em", "0.5em", "0em", "0em"]}>
-                            <Link href="/integrantes/lilianaochoa">
-                                <a>
-                                    <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
-                                        <Image src="/images/lilianaochoa.svg" alt="Liliana Ochoa" width={["15em", "15em", "18em", "18em"]} />             
-                                    </PseudoBox>
-                                    <Flex direction="column"  alignItems="center" mt={[-5]}>
-                                        <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>Liliana Ochoa</b></Text>    
-                                        <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Integrante - 2 Años</Text> 
-                                    </Flex>  
-                                </a>
-                            </Link>
-
-                        </Flex>  
-                         <Flex  direction="column" alignItems="center" my={["1em", "0.5em", "0em", "0em"]}>
-                             <Link href="/integrantes/renemoreno">
-                                <a>
-                                    <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
-                                        <Image src="/images/renemoreno.svg" alt="rene moreno" width={["15em", "15em", "18em", "18em"]} />            
-                                    </PseudoBox>
-                                    <Flex direction="column"  alignItems="center" mt={[-5]}>
-                                        <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>René Moreno</b></Text>    
-                                        <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Integrante - 3 Años</Text> 
-                                    </Flex>  
-                                </a>
-                            </Link>
-                        </Flex>    
-                    </Flex>
-
-                    <Flex mt={10} direction={["column", "column", "row", "row"]} color="cpc.black" alignItems="center" justify="center" width="100%" mt={["1em"]}>
-                        <Flex  direction="column" alignItems="center" mx={[10]} my={["1em", "0.5em", "0em", "0em"]}>
-                            <Link href="/integrantes/miguelgomez">
-                                <a>
-                                    <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
-                                        <Image src="/images/miguelgomez.svg" alt="miguel gomez" width={["15em", "15em", "18em", "18em"]} />            
-                                    </PseudoBox>
-                                    <Flex direction="column"  alignItems="center" mt={[-5]}>
-                                        <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>Miguel Gómez</b></Text>    
-                                        <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Integrante - 4 Años</Text> 
-                                    </Flex>  
-                                </a>
-                            </Link>
-                        </Flex>  
-                        <Flex  direction="column" alignItems="center" mx={[10]} my={["1em", "0.5em", "0em", "0em"]}>
-                            <Link href="/integrantes/carmenalvarez">
-                                <a>
-                                    <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
-                                        <Image src="/images/carmenalvarez.svg" alt="carmen alvarez" width={["15em", "15em", "18em", "18em"]} />            
-                                    </PseudoBox>
-                                    <Flex direction="column"  alignItems="center" mt={[-5]}>
-                                        <Text fontSize={["2em","3em", "3em", "3em"]} fontFamily="cpc.gothamCondensed"><b>Carmen Álvarez</b></Text>    
-                                        <Text fontFamily="cpc.gothamCondensedBook" mt={[-4]} fontSize={["2em"]}>Integrante - 5 Años</Text> 
-                                    </Flex>  
-                                </a>
-                            </Link>
-                        </Flex>    
+                   
                     </Flex>
                 </Section> 
 
