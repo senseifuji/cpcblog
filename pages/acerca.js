@@ -188,7 +188,7 @@ export default function AboutPage() {
                     </Text>
         {/* Inicia codigo nuevo*/}
                     <Box width={["300px", "600px", "850px", "850px"]} overflow="scroll" display="flex" pt="20px">
-    <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
+    <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" px="16px">
       <Box maxWidth="200px" maxHeight="200px"pb="16px" textAlign="center">
         <Image borderRadius="full" borderSize="200px" src="/images/anaterrazas.svg" alt="Ana Terrazas" />
       </Box>
