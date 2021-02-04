@@ -194,7 +194,7 @@ export default function AboutPage() {
                             <Link href="/integrantes/anaterrazas">
                             <a>
                             <Box maxWidth="200px" maxHeight="200px"pb="16px" textAlign="center">
-                                <Image width="200px" src="/images/anaterrazas.svg" alt="Ana Terrazas" />
+                                <Image width="200px" height="200px" src="/images/anaterrazas.svg" alt="Ana Terrazas" />
                             </Box>
                             <Box maxWidth="200px">
                                 <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" 
@@ -216,7 +216,7 @@ export default function AboutPage() {
                             <Link href="/integrantes/lilianaochoa">
                             <a>
                             <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
-                                <Image width="200px" src="/images/lilianaochoa.svg" />
+                                <Image width="200px" height="200px" src="/images/lilianaochoa.svg" />
                             </Box>
                             <Box maxWidth="200px">
                                 <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" 
@@ -238,7 +238,7 @@ export default function AboutPage() {
                             <Link href="/integrantes/renemoreno">
                             <a>
                             <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
-                                <Image width="200px" src="/images/renemoreno.svg" />
+                                <Image width="200px" height="200px" src="/images/renemoreno.svg" />
                             </Box>
                             <Box maxWidth="200px">
                                 <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" 
