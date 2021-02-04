@@ -105,7 +105,7 @@ export default function AboutPage() {
                 <Section bg="cpc.blueDark" color="cpc.white">
                    <Flex justify="space-evenly" direction={["column", 'column', 'row', 'row']}>
                         <Flex direction="column" alignItems="center" width={["100%", "100%", "70%", "60%" ]}>
-                            <Image src="/images/sistemaestatal.svg" alt="SEA" width={["15em", "15em", "20em", "20em"]} mb={["0", "0", "0em", "1.2em"]} />                            
+                            <Image src="/images/sistemaestatal.svg" alt="SEA" height={["5em", "5em", "7em", "7em"]} mb={["0", "0", "0em", "1.2em"]} />                            
                             <Text lineHeight="1.1em" fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1em", "1em", "1em"]} fontWeight="300" textAlign={["left", "center", "center", "left"]} my={["1rem", "1em", "0", "0"]} pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} width={["100%", "80%", "70%", "75%"]}>
                                 Ente creado para coordinar acciones
                                 interinstitucionales orientadas a:
@@ -125,7 +125,7 @@ export default function AboutPage() {
                            Los <b>67 municipios</b> del estado de Chihuahua
                         </Text>
                         <Text color="cpc.black" mt={["-.1em", "0", "0", "0"]} mb={["-.4em", "0", "0", "0"]} fontSize={["3em", "4em", "4em", "4em"]} > + </Text>
-                        <Image src="/images/comitecoordinador.svg" alt="Comité Coordinador" width={["15em", "18em", "20em", "20em"]} mt={["1em", "0", "0", "0"]} mb={[".6em", "0.6em", "0.6em", "0.6em"]} />            
+                        <Image src="/images/comitecoordinador.svg" alt="Comité Coordinador" height={["5em", "5em", "7em", "7em"]} mt={["1em", "0", "0", "0"]} mb={[".6em", "0.6em", "0.6em", "0.6em"]} />            
                         <Text width={["90%", "400px", "400px", "400px"]} border="2px" borderRadius="lg" px={["1.5em", "1em", "1.2em", "1.2em"]} py={["0.5em", "1em", ".5em", ".5em"]} fontFamily="cpc.spaceMonoRegular" borderColor="cpc.redCoor" fontSize={["1em", "1em", "1em", "1em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                             Integrado por:
                             <List styleType="disc">
@@ -315,7 +315,7 @@ export default function AboutPage() {
                     <Flex direction={["column", "row", "row", "row"]} border={["2px", "2px", "2px", "2px"]} borderRadius="lg" borderColor="cpc.black" p="2em" width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
                         <Image src="/images/4CPCs.svg" alt="4 integrantes del CPC" width={["7em", "7em", "8em", "8em"]} mx={2}   my={2}/>            
                         <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]}> + </Text>
-                        <Image src="/images/secretariaejecutiva.svg" alt="secretaria ejecutiva" width={["15em", "18em", "20em", "20em"]} my={5}/>
+                        <Image src="/images/secretariaejecutiva.svg" alt="secretaria ejecutiva" height={["5em", "5em", "7em", "7em"]} my={5}/>
                     </Flex>
                     <Flex direction="column" border="2px" borderRadius="lg" borderColor="cpc.black" p="2em"  width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
                         <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.15em", "1.15em", "1.5em", "2em"]}> Las 4 personas que no presiden el Comité de Participación Ciudadana (integrantes) junto con la persona titular de la Secretaría Ejecutiva proponen proyectos de política pública, metodologías e indicadores a ser implementados a nivel estatal. </Text>
@@ -324,7 +324,7 @@ export default function AboutPage() {
                     <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]}> = </Text>
                     <Flex direction="column" border="2px" borderRadius="lg" borderColor="cpc.black" p="2em"  width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
                         <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.15em", "1.15em", "1.5em", "2em"]}> Este espacio de trabajo se conoce como: </Text>
-                        <Image src="/images/comisionejecutiva.svg" alt="comision ejecutiva" width={["15em", "18em", "20em", "20em"]} my={5}/>            
+                        <Image src="/images/comisionejecutiva.svg" alt="comision ejecutiva" height={["5em", "5em", "7em", "7em"]} my={5}/>            
                     </Flex>
                     <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]}> ↓ </Text>
                     
