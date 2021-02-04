@@ -194,37 +194,37 @@ export default function AboutPage() {
       </Box>
       <Box maxWidth="200px">
         <Text fontWeight="bold" textAlign="left" isTruncated>
-          Aqui va un texto largo o algo asi
+        Ana Isabel Terrazas Cerros
         </Text>
       </Box>
       <Box maxWidth="200px">
-        <Text isTruncated>Aqui va otro texto largo kiiir</Text>
+        <Text isTruncated>Presidenta del CPC</Text>
       </Box>
     </Box>
-    <Box display="flex" flexDirection="column" backgroundColor="white" p="16px">
+    <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px">
         <Avatar size="2xl" />
       </Box>
       <Box maxWidth="200px">
         <Text fontWeight="bold" textAlign="left" isTruncated>
-          Aqui va un texto largo o algo asi
+          Liliana Ochoa Terrazas
         </Text>
       </Box>
       <Box maxWidth="200px">
-        <Text isTruncated>Aqui va otro texto largo kiiir</Text>
+        <Text isTruncated>Integrante del CPC</Text>
       </Box>
     </Box>
-    <Box display="flex" flexDirection="column" backgroundColor="white" p="16px">
+    <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px">
         <Avatar size="2xl" />
       </Box>
       <Box maxWidth="200px">
         <Text fontWeight="bold" textAlign="left" isTruncated>
-          Aqui va un texto largo o algo asi
+          René Moreno Medina
         </Text>
       </Box>
       <Box maxWidth="200px">
-        <Text isTruncated>Aqui va otro texto largo kiiir</Text>
+        <Text isTruncated>Integrante del CPC</Text>
       </Box>
     </Box>
   </Box>
