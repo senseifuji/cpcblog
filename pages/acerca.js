@@ -187,18 +187,18 @@ export default function AboutPage() {
                         ¿Quienes integran al Comité de Participación Ciudadana?
                     </Text>
         {/* Inicia codigo nuevo*/}
-                    <Box width="275px" overflow="scroll" display="flex" pt="20px">
+                    <Box desktopWidth="100%" overflow="scroll" display="flex" pt="20px">
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px"pb="16px" textAlign="center">
         <Avatar size="full" colorScheme="whiteAlpha" src="/images/AnaCPC.png" />
       </Box>
       <Box maxWidth="200px">
-        <Text fontWeight="bold" textAlign="left" isTruncated>
+        <Text fontFamily='cpc.gothamCondensed' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>
         Ana Isabel Terrazas Cerros
         </Text>
       </Box>
       <Box maxWidth="200px">
-        <Text isTruncated>Presidenta del CPC</Text>
+        <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>Presidenta del CPC</Text>
       </Box>
     </Box>
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
@@ -206,12 +206,12 @@ export default function AboutPage() {
         <Avatar size="full" colorScheme="whiteAlpha" src="/images/LiliCPC.png" />
       </Box>
       <Box maxWidth="200px">
-        <Text fontWeight="bold" textAlign="left" isTruncated>
+        <Text fontFamily='cpc.gothamCondensed' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>
           Liliana Ochoa Terrazas
         </Text>
       </Box>
       <Box maxWidth="200px">
-        <Text isTruncated>Integrante del CPC</Text>
+        <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>Integrante del CPC</Text>
       </Box>
     </Box>
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
@@ -219,12 +219,12 @@ export default function AboutPage() {
         <Avatar size="full" colorScheme="whiteAlpha" src="/images/ReneCPC.png" />
       </Box>
       <Box maxWidth="200px">
-        <Text fontWeight="bold" textAlign="left" isTruncated>
+        <Text fontFamily='cpc.gothamCondensed' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>
           René Moreno Medina
         </Text>
       </Box>
       <Box maxWidth="200px">
-        <Text isTruncated>Integrante del CPC</Text>
+        <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>Integrante del CPC</Text>
       </Box>
     </Box>
   </Box>
