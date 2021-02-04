@@ -305,8 +305,8 @@ export default function AboutPage() {
 
                 {/* COMO HACEMOS POLITICA PUBLICA */}
                 <Section bg="cpc.yellow" color="cpc.white">
-                    <Text fontSize={["1em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
-                       ¿Cómo hacemos política pública?
+                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "70%"]}>
+                       ¿Cómo hacemos política pública en el Comité de Participación Ciudadana?
                     </Text>
                 </Section> 
 
