@@ -312,14 +312,11 @@ export default function AboutPage() {
 
                 {/* //FACES SECTION TWO */}
                  <Section bg="cpc.white" color="cpc.black">
-                    <Flex direction={["column", "row", "row", "row"]} border={["0px", "2px", "2px", "2px"]} borderRadius="lg" borderColor="cpc.black" p="2em" width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
-                        <Image src="/images/liliana2.svg" alt="liliana" width={["7em", "7em", "8em", "8em"]} mx={2}   my={2}/>            
-                        <Image src="/images/rene2.svg" alt="rene" width={["7em", "7em", "8em", "8em"]}  mx={2} my={2}/>            
-                        <Image src="/images/miguel2.svg" alt="miguel" width={["7em", "7em", "8em", "8em"]}  mx={2} my={2}/>            
-                        <Image src="/images/carmen2.svg" alt="carmen" width={["7em", "7em", "8em", "8em"]}  mx={2} my={2}/>            
+                    <Flex direction={["column", "row", "row", "row"]} border={["2px", "2px", "2px", "2px"]} borderRadius="lg" borderColor="cpc.black" p="2em" width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
+                        <Image src="/images/4CPCs.svg" alt="4 integrantes del CPC" width={["7em", "7em", "8em", "8em"]} mx={2}   my={2}/>            
+                        <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]}> + </Text>
+                        <Image src="/images/secretariaejecutiva.svg" alt="secretaria ejecutiva" width={["15em", "18em", "20em", "20em"]} my={5}/>
                     </Flex>
-                    <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]}> + </Text>
-                    <Image src="/images/secretariaejecutiva.svg" alt="secretaria ejecutiva" width={["15em", "18em", "20em", "20em"]} my={5}/>            
                     <Flex direction="column" border="2px" borderRadius="lg" borderColor="cpc.black" p="2em"  width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
                         <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.15em", "1.15em", "1.5em", "2em"]}> Las 4 personas que no presiden el Comité de Participación Ciudadana (integrantes) junto con la persona titular de la Secretaría Ejecutiva proponen proyectos de política pública, metodologías e indicadores a ser implementados a nivel estatal. </Text>
                     </Flex>
