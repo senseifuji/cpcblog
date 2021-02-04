@@ -188,7 +188,7 @@ export default function AboutPage() {
                     </Text>
         {/* Inicia codigo nuevo*/}
                     <Box width={["300px", "600px", "850px", "850px"]} overflow="scroll" display="flex" pt="20px">
-    <Box href="/integrantes/anaterrazas" maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white">
+    <Box href="/integrantes/anaterrazas" maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px"pb="16px" textAlign="center">
         <Image borderRadius="full" borderSize="200px" src="/images/anaterrazas.svg" alt="Ana Terrazas" />
       </Box>
@@ -201,7 +201,7 @@ export default function AboutPage() {
         <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>Presidenta del CPC</Text>
       </Box>
     </Box>
-    <Box href="/integrantes/lilianaochoa" maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white">
+    <Box href="/integrantes/lilianaochoa" maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
         <Image borderRadius="full" borderSize="200px" src="/images/lilianaochoa.svg" />
       </Box>
@@ -214,7 +214,7 @@ export default function AboutPage() {
         <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>Integrante del CPC</Text>
       </Box>
     </Box>
-    <Box href="/integrantes/renemoreno" maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white">
+    <Box href="/integrantes/renemoreno" maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px" pb="16px" textAlign="center">
         <Image borderRadius="full" borderSize="200px" src="/images/renemoreno.svg" />
       </Box>
