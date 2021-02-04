@@ -301,7 +301,6 @@ export default function AboutPage() {
         
                 </Box>
                    
-                    </Flex>
                 </Section> 
 
                 {/* COMO HACEMOS POLITICA PUBLICA */}
