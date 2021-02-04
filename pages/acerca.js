@@ -190,15 +190,15 @@ export default function AboutPage() {
                     <Box width={["300px", "600px", "850px", "850px"]} overflow="scroll" display="flex" pt="20px">
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
       <Box maxWidth="200px" maxHeight="200px"pb="16px" textAlign="center">
-        <Avatar size="full" src="/images/AnaCPC.png" />
+        <Avatar size="full" src="/images/anaterrazas.svg" alt="Ana Terrazas" />
       </Box>
       <Box maxWidth="200px">
-        <Text fontFamily='cpc.gothamCondensed' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>
+        <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>
         Ana Isabel Terrazas Cerros
         </Text>
       </Box>
       <Box maxWidth="200px">
-        <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>Presidenta del CPC</Text>
+        <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>Presidenta del CPC</Text>
       </Box>
     </Box>
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
@@ -206,12 +206,12 @@ export default function AboutPage() {
         <Avatar size="full" src="/images/LiliCPC.png" />
       </Box>
       <Box maxWidth="200px">
-        <Text fontFamily='cpc.gothamCondensed' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>
+        <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>
           Liliana Ochoa Terrazas
         </Text>
       </Box>
       <Box maxWidth="200px">
-        <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>Integrante del CPC</Text>
+        <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>Integrante del CPC</Text>
       </Box>
     </Box>
     <Box maxWidth="200px" display="flex" flexDirection="column" backgroundColor="white" p="16px">
@@ -219,12 +219,12 @@ export default function AboutPage() {
         <Avatar size="full" src="/images/ReneCPC.png" />
       </Box>
       <Box maxWidth="200px">
-        <Text fontFamily='cpc.gothamCondensed' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>
+        <Text fontFamily='cpc.gothamCondensed' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>
           René Moreno Medina
         </Text>
       </Box>
       <Box maxWidth="200px">
-        <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} fontWeight="300" textAlign="left" isTruncated>Integrante del CPC</Text>
+        <Text fontFamily='cpc.gothamCondensedBook' color="black" fontSize="27px" fontWeight="300" textAlign="left" isTruncated>Integrante del CPC</Text>
       </Box>
     </Box>
   </Box>
