@@ -322,8 +322,8 @@ export default function AboutPage() {
                         fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
                         textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                             Empresas 🏢 profesionistas 👷 organizaciones de la sociedad
-                            civil 📢 y academia 👩‍🏫 tienen muy buenas ideas para combatir la
-                            corrupción. A estos esfuerzos los conjuntamos en un espacio de trabajo denominado  
+                            civil 📢 y academia 👩‍🏫 tienen <b>muy buenas ideas para combatir la
+                            corrupción</b>. A estos esfuerzos los conjuntamos en un espacio de trabajo denominado  
                         </Text>
                         <Image src="/images/redanticorrupcion.svg" alt="Red Anticorrupción" 
                         height={["6em", "6em", "7em", "7em"]} my={5}/>
