@@ -344,23 +344,6 @@ export default function AboutPage() {
                             ideas con potencial para ser trabajadas por el gobierno.  
                         </Text>
                     </Flex>
-        
-                    <Flex direction="column" border="2px" borderRadius="lg" borderColor="cpc.black" p="2em"  width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
-                        <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.15em", "1.15em", "1.5em", "2em"]}> Las 4 personas que no presiden el Comité de Participación Ciudadana (integrantes) junto con la persona titular de la Secretaría Ejecutiva proponen proyectos de política pública, metodologías e indicadores a ser implementados a nivel estatal. </Text>
-                    </Flex>
-
-                    <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]}> = </Text>
-                    <Flex direction="column" border="2px" borderRadius="lg" borderColor="cpc.black" p="2em"  width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
-                        <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.15em", "1.15em", "1.5em", "2em"]}> Este espacio de trabajo se conoce como: </Text>
-                        <Image src="/images/comisionejecutiva.svg" alt="comision ejecutiva" height={["6em", "6em", "7em", "7em"]} my={5}/>            
-                    </Flex>
-
-                    <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]}> ↓ </Text>
-                    
-                    <Flex direction="column" border="2px" borderRadius="lg" borderColor="cpc.black" p="2em"  width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
-                        <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.15em", "1.15em", "1.5em", "2em"]}> El trabajo que realiza la Comisión Ejecutiva Anticorrupción es enviado a la persona que preside el Comité de Participación Ciudadana para que cabildee y defienda esos proyectos de política pública, metodologías e indicadores en el Comité Coordinador del Sistema Estatal Anticorrupción. </Text>
-                        <Image src="/images/ana2.svg" alt="ana terrazas" width={["7em", "10em", "10em", "10em"]} my={5}/>            
-                    </Flex>
 
                 </Section>   
                 
