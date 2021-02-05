@@ -314,13 +314,19 @@ export default function AboutPage() {
                  <Section bg="cpc.white" color="cpc.black">
         
         
-                    <Flex direction={["column", "row", "row", "row"]} width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
-                        <Text color="cpc.black" width={["90%", "400px", "400px", "400px"]} mb="1.5em" 
-                        px={[".7em", "1em", "1em", "1em"]} py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
-                        fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
-                            + 
+                    <Flex direction={["column", "row", "row", "row"]} 
+                    width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
+                        <Text color="cpc.black" width={["90%", "400px", "400px", "400px"]} 
+                        mb="1.5em" px={[".7em", "1em", "1em", "1em"]} 
+                        py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
+                        fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
+                        textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                            Empresas 🏢 profesionistas 👷 organizaciones de la sociedad
+                            civil 📢 y academia 👩‍🏫 tienen muy buenas ideas para combatir la
+                            corrupción.  
                         </Text>
-                        <Image src="/images/redanticorrupcion.svg" alt="Red Anticorrupción" height={["6em", "6em", "7em", "7em"]} my={5}/>
+                        <Image src="/images/redanticorrupcion.svg" alt="Red Anticorrupción" 
+                        height={["6em", "6em", "7em", "7em"]} my={5}/>
                     </Flex>
 
                     <Flex direction="column" border="2px" borderRadius="lg" borderColor="cpc.black" p="2em"  width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
