@@ -81,7 +81,7 @@ export default function AboutPage() {
                                 <MonoCovid size="100px"/>
                             </Box>
                         </Flex>
-                        <Flex width={["100%", "100%", "100%", "420px" ]}>
+                        <Flex width={["100%", "100%", "600px", "420px" ]}>
                             <Text my={4} fontFamily="cpc.gothamCondensedBook" 
                             fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
                             textAlign={["left", "left", "left", "left"]} 
@@ -246,7 +246,7 @@ export default function AboutPage() {
                     fontFamily="cpc.gothamBold" fontWeight="300" 
                     textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} 
                     letterSpacing={["-.05em", "0", "0", "0"]} 
-                    width={["100%", "100%", "70%", "75%"]}>
+                    width={["100%", "100%", "80%", "75%"]}>
                         ¿Cuál es la función del Comité de Participación Ciudadana?
                     </Text>
                     <Image src="/images/cpc.svg" alt="CPC logo" 
@@ -301,7 +301,7 @@ export default function AboutPage() {
                     fontWeight="300" textAlign="center" 
                     lineHeight={["1em", "1em", "1.18em", "1.18em"]} 
                     letterSpacing={["-.05em", "0", "0", "0"]} 
-                    width={["100%", "100%", "70%", "70%"]}>
+                    width={["100%", "100%", "80%", "70%"]}>
                         ¿Quienes integran al Comité de Participación Ciudadana?
                     </Text>
                     
@@ -438,7 +438,7 @@ export default function AboutPage() {
                 <Section bg="cpc.yellow" color="cpc.white">
                     <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" 
                     fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} 
-                    letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "70%"]}>
+                    letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "80%", "70%"]}>
                        ¿Cómo hacemos política pública en el Comité de Participación Ciudadana?
                     </Text>
                 </Section> 
@@ -545,7 +545,7 @@ export default function AboutPage() {
                 <Section bg="cpc.blue" color="cpc.white">
                     <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" 
                     fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} 
-                    letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "70%"]}>
+                    letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "80%", "70%"]}>
                        ¿Cúal es el proyecto de política pública rector en el Comité de Participación Ciudadana?
                     </Text>
                 </Section>
