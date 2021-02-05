@@ -358,7 +358,7 @@ export default function AboutPage() {
                             la persona titular de la Secretaría Ejecutiva del Sistema Estatal 
                             Anticorrupción trabajan en un espacio denominado la <b>Comisión Ejecutiva</b>.
                             Aquí se convierten los anteproyectos de política pública en 
-                            <b>Proyectos de Política Pública</b> después de asegurar que tengan
+                            <b> Proyectos de Política Pública</b> después de asegurar que tengan
                             factibilidad técnica y jurídica, es decir, que sea posible en realidad
                             hacer ese proyecto por el gobierno.
                         </Text>
@@ -366,7 +366,7 @@ export default function AboutPage() {
 
                     <Flex direction={["column", "row", "row", "row"]} 
                     width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
-                        <Image src="/images/ana2.svg" alt="Presidenta del CPC" 
+                        <Image src="/images/anaterrazas.svg" alt="Presidenta del CPC" 
                         height={["6em", "6em", "7em", "7em"]} m={5}/>
                         <Text color="cpc.black" width={["100%", "400px", "400px", "400px"]} 
                         px={[".7em", "1em", "1em", "1em"]} 
@@ -376,6 +376,25 @@ export default function AboutPage() {
                             Los Proyectos de Políticas Públicas son enviados a la presidenta del 
                             Comité de Participación de Participación Ciudadana <b>para que 
                             defienda</b> el producto de buenas ideas de muchas personas 💪📝.
+                        </Text>
+                    </Flex>
+
+                    <Flex direction={["column", "column", "column", "column"]} 
+                    width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
+                        <Image src="/images/comitecoordinador.svg" alt="Comité Coordinador" 
+                        height={["6em", "6em", "7em", "7em"]} mt={5}/>
+                        <Text color="cpc.black" 
+                        px={[".7em", "1em", "1em", "1em"]} 
+                        py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
+                        fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
+                        textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                            Todo el trabajo que hemos platicado hasta ahora se aterriza en 
+                            el Comité Coordinador del Sistema Estatal Anticorrupción donde
+                            la presidenta del Comité de Participación Ciudadana tiene como
+                            principal función el defender las propuestas que le llegaron
+                            vía la Comisión Ejecutiva. <b>El objetivo es que se aprueben los
+                            Proyectos de Políticas Públicas</b> ya que eso obliga al gobierno
+                            a poner las buenas ideas en acción 💡📝. 
                         </Text>
                     </Flex>
 
