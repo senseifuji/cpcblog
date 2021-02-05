@@ -132,7 +132,7 @@ export default function AboutPage() {
                             *Basado en el trabajo de la 
                             <Link href="http://rendiciondecuentas.org.mx/wp-content/uploads/2018/06/PNA-AccountWordPressEduHdez.pdf">
                                 <a className="redlink"> 
-                                    Red por la Rendición de Cuentas.
+                                     Red por la Rendición de Cuentas.
                                 </a>
                             </Link>
                         </Text>
@@ -153,19 +153,19 @@ export default function AboutPage() {
                    <Flex justify="space-evenly" direction={["column", 'column', 'row', 'row']}>
                         <Flex direction="column" alignItems="center" width={["100%", "100%", "70%", "60%" ]}>
                             <Image src="/images/sistemaestatal.svg" alt="SEA" 
-                            height={["6em", "6em", "7em", "7em"]} mb={["0", "0", "0em", "1.2em"]} />                            
+                            height={["6em", "6em", "7em", "7em"]} mb={["0", "0", "1.2em", "1.2em"]} />                            
                             <Text lineHeight="1.1em" fontFamily="cpc.spaceMonoRegular" 
                             fontSize={["1em", "1em", "1em", "1em"]} fontWeight="300" 
-                            textAlign={["left", "center", "center", "left"]} my={["1rem", "1em", "0", "0"]} 
+                            textAlign={["left", "center", "left", "left"]} my={["1rem", "1em", "0", "0"]} 
                             pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} 
                             width={["100%", "80%", "70%", "75%"]}>
                                 Ente creado para coordinar acciones
                                 interinstitucionales orientadas a:
                                 combatir, prevenir, disuadir, sancionar
                                 y reducir 
-                                <Text fontFamily="cpc.spaceMonoRegular" d="inline" 
+                                <Text fontFamily="cpc.spaceMonoBold" d="inline" 
                                 color="cpc.redAnti">
-                                    los niveles de corrupción 
+                                     los niveles de corrupción  
                                 </Text>
                                 en el Estado.
                             </Text>
@@ -176,7 +176,7 @@ export default function AboutPage() {
                 {/* Partes del SEA section*/}
                 <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
                     <Flex direction="column" alignItems="center" textAlign="center">
-                        <Text color="cpc.black" pb={[".4em", "1em", "0", "1em"]} 
+                        <Text color="cpc.black" pb={[".4em", "1em", "1em", "1em"]} 
                         fontFamily="cpc.gothamCondensedBook" textWeight="300" 
                         fontSize={["1.5em", "2em", "1.7em", "1.7em"]}>
                             Está formado por
