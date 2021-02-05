@@ -356,9 +356,9 @@ export default function AboutPage() {
                         textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                             El equipo de 4 personas del Comité de Participación Ciudadana junto a 
                             la persona titular de la Secretaría Ejecutiva del Sistema Estatal 
-                            Anticorrupción trabajan en un espacio denominado la Comisión Ejecutiva.
+                            Anticorrupción trabajan en un espacio denominado la <b>Comisión Ejecutiva</b>.
                             Aquí se convierten los anteproyectos de política pública en 
-                            <b>Proyectos de Política Pública</b> después de asegurar que tengan
+                            <b> Proyectos de Política Pública</b> después de asegurar que tengan
                             factibilidad técnica y jurídica, es decir, que sea posible en realidad
                             hacer ese proyecto por el gobierno.
                         </Text>
