@@ -39,7 +39,7 @@ export default function AboutPage() {
                 <Section bg="cpc.red" color="cpc.white">
                     <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" 
                     fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} 
-                    letterSpacing={["-.05em", "-.05em", "0", "0"]} width={["100%", "90%", "70%", "60%"]}>
+                    letterSpacing={["-.05em", "-.05em", "0", "0"]} width={["100%", "90%", "80%", "60%"]}>
                         ¿Has buscado en Google imágenes de la palabra corrupción?
                     </Text>
                     <Text fontFamily='cpc.gothamCondensedBook' fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} 
@@ -60,7 +60,7 @@ export default function AboutPage() {
                     fontSize={["1.75em", "1.75em", "2em", "2em"]} 
                     fontWeight="300" lineHeight={["1em", "1em", "1.18em", "1.18em"]} 
                     textAlign="center" letterSpacing={["-.05em", "0", "0", "0"]} 
-                    width={["100%", "90%", "70%", "60%"]}>
+                    width={["100%", "90%", "80%", "60%"]}>
                         Nos urge una mejor definición de corrupción
                     </Text>
                 </Section> 
