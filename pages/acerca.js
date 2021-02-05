@@ -117,7 +117,7 @@ export default function AboutPage() {
                         fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} textAlign={["left", "left", "left", "left"]} 
                         mt={["1em", "1em", "1em", "1em"]} pl={["1em", "1em", "0", "0"]} 
                         pr={[".5em", "0.5em", "0", "0"]} lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]} 
-                        width={["100%", "100%", "80%", "80%"]}>
+                        width={["100%", "100%", "600px", "600px"]}>
                             Es un problema de <b>captura</b> que se traduce en la incapacidad del Estado para 
                             controlar el <b>particularismo</b>. Se trata de una <b>forma de organización 
                             social</b> que se caracteriza por la distribución de bienes sobre 
@@ -128,7 +128,7 @@ export default function AboutPage() {
                         pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} textAlign="left"
                         pl={["1em", "1em", "0", "0"]} 
                         pr={[".5em", "0.5em", "0", "0"]}
-                        width={["100%", "100%", "80%", "80%"]}>
+                        width={["100%", "100%", "600px", "600px"]}>
                             *Basado en el trabajo de la
                             <Link href="http://rendiciondecuentas.org.mx/wp-content/uploads/2018/06/PNA-AccountWordPressEduHdez.pdf">
                                 <a className="redlink"> 
