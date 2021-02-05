@@ -339,9 +339,28 @@ export default function AboutPage() {
                         fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
                         textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                             Estas buenas ideas son retomadas por las 4 personas del Comité de
-                            Participación Ciudadana que no estan en la presidencia para analizarlas
-                            y convertirlas en <b>anteproyectos de política pública</b>, es decir buenas
+                            Participación Ciudadana que no están en la presidencia para analizarlas
+                            y convertirlas en <b>anteproyectos de política pública</b>, es decir, buenas
                             ideas con potencial para ser trabajadas por el gobierno.  
+                        </Text>
+                    </Flex>
+
+                    <Flex direction={["column", "column", "column", "column"]} 
+                    width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
+                        <Image src="/images/comisionejecutiva.svg" alt="Comisión Ejecutiva" 
+                        height={["6em", "6em", "7em", "7em"]} my={5}/>
+                        <Text color="cpc.black" 
+                        px={[".7em", "1em", "1em", "1em"]} 
+                        py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
+                        fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
+                        textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                            El equipo de 4 personas del Comité de Participación Ciudadana junto a 
+                            la persona titular de la Secretaría Ejecutiva del Sistema Estatal 
+                            Anticorrupción trabajan en un espacio denominado la Comisión Ejecutiva.
+                            Aquí se convierten los anteproyectos de política pública en 
+                            <b>Proyectos de Política Pública</b> después de asegurar que tengan
+                            factibilidad técnica y jurídica, es decir, que sea posible en realidad
+                            hacer ese proyecto por el gobierno.
                         </Text>
                     </Flex>
 
