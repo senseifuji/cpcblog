@@ -374,7 +374,7 @@ export default function AboutPage() {
                     width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
                         <Image src="/images/ana2.svg" alt="Presidenta del CPC" 
                         height={["6em", "6em", "7em", "7em"]} 
-                        mt={["0", 5, 5, 5]}
+                        mt={5}
                         mb={["0", 5, 5, 5]}
                         mx={5}/>
                         <Text color="cpc.black" width={["100%", "400px", "400px", "400px"]} 
