@@ -175,7 +175,7 @@ export default function AboutPage() {
                         <List styleType="square">
                             <ListItem>Proponemos políticas públicas que permitan prevenir, detectar y sancionar actos de corrupción</ListItem>
                             <ListItem>Vigilamos el funcionamiento del Sistema Estatal Anticorrupción</ListItem>
-                            <ListItem>Vinculamos a sociedad civil, academia, profesionistas y empresas a través de la Red Ciudadana Anticorrupción</ListItem>
+                            <ListItem>Vinculamos a sociedad civil, academia, profesionistas y empresas a través de la Red Anticorrupción</ListItem>
                             <ListItem>Acompañamos a denunciantes de actos de corrupción</ListItem>
                         </List>
                     </Text>   
@@ -312,11 +312,17 @@ export default function AboutPage() {
 
                 {/* //FACES SECTION TWO */}
                  <Section bg="cpc.white" color="cpc.black">
-                    <Flex direction={["column", "row", "row", "row"]} border={["2px", "2px", "2px", "2px"]} borderRadius="lg" borderColor="cpc.black" p="2em" width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
-                        <Image src="/images/4CPCs.svg" alt="4 integrantes del CPC" width={["7em", "7em", "8em", "8em"]} mx={2}   my={2}/>            
-                        <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]}> + </Text>
-                        <Image src="/images/secretariaejecutiva.svg" alt="secretaria ejecutiva" height={["6em", "6em", "7em", "7em"]} my={5}/>
+        
+        
+                    <Flex direction={["column", "row", "row", "row"]} width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
+                        <Text color="cpc.black" width={["90%", "400px", "400px", "400px"]} mb="1.5em" 
+                        px={[".7em", "1em", "1em", "1em"]} py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
+                        fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                            + 
+                        </Text>
+                        <Image src="/images/redanticorrupcion.svg" alt="Red Anticorrupción" height={["6em", "6em", "7em", "7em"]} my={5}/>
                     </Flex>
+
                     <Flex direction="column" border="2px" borderRadius="lg" borderColor="cpc.black" p="2em"  width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
                         <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.15em", "1.15em", "1.5em", "2em"]}> Las 4 personas que no presiden el Comité de Participación Ciudadana (integrantes) junto con la persona titular de la Secretaría Ejecutiva proponen proyectos de política pública, metodologías e indicadores a ser implementados a nivel estatal. </Text>
                     </Flex>
@@ -326,12 +332,14 @@ export default function AboutPage() {
                         <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.15em", "1.15em", "1.5em", "2em"]}> Este espacio de trabajo se conoce como: </Text>
                         <Image src="/images/comisionejecutiva.svg" alt="comision ejecutiva" height={["6em", "6em", "7em", "7em"]} my={5}/>            
                     </Flex>
+
                     <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]}> ↓ </Text>
                     
                     <Flex direction="column" border="2px" borderRadius="lg" borderColor="cpc.black" p="2em"  width={["95%","90%", "600px", "800px"]} justify="center" alignItems="center">
                         <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.15em", "1.15em", "1.5em", "2em"]}> El trabajo que realiza la Comisión Ejecutiva Anticorrupción es enviado a la persona que preside el Comité de Participación Ciudadana para que cabildee y defienda esos proyectos de política pública, metodologías e indicadores en el Comité Coordinador del Sistema Estatal Anticorrupción. </Text>
                         <Image src="/images/ana2.svg" alt="ana terrazas" width={["7em", "10em", "10em", "10em"]} my={5}/>            
                     </Flex>
+
                 </Section>   
                 
             </Content>
