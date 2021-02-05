@@ -414,7 +414,7 @@ export default function AboutPage() {
                     <Flex direction={["column", "column", "column", "column"]} 
                     width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
                         <Image src="/images/politicaanticorrupcion.svg" alt="Política Estatal Anticorrupción" 
-                        height={["6em", "6em", "7em", "7em"]} mt={5}/>
+                        height={["6em", "6em", "6em", "6em"]} mt={5}/>
                         <Text color="cpc.black" 
                         px={[".7em", "1em", "1em", "1em"]} 
                         py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
