@@ -316,7 +316,7 @@ export default function AboutPage() {
         
                     <Flex direction={["column", "row", "row", "row"]} 
                     width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
-                        <Text color="cpc.black" width={["90%", "400px", "400px", "400px"]} 
+                        <Text color="cpc.black" width={["100%", "400px", "400px", "400px"]} 
                         px={[".7em", "1em", "1em", "1em"]} 
                         py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
                         fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
@@ -328,12 +328,12 @@ export default function AboutPage() {
                         <Image src="/images/redanticorrupcion.svg" alt="Red Anticorrupción" 
                         height={["6em", "6em", "7em", "7em"]} my={5}/>
                     </Flex>
-        
+
                     <Flex direction={["column", "row", "row", "row"]} 
                     width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
                         <Image src="/images/4CPCs.svg" alt="4 integrantes del CPC" 
                         height={["6em", "6em", "7em", "7em"]} my={5}/>
-                        <Text color="cpc.black" width={["90%", "400px", "400px", "400px"]} 
+                        <Text color="cpc.black" width={["100%", "400px", "400px", "400px"]} 
                         px={[".7em", "1em", "1em", "1em"]} 
                         py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
                         fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
