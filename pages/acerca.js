@@ -317,7 +317,8 @@ export default function AboutPage() {
                     <Flex direction={["column", "row", "row", "row"]} 
                     width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
                         <Text color="cpc.black" width={["100%", "400px", "400px", "400px"]} 
-                        px={[".7em", "1em", "1em", "1em"]} 
+                        pl={[".7em", "0", "0", "0"]} 
+                        pr={[".7em", "1em", "1em", "1em"]} 
                         py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
                         fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
                         textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
