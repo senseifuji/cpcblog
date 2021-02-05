@@ -400,6 +400,34 @@ export default function AboutPage() {
                     </Flex>
 
                 </Section>   
+
+                {/*CUAL ES NUESTRO PRINCIPAL PROYECTO DE POLITICA PUBLICA*/}
+                <Section bg="cpc.blue" color="cpc.white">
+                    <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" 
+                    fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} 
+                    letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "100%", "70%", "70%"]}>
+                       ¿Cúal es el proyecto de política pública rector en el Comité de Participación Ciudadana?
+                    </Text>
+                </Section>
+
+                <Section bg="cpc.white" color="cpc.black">
+                    <Flex direction={["column", "column", "column", "column"]} 
+                    width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
+                        <Image src="/images/politicaanticorrupcion.svg" alt="Política Estatal Anticorrupción" 
+                        height={["6em", "6em", "7em", "7em"]} mt={5}/>
+                        <Text color="cpc.black" 
+                        px={[".7em", "1em", "1em", "1em"]} 
+                        py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
+                        fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
+                        textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                            Basado en una metodología que pone en primer lugar la participación de las 
+                            personas comunes se realizó en el año 2020 un proceso único en México de 
+                            <b> democracia deliberativa</b> observado por organismos internacionales
+                            para discutir a profundidad que camino debería de seguir el estado de
+                            Chihuahua para combatir la corrupción. 
+                        </Text>
+                    </Flex>
+                </Section>        
                 
             </Content>
             <style jsx>{`
