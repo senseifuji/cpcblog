@@ -129,7 +129,7 @@ export default function AboutPage() {
                         pl={["1em", "1em", "0", "0"]} 
                         pr={[".5em", "0.5em", "0", "0"]}
                         width={["100%", "100%", "80%", "80%"]}>
-                            *Basado en el trabajo de la 
+                            *Basado en el trabajo de la  
                             <Link href="http://rendiciondecuentas.org.mx/wp-content/uploads/2018/06/PNA-AccountWordPressEduHdez.pdf">
                                 <a className="redlink"> 
                                      Red por la Rendición de Cuentas.
@@ -167,7 +167,7 @@ export default function AboutPage() {
                                 color="cpc.redAnti">
                                      los niveles de corrupción  
                                 </Text>
-                                en el Estado.
+                                 en el Estado.
                             </Text>
                         </Flex>
                    </Flex>
