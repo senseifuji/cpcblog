@@ -56,7 +56,7 @@ export default function FaqPage({faqs}) {
 
 //this functions run on build time on server.
 //provides props to your page, and makes it static 
-export async function getStaticProps(){
+{/export async function getStaticProps(){
 	let faqs;
 	try {
 		const response = await getAllFaqs();
@@ -71,3 +71,4 @@ export async function getStaticProps(){
 		},
 		revalidate: 10
 	}
+}	
