@@ -17,10 +17,10 @@ export default function FaqPage({faqs}) {
 	return (
 		<>
 		<CpcSeo
-			title="Preguntas frecuentes CPC - 
+			title="Preguntas frecuentes al CPC - 
 			Comité Participativo Ciudadano de Chihuahua"
-			description="Preguntas más frecuentes acerca del Comité 
-			Participativo Ciudadano de Chihuahua (CPC)."
+			description="Preguntas más frecuentes hechas al Comité 
+			de Participación Ciudadana de Chihuahua (CPC)."
 			url={path}
 			imageUrl={process.env.NEXT_PUBLIC_OPENGRAPH_IMAGE_URL}
 		/>
@@ -57,18 +57,11 @@ export default function FaqPage({faqs}) {
 //this functions run on build time on server.
 //provides props to your page, and makes it static 
 export async function getStaticProps(){
-	let faqs;
-	try {
-		const response = await getAllFaqs();
-		faqs = response
-	}
-	catch(e){
-		faqs = []
-	}
+		const response = await getAllFaqs()
+		const faqs = await response.json()
 	return {
 		props: {
 			faqs
 		},
 		revalidate: 10
 	}
-
