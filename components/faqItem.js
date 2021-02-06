@@ -32,11 +32,15 @@ const FaqItem = ({question, answer}) => {
             alignItems="center">
                 <Collapse  
                 px={10} 
-                isOpen={show} 
-                fontSize={["1.3em", "1.25em", "1.25em","1.5em"]} 
-                color="cpc.black"
-                fontFamily="cpc.gothamCondensed" 
-                my={[5, 3, 3, 3]}>
+                isOpen={show}
+                fontSize={["1.75em", "1.75em", "2em", "2em"]} 
+                fontFamily="cpc.gothamBold" 
+                fontWeight="300" 
+                textAlign="left" 
+                lineHeight={["1em", "1em", "1.18em", "1.18em"]} 
+                letterSpacing={["-.05em", "0", "0", "0"]} 
+                width={["100%", "80%", "80%", "75%"]} 
+                color="cpc.black">
                     <BlockContent 
                         blocks={answer}
                     />
