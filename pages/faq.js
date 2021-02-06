@@ -27,10 +27,26 @@ export default function FaqPage({faqs}) {
                 <Content>
                     {/* Top SECTION */}
                     <Section bg="cpc.red" color="cpc.white">
-                        <Text fontSize={["2em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
-                            Preguntas frecuentes al CPC
+                        <Text fontSize={["1.75em", "1.75em", "2em", "2em"]} fontFamily="cpc.gothamBold" 
+                        fontWeight="300" textAlign="center" lineHeight={["1em", "1em", "1.18em", "1.18em"]} 
+                        letterSpacing={["-.05em", "0", "0", "0"]} width={["100%", "80%", "80%", "75%"]}>
+                            Preguntas frecuentes hechas al CPC
                         </Text>
-                    </Section>  
+                    </Section> 
+                    <Section bg="cpc.white" color="cpc.black">
+                        <Flex direction={["column", "column", "column", "column"]} 
+                        width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
+                            <Text color="cpc.black" 
+                            px={[".7em", "1em", "1em", "1em"]} 
+                            py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
+                            fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
+                            textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                                Aquí vamos a estar resolviendo las preguntas más frecuentes que
+                                nos hagan llegar al CPC tanto por Solicitudes de Transparencia como 
+                                por la sección de Contacto.
+                        </Text>
+                    </Flex>
+                    </Section> 
                     <Section bg="cpc.white" color="cpc.red">
                         <Flex direction="column" height="auto">
                             {faqs.map(faq => <FaqItem key={faq._id} question={faq.question} answer={faq.answer}/>)}
