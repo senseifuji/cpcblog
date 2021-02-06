@@ -44,15 +44,15 @@ export default function FaqPage({faqs}) {
                             textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                                 Aquí vamos a estar resolviendo las preguntas más frecuentes que
                                 nos hagan llegar al Comité de Participación Ciudadana de Chihuahua 
-                                (CPC) tanto por 
+                                (CPC) tanto por {" "}
                                 <Link href="https://buscador.plataformadetransparencia.org.mx/web/guest/buscadornacional?buscador=%22comit%C3%A9%20de%20participaci%C3%B3n%20ciudadana%22&coleccion=5">
                                 <a className="redlink"> 
-                                    {" "}Solicitudes de Transparencia 
+                                    Solicitudes de Transparencia 
                                 </a>
-                            </Link> como por la sección de 
+                            </Link> como por la sección de {" "}
                             <Link href="/contacto">
                                 <a className="redlink">
-                                {" "}Contacto.
+                                Contacto.
                                 </a>
                             </Link>
                         </Text>
