@@ -17,8 +17,8 @@ export default function FaqPage({faqs}) {
     return (
         <>
             <CpcSeo 
-                title="Preguntas frecuentes CPC - Comité Participativo Ciudadano de Chihuahua"
-                description="Preguntas más frecuentes acerca del Comité Participativo Ciudadano de Chihuahua (CPC)."
+                title="Preguntas frecuentes al CPC - Comité de Participación Ciudadana de Chihuahua"
+                description="Preguntas más frecuentes hechas al Comité de Participación Ciudadana de Chihuahua (CPC)."
                 url={path}
                 imageUrl={process.env.NEXT_PUBLIC_OPENGRAPH_IMAGE_URL}
             />
@@ -28,7 +28,7 @@ export default function FaqPage({faqs}) {
                     {/* Top SECTION */}
                     <Section bg="cpc.red" color="cpc.white">
                         <Text fontSize={["2em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
-                            <b>Preguntas <br/> frecuentes al CPC</b>
+                            Preguntas frecuentes al CPC
                         </Text>
                     </Section>  
                     <Section bg="cpc.white" color="cpc.red">
