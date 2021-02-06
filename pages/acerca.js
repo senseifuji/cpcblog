@@ -105,7 +105,7 @@ export default function AboutPage() {
 
                  {/* Definicion de Corrupcion section*/}
                 <Section bg="cpc.white" color="cpc.black">
-                    <Flex direction="column" alignItems="center" textAlign="center" py="1.5em">
+                    <Flex direction="column" alignItems="center" textAlign="center" py="1em">
                         <Text color="cpc.red" fontSize={["1.75em", "1.75em", "2em", "2em"]} 
                         fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" 
                         lineHeight={["1em", "1em", "1.18em", "1.18em"]} 
