@@ -16,7 +16,7 @@ const FaqItem = ({question, answer}) => {
             direction="column" 
             alignItems="center" 
             justify="center">
-                <Text fontFamily='cpc.gothamCondensedBook' 
+                <Text fontFamily='cpc.gothamCondensed' 
                 fontSize={["1.5em", "1.5em", "1.7em", "1.7em"]} 
                 fontWeight="300" 
                 color="cpc.black"
