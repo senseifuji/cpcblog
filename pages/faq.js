@@ -36,11 +36,12 @@ export default function FaqPage({faqs}) {
                     </Section> 
                     <Flex bg="cpc.white" color="cpc.black">
                         <Flex direction={["column", "column", "column", "column"]} 
-                        width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center"
+                        width={["100%","500px", "600px", "600px"]} justify="center" alignItems="center"
                         p="0px">
                             <Text color="cpc.black" 
-                            px={[".7em", "1em", "1em", "1em"]} 
-                            py={["0.5em", "1em", "1em", "1em"]} 
+                            pl={["1.5em", "1em", "1em", "1em"]} 
+                            pt={["1.5em", "1em", "1em", "1em"]} 
+                            pb={["0.5em", "1em", "1em", "1em"]} 
                             fontFamily="cpc.gothamCondensedBook" 
                             fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
                             textAlign="left" 
