@@ -39,7 +39,8 @@ export default function FaqPage({faqs}) {
                         width={["100%","500px", "600px", "600px"]} justify="center" alignItems="center"
                         p="0px">
                             <Text color="cpc.black" 
-                            pl={["1.5em", "1em", "1em", "1em"]} 
+                            pl={["1.5em", "1em", "1em", "1em"]}
+                            pr={[".7em", "1em", "1em", "1em"]} 
                             pt={["1.5em", "1em", "1em", "1em"]} 
                             pb={["0.5em", "1em", "1em", "1em"]} 
                             fontFamily="cpc.gothamCondensedBook" 
