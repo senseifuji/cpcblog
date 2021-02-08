@@ -20,9 +20,11 @@ const FaqItem = ({question, answer}) => {
                 textAlign="center" 
                 d="inline-flex" 
                 alignItems="center" 
-                mt={["1em", "0.75em", "0em", "0em"]}
+                mt={["1em", "0.75em", "1em", "1em"]}
+                mb={[".7em", "0.7em", "1em", "1em"]}
                 pl={["1em", "1em", "1em", "1em"]}
-                pr={[".7em", ".7em", ".7em", ".7em"]}>
+                pr={[".7em", ".7em", ".7em", ".7em"]}
+                lineHeight={["1.2em","1em","1em","1em"]}>
                     {question}
                 </Text>
             </Flex>
