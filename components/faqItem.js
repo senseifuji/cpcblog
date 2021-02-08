@@ -49,7 +49,7 @@ const FaqItem = ({question, answer}) => {
                 size="sm" 
                 onClick={handleToggle} 
                 mt={["0rem", "1rem", "1rem", "1rem"]} 
-                width={["100%", "50%", "200px", "150px"]}>
+                width="140px">
                     {show ? "Cerrar" : "Ver Respuesta"}
                 </Button>
             </Flex>
