@@ -33,7 +33,7 @@ const FaqItem = ({question, answer}) => {
                 <Collapse  
                 isOpen={show}
                 color="cpc.black" 
-                px={[".7em", "1em", "1em", "1em"]} 
+                px={["1.5em", "1em", "1em", "1em"]} 
                 py={["0.5em", "1em", "1em", "1em"]} 
                 fontFamily="cpc.gothamCondensedBook" 
                 fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
