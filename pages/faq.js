@@ -34,14 +34,17 @@ export default function FaqPage({faqs}) {
                             Preguntas frecuentes hechas al Comité de Participación Ciudadana
                         </Text>
                     </Section> 
-                    <Section bg="cpc.white" color="cpc.black">
+                    <Flex bg="cpc.white" color="cpc.black">
                         <Flex direction={["column", "column", "column", "column"]} 
-                        width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
+                        width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center"
+                        p="0px">
                             <Text color="cpc.black" 
                             px={[".7em", "1em", "1em", "1em"]} 
-                            py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
+                            py={["0.5em", "1em", "1em", "1em"]} 
+                            fontFamily="cpc.gothamCondensedBook" 
                             fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
-                            textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+                            textAlign="left" 
+                            lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                                 Aquí vamos a estar resolviendo las preguntas más frecuentes que
                                 nos hagan llegar al Comité de Participación Ciudadana de Chihuahua 
                                 (CPC) tanto por {" "}
@@ -57,12 +60,16 @@ export default function FaqPage({faqs}) {
                             </Link>
                         </Text>
                     </Flex>
-                    </Section> 
-                    <Section bg="cpc.white" color="cpc.red">
-                        <Flex direction="column" height="auto">
-                            {faqs.map(faq => <FaqItem key={faq._id} question={faq.question} answer={faq.answer}/>)}
+                    </Flex> 
+                    <Flex bg="cpc.white" color="cpc.red">
+                        <Flex direction="column" 
+                        height="auto">
+                            {faqs.map(faq => <FaqItem 
+                                key={faq._id} 
+                                question={faq.question} 
+                                answer={faq.answer}/>)}
                         </Flex>
-                    </Section>
+                    </Flex>
                 </Content>
                 <style jsx>{`
                     .redlink {
