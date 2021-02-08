@@ -9,7 +9,7 @@ const FaqItem = ({question, answer}) => {
     return (
         <Flex 
         direction="column" 
-        width="100%">
+        width="90%">
             <Flex  
             direction="column" 
             alignItems="center" 
@@ -21,7 +21,9 @@ const FaqItem = ({question, answer}) => {
                 textAlign="center" 
                 d="inline-flex" 
                 alignItems="center" 
-                mt={["1em", "0.75em", "0em", "0em"]}>
+                mt={["1em", "0.75em", "0em", "0em"]}
+                pl={["1em", "1em", "1em", "1em"]}
+                pr={[".7em", ".7em", ".7em", ".7em"]}>
                     {question}
                 </Text>
             </Flex>
@@ -31,7 +33,8 @@ const FaqItem = ({question, answer}) => {
                 <Collapse  
                 isOpen={show}
                 color="cpc.black" 
-                px={["1.5em", "1em", "1em", "1em"]} 
+                pl={["1.5em", "1em", "1em", "1em"]}
+                pr={[".7em","1em","1em","1em"]} 
                 py={["0.5em", "1em", "1em", "1em"]} 
                 fontFamily="cpc.gothamCondensedBook" 
                 fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
