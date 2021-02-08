@@ -9,10 +9,8 @@ const FaqItem = ({question, answer}) => {
     return (
         <Flex 
         direction="column" 
-        width="100%" 
-        my={[2, 5, 5, 5]}>
-            <Flex my={5} 
-            px={5} 
+        width="100%">
+            <Flex  
             direction="column" 
             alignItems="center" 
             justify="center">
