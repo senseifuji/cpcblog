@@ -8,7 +8,8 @@ const FaqItem = ({question, answer}) => {
 
     return (
         <Flex 
-        direction="column">
+        direction="column"
+        justify="center">
             <Flex  
             direction="column" 
             alignItems="center" 
