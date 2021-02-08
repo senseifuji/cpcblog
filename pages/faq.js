@@ -47,7 +47,7 @@ export default function FaqPage({faqs}) {
                             fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
                             textAlign="left" 
                             lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
-                                Aquí vamos a estar resolviendo las preguntas más frecuentes que
+                                En esta sección vamos a estar resolviendo las preguntas más frecuentes que
                                 nos hagan llegar al Comité de Participación Ciudadana de Chihuahua 
                                 (CPC) tanto por {" "}
                                 <Link href="https://buscador.plataformadetransparencia.org.mx/web/guest/buscadornacional?buscador=%22comit%C3%A9%20de%20participaci%C3%B3n%20ciudadana%22&coleccion=2">
