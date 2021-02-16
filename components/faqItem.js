@@ -40,7 +40,7 @@ const FaqItem = ({question, answer}) => {
                 color="cpc.black" 
                 pl={["1.5em", "1em", "1em", "1em"]}
                 pr={[".7em", "1em", "1em", "1em"]} 
-                pt={["1.5em", "1em", "1em", "1em"]} 
+                pt={["1.5em", "0", "0", "0"]} 
                 pb={["0.5em", "1em", "1em", "1em"]} 
                 fontFamily="cpc.gothamCondensedBook" 
                 fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
