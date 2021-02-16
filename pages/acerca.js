@@ -26,8 +26,8 @@ export default function AboutPage() {
         <>
             {/* SEO OF ABOUT PAGE */}        
          <CpcSeo 
-             title="Acerca del CPC - Comité Participativo Ciudadano de Chihuahua"
-            description="Conoce lo que hacemos en el Comité de Participación Ciudadana de Chihuahua (CPC)."
+             title="Acerca del CPC - Comité de Participación Ciudadana de Chihuahua"
+            description="Conoce lo que hacemos para combatir la corrupción en el Comité de Participación Ciudadana de Chihuahua (CPC)."
             url={path}
             imageUrl={process.env.NEXT_PUBLIC_OPENGRAPH_IMAGE_URL}
          /> 
