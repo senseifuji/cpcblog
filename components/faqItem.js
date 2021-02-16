@@ -31,7 +31,10 @@ const FaqItem = ({question, answer}) => {
             </Flex>
             <Flex 
             direction="column" 
-            alignItems="center">
+            alignItems="center"
+            justify="center"
+            width={["100%","500px", "600px", "600px"]}
+            p="0px">
                 <Collapse  
                 isOpen={show}
                 color="cpc.black" 
