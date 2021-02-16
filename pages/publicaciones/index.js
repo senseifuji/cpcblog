@@ -42,8 +42,8 @@ export default function PublicacionesPage({posts}) {
     return (
        <>
         <CpcSeo 
-            title="Publicaciones CPC - Comité Participativo Ciudadano de Chihuahua"
-            description="Listado de publicaciones del Comité Participativo Ciudadano de Chihuahua (CPC)."
+            title="Publicaciones CPC - Comité de Participación Ciudadana de Chihuahua"
+            description="Listado de publicaciones del Comité de Participación Ciudadana de Chihuahua (CPC) del Sistema Estatal Anticorrupción."
             url={path}
             imageUrl={process.env.NEXT_PUBLIC_OPENGRAPH_IMAGE_URL}
         /> 
