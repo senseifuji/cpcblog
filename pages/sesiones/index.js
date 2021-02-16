@@ -44,8 +44,8 @@ export default function SesionesPage({sessions}) {
     return (
         <>
             <CpcSeo 
-                title="Sesiones CPC - Comité Participativo Ciudadano de Chihuahua"
-                description="Listado de sesiones del Comité Participativo Ciudadano de Chihuahua (CPC)."
+                title="Sesiones del CPC - Comité de Participación Ciudadana de Chihuahua"
+                description="Listado de sesiones del Comité de Participación Ciudadana de Chihuahua (CPC) del Sistema Estatal Anticorrupción."
                 url={path}
                 imageUrl={process.env.NEXT_PUBLIC_OPENGRAPH_IMAGE_URL}
             />
