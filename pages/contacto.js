@@ -35,8 +35,8 @@ export default function Contact() {
     return (
         <>
             <CpcSeo 
-                title="Contacto CPC - Comité Participativo Ciudadano de Chihuahua"
-                description="Contacta a los integrantes del Comité Participativo Ciudadano de Chihuahua"
+                title="Contacto CPC - Comité de Participación Ciudadana de Chihuahua"
+                description="Contacta a las personas que integran el Comité de Participación Ciudadana del Sistema Estatal Anticorrupción de Chihuahua"
                 url={path}
                 imageUrl={process.env.NEXT_PUBLIC_OPENGRAPH_IMAGE_URL}
             /> 
