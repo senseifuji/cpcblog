@@ -63,7 +63,7 @@ export default function FaqPage({faqs}) {
                         </Text>
                     </Flex>
                     </Flex> 
-                    <Flex bg="cpc.white" color="cpc.red">
+                    <Flex bg="cpc.white" color="cpc.red" justify="center">
                         <Flex direction="column" 
                         height="auto">
                             {faqs.map(faq => <FaqItem 
