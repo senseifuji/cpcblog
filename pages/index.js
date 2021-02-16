@@ -61,7 +61,7 @@ export default function Home() {
     <>
       {/* SEO OF INDEX PAGE */}
         <CpcSeo 
-            title="CPC - Comité Participativo Ciudadano de Chihuahua"
+            title="CPC - Comité de Participación Ciudadana de Chihuahua"
             description="En el Comité de Participación Ciudadana de Chihuahua (CPC) sabemos que solo juntas, las personas,
             podremos hacerle frente a la corrupción."
             url={process.env.NEXT_PUBLIC_BASE_URL}
