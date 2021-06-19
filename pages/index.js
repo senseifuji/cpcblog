@@ -113,7 +113,7 @@ export default function Home() {
                 <Text fontFamily="cpc.gothamCondensed" mb={3}>
                   Si crees que puedes ser tú, déjanos tus datos. Tienes hasta el 15 de julio para aplicar.
                 </Text>
-                <Link href="/publicaciones/investigacioncovid">
+                <Link href="/publicaciones/convocatoriaSESEA2021">
                 <Button size="lg" bg={blue} color={yellow} rounded="10px" _hover={{ bg: "cpc.blueMedium" }} width={["250px", "200px", "200px", "200px"]}>
                   <i aria-hidden="true" className="far fa-file-alt"></i>
                     &nbsp; Aplica Aquí
