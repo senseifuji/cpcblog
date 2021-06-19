@@ -4,6 +4,7 @@ import customtheme from '../customtheme';
 import Header from '../components/header';
 import { Text, Flex, Button} from '@chakra-ui/core';
 
+import ConvoSESEA from '../components/svgs/convoSESEA'
 import YoElijoRegidor from '../components/svgs/yoelijoregidor'
 import InformeAnual from '../components/svgs/informeanual'
 import Chihuahua from '../components/svgs/chihuahua'
@@ -98,12 +99,8 @@ export default function Home() {
                   <Text fontFamily="cpc.gothamMedium" fontSize={["2.2em", "2.8em", "2.8em", "2.8em"]}  color={white} textShadow="0px 0px 10px rgba(0,0,0,0.3)">
                     <b>vacuna a la</b>
                     </Text>
-                  <Text fontFamily="cpc.gothamMedium" fontSize={["2.5em", "2.8em", "2.8em", "3.3em"]} mt="-0.75em" color={white} fontWeight=""textShadow="0px 0px 10px rgba(0,0,0,0.3)" letterSpacing="-0.9px">
-                    <b>CORRUPCIÓN</b>
-                    </Text>
-                  <Text fontSize={["2em", "2em", "2em", "2em"]} mt={["-0.5em"]} px={5} py={0} fontFamily="cpc.gothamCondensed" color={white} bg={blue} width="fit-content">durante el COVID19</Text>
+                    <ConvoSESEA size={configs.regidorSize}/> 
                 </Flex>
-                <img src="/images/covid.png" id="covidimage"/>
               </Flex>
               <Flex fontFamily="cpc.gothamCondensed" lineHeight="1.1em" fontSize="1.2em" direction="column" width="100%" textAlign="center" alignItems="center" px="1em">
                 <Text fontFamily="cpc.gothamCondensed" mb={3}>
