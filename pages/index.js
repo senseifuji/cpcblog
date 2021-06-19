@@ -107,6 +107,40 @@ export default function Home() {
               </Flex>
               <Flex fontFamily="cpc.gothamCondensed" lineHeight="1.1em" fontSize="1.2em" direction="column" width="100%" textAlign="center" alignItems="center" px="1em">
                 <Text fontFamily="cpc.gothamCondensed" mb={3}>
+                  Queremos encontrar al mejor talento en el país para que nos ayude
+                  a coordinar la Secretaría Ejecutiva del Sistema Anticorrupción.
+                </Text>
+                <Text fontFamily="cpc.gothamCondensed" mb={3}>
+                  Si crees que puedes ser tú, déjanos tus datos. Tienes hasta el 15 de julio para aplicar.
+                </Text>
+                <Link href="/publicaciones/investigacioncovid">
+                <Button size="lg" bg={blue} color={yellow} rounded="10px" _hover={{ bg: "cpc.blueMedium" }} width={["250px", "200px", "200px", "200px"]}>
+                  <i aria-hidden="true" className="far fa-file-alt"></i>
+                    &nbsp; Aplica Aquí
+                </Button>
+                </Link>
+              </Flex>
+            </Flex>
+          </Section>
+
+       {/* --------VACUNA A LA CORRUPCIÓN-------- */}
+        <Layout direction="column">
+          <Section bg="cpc.yellowLight" color="cpc.blackLight" desktopWidth="100%">
+            <Flex direction={["column", "column", "row", "row"]} alignItems="center">
+              <Flex direction="column" width="100%" justify="center" alignItems="center" py={["2em"]}>
+                <Flex direction="column" alignItems="center" transform="translateY(150px)" zIndex="50" mt="-10em">
+                  <Text fontFamily="cpc.gothamMedium" fontSize={["2.2em", "2.8em", "2.8em", "2.8em"]}  color={white} textShadow="0px 0px 10px rgba(0,0,0,0.3)">
+                    <b>vacuna a la</b>
+                    </Text>
+                  <Text fontFamily="cpc.gothamMedium" fontSize={["2.5em", "2.8em", "2.8em", "3.3em"]} mt="-0.75em" color={white} fontWeight=""textShadow="0px 0px 10px rgba(0,0,0,0.3)" letterSpacing="-0.9px">
+                    <b>CORRUPCIÓN</b>
+                    </Text>
+                  <Text fontSize={["2em", "2em", "2em", "2em"]} mt={["-0.5em"]} px={5} py={0} fontFamily="cpc.gothamCondensed" color={white} bg={blue} width="fit-content">durante el COVID19</Text>
+                </Flex>
+                <img src="/images/covid.png" id="covidimage"/>
+              </Flex>
+              <Flex fontFamily="cpc.gothamCondensed" lineHeight="1.1em" fontSize="1.2em" direction="column" width="100%" textAlign="center" alignItems="center" px="1em">
+                <Text fontFamily="cpc.gothamCondensed" mb={3}>
                   Sabemos que estamos en un momento complicado como planeta y 
                   como especie. Son justo estos momentos en los que necesitamos 
                   respuestas públicas a la altura.
@@ -131,7 +165,6 @@ export default function Home() {
               </Flex>
             </Flex>
           </Section>
-
 
         {/* --------- YO ELIJO REGIDOR SECTION-------- */}
 
