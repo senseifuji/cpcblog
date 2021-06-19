@@ -96,9 +96,6 @@ export default function Home() {
             <Flex direction={["column", "column", "row", "row"]} alignItems="center">
               <Flex direction="column" width="100%" justify="center" alignItems="center" py={["2em"]}>
                 <Flex direction="column" alignItems="center" transform="translateY(150px)" zIndex="50" mt="-10em">
-                  <Text fontFamily="cpc.gothamMedium" fontSize={["2.2em", "2.8em", "2.8em", "2.8em"]}  color={white} textShadow="0px 0px 10px rgba(0,0,0,0.3)">
-                    <b>vacuna a la</b>
-                    </Text>
                     <ConvoSESEA size={configs.regidorSize}/> 
                 </Flex>
               </Flex>
@@ -111,7 +108,7 @@ export default function Home() {
                   Si crees que puedes ser tú, déjanos tus datos. Tienes hasta el 15 de julio para aplicar.
                 </Text>
                 <Link href="/publicaciones/convocatoriaSESEA2021">
-                <Button size="lg" bg={blue} color={yellow} rounded="10px" _hover={{ bg: "cpc.blueMedium" }} width={["250px", "200px", "200px", "200px"]}>
+                <Button size="lg" bg="#00BDFF" color={white} rounded="10px" _hover={{ bg: "#e0ecf1f5" }} width={["250px", "200px", "200px", "200px"]}>
                   <i aria-hidden="true" className="far fa-file-alt"></i>
                     &nbsp; Aplica Aquí
                 </Button>
