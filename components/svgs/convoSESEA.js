@@ -71,9 +71,9 @@ const ConvoSESEA = ({size}) =>  {
   .st16{opacity:0.74;clip-path:url(#SVGID_4_);}
   .st17{opacity:0.74;clip-path:url(#SVGID_6_);}
   .st18{opacity:0.74;clip-path:url(#SVGID_8_);}
-  .st19{font-family:'cpc.spaceMonoItalic';}
+  .st19{font-family:"SpaceMono Italic";}
   .st20{font-size:29.8481px;}
-  .st21{font-family:'SpaceMono-BoldItalic';}
+  .st21{font-family:"SpaceMono Italic";}
   .st22{font-size:31.0817px;}
   .st23{fill:#1A1B2F;}
   .st24{opacity:0.74;clip-path:url(#SVGID_10_);}
