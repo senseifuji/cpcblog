@@ -262,18 +262,7 @@ export default function Home() {
               </Flex>
           </Flex>
           </Section>
-          {/*------------ESTADO DE CHIHUAHUA------------*/}
-          <Section bg="cpc.purple" color="cpc.white" desktopWidth="810%">
-              
-            <Flex justify="space-between" direction={["column", "column", "column", "row"]}>
-              <Flex direction="column"  fontFamily="cpc.gothamMedium" lineHeight="1.2em" alignItems={["center"]} fontSize={["1.5em", "2em", "2em", "2em"]} >
-                <Chihuahua size="200px"/> 
-              </Flex>
-              <Flex direction="column" justify="center" fontFamily="cpc.gothamMedium" lineHeight="1.2em" alignItems={["center"]} fontSize={["1.5em", "2em", "2em", "2em"]} >
-                <Text fontWeight="600" textAlign="center" mt={["1em", "1em", "0em", "2em"]}><strong>Comité de Participación Ciudadana <br/> del estado de <span className="yellowText"> Chihuahua </span></strong></Text>
-              </Flex>
-            </Flex>
-          </Section>
+        
           
 
           <style jsx>{`
