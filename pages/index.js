@@ -108,7 +108,7 @@ export default function Home() {
                   Si crees que puedes ser tú, déjanos tus datos. Tienes hasta el 15 de julio para aplicar.
                 </Text>
                 <Link href="/publicaciones/convocatoriaSESEA2021">
-                <Button size="lg" bg={white} color="#00BDFF" rounded="10px" _hover={{ bg: "#00BDFF", color: "#000000" }} width={["250px", "200px", "200px", "200px"]}>
+                <Button size="lg" bg={white} color="#00BDFF" rounded="10px" _hover={{ bg: "#00BDFF", color: "white" }} width={["250px", "200px", "200px", "200px"]}>
                   <i aria-hidden="true" className="far fa-file-alt"></i>
                     &nbsp; Aplica Aquí
                 </Button>
