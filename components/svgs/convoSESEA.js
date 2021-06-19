@@ -78,11 +78,13 @@ const ConvoSESEA = ({size}) =>  {
   .st23{fill:#1A1B2F;}
   .st24{opacity:0.74;clip-path:url(#SVGID_10_);}
   svg {
-            margin-top: -5em;
+            margin-top: -7em;
+            margin-bottom: 3em;
           }
           @media only screen and (max-width: 990px) {
             svg {
-              margin-top: -4em;
+              margin-top: -7em;
+              margin-bottom: 3em;
             }
           }
           @media only screen and (max-width: 768px) {
