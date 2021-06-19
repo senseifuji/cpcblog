@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+import { Icon, createIcon } from "@chakra-ui/core"
+
+const Logo = ({logofill, letrasfill, width, height}) =>  {
+
+  return (
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 418.85 151.26" style="enable-background:new 0 0 418.85 151.26;" xml:space="preserve">
 <style type="text/css">
@@ -78,3 +82,9 @@
 	</g>
 </g>
 </svg>
+
+     
+  );
+}
+
+export default Logo;
