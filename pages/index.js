@@ -124,7 +124,7 @@ export default function Home() {
           </Section>
 
        {/* --------VACUNA A LA CORRUPCIÓN-------- */}
-          <Section bg="cpc.yellowLight" color=cpc.blackLight desktopWidth="100%">
+          <Section bg="cpc.yellowLight" color="cpc.blackLight" desktopWidth="100%">
             <Flex direction={["column", "column", "row", "row"]} alignItems="center">
               <Flex direction="column" width="100%" justify="center" alignItems="center" py={["2em"]}>
                 <Flex direction="column" alignItems="center" transform="translateY(150px)" zIndex="50" mt="-10em">
