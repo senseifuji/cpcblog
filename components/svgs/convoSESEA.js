@@ -71,7 +71,7 @@ const ConvoSESEA = ({size}) =>  {
   .st16{opacity:0.74;clip-path:url(#SVGID_4_);}
   .st17{opacity:0.74;clip-path:url(#SVGID_6_);}
   .st18{opacity:0.74;clip-path:url(#SVGID_8_);}
-  .st19{font-family:'SpaceMono-Italic'; src: url('../../public/fonts/SpaceMonoItalic.ttf')}
+  .st19{font-family:'cpc.spaceMonoItalic';}
   .st20{font-size:29.8481px;}
   .st21{font-family:'SpaceMono-BoldItalic';}
   .st22{font-size:31.0817px;}
