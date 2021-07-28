@@ -20,7 +20,7 @@ const CpcSeo = ({title = "", description = "", url, imageUrl}) => {
                         alt: title,
                     }
                 ],
-                site_name: "CPC Comité Participativo Ciudadano de Chihuahua",
+                site_name: "CPC Anticorrupción – Comité de Participación Ciudadana de Chihuahua",
             }}
             twitter={{
                 handle: '@cpc_chih',
