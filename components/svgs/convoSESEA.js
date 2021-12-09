@@ -48,7 +48,7 @@ const ConvoSESEA = ({size}) =>  {
     <text transform="matrix(1 0 0 1 56.7549 65.0283)"><tspan x="0" y="0" className="st1 st19 st20">Secretaría</tspan><tspan x="19.01" y="24.83" className="st1 st19 st20">Ejecutiva</tspan></text>
   </g>
   <g>
-    <text transform="matrix(1 0 0 1 0 26.4189)" className="st1 st21 st22">Buscamos titular de la</text>
+    <text transform="matrix(1 0 0 1 0 26.4189)" className="st1 st21 st22">Designación de terna para</text>
   </g>
 </g>
     <style jsx>{`
