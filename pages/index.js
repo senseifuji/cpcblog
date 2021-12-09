@@ -101,16 +101,15 @@ export default function Home() {
               </Flex>
               <Flex fontFamily="cpc.gothamCondensed" lineHeight="1.1em" fontSize="1.2em" direction="column" width="100%" textAlign="center" alignItems="center" px="1em">
                 <Text fontFamily="cpc.gothamCondensed" mb={3}>
-                  Queremos encontrar al mejor talento en el país para que nos ayude
-                  a coordinar la Secretaría Ejecutiva del Sistema Anticorrupción.
+                  En 2021 realizamos un proceso abierto de convocatoria para elegir la terna para titular de la Secretaría Ejecutiva.
                 </Text>
                 <Text fontFamily="cpc.gothamCondensed" mb={3}>
-                  Si crees que puedes ser tú, déjanos tus datos. Tienes hasta el 15 de julio para aplicar.
+                  Documentamos la totalidad del proceso conforme se fue llevando a cabo y te invitamos a que lo revises.
                 </Text>
                 <Link href="/publicaciones/convocatoriaSESEA2021">
                 <Button size="lg" bg={white} color="#00BDFF" rounded="10px" _hover={{ bg: "#00BDFF", color: "white" }} width={["250px", "200px", "200px", "200px"]}>
                   <i aria-hidden="true" className="far fa-file-alt"></i>
-                    &nbsp; Aplica Aquí
+                    &nbsp; Revisa Aquí
                 </Button>
                 </Link>
               </Flex>
