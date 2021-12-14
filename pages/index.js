@@ -91,9 +91,11 @@ export default function Home() {
         {/* -------HEADER------ */}
         <Header position={headerPosition}/>
 
-        {/* --------CONVOCATORIA SESEA-------- */}
+       
         <Layout direction="column">
-          <Section bg="#1A1B2F" color={white} desktopWidth="100%">
+        
+         {/* --------CONVOCATORIA CCPC-------- */}
+          <Section bg="#410054" color={white} desktopWidth="100%">
             <Flex direction={["column", "column", "row", "row"]} alignItems="center">
               <Flex direction="column" width="100%" justify="center" alignItems="center" py={["2em"]}>
                 <Flex direction="column" alignItems="center" transform="translateY(150px)" zIndex="50" mt="-10em">
@@ -102,20 +104,23 @@ export default function Home() {
               </Flex>
               <Flex fontFamily="cpc.gothamCondensed" lineHeight="1.1em" fontSize="1.2em" direction="column" width="100%" textAlign="center" alignItems="center" px="1em">
                 <Text fontFamily="cpc.gothamCondensed" mb={3}>
-                  En 2021 realizamos un proceso abierto de convocatoria para elegir la terna para titular de la Secretaría Ejecutiva.
+                  Estamos buscando a personas que quieran defender el derecho humano a la participación ciudadana.
                 </Text>
                 <Text fontFamily="cpc.gothamCondensed" mb={3}>
-                  Documentamos la totalidad del proceso conforme se fue llevando a cabo y te invitamos a que lo revises.
+                  Es una oportunidad para incidir en como ampliar los mecanismos de participación en el estado de Chihuahua ¿Te interesa?
                 </Text>
-                <Link href="/publicaciones/convocatoriaSESEA2021">
-                <Button size="lg" bg={white} color="#00BDFF" rounded="10px" _hover={{ bg: "#00BDFF", color: "white" }} width={["250px", "200px", "200px", "200px"]}>
+                <Link href="/publicaciones/convocatoriaCCPC2021">
+                <Button size="lg" bg={white} color="#410054" rounded="10px" _hover={{ bg: "#410054", color: "white" }} width={["250px", "200px", "200px", "200px"]}>
                   <i aria-hidden="true" className="far fa-file-alt"></i>
-                    &nbsp; Revisa Aquí
+                    &nbsp; Aplica Aquí
                 </Button>
                 </Link>
               </Flex>
             </Flex>
           </Section>
+          
+          
+         {/* --------CONVOCATORIA SESEA-------- */}          
           <Section bg="#1A1B2F" color={white} desktopWidth="100%">
             <Flex direction={["column", "column", "row", "row"]} alignItems="center">
               <Flex direction="column" width="100%" justify="center" alignItems="center" py={["2em"]}>
