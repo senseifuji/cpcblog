@@ -109,7 +109,7 @@ export default function Home() {
                 <Text fontFamily="cpc.gothamCondensed" mb={3}>
                   Es una oportunidad para incidir en como ampliar los mecanismos de participación en el estado de Chihuahua ¿Te interesa?
                 </Text>
-                <Link href="/publicaciones/convocatoriaCCPC2021">
+                <Link href="/publicaciones/ConvocatoriaCCPC2021">
                 <Button size="lg" bg={white} color="#410054" rounded="10px" _hover={{ bg: "#410054", color: "white" }} width={["250px", "200px", "200px", "200px"]}>
                   <i aria-hidden="true" className="far fa-file-alt"></i>
                     &nbsp; Aplica Aquí
