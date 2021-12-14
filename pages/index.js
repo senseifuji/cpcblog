@@ -97,7 +97,7 @@ export default function Home() {
             <Flex direction={["column", "column", "row", "row"]} alignItems="center">
               <Flex direction="column" width="100%" justify="center" alignItems="center" py={["2em"]}>
                 <Flex direction="column" alignItems="center" transform="translateY(150px)" zIndex="50" mt="-10em">
-                    <ConvoSESEA size={configs.regidorSize}/> 
+                    <ConvoCCPC size={configs.regidorSize}/> 
                 </Flex>
               </Flex>
               <Flex fontFamily="cpc.gothamCondensed" lineHeight="1.1em" fontSize="1.2em" direction="column" width="100%" textAlign="center" alignItems="center" px="1em">
@@ -120,7 +120,7 @@ export default function Home() {
             <Flex direction={["column", "column", "row", "row"]} alignItems="center">
               <Flex direction="column" width="100%" justify="center" alignItems="center" py={["2em"]}>
                 <Flex direction="column" alignItems="center" transform="translateY(150px)" zIndex="50" mt="-10em">
-                    <ConvoCCPC size={configs.regidorSize}/> 
+                    <ConvoSESEA size={configs.regidorSize}/> 
                 </Flex>
               </Flex>
               <Flex fontFamily="cpc.gothamCondensed" lineHeight="1.1em" fontSize="1.2em" direction="column" width="100%" textAlign="center" alignItems="center" px="1em">
