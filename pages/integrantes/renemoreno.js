@@ -18,8 +18,8 @@ const ReneMorenoPage = () => {
     return ( 
         <>
             <CpcSeo 
-                title="René Moreno - Comité Participativo Ciudadano de Chihuahua"
-                description="Conoce a René Moreno, integrante del Comité Participativo Ciudadano de Chihuahua"
+                title="René Moreno - Comité de Participación Ciudadana de Chihuahua"
+                description="Conoce a René Moreno, integrante del Comité de Participación Ciudadana de Chihuahua"
                 url={`${process.env.NEXT_PUBLIC_BASE_URL}/integrantes/renemoreno`}
                 imageUrl="https://cdn.sanity.io/images/o2k6bnet/production/ef4efbd86d6543de7975b94a243673461c230a81-800x600.jpg"
             />
@@ -31,7 +31,7 @@ const ReneMorenoPage = () => {
                         role="Integrante"
                         membersince="3 años"
                         photouRL="/images/renemoreno.svg" 
-                        mail="rene@anticorrupcion.mx"
+                        mail="rene@comiteanticorrupcion.mx"
                         twitter="elperrogacho" 
                         phone="+526142476818"
                         links={links}
