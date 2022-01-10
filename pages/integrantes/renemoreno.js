@@ -29,7 +29,7 @@ const ReneMorenoPage = () => {
                     <Member 
                         title="René Moreno"
                         role="Integrante"
-                        membersince="3 años"
+                        membersince="2018-2023"
                         photouRL="/images/renemoreno.svg" 
                         mail="rene@comiteanticorrupcion.mx"
                         twitter="elperrogacho" 
