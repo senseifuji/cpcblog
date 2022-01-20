@@ -42,4 +42,4 @@ const JesusAbbudPage = () => {
      );
 }
  
-export default ReneMorenoPage;
+export default JesusAbbudPage;
