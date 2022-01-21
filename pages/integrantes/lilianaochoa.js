@@ -6,8 +6,8 @@ import CpcSeo from '../../components/cpcseo';
 
 const LilianaochoaPage = () => {
     const links = [
-        {title: "Enlace de prueba 1", url: "#"},
-        {title: "Enlace de prueba 2", url: "#"}
+        {title: "Entrevista", url: "#"},
+        {title: "Currículum", url: "#"}
     ]
 
     return ( 
@@ -23,9 +23,10 @@ const LilianaochoaPage = () => {
                 <Content>
                     <Member 
                         title="Liliana Ochoa"
-                        role="Integrante"
-                        membersince="2 años"
-                        photouRL="/images/lilianaochoa.svg" 
+                        role="Presidenta"
+                        membersince="2018-2022"
+                        photouRL="/images/lilianaochoa.svg"
+                        mail="liliana@comiteanticorrupcion.mx"
                         links={links}
                     />
                 </Content>
