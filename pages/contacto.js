@@ -86,10 +86,10 @@ export default function Contact() {
                                     <a><Image src="/images/cpc_profile_liliana.svg" alt="lilianaochoa" mt={[3]} width={["10em", "10em", "10em", "10em"]} />  </a>
                                 </Link>
                             </Box>          
-                            <Box as='button' fontSize={["1.5em", "1.5em", "1.5em", "1.5em"]} 
+                            <Box as='button' fontSize={["1em", "1em", "1em", "1em"]} 
                                 borderRadius='md' bgGradient='linear(to-r, teal.500, green.500)'
                                 lineHeight={["1em"]} textAlign="center" fontFamily="cpc.gothamMedium">
-                                <b>Más información</b>
+                                Más información
                             </Box>
                         </Flex>
                          <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
