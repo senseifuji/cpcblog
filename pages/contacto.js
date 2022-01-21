@@ -94,7 +94,7 @@ export default function Contact() {
                             <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
                                 <Link href="/integrantes/renemoreno">
                                     <a>
-                                        <Image src="/images/cpc_profile_renemoreno.svg" alt="renemoreno" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
+                                        <Image src="/images/cpc_profile_rene.svg" alt="renemoreno" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
                                     </a>
                                 </Link>
                             </PseudoBox>
