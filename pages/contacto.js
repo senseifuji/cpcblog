@@ -91,7 +91,7 @@ export default function Contact() {
                                 </Link>
                             </Box>                                  
                         </Flex>
-                         <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
+                         <Flex  direction="column" justify="center" alignItems="center" width="100%" py={2}>
                             <Box>
                                 <Link href="/integrantes/renemoreno">
                                     <a>
@@ -100,7 +100,7 @@ export default function Contact() {
                                 </Link>
                             </Box>
                         </Flex>
-                         <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
+                         <Flex  direction="column" justify="center" alignItems="center" width="100%" py={2}>
                             <Box>
                                  <Link href="/integrantes/miguelgomez">
                                      <a>
@@ -109,7 +109,7 @@ export default function Contact() {
                                 </Link>
                             </Box>
                         </Flex>
-                         <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
+                         <Flex direction="column" justify="center" alignItems="center" width="100%" py={2}>
                             <Box>
                                  <Link href="/integrantes/carmenalvarez">
                                      <a>
@@ -118,7 +118,7 @@ export default function Contact() {
                                 </Link>
                             </Box>
                         </Flex>
-                         <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
+                         <Flex direction="column" justify="center" alignItems="center" width="100%" py={2}>
                             <Box>
                                  <Link href="/integrantes/jesusabbud">
                                      <a>
