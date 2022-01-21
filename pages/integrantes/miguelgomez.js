@@ -29,6 +29,7 @@ const MiguelGomezPage = () => {
                         membersince="2019-2024"
                         photouRL="/images/miguelgomez.svg"
                         mail="miguel@comiteanticorrupcion.mx"
+                        twitter="MiguelSGomezGlz"
                         links={links}
                     />
                 </Content>
