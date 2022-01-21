@@ -27,7 +27,8 @@ const MiguelGomezPage = () => {
                         title="Miguel Gómez"
                         role="Integrante"
                         membersince="2019-2024"
-                        photouRL="/images/miguelgomez.svg" 
+                        photouRL="/images/miguelgomez.svg"
+                        mail="miguel@comiteanticorrupcion.mx"
                         links={links}
                     />
                 </Content>
