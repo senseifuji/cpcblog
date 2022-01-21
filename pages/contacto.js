@@ -83,7 +83,7 @@ export default function Contact() {
                     <Text fontSize={["2em"]} fontFamily="cpc.gothamCondensed" textAlign="center" lineHeight="1.18em">
                             Da click en la persona integrante de la que quieras conocer más información
                         </Text>
-                    <Flex justify="space-around" alignItems="top"  direction={["column", "column", "row", "row"]} width="100%" mt={["2em", "2em", "5em", "5em"]}>
+                    <Flex justify="space-around" alignItems="top"  direction={["column", "column", "row", "row"]} width="100%" mt={["2em", "2em", "0em", "0em"]}>
                         <Flex  direction="column" justify="center" alignItems="center" width="100%" py={2}>
                             <Box>
                                 <Link href="/integrantes/lilianaochoa">
