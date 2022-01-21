@@ -30,7 +30,7 @@ const JesusAbbudPage = () => {
                         title="Jesús Abbud"
                         role="Integrante"
                         membersince="2021-2026"
-                        photouRL="/images/renemoreno.svg" 
+                        photouRL="/images/jesus.svg" 
                         mail="jesus@comiteanticorrupcion.mx"
                         twitter="elperrogacho" 
                         phone="+526142476818"
