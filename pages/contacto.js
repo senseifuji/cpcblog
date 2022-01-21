@@ -87,19 +87,19 @@ export default function Contact() {
                                 </Link>
                             </PseudoBox>          
                             <Box fontSize={["1.5em", "1.5em", "1.5em", "1.5em"]} lineHeight={["1em"]} textAlign="center">
-                                <Text fontFamily="cpc.gothamMedium" ><b>Ana Terrazas</b></Text>
+                                <Text fontFamily="cpc.gothamMedium" ><b>Liliana Ochoa</b></Text>
                             </Box>
                         </Flex>
                          <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
                             <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
-                                <Link href="/integrantes/lilianaochoa">
+                                <Link href="/integrantes/renemoreno">
                                     <a>
-                                        <Image src="/images/lilianaochoa.svg" alt="lilianaochoa" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
+                                        <Image src="/images/cpc_profile_renemoreno.svg" alt="renemoreno" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
                                     </a>
                                 </Link>
                             </PseudoBox>
                             <Box fontSize={["1.5em", "1.5em", "1.5em", "1.5em"]} lineHeight={["1em"]} textAlign="center">
-                                <Text fontFamily="cpc.gothamMedium" ><b>Liliana Ochoa</b></Text>
+                                <Text fontFamily="cpc.gothamMedium" ><b>René Moreno</b></Text>
                             </Box>
                         </Flex>
                          <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
