@@ -61,7 +61,7 @@ export default function Contact() {
                         )
                         : 
                         (
-                                <Flex width={["100%", "100%", "100%", "600px"]} direction="column" textAlign="center">
+                                <Flex width={["100%", "80%", "80%", "600px"]} direction="column" textAlign="center">
                                     <form onSubmit={handleSubmit(onSubmit)}>
                                         <Text fontSize={["2em"]}color="cpc.red" fontFamily="cpc.gothamCondensed">Contáctanos llenando el formulario</Text>
                                         <FormControl isRequired>
@@ -79,6 +79,10 @@ export default function Contact() {
                     </Flex>
 
                     {/* //Faces  */}
+                    <Section bg="#fcd46f" color="#3d3d3d">
+                    <Text fontSize={["1.25em", "1.5em", "1.5em", "1.5em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
+                            Da click en la persona integrante de la que quieras conocer más información
+                        </Text>
                     <Flex justify="space-around" alignItems="top"  direction={["column", "column", "row", "row"]} width="100%" mt={["2em", "2em", "5em", "5em"]}>
                         <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
                             <Box>
@@ -124,6 +128,7 @@ export default function Contact() {
                             </Box>
                         </Flex>
                     </Flex>
+                </Section>
                 </Content>
             </Layout>
         </>
