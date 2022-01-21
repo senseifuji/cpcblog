@@ -79,8 +79,8 @@ export default function Contact() {
                     </Flex>
 
                     {/* //Faces  */}
-                    <Section bg="#fcd46f" color="#3d3d3d" mt={["1em"]}>
-                    <Text fontSize={["1.25em", "1.5em", "1.5em", "1.5em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
+                    <Section bg="#fcd46f" color="#3d3d3d">
+                    <Text fontSize={["2em"]} fontFamily="cpc.gothamCondensed" textAlign="center" lineHeight="1.18em" p={2} mt={["1em", "2em", "3em", "3em"]}>
                             Da click en la persona integrante de la que quieras conocer más información
                         </Text>
                     <Flex justify="space-around" alignItems="top"  direction={["column", "column", "row", "row"]} width="100%" mt={["2em", "2em", "5em", "5em"]}>
