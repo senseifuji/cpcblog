@@ -83,61 +83,44 @@ export default function Contact() {
                         <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
                             <Box>
                                 <Link href="/integrantes/lilianaochoa">
-                                    <a><Image src="/images/cpc_profile_liliana.svg" alt="lilianaochoa" mt={[3]} width={["10em", "10em", "10em", "10em"]} />  </a>
+                                    <a><Image src="/images/cpc_profile_liliana.svg" alt="Liliana Ochoa" mt={[3]} width={["10em", "10em", "10em", "10em"]} />  </a>
                                 </Link>
-                            </Box>          
-                            <Box as='button' fontSize={["1em", "1em", "1em", "1em"]} 
-                                borderRadius='md' bgGradient='linear(to-r, teal.500, green.500)'
-                                lineHeight={["1em"]} textAlign="center" fontFamily="cpc.gothamMedium">
-                                Más información
-                            </Box>
+                            </Box>                                  
                         </Flex>
                          <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
-                            <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
+                            <Box>
                                 <Link href="/integrantes/renemoreno">
                                     <a>
-                                        <Image src="/images/cpc_profile_rene.svg" alt="renemoreno" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
+                                        <Image src="/images/cpc_profile_rene.svg" alt="René Moreno" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
                                     </a>
                                 </Link>
-                            </PseudoBox>
-                            <Box fontSize={["1.5em", "1.5em", "1.5em", "1.5em"]} lineHeight={["1em"]} textAlign="center">
-                                <Text fontFamily="cpc.gothamMedium" ><b>René Moreno</b></Text>
                             </Box>
                         </Flex>
                          <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
-                            <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
-                                 <Link href="/integrantes/renemoreno">
-                                     <a>
-                                        <Image src="/images/renemoreno.svg" alt="renemoreno" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
-                                     </a>
-                                </Link>
-                            </PseudoBox>
-                            <Box fontSize={["1.5em", "1.5em", "1.5em", "1.5em"]} lineHeight={["1em"]} textAlign="center">
-                                <Text fontFamily="cpc.gothamMedium" ><b>René Moreno</b></Text>
-                            </Box>
-                        </Flex>
-                         <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
-                            <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
+                            <Box>
                                  <Link href="/integrantes/miguelgomez">
                                      <a>
-                                        <Image src="/images/miguelgomez.svg" alt="miguelgomez" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
+                                        <Image src="/images/cpc_profile_miguel.svg" alt="Miguel Gómez" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
                                      </a>
                                 </Link>
-                            </PseudoBox>
-                            <Box fontSize={["1.5em", "1.5em", "1.5em", "1.5em"]} lineHeight={["1em"]} textAlign="center">
-                                <Text fontFamily="cpc.gothamMedium" ><b>Miguel Gómez</b></Text>
                             </Box>
                         </Flex>
                          <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
-                            <PseudoBox _hover={{filter: "drop-shadow(2px 4px 6px black)"}}>
+                            <Box>
                                  <Link href="/integrantes/carmenalvarez">
                                      <a>
-                                        <Image src="/images/carmenalvarez.svg" alt="carmenalvarez" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
+                                        <Image src="/images/cpc_profile_carmen.svg" alt="Carmen Álvarez" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
                                      </a>
                                 </Link>
-                            </PseudoBox>
-                            <Box fontSize={["1.5em", "1.5em", "1.5em", "1.5em"]} lineHeight={["1em"]} textAlign="center">
-                                <Text fontFamily="cpc.gothamMedium" ><b>Carmen Álvarez</b></Text>
+                            </Box>
+                        </Flex>
+                         <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
+                            <Box>
+                                 <Link href="/integrantes/jesusabbud">
+                                     <a>
+                                        <Image src="/images/cpc_profile_jesus.svg" alt="Jesús Abbud" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
+                                     </a>
+                                </Link>
                             </Box>
                         </Flex>
                     </Flex>
