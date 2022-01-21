@@ -51,7 +51,7 @@ export default function Contact() {
                     </Section> 
 
 
-                    <Flex justify="center" alignItems="center" p={2} mt={["1em", "2em", "3em", "3em"]} lineHeight="2em">
+                    <Flex justify="center" alignItems="center" p={2} my={["1em", "2em", "3em", "3em"]} lineHeight="2em">
                        {isOk ? (
                             <Text fontSize={["2em"]}color="cpc.red" fontFamily="cpc.gothamCondensed" textAlign="center">Tu mensaje ha sido recibido <br/>Gracias por contactarnos!</Text>
                        ): 
@@ -80,7 +80,7 @@ export default function Contact() {
 
                     {/* //Faces  */}
                     <Section bg="#fcd46f" color="#3d3d3d">
-                    <Text fontSize={["2em"]} fontFamily="cpc.gothamCondensed" textAlign="center" lineHeight="1.18em" p={2} mt={["1em", "2em", "3em", "3em"]}>
+                    <Text fontSize={["2em"]} fontFamily="cpc.gothamCondensed" textAlign="center" lineHeight="1.18em">
                             Da click en la persona integrante de la que quieras conocer más información
                         </Text>
                     <Flex justify="space-around" alignItems="top"  direction={["column", "column", "row", "row"]} width="100%" mt={["2em", "2em", "5em", "5em"]}>
