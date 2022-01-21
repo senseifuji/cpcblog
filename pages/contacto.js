@@ -81,7 +81,7 @@ export default function Contact() {
                     {/* //Faces  */}
                     <Flex justify="space-around" alignItems="top"  direction={["column", "column", "row", "row"]} width="100%" mt={["2em", "2em", "5em", "5em"]}>
                         <Flex  bg="cpc.white" color="cpc.red" direction="column" justify="center" alignItems="center" width="100%" py={2}>
-                            <Box boxShadow='md'>
+                            <Box>
                                 <Link href="/integrantes/lilianaochoa">
                                     <a><Image src="/images/cpc_profile_liliana.svg" alt="lilianaochoa" mt={[3]} width={["10em", "10em", "10em", "10em"]} />  </a>
                                 </Link>
