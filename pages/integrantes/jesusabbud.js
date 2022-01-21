@@ -32,8 +32,7 @@ const JesusAbbudPage = () => {
                         membersince="2021-2026"
                         photouRL="/images/jesus.svg" 
                         mail="jesus@comiteanticorrupcion.mx"
-                        twitter="elperrogacho" 
-                        phone="+526142476818"
+                        twitter="pibe_abbud" 
                         links={links}
                     />
                 </Content>
