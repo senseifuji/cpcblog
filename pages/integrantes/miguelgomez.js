@@ -8,8 +8,8 @@ import CpcSeo from '../../components/cpcseo';
 const MiguelGomezPage = () => {
 
     const links = [
-        {title: "Enlace de prueba 1", url: "#"},
-        {title: "Enlace de prueba 2", url: "#"}
+        {title: "Entrevista", url: "#"},
+        {title: "Currículum", url: "#"}
     ]
 
     return ( 
@@ -26,7 +26,7 @@ const MiguelGomezPage = () => {
                     <Member 
                         title="Miguel Gómez"
                         role="Integrante"
-                        membersince="4 años"
+                        membersince="2019-2024"
                         photouRL="/images/miguelgomez.svg" 
                         links={links}
                     />
