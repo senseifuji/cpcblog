@@ -21,7 +21,7 @@ const JesusAbbudPage = () => {
                 title="Jesús Abbud - Comité de Participación Ciudadana de Chihuahua"
                 description="Conoce a Jesús Abbud, integrante del Comité de Participación Ciudadana de Chihuahua"
                 url={`${process.env.NEXT_PUBLIC_BASE_URL}/integrantes/jesusabbud`}
-                imageUrl="https://cdn.sanity.io/images/o2k6bnet/production/ef4efbd86d6543de7975b94a243673461c230a81-800x600.jpg"
+                imageUrl="https://comiteanticorrupcion.mx/images/cpcintegrante_jesus.jpg"
             />
             <Layout>
                 <Header position="fixed"/>
