@@ -9,7 +9,7 @@ const JesusAbbudPage = () => {
     const links = [
         {title: "Contrato Anual", url: "#"},
         {title: "Declaraciones 3 de 3 ", url: "#"},
-        {title: "Entrevista", url: "#"},
+        {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/entrevistajesus"},
         {title: "Currículum", url: "#"},
         {title: "Nombramiento", url: "#"},
         {title: "Carta de Intención", url: "#"}
