@@ -8,8 +8,12 @@ import CpcSeo from '../../components/cpcseo';
 const CarmenAlvarezPage = () => {
 
     const links = [
-       {title: "Entrevista", url: "#"},
-        {title: "Currículum", url: "#"}
+       {title: "Contrato Anual", url: "#"},
+        {title: "Declaraciones 3 de 3 ", url: "#"},
+        {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/entrevistacarmen"},
+        {title: "Currículum", url: "https://comiteanticorrupcion.mx/publicaciones/cvcarmen"},
+        {title: "Nombramiento", url: "https://comiteanticorrupcion.mx/publicaciones/nombramientocarmen"},
+        {title: "Carta de Intención", url: "https://comiteanticorrupcion.mx/publicaciones/cartacarmen"}
     ]
 
     return ( 
