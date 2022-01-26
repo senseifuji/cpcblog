@@ -10,9 +10,9 @@ const JesusAbbudPage = () => {
         {title: "Contrato Anual", url: "#"},
         {title: "Declaraciones 3 de 3 ", url: "#"},
         {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/entrevistajesus"},
-        {title: "Currículum", url: "#"},
-        {title: "Nombramiento", url: "#"},
-        {title: "Carta de Intención", url: "#"}
+        {title: "Currículum", url: "https://comiteanticorrupcion.mx/publicaciones/cvjesus"},
+        {title: "Nombramiento", url: "https://comiteanticorrupcion.mx/publicaciones/nombramientojesus"},
+        {title: "Carta de Intención", url: "https://comiteanticorrupcion.mx/publicaciones/cartajesus"}
     ]
 
     return ( 
