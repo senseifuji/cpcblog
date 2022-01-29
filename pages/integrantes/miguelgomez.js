@@ -8,8 +8,12 @@ import CpcSeo from '../../components/cpcseo';
 const MiguelGomezPage = () => {
 
     const links = [
-        {title: "Entrevista", url: "#"},
-        {title: "Currículum", url: "#"}
+       {title: "Contrato Anual", url: "#"},
+        {title: "Declaraciones 3 de 3 ", url: "#"},
+        {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/entrevistamiguel"},
+        {title: "Currículum", url: "https://comiteanticorrupcion.mx/publicaciones/cvmiguel"},
+        {title: "Nombramiento", url: "https://comiteanticorrupcion.mx/publicaciones/nombramientomiguel"},
+        {title: "Carta de Intención", url: "https://comiteanticorrupcion.mx/publicaciones/cartamiguel"}
     ]
 
     return ( 
