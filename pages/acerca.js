@@ -513,7 +513,7 @@ export default function AboutPage() {
                         py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
                         fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
                         textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
-                            Los Proyectos de Políticas Públicas son enviados a la presidenta del 
+                            Los Proyectos de Políticas Públicas son enviados a la presidencia del 
                             Comité de Participación de Participación Ciudadana <b>para que 
                             defienda</b> el producto de buenas ideas de muchas personas 💪📝.
                         </Text>
@@ -563,6 +563,13 @@ export default function AboutPage() {
                             <b> democracia deliberativa</b> observado por organismos internacionales
                             para discutir a profundidad que camino debería de seguir el estado de
                             Chihuahua para combatir la corrupción. 
+                            Click <Link href="https://drive.google.com/file/d/1yiAP49RjZo20MBtTmT1nuBSpG3Jmogj9/view">
+                                <a className="redlink"> 
+                                    {" "}aquí para ver la propuesta.
+                                </a>
+                            
+                            
+                          
                         </Text>
                     </Flex>
                 </Section>
