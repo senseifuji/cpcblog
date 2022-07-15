@@ -41,4 +41,4 @@ const GiselaRodriguezPage = () => {
      );
 }
  
-export default GiselaRodríguezPage;
+export default GiselaRodriguezPage;
