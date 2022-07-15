@@ -84,13 +84,6 @@ export default function Contact() {
                             Da click en la persona integrante de la que quieras conocer más información
                         </Text>
                     <Flex justify="space-around" alignItems="top"  direction={["column", "column", "row", "row"]} width="100%" mt={["2em", "2em", "0em", "0em"]}>
-                        <Flex  direction="column" justify="center" alignItems="center" width="100%" py={2}>
-                            <Box>
-                                <Link href="/integrantes/lilianaochoa">
-                                    <a><Image src="/images/cpc_profile_liliana.svg" alt="Liliana Ochoa" mt={[3]} width={["10em", "10em", "10em", "10em"]} />  </a>
-                                </Link>
-                            </Box>                                  
-                        </Flex>
                          <Flex  direction="column" justify="center" alignItems="center" width="100%" py={2}>
                             <Box>
                                 <Link href="/integrantes/renemoreno">
@@ -124,6 +117,15 @@ export default function Contact() {
                                      <a>
                                         <Image src="/images/cpc_profile_jesus.svg" alt="Jesús Abbud" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
                                      </a>
+                                </Link>
+                            </Box>
+                        </Flex>
+                        <Flex  direction="column" justify="center" alignItems="center" width="100%" py={2}>
+                            <Box>
+                                <Link href="/integrantes/giselarodriguez">
+                                    <a>
+                                        <Image src="/images/cpc_profile_gisela.svg" alt="Gisela Rodríguez" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
+                                    </a>
                                 </Link>
                             </Box>
                         </Flex>
