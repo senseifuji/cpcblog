@@ -503,7 +503,7 @@ export default function AboutPage() {
 
                     <Flex direction={["column", "row", "row", "row"]} 
                     width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
-                        <Image src="/images/ana2.svg" alt="Presidenta del CPC" 
+                        <Image src="/images/rene2.svg" alt="Presidenta del CPC" 
                         height={["6em", "6em", "7em", "7em"]} 
                         mt={5}
                         mb={["0", 5, 5, 5]}
