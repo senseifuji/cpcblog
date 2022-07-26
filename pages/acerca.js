@@ -566,7 +566,7 @@ export default function AboutPage() {
                             Click <Link href="https://drive.google.com/file/d/1yiAP49RjZo20MBtTmT1nuBSpG3Jmogj9/view">
                                 <a className="redlink"> 
                                     {" "}aquí para ver la propuesta.
-                                </a>
+                                </a>  </Link>
                             
                             
                           
