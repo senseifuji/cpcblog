@@ -564,16 +564,17 @@ export default function AboutPage() {
                             para discutir a profundidad que camino debería de seguir el estado de
                             Chihuahua para combatir la corrupción. 
                         </Text>
-                        <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.1em", "1.1em", "1.2em", "1.2em"]} 
+                        <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
                         textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}
                         px={[".7em", "1em", "1em", "1em"]} 
                         py={["0.5em", "1em", "1em", "1em"]}
                         width={["90%", "500px", "600px", "600px"]}>
-                            *Click
+                            <b>* Click
                             <Link href="https://drive.google.com/file/d/1yiAP49RjZo20MBtTmT1nuBSpG3Jmogj9/view"">
                                 <a className="redlink"> 
                                     {" "}aquí para ver la propuesta.
                                 </a>
+                            </b>
                             </Link>
                         </Text>
                     </Flex>
