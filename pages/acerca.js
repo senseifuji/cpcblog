@@ -570,7 +570,7 @@ export default function AboutPage() {
                         py={["0.5em", "1em", "1em", "1em"]}
                         width={["90%", "500px", "600px", "600px"]}>
                             *Click
-                            <Link href="http://rendiciondecuentas.org.mx/wp-content/uploads/2018/06/PNA-AccountWordPressEduHdez.pdf">
+                            <Link href="https://drive.google.com/file/d/1yiAP49RjZo20MBtTmT1nuBSpG3Jmogj9/view"">
                                 <a className="redlink"> 
                                     {" "}aquí para ver la propuesta.
                                 </a>
