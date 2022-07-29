@@ -563,13 +563,18 @@ export default function AboutPage() {
                             <b> democracia deliberativa</b> observado por organismos internacionales
                             para discutir a profundidad que camino debería de seguir el estado de
                             Chihuahua para combatir la corrupción. 
-                            Click <Link href="https://drive.google.com/file/d/1yiAP49RjZo20MBtTmT1nuBSpG3Jmogj9/view">
+                        </Text>
+                        <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.1em", "1.1em", "1.2em", "1.2em"]} 
+                        pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} textAlign="left"
+                        pl={["1em", "1em", "0", "0"]} 
+                        pr={[".5em", "0.5em", "0", "0"]}
+                        width={["100%", "100%", "600px", "600px"]}>
+                            *Click
+                            <Link href="http://rendiciondecuentas.org.mx/wp-content/uploads/2018/06/PNA-AccountWordPressEduHdez.pdf">
                                 <a className="redlink"> 
                                     {" "}aquí para ver la propuesta.
-                                </a>  </Link>
-                            
-                            
-                          
+                                </a>
+                            </Link>
                         </Text>
                     </Flex>
                 </Section>
