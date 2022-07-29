@@ -565,10 +565,10 @@ export default function AboutPage() {
                             Chihuahua para combatir la corrupción. 
                         </Text>
                         <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1.1em", "1.1em", "1.2em", "1.2em"]} 
-                        pl={["1em", "0", "0", "0"]} pr={[".5em", "0", "0", "0"]} textAlign="left"
-                        pl={["1em", "1em", "0", "0"]} 
-                        pr={[".5em", "0.5em", "0", "0"]}
-                        width={["100%", "100%", "600px", "600px"]}>
+                        textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}
+                        px={[".7em", "1em", "1em", "1em"]} 
+                        py={["0.5em", "1em", "1em", "1em"]}
+                        width={["90%", "500px", "600px", "600px"]}>
                             *Click
                             <Link href="http://rendiciondecuentas.org.mx/wp-content/uploads/2018/06/PNA-AccountWordPressEduHdez.pdf">
                                 <a className="redlink"> 
