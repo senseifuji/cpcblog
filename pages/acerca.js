@@ -569,12 +569,10 @@ export default function AboutPage() {
                         py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
                         fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
                         textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
-                            <b>Click
-                            <Link href="https://drive.google.com/file/d/1yiAP49RjZo20MBtTmT1nuBSpG3Jmogj9/view"">
+                            <Link href="https://drive.google.com/file/d/1yiAP49RjZo20MBtTmT1nuBSpG3Jmogj9/view">
                                 <a className="redlink"> 
-                                    {" "}aquí para ver la propuesta.
+                                   click aquí para ver la propuesta.
                                 </a>
-                            </b>
                             </Link>
                         </Text>
                     </Flex>
