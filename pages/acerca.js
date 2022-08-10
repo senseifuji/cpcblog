@@ -530,7 +530,7 @@ export default function AboutPage() {
                         textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                             Todo el trabajo que hemos platicado hasta ahora se aterriza en 
                             el Comité Coordinador del Sistema Estatal Anticorrupción donde
-                            la presidenta del Comité de Participación Ciudadana tiene como
+                            la presidencia del Comité de Participación Ciudadana tiene como
                             principal función el defender las propuestas que le llegaron
                             vía la Comisión Ejecutiva. <b>El objetivo es que se aprueben los
                             Proyectos de Políticas Públicas</b> ya que eso obliga al gobierno
