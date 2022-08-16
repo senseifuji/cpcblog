@@ -10,10 +10,10 @@ const GiselaRodriguezPage = () => {
     const links = [
        {title: "Contrato Anual", url: "#"},
         {title: "Declaraciones", url: "https://comiteanticorrupcion.mx/publicaciones/DeclaracionesGiselaRodr%C3%ADguez"},
-        {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/entrevistacarmen"},
-        {title: "Currículum", url: "https://comiteanticorrupcion.mx/publicaciones/cvcarmen"},
-        {title: "Nombramiento", url: "https://comiteanticorrupcion.mx/publicaciones/nombramientocarmen"},
-        {title: "Carta de Intención", url: "https://comiteanticorrupcion.mx/publicaciones/cartacarmen"}
+        {title: "Entrevista", url: "#"},
+        {title: "Currículum", url: "#"},
+        {title: "Nombramiento", url: "#"},
+        {title: "Carta de Intención", url: "#"}
     ]
 
     return ( 
