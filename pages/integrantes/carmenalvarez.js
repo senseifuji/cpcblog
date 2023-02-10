@@ -9,7 +9,7 @@ const CarmenAlvarezPage = () => {
 
     const links = [
        {title: "Contrato Anual", url: "#"},
-        {title: "Declaraciones 3 de 3 ", url: "#"},
+        {title: "Declaraciones 3 de 3 ", url: "https://comiteanticorrupcion.mx/publicaciones/DeclaracionesCarmen%C3%81lvarez"},
         {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/entrevistacarmen"},
         {title: "Currículum", url: "https://comiteanticorrupcion.mx/publicaciones/cvcarmen"},
         {title: "Nombramiento", url: "https://comiteanticorrupcion.mx/publicaciones/nombramientocarmen"},
