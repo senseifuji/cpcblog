@@ -9,7 +9,7 @@ const MiguelGomezPage = () => {
 
     const links = [
        {title: "Contrato Anual", url: "#"},
-        {title: "Declaraciones 3 de 3 ", url: "#"},
+        {title: "Declaraciones 3 de 3 ", url: "https://comiteanticorrupcion.mx/publicaciones/DeclaracionesMiguelG%C3%B3mez"},
         {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/entrevistamiguel"},
         {title: "Currículum", url: "https://comiteanticorrupcion.mx/publicaciones/cvmiguel"},
         {title: "Nombramiento", url: "https://comiteanticorrupcion.mx/publicaciones/nombramientomiguel"},
