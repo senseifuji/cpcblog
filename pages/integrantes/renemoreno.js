@@ -29,7 +29,7 @@ const ReneMorenoPage = () => {
                 <Content>
                     <Member 
                         title="René Moreno"
-                        role="Integrante"
+                        role="Presidente"
                         membersince="2018-2023"
                         photouRL="/images/renemoreno.svg" 
                         mail="rene@comiteanticorrupcion.mx"
