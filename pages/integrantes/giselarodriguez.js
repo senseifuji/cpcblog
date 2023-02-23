@@ -19,7 +19,7 @@ const GiselaRodriguezPage = () => {
     return ( 
         <>
             <CpcSeo 
-                title="Gisela Rodríguez - Comité Participativo Ciudadano de Chihuahua"
+                title="Gisela Rodríguez - Comité de PArticipación Ciudadana de Chihuahua"
                 description="Conoce a Gisela Rodríguez, integrante del Comité Participativo Ciudadano de Chihuahua"
                 url={`${process.env.NEXT_PUBLIC_BASE_URL}/integrantes/giselarodriguez`}
                 imageUrl="https://github.com/cpcwebchih/cpcblog/blob/master/public/images/giselaportada.png?raw=true"
