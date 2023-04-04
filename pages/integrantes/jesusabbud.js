@@ -7,7 +7,7 @@ import CpcSeo from '../../components/cpcseo';
 const JesusAbbudPage = () => {
 
     const links = [
-        {title: "Contrato Anual", url: "#"},
+        
         {title: "Declaraciones 3 de 3 ", url: "https://comiteanticorrupcion.mx/publicaciones/Declaraciones3de3Jes%C3%BAsAbbud"},
         {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/entrevistajesus"},
         {title: "Currículum", url: "https://comiteanticorrupcion.mx/publicaciones/cvjesus"},
