@@ -10,7 +10,7 @@ const GiselaRodriguezPage = () => {
     const links = [
        {title: "Contrato Anual", url: "#"},
         {title: "Declaraciones", url: "https://comiteanticorrupcion.mx/publicaciones/DeclaracionesGiselaRodr%C3%ADguez"},
-        {title: "Entrevista", url: "#"},
+        {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/entrevistagisela"},
         {title: "Currículum", url: "https://comiteanticorrupcion.mx/publicaciones/cvgisela"},
         {title: "Nombramiento", url: "https://comiteanticorrupcion.mx/publicaciones/nombramientogisela"},
         {title: "Carta de Intención", url: "https://comiteanticorrupcion.mx/publicaciones/cartamotivosgisela"}
