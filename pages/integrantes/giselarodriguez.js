@@ -8,7 +8,7 @@ import CpcSeo from '../../components/cpcseo';
 const GiselaRodriguezPage = () => {
 
     const links = [
-       {title: "Contrato Anual", url: "#"},
+      
         {title: "Declaraciones", url: "https://comiteanticorrupcion.mx/publicaciones/DeclaracionesGiselaRodr%C3%ADguez"},
         {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/entrevistagisela"},
         {title: "Currículum", url: "https://comiteanticorrupcion.mx/publicaciones/cvgisela"},
