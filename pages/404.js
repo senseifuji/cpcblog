@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import Header from '../components/header'
 import Content from '../components/content';
-import  {Flex, Image, Text, Box} from '@chakra-ui/core';
+import  {Flex, Image, Text, Box} from '@chakra-ui/react';
 
 
 // pages/404.js

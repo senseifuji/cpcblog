@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Flex } from '@chakra-ui/core';
+import { Flex } from '@chakra-ui/react';
 
 const Layout = ({children, direction="row"}) => {
     return ( 

@@ -25,7 +25,7 @@ const LilianaochoaPage = () => {
                         title="Liliana Ochoa"
                         role="Presidenta"
                         membersince="2018-2022"
-                        photouRL="/images/lilianaochoa.svg"
+                        photouRL="/images/lilianaochafr2.png"
                         mail="liliana@comiteanticorrupcion.mx"
                         links={links}
                     />

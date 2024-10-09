@@ -3,7 +3,7 @@ import Header from '../../components/header'
 import Content from '../../components/content';
 import Member from '../../components/member'
 import CpcSeo from '../../components/cpcseo';
-
+import { Box } from "@chakra-ui/react"
 const ReneMorenoPage = () => {
 
     const links = [
@@ -27,16 +27,19 @@ const ReneMorenoPage = () => {
             <Layout>
                 <Header position="fixed"/>
                 <Content>
+                    <Box maxWidth="800px" margin="auto" padding="2rem">
                     <Member 
                         title="René Moreno"
                         role="Presidente"
                         membersince="2018-2023"
-                        photouRL="/images/renemoreno.svg" 
+                        photouRL="/images/renemorenofr2.png" 
                         mail="rene@comiteanticorrupcion.mx"
                         twitter="elperrogacho" 
-                        phone="+526142476818"
                         links={links}
+                        mailFontSize="sm"
+                        linksFontSize="sm"
                     />
+                    </Box>
                 </Content>
             </Layout>
         </>

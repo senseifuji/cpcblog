@@ -1,5 +1,5 @@
 
-import { Icon, createIcon } from "@chakra-ui/core"
+import { Icon, createIcon } from "@chakra-ui/react"
 
 const Logo = ({logofill, letrasfill, width, height}) =>  {
 

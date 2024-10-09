@@ -3,6 +3,7 @@ import Header from '../../components/header'
 import Content from '../../components/content';
 import Member from '../../components/member'
 import CpcSeo from '../../components/cpcseo';
+import { Box } from "@chakra-ui/react"
 
 const JesusAbbudPage = () => {
 
@@ -26,15 +27,19 @@ const JesusAbbudPage = () => {
             <Layout>
                 <Header position="fixed"/>
                 <Content>
+                <Box maxWidth="800px" margin="auto" padding="2rem">
                     <Member 
                         title="Jesús Abbud"
                         role="Integrante"
                         membersince="2021-2026"
-                        photouRL="/images/jesus.svg" 
+                        photouRL="/images/jesusabuddfr2.png" 
                         mail="jesus@comiteanticorrupcion.mx"
                         twitter="pibe_abbud" 
                         links={links}
+                            mailFontSize="sm"
+                            linksFontSize="sm"
                     />
+                    </Box>
                 </Content>
             </Layout>
         </>

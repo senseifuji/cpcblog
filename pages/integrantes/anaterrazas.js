@@ -25,7 +25,7 @@ const AnaTerrazasPage = () => {
                         title="Ana Terrazas"
                         role="Presidenta"
                         membersince="1 año"
-                        photouRL="/images/anaterrazas.svg" 
+                        photouRL="/images/isabelterrazasfr2.png" 
                         links={links}
                     />
                 </Content>

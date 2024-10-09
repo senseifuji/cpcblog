@@ -3,24 +3,32 @@ import Header from '../../components/header'
 import Content from '../../components/content';
 import ListItem from '../../components/listitem';
 import Section from '../../components/section'
-import {Flex, Text, Input} from '@chakra-ui/core';
+import { Flex, Text, Input, Box } from '@chakra-ui/react';
 import { getAllPosts } from '../../lib/api';
 import customtheme from '../../customtheme.js'
-import {useState} from 'react';
+import { useState, useCallback } from 'react';
 import { useRouter } from 'next/router'
 import CpcSeo from '../../components/cpcseo'
 import moment from 'moment'
 import 'moment/locale/es'
 moment.locale('es')
 
+const toPlainText = (blocks = []) => {
+  return blocks
+    .filter(block => block._type === 'block' && block.children)
+    .map(block => block.children.map(child => child.text).join(''))
+    .join('\n\n')
+}
 
 export default function PublicacionesPage({posts}) {
     const {colors} = customtheme
     const router = useRouter()
     const path = process.env.NEXT_PUBLIC_BASE_URL + router.asPath
     const [filteredPosts, setFilteredposts] = useState(posts);
+    const [isFiltering, setIsFiltering] = useState(false);
 
-    const handleFilter = (value) => {
+    const handleFilter = useCallback((value) => {
+        setIsFiltering(true);
         const postsCopy = [...posts]
 
         if(value !== ''){
@@ -37,7 +45,8 @@ export default function PublicacionesPage({posts}) {
         } else {
             setFilteredposts(postsCopy)
         }
-    }
+        setIsFiltering(false);
+    }, [posts]);
 
     return (
        <>
@@ -55,55 +64,45 @@ export default function PublicacionesPage({posts}) {
                         <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
                             <b>Publicaciones del CPC</b>
                         </Text>
-                        <Text lineheight="1em" px={5} display={{xs: "none", md: "inherit"}}>Aquí puedes encontrar las publicaciones que hacemos comunmente en el cpc</Text>
+                        <Text lineHeight="1em" px={5} display={["none", null, "inherit"]}>Aquí puedes encontrar las publicaciones que hacemos comúnmente en el CPC</Text>
                     </Flex>
-
                 </Section>
                 <Section bg="cpc.white" color="cpc.red" desktopWidth="95%">
-                <Input placeholder="Filtra una publicación por titulo, fecha, autor o contenido" borderColor="cpc.red" focusBorderColor="cpc.red" size="lg" width="90%" onChange={e => handleFilter(e.target.value)}/>
-                    <Flex  width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]} mt={[6, 6, 10, 10]}>
-                        {filteredPosts.length > 0 ? 
-                            filteredPosts.map(post => 
-                                <ListItem key={post._id} 
-                                    title={post.title} 
-                                    author={post.author} 
-                                    date={post.date}
-                                    image={post.coverImage}
-                                    url={`/publicaciones/${post.slug}`}
-                                />
-                            ) : (
-                                <Text width="100%" ml={["0em", "3em", "3em", "3em"]}><b>No existen resultados para tu busqueda</b></Text>
-                            )
-                        }
-                    </Flex>
+                    <Input 
+                        placeholder="Filtra una publicación por título, fecha, autor o contenido" 
+                        borderColor="cpc.red" 
+                        focusBorderColor="cpc.red" 
+                        size="lg" 
+                        width="90%" 
+                        onChange={e => handleFilter(e.target.value)}
+                    />
+                    <Box mt={[6, 6, 10, 10]}>
+                        {isFiltering ? (
+                            <Text>Filtrando publicaciones...</Text>
+                        ) : filteredPosts.length > 0 ? (
+                            <Flex width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]}>
+                                {filteredPosts.map(post => 
+                                    <ListItem 
+                                        key={post._id} 
+                                        title={post.title} 
+                                        author={post.author} 
+                                        date={post.date}
+                                        image={post.coverImage}
+                                        url={`/publicaciones/${post.slug}`}
+                                    />
+                                )}
+                            </Flex>
+                        ) : (
+                            <Text width="100%" ml={["0em", "3em", "3em", "3em"]}><b>No existen resultados para tu búsqueda</b></Text>
+                        )}
+                    </Box>
                 </Section>
             </Content>
         </Layout>
-       
        </>
     )
 }
 
-let toPlainText = (blocks = []) => {
-  return blocks
-    // loop through each block
-    .map(block => {
-      // if it's not a text block with children, 
-      // return nothing
-      if (block._type !== 'block' || !block.children) {
-        return ''
-      }
-      // loop through the children spans, and join the
-      // text strings
-      return block.children.map(child => child.text).join('')
-    })
-    // join the paragraphs leaving split by two linebreaks
-    .join('\n\n')
-}
-
-
-//this functions run on build time on server.
-//provides props to your page, and makes it static
 export async function getStaticProps(){
     let posts;
     try{
@@ -118,7 +117,5 @@ export async function getStaticProps(){
             posts
         },
         revalidate: 5
-
     }
-
 }

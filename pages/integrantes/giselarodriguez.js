@@ -1,14 +1,12 @@
 import Layout from '../../components/layout'
 import Header from '../../components/header'
-import Content from '../../components/content';
+import Content from '../../components/content'
 import Member from '../../components/member'
-import CpcSeo from '../../components/cpcseo';
-
+import CpcSeo from '../../components/cpcseo'
+import { Box } from "@chakra-ui/react"
 
 const GiselaRodriguezPage = () => {
-
     const links = [
-      
         {title: "Declaraciones", url: "https://comiteanticorrupcion.mx/publicaciones/DeclaracionesGiselaRodr%C3%ADguez"},
         {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/entrevistagisela"},
         {title: "Currículum", url: "https://comiteanticorrupcion.mx/publicaciones/cvgisela"},
@@ -19,7 +17,7 @@ const GiselaRodriguezPage = () => {
     return ( 
         <>
             <CpcSeo 
-                title="Gisela Rodríguez - Comité de PArticipación Ciudadana de Chihuahua"
+                title="Gisela Rodríguez - Comité de Participación Ciudadana de Chihuahua"
                 description="Conoce a Gisela Rodríguez, integrante del Comité Participativo Ciudadano de Chihuahua"
                 url={`${process.env.NEXT_PUBLIC_BASE_URL}/integrantes/giselarodriguez`}
                 imageUrl="https://github.com/cpcwebchih/cpcblog/blob/master/public/images/giselaportada.png?raw=true"
@@ -27,18 +25,22 @@ const GiselaRodriguezPage = () => {
             <Layout>
                 <Header position="fixed"/>
                 <Content>
-                    <Member 
-                        title="Gisela Rodríguez"
-                        role="Integrante"
-                        membersince="2022-2027"
-                        photouRL="/images/giselarodriguez.svg"
-                        mail="gisela@comiteanticorrupcion.mx"
-                        links={links}
-                    />
+                    <Box maxWidth="800px" margin="auto" padding="2rem">
+                        <Member 
+                            title="Gisela Rodríguez"
+                            role="Integrante"
+                            membersince="2022-2027"
+                            photouRL="/images/giselarodriguez.svg"
+                            mail="gisela@comiteanticorrupcion.mx"
+                            links={links}
+                            mailFontSize="sm"
+                            linksFontSize="sm"
+                        />
+                    </Box>
                 </Content>
             </Layout>
         </>
      );
 }
- 
-export default GiselaRodriguezPage;
+
+export default GiselaRodriguezPage

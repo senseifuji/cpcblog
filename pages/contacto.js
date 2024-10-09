@@ -6,10 +6,11 @@ import { useRouter} from 'next/router'
 import {useState} from 'react';
 import CpcSeo from '../components/cpcseo'
 import customtheme from '../customtheme.js'
-import { Flex, Text, Box, Image, PseudoBox, Input, Textarea, Button, FormControl} from '@chakra-ui/core';
+import { Flex, Text, Box, Input, Textarea, Button, FormControl} from '@chakra-ui/react';
 import Link from 'next/link'
 import { useForm } from "react-hook-form";
 import axios from 'axios';
+import Image from 'next/image';
 
 export default function Contact() {
     const {colors} = customtheme
@@ -17,19 +18,19 @@ export default function Contact() {
     const path = process.env.NEXT_PUBLIC_BASE_URL + router.asPath
     
     const { handleSubmit, register } = useForm();
-    const [isLoading, setIsloading] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
     const [isOk, setIsOk] = useState(false);
     const [error, setError] = useState(false);
 
     const onSubmit = async values => {
-        setIsloading(true)
+        setIsLoading(true)
         try {
             await axios.post("https://formspree.io/f/xwkwbgpd", values)
             setIsOk(true)
         } catch (error) {
-            error(true)
+            setError(true)
         }
-        setIsloading(false)
+        setIsLoading(false)
     }
 
     return (
@@ -40,99 +41,70 @@ export default function Contact() {
                 url={path}
                 imageUrl={process.env.NEXT_PUBLIC_OPENGRAPH_IMAGE_URL}
             /> 
-            <Layout >
+            <Layout>
                 <Header position="fixed"/>
                 <Content>
                     <Section bg="cpc.red" color="cpc.white">
                         <Text fontSize={["1.25em", "1.5em", "3em", "3em"]} fontFamily="cpc.gothamBold" textAlign="center" lineHeight="1.18em">
                             <b>Contáctanos!</b>
                         </Text>
-                        <Text lineheight="1em" px={5} display={{xs: "none", md: "inherit"}} textAlign="center">Llena el formulario para contactarnos o si prefieres da click en el integrante de tu preferencia.</Text>
+                        <Text lineHeight="1em" px={5} display={["none", null, "inherit"]} textAlign="center">Llena el formulario para contactarnos o si prefieres da click en el integrante de tu preferencia.</Text>
                     </Section> 
 
-
+                    {/* Form section */}
                     <Flex justify="center" alignItems="center" p={2} my={["1em", "2em", "3em", "3em"]} lineHeight="2em">
                        {isOk ? (
-                            <Text fontSize={["2em"]}color="cpc.red" fontFamily="cpc.gothamCondensed" textAlign="center">Tu mensaje ha sido recibido <br/>Gracias por contactarnos!</Text>
-                       ): 
-                       
-                        error ? (
-                            <Text fontSize={["2em"]}color="cpc.red" fontFamily="cpc.gothamCondensed" textAlign="center">Lo sentimos, ha ocurrido un error recibiendo tu mensaje.</Text>
+                            <Text fontSize={["2em"]} color="cpc.red" fontFamily="cpc.gothamCondensed" textAlign="center">Tu mensaje ha sido recibido <br/>Gracias por contactarnos!</Text>
+                       ) : error ? (
+                            <Text fontSize={["2em"]} color="cpc.red" fontFamily="cpc.gothamCondensed" textAlign="center">Lo sentimos, ha ocurrido un error recibiendo tu mensaje.</Text>
+                        ) : (
+                            <Flex width={["100%", "80%", "80%", "600px"]} direction="column" textAlign="center">
+                                <form onSubmit={handleSubmit(onSubmit)}>
+                                    <Text fontSize={["2em"]} color="cpc.red" fontFamily="cpc.gothamCondensed">Contáctanos llenando el formulario</Text>
+                                    <FormControl isRequired>
+                                        <Input size="lg" my={3} type="email" placeholder="Email" name="email" ref={register()}/>
+                                    </FormControl>
+                                    <FormControl isRequired>
+                                        <Textarea size="lg" my={2} placeholder="Escribe tu mensaje" name="message" ref={register()}/>
+                                    </FormControl>
+                                    <Button type="submit" bg="cpc.red" color="cpc.white" width="100%" _hover={{bg: "cpc.redLight"}} mt={3} isLoading={isLoading}>Enviar</Button>
+                                </form>
+                            </Flex>
                         )
-                        : 
-                        (
-                                <Flex width={["100%", "80%", "80%", "600px"]} direction="column" textAlign="center">
-                                    <form onSubmit={handleSubmit(onSubmit)}>
-                                        <Text fontSize={["2em"]}color="cpc.red" fontFamily="cpc.gothamCondensed">Contáctanos llenando el formulario</Text>
-                                        <FormControl isRequired>
-                                            <Input size="lg" my={3} type="email" placeholder="Email" name="email" ref={register()}/>
-                                        </FormControl>
-                                        <FormControl isRequired>
-                                            <Textarea size="lg" my={2} placeholder="Escribe tu mensaje" name="message" ref={register()}/>
-                                        </FormControl>
-                                        <Button type="submit" bg="cpc.red" color="cpc.white" width="100%" _hover={{bg: "cpc.red"}} mt={3} isLoading={isLoading}>Enviar</Button>
-                                    </form>
-                                </Flex>
-                        )
-                       
                        }
                     </Flex>
 
-                    {/* //Faces  */}
+                    {/* Faces section */}
                     <Section bg="#fcd46f" color="#3d3d3d">
-                    <Text fontSize={["2em"]} fontFamily="cpc.gothamCondensed" textAlign="center" lineHeight="1.18em">
+                        <Text fontSize={["1.5em", "2em"]} fontFamily="cpc.gothamCondensed" textAlign="center" lineHeight="1.18em" mb={6}>
                             Da click en la persona integrante de la que quieras conocer más información
                         </Text>
-                    <Flex justify="space-around" alignItems="top"  direction={["column", "column", "row", "row"]} width="100%" mt={["2em", "2em", "0em", "0em"]}>
-                         <Flex  direction="column" justify="center" alignItems="center" width="100%" py={2}>
-                            <Box>
-                                <Link href="/integrantes/renemoreno">
-                                    <a>
-                                        <Image src="/images/cpc_profile_rene.svg" alt="René Moreno" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
-                                    </a>
-                                </Link>
-                            </Box>
+                        <Flex justify="center" alignItems="center" flexWrap="wrap" width="100%" mt={["2em", "2em", "0em", "0em"]}>
+                            {[
+                                {name: "René Moreno", href: "/integrantes/renemoreno", image: "/images/cpc_profile_rene.svg"},
+                                {name: "Miguel Gómez", href: "/integrantes/miguelgomez", image: "/images/cpc_profile_miguel.svg"},
+                                {name: "Carmen Álvarez", href: "/integrantes/carmenalvarez", image: "/images/cpc_profile_carmen.svg"},
+                                {name: "Jesús Abbud", href: "/integrantes/jesusabbud", image: "/images/cpc_profile_jesus.svg"},
+                                {name: "Gisela Rodríguez", href: "/integrantes/giselarodriguez", image: "/images/cpc_profile_gisela.svg"}
+                            ].map((member, index) => (
+                                <Box key={index} textAlign="center" m={4} width={["100%", "40%", "20%", "20%"]}>
+                                    <Link href={member.href} passHref legacyBehavior>
+                                        <a>
+                                            <Image 
+                                                src={member.image} 
+                                                alt={member.name} 
+                                                width={150}
+                                                height={150}
+                                            />
+                                        </a>
+                                    </Link>
+                                    <Text mt={2} fontWeight="bold" fontSize="lg">{member.name}</Text>
+                                </Box>
+                            ))}
                         </Flex>
-                         <Flex  direction="column" justify="center" alignItems="center" width="100%" py={2}>
-                            <Box>
-                                 <Link href="/integrantes/miguelgomez">
-                                     <a>
-                                        <Image src="/images/cpc_profile_miguel.svg" alt="Miguel Gómez" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
-                                     </a>
-                                </Link>
-                            </Box>
-                        </Flex>
-                         <Flex direction="column" justify="center" alignItems="center" width="100%" py={2}>
-                            <Box>
-                                 <Link href="/integrantes/carmenalvarez">
-                                     <a>
-                                        <Image src="/images/cpc_profile_carmen.svg" alt="Carmen Álvarez" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
-                                     </a>
-                                </Link>
-                            </Box>
-                        </Flex>
-                         <Flex direction="column" justify="center" alignItems="center" width="100%" py={2}>
-                            <Box>
-                                 <Link href="/integrantes/jesusabbud">
-                                     <a>
-                                        <Image src="/images/cpc_profile_jesus.svg" alt="Jesús Abbud" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
-                                     </a>
-                                </Link>
-                            </Box>
-                        </Flex>
-                        <Flex  direction="column" justify="center" alignItems="center" width="100%" py={2}>
-                            <Box>
-                                <Link href="/integrantes/giselarodriguez">
-                                    <a>
-                                        <Image src="/images/cpc_profile_gisela.svg" alt="Gisela Rodríguez" mt={[3]} width={["10em", "10em", "10em", "10em"]} />            
-                                    </a>
-                                </Link>
-                            </Box>
-                        </Flex>
-                    </Flex>
-                </Section>
+                    </Section>
                 </Content>
             </Layout>
         </>
-    )
+    );
 }

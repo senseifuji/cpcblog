@@ -1,7 +1,7 @@
-import { 
-    Flex, Box, List, Button, Text, Textarea, Modal, ModalOverlay, ModalContent, 
-    ModalBody, ModalCloseButton, useDisclosure, FormControl, Input} 
-from "@chakra-ui/core";
+import {
+    Flex, Box, List, Button, Text, Textarea, Modal, ModalOverlay, ModalContent,        
+    ModalBody, ModalCloseButton, useDisclosure, FormControl, Input
+} from "@chakra-ui/react";
 
 import customTheme from '../customtheme';
 import Logo from './svgs/cpclogo';
@@ -64,7 +64,7 @@ const Header = ({position}) => {
                     {/* LOGO SECTION*/}
                    {logoSize && (
                         <Box>
-                            <Link href="/">
+                            <Link href="/" legacyBehavior>
                                 <a id="logo"  onMouseEnter={() => setLogoColor(yellow)}  onMouseLeave={() => setLogoColor(white)}>
                                     <Logo id="logo" logofill={logoColor} letrasfill={white}  width={logoSize} height={logoSize}/>
                                 </a>
@@ -74,43 +74,44 @@ const Header = ({position}) => {
 
                     {/* LINKS SECTION */}
                     {linksPadding && (
-                        <Flex color={white} direction="row" justify={["center", "center", "center", "left"]} fontFamily={gothamCondensed} fontSize="1.2em" width="inherit">
-                            <List d="flex">
-                                <li className={"item " +  (router.pathname === '/acerca' ? 'inpage':'')}> 
-                                    <Link href="/acerca"><a >Acerca de</a></Link>
-                                </li>
-                                <li className={"item " + (router.pathname === '/faq' ? 'inpage':'')}>
-                                    <Link href="/faq"><a >Preguntas Frecuentes</a></Link>
-                                </li>
-                                <li  className={"item " +  (router.pathname === '/publicaciones' ? 'inpage':'')}>
-                                    <Link href="/publicaciones"><a >Publicaciones</a></Link>
-                                </li>
-                                <li  className={"item " +  (router.pathname === '/sesiones' ? 'inpage':'')}>
-                                    <Link href="/sesiones"><a >Sesiones</a></Link>
-                                </li>
-                                <li  className={"item " +  (router.pathname === '/contacto' ? 'inpage':'')}>
-                                    <Link href="/contacto"><a >Contacto</a></Link>
-                                </li>
-                               
-                            </List>
-                        </Flex>
-                    )}
+    <Flex color={white} direction="row" justify={["center", "center", "center", "left"]} fontFamily={gothamCondensed} fontSize="1.2em" width="inherit">
+        <List display="flex" flexDirection="row" alignItems="center" styleType="none">
+            <li className={"item " +  (router.pathname === '/acerca' ? 'inpage':'')} style={{marginRight: "20px"}}> 
+                <Link href="/acerca" legacyBehavior><a>Acerca de</a></Link>
+            </li>
+            <li className={"item " + (router.pathname === '/faq' ? 'inpage':'')} style={{marginRight: "20px"}}>
+                <Link href="/faq" legacyBehavior><a>Preguntas Frecuentes</a></Link>
+            </li>
+            <li className={"item " +  (router.pathname === '/publicaciones' ? 'inpage':'')} style={{marginRight: "20px"}}>
+                <Link href="/publicaciones" legacyBehavior><a>Publicaciones</a></Link>
+            </li>
+            <li className={"item " +  (router.pathname === '/sesiones' ? 'inpage':'')} style={{marginRight: "20px"}}>
+                <Link href="/sesiones" legacyBehavior><a>Sesiones</a></Link>
+            </li>
+            <li className={"item " +  (router.pathname === '/contacto' ? 'inpage':'')} style={{marginRight: "20px"}}>
+                <Link href="/contacto" legacyBehavior><a>Contacto</a></Link>
+            </li>
+        </List>
+    </Flex>
+)}
 
                     {/* SOCIAL MEDIA SECTION */}
                     <Flex>
                         <List d="flex">
                             <li className="socialitem">
-                                <Link href="https://www.facebook.com/cpcchih/">
+                                <Link href="https://www.facebook.com/cpcchih/" legacyBehavior>
                                     <a target="_blank"><i aria-hidden className="fab fa-facebook"></i></a>
                                 </Link>
                             </li>
                             <li className="socialitem">
-                                <Link href="http://twitter.com/cpc_chih">
+                                <Link href="http://twitter.com/cpc_chih" legacyBehavior>
                                     <a target="_blank"><i aria-hidden className="fab fa-twitter"></i></a>
                                 </Link>
                             </li>
                             <li className="socialitem">
-                                <Link href="https://www.youtube.com/channel/UCSzbJsei-QnAbjUMmHXBxYg?view_as=subscriber">
+                                <Link
+                                    href="https://www.youtube.com/channel/UCSzbJsei-QnAbjUMmHXBxYg?view_as=subscriber"
+                                    legacyBehavior>
                                     <a target="_blank"><i aria-hidden className="fab fa-youtube"></i></a>
                                 </Link>
                             </li>
@@ -127,26 +128,26 @@ const Header = ({position}) => {
                     <ModalBody>
                         <Flex direction="column" width="100%">
                             <Flex p={0} m={-1}>
-                                <Link href="/">
+                                <Link href="/" legacyBehavior>
                                     <a><ModalLogo filllogo={yellow} fillletras={white} logosize="12em"/></a>
                                 </Link>
                             </Flex>
                             <Flex mb={4} mt={-10} width="100%">
                                  <List width="100%">
                                     <li className={"modalitem " +  (router.pathname === '/acerca' ? 'inpage':'')}> 
-                                        <Link href="/acerca"><a >Acerca de</a></Link>
+                                        <Link href="/acerca" legacyBehavior><a >Acerca de</a></Link>
                                     </li>
                                     <li className={"modalitem " + (router.pathname === '/faq' ? 'inpage':'')}>
-                                        <Link href="/faq"><a >Preguntas Frecuentes</a></Link>
+                                        <Link href="/faq" legacyBehavior><a >Preguntas Frecuentes</a></Link>
                                     </li>
                                     <li  className={"modalitem " +  (router.pathname === '/publicaciones' ? 'inpage':'')}>
-                                        <Link href="/publicaciones"><a >Publicaciones</a></Link>
+                                        <Link href="/publicaciones" legacyBehavior><a >Publicaciones</a></Link>
                                     </li>
                                     <li  className={"modalitem " +  (router.pathname === '/sesiones' ? 'inpage':'')}>
-                                        <Link href="/sesiones"><a >Sesiones</a></Link>
+                                        <Link href="/sesiones" legacyBehavior><a >Sesiones</a></Link>
                                     </li>
                                     <li  className={"modalitem " + (router.pathname === '/contacto' ? 'inpage':'')}>
-                                        <Link href="/contacto"><a >Contacto</a></Link>
+                                        <Link href="/contacto" legacyBehavior><a >Contacto</a></Link>
                                     </li>
                                 </List>
                             </Flex>

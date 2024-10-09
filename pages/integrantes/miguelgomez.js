@@ -3,6 +3,7 @@ import Header from '../../components/header'
 import Content from '../../components/content';
 import Member from '../../components/member'
 import CpcSeo from '../../components/cpcseo';
+import { Box } from "@chakra-ui/react"
 
 
 const MiguelGomezPage = () => {
@@ -27,15 +28,19 @@ const MiguelGomezPage = () => {
             <Layout>
                 <Header position="fixed"/>
                 <Content>
+                    <Box maxWidth="800px" margin="auto" padding="2rem">
                     <Member 
                         title="Miguel Gómez"
                         role="Integrante"
                         membersince="2019-2024"
-                        photouRL="/images/miguelgomez.svg"
+                        photouRL="/images/salvadordominguezfr2.png"
                         mail="miguel@comiteanticorrupcion.mx"
                         twitter="MiguelSGomezGlz"
                         links={links}
+                        mailFontSize="sm"
+                        linksFontSize="sm"
                     />
+                    </Box>
                 </Content>
             </Layout>
         </>
