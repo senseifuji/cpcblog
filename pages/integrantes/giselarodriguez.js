@@ -7,11 +7,11 @@ import { Box } from "@chakra-ui/react"
 
 const GiselaRodriguezPage = () => {
     const links = [
-        {title: "Declaraciones", url: "/publicaciones/DeclaracionesGiselaRodriguez"},
-        {title: "Entrevista", url: "/publicaciones/entrevistagisela"},
+        {title: "Declaraciones", url: "/datos/DeclaracionesGiselaRodriguez"},
+        {title: "Entrevista", url: "/datos/entrevistagisela"},
         {title: "Currículum", url: "https://drive.google.com/file/d/1uT12FxI4Fs86y2teLTx4CjfY7B0lWj-n/view"},
-        {title: "Nombramiento", url: "/publicaciones/nombramientogisela"},
-        {title: "Carta de Intención", url: "/publicaciones/cartagisela"}
+        {title: "Nombramiento", url: "/datos/nombramientogisela"},
+        {title: "Carta de Intención", url: "/datos/cartagisela"}
     ]
 
     return ( 

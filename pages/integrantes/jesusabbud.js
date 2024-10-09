@@ -9,11 +9,11 @@ const JesusAbbudPage = () => {
 
     const links = [
         
-        {title: "Declaraciones 3 de 3 ", url: "/publicaciones/Declaraciones3de3JesusAbb"},
-        {title: "Entrevista", url: "/publicaciones/EntrevistaJesusAbb"},
+        {title: "Declaraciones 3 de 3 ", url: "/datos/Declaraciones3de3JesusAbb"},
+        {title: "Entrevista", url: "/datos/EntrevistaJesusAbb"},
         {title: "Currículum", url: "/pdfs/CV_JESUSA.pdf"},
-        {title: "Nombramiento", url: "/publicaciones/nombramientojesus"},
-        {title: "Carta de Intención", url: "/publicaciones/cartajesus"}
+        {title: "Nombramiento", url: "/datos/nombramientojesus"},
+        {title: "Carta de Intención", url: "/datos/cartajesus"}
     ]
 
     return ( 

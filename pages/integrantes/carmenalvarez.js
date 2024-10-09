@@ -8,11 +8,11 @@ import { Box } from "@chakra-ui/react"
 
 const CarmenAlvarezPage = () => {
     const links = [
-        {title: "Declaraciones 3 de 3", url: "/publicaciones/DeclaracionesCarmenAlvarez"},
-        {title: "Entrevista", url: "/publicaciones/EntrevistaCarmen"},
+        {title: "Declaraciones 3 de 3", url: "/datos/DeclaracionesCarmenAlvarez"},
+        {title: "Entrevista", url: "/datos/EntrevistaCarmen"},
         {title: "Currículum", url: "https://drive.google.com/file/d/1GHk48kAoBRL0weNv_dgyxLolLxdJA3Wv/view"},
-        {title: "Nombramiento", url: "/publicaciones/nombramientocarmen"},
-        {title: "Carta de Intención", url: "/publicaciones/cartacarmen"}
+        {title: "Nombramiento", url: "/datos/nombramientocarmen"},
+        {title: "Carta de Intención", url: "/datos/cartacarmen"}
     ]
 
     return ( 
