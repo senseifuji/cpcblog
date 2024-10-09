@@ -9,11 +9,11 @@ const JesusAbbudPage = () => {
 
     const links = [
         
-        {title: "Declaraciones 3 de 3 ", url: "https://comiteanticorrupcion.mx/publicaciones/Declaraciones3de3Jes%C3%BAsAbbud"},
-        {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/entrevistajesus"},
-        {title: "Currículum", url: "https://comiteanticorrupcion.mx/publicaciones/cvjesus"},
-        {title: "Nombramiento", url: "https://comiteanticorrupcion.mx/publicaciones/nombramientojesus"},
-        {title: "Carta de Intención", url: "https://comiteanticorrupcion.mx/publicaciones/cartajesus"}
+        {title: "Declaraciones 3 de 3 ", url: "/publicaciones/Declaraciones3de3JesusAbb"},
+        {title: "Entrevista", url: "/publicaciones/EntrevistaJesusAbb"},
+        {title: "Currículum", url: "/pdfs/CV_JESUSA.pdf"},
+        {title: "Nombramiento", url: "/publicaciones/nombramientojesus"},
+        {title: "Carta de Intención", url: "/publicaciones/cartajesus"}
     ]
 
     return ( 

@@ -3,10 +3,10 @@ import Header from '../../components/header'
 import Content from '../../components/content';
 import ListItem from '../../components/listitem';
 import Section from '../../components/section'
-import { Flex, Text, Input, Box } from '@chakra-ui/react';
+import { Flex, Text, Input, Box, Button } from '@chakra-ui/react';
 import { getAllPosts } from '../../lib/api';
 import customtheme from '../../customtheme.js'
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { useRouter } from 'next/router'
 import CpcSeo from '../../components/cpcseo'
 import moment from 'moment'
@@ -20,12 +20,16 @@ const toPlainText = (blocks = []) => {
     .join('\n\n')
 }
 
+const POSTS_PER_PAGE = 6;
+
 export default function PublicacionesPage({posts}) {
     const {colors} = customtheme
     const router = useRouter()
     const path = process.env.NEXT_PUBLIC_BASE_URL + router.asPath
     const [filteredPosts, setFilteredposts] = useState(posts);
     const [isFiltering, setIsFiltering] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [paginatedPosts, setPaginatedPosts] = useState([]);
 
     const handleFilter = useCallback((value) => {
         setIsFiltering(true);
@@ -45,8 +49,17 @@ export default function PublicacionesPage({posts}) {
         } else {
             setFilteredposts(postsCopy)
         }
+        setCurrentPage(1);
         setIsFiltering(false);
     }, [posts]);
+
+    useEffect(() => {
+        const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+        const endIndex = startIndex + POSTS_PER_PAGE;
+        setPaginatedPosts(filteredPosts.slice(startIndex, endIndex));
+    }, [currentPage, filteredPosts]);
+
+    const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
 
     return (
        <>
@@ -79,19 +92,38 @@ export default function PublicacionesPage({posts}) {
                     <Box mt={[6, 6, 10, 10]}>
                         {isFiltering ? (
                             <Text>Filtrando publicaciones...</Text>
-                        ) : filteredPosts.length > 0 ? (
-                            <Flex width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]}>
-                                {filteredPosts.map(post => 
-                                    <ListItem 
-                                        key={post._id} 
-                                        title={post.title} 
-                                        author={post.author} 
-                                        date={post.date}
-                                        image={post.coverImage}
-                                        url={`/publicaciones/${post.slug}`}
-                                    />
-                                )}
-                            </Flex>
+                        ) : paginatedPosts.length > 0 ? (
+                            <>
+                                <Flex width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]}>
+                                    {paginatedPosts.map(post => 
+                                        <ListItem 
+                                            key={post._id} 
+                                            title={post.title} 
+                                            author={post.author} 
+                                            date={post.date}
+                                            image={post.coverImage}
+                                            url={`/publicaciones/${post.slug}`}
+                                        />
+                                    )}
+                                </Flex>
+                                <Flex justify="center" mt={6}>
+                                    <Button 
+                                        onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))} 
+                                        isDisabled={currentPage === 1}
+                                        mr={2}
+                                    >
+                                        Anterior
+                                    </Button>
+                                    <Text mx={4}>Página {currentPage} de {totalPages}</Text>
+                                    <Button 
+                                        onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))} 
+                                        isDisabled={currentPage === totalPages}
+                                        ml={2}
+                                    >
+                                        Siguiente
+                                    </Button>
+                                </Flex>
+                            </>
                         ) : (
                             <Text width="100%" ml={["0em", "3em", "3em", "3em"]}><b>No existen resultados para tu búsqueda</b></Text>
                         )}

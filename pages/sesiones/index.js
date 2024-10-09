@@ -5,8 +5,8 @@ import ListItem from '../../components/listitem';
 import Section from '../../components/section'
 import customtheme from '../../customtheme.js'
 import { getAllSessions } from '../../lib/api';
-import { Flex, Text, Input, Box } from '@chakra-ui/react'
-import { useState, useCallback } from 'react';
+import { Flex, Text, Input, Box, Button } from '@chakra-ui/react'
+import { useState, useCallback, useEffect } from 'react';
 import { useRouter } from 'next/router'
 import CpcSeo from '../../components/cpcseo'
 
@@ -21,6 +21,8 @@ const toPlainText = (blocks = []) => {
     .join('\n\n')
 }
 
+const SESSIONS_PER_PAGE = 6;
+
 export default function SesionesPage({sessions}) {
     const {colors} = customtheme
     const router = useRouter()
@@ -28,6 +30,8 @@ export default function SesionesPage({sessions}) {
 
     const [filteredSessions, setFilteredSessions] = useState(sessions);
     const [isFiltering, setIsFiltering] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [paginatedSessions, setPaginatedSessions] = useState([]);
 
     const handleFilter = useCallback((value) => {
         setIsFiltering(true);
@@ -48,7 +52,16 @@ export default function SesionesPage({sessions}) {
             setFilteredSessions(sessionsCopy)
         }
         setIsFiltering(false);
+        setCurrentPage(1);
     }, [sessions]);
+
+    useEffect(() => {
+        const startIndex = (currentPage - 1) * SESSIONS_PER_PAGE;
+        const endIndex = startIndex + SESSIONS_PER_PAGE;
+        setPaginatedSessions(filteredSessions.slice(startIndex, endIndex));
+    }, [currentPage, filteredSessions]);
+
+    const totalPages = Math.ceil(filteredSessions.length / SESSIONS_PER_PAGE);
 
     return (
         <>
@@ -81,19 +94,38 @@ export default function SesionesPage({sessions}) {
                         <Box mt={[6, 6, 10, 10]}>
                             {isFiltering ? (
                                 <Text>Filtrando sesiones...</Text>
-                            ) : filteredSessions.length > 0 ? (
-                                <Flex width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]}>
-                                    {filteredSessions.map(session => 
-                                        <ListItem 
-                                            key={session._id} 
-                                            title={session.title} 
-                                            author={session.author} 
-                                            date={session.date}
-                                            image={session.coverImage}
-                                            url={`/sesiones/${session.slug}`}
-                                        />
-                                    )}
-                                </Flex>
+                            ) : paginatedSessions.length > 0 ? (
+                                <>
+                                    <Flex width="100%" justify={["center", "center", "space-around", "space-between"]} alignItems="top" wrap="wrap" px={["1em"]}>
+                                        {paginatedSessions.map(session => 
+                                            <ListItem 
+                                                key={session._id} 
+                                                title={session.title} 
+                                                author={session.author} 
+                                                date={session.date}
+                                                image={session.coverImage}
+                                                url={`/sesiones/${session.slug}`}
+                                            />
+                                        )}
+                                    </Flex>
+                                    <Flex justify="center" mt={6}>
+                                        <Button 
+                                            onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))} 
+                                            isDisabled={currentPage === 1}
+                                            mr={2}
+                                        >
+                                            Anterior
+                                        </Button>
+                                        <Text mx={4}>Página {currentPage} de {totalPages}</Text>
+                                        <Button 
+                                            onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))} 
+                                            isDisabled={currentPage === totalPages}
+                                            ml={2}
+                                        >
+                                            Siguiente
+                                        </Button>
+                                    </Flex>
+                                </>
                             ) : (
                                 <Text width="100%" ml={["0em", "3em", "3em", "3em"]}><b>No existen resultados para tu búsqueda</b></Text>
                             )}

@@ -7,11 +7,11 @@ import { Box } from "@chakra-ui/react"
 
 const GiselaRodriguezPage = () => {
     const links = [
-        {title: "Declaraciones", url: "https://comiteanticorrupcion.mx/publicaciones/DeclaracionesGiselaRodr%C3%ADguez"},
-        {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/entrevistagisela"},
-        {title: "Currículum", url: "https://comiteanticorrupcion.mx/publicaciones/cvgisela"},
-        {title: "Nombramiento", url: "https://comiteanticorrupcion.mx/publicaciones/nombramientogisela"},
-        {title: "Carta de Intención", url: "https://comiteanticorrupcion.mx/publicaciones/cartamotivosgisela"}
+        {title: "Declaraciones", url: "/publicaciones/DeclaracionesGiselaRodriguez"},
+        {title: "Entrevista", url: "/publicaciones/entrevistagisela"},
+        {title: "Currículum", url: "https://drive.google.com/file/d/1uT12FxI4Fs86y2teLTx4CjfY7B0lWj-n/view"},
+        {title: "Nombramiento", url: "/publicaciones/nombramientogisela"},
+        {title: "Carta de Intención", url: "/publicaciones/cartagisela"}
     ]
 
     return ( 
@@ -30,7 +30,7 @@ const GiselaRodriguezPage = () => {
                             title="Gisela Rodríguez"
                             role="Integrante"
                             membersince="2022-2027"
-                            photouRL="/images/giselarodriguez.svg"
+                            photouRL="/images/giselarodriguezfr2.png"
                             mail="gisela@comiteanticorrupcion.mx"
                             links={links}
                             mailFontSize="sm"

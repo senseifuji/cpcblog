@@ -51,7 +51,7 @@ const Header = ({position}) => {
         <header>
             <Flex width="100%" justify="center">
                 <Flex justify="space-between" align="center" width={["100%", "80%", "95%", "80%", "70%"]}>
-
+    
                     {/* Menu for mobile */}
                     {!logoSize && (
                         <div id="menucontainer" onClick={onOpen}>
@@ -71,52 +71,56 @@ const Header = ({position}) => {
                             </Link>
                         </Box>
                    )}
-
+    
                     {/* LINKS SECTION */}
                     {linksPadding && (
-    <Flex color={white} direction="row" justify={["center", "center", "center", "left"]} fontFamily={gothamCondensed} fontSize="1.2em" width="inherit">
-        <List display="flex" flexDirection="row" alignItems="center" styleType="none">
-            <li className={"item " +  (router.pathname === '/acerca' ? 'inpage':'')} style={{marginRight: "20px"}}> 
-                <Link href="/acerca" legacyBehavior><a>Acerca de</a></Link>
-            </li>
-            <li className={"item " + (router.pathname === '/faq' ? 'inpage':'')} style={{marginRight: "20px"}}>
-                <Link href="/faq" legacyBehavior><a>Preguntas Frecuentes</a></Link>
-            </li>
-            <li className={"item " +  (router.pathname === '/publicaciones' ? 'inpage':'')} style={{marginRight: "20px"}}>
-                <Link href="/publicaciones" legacyBehavior><a>Publicaciones</a></Link>
-            </li>
-            <li className={"item " +  (router.pathname === '/sesiones' ? 'inpage':'')} style={{marginRight: "20px"}}>
-                <Link href="/sesiones" legacyBehavior><a>Sesiones</a></Link>
-            </li>
-            <li className={"item " +  (router.pathname === '/contacto' ? 'inpage':'')} style={{marginRight: "20px"}}>
-                <Link href="/contacto" legacyBehavior><a>Contacto</a></Link>
-            </li>
-        </List>
-    </Flex>
-)}
-
-                    {/* SOCIAL MEDIA SECTION */}
-                    <Flex>
-                        <List d="flex">
-                            <li className="socialitem">
-                                <Link href="https://www.facebook.com/cpcchih/" legacyBehavior>
-                                    <a target="_blank"><i aria-hidden className="fab fa-facebook"></i></a>
-                                </Link>
-                            </li>
-                            <li className="socialitem">
-                                <Link href="http://twitter.com/cpc_chih" legacyBehavior>
-                                    <a target="_blank"><i aria-hidden className="fab fa-twitter"></i></a>
-                                </Link>
-                            </li>
-                            <li className="socialitem">
-                                <Link
-                                    href="https://www.youtube.com/channel/UCSzbJsei-QnAbjUMmHXBxYg?view_as=subscriber"
-                                    legacyBehavior>
-                                    <a target="_blank"><i aria-hidden className="fab fa-youtube"></i></a>
-                                </Link>
-                            </li>
-                        </List>
-                    </Flex>  
+                        <Flex color={white} direction="row" justify={["center", "center", "center", "left"]} fontFamily={gothamCondensed} fontSize="1.2em" width="inherit">
+                            <List display="flex" flexDirection="row" alignItems="center" styleType="none">
+                                <li className={"item " +  (router.pathname === '/acerca' ? 'inpage':'')} style={{marginRight: "20px"}}> 
+                                    <Link href="/acerca" legacyBehavior><a>Acerca de</a></Link>
+                                </li>
+                                <li className={"item " + (router.pathname === '/faq' ? 'inpage':'')} style={{marginRight: "20px"}}>
+                                    <Link href="/faq" legacyBehavior><a>Preguntas Frecuentes</a></Link>
+                                </li>
+                                <li className={"item " +  (router.pathname === '/publicaciones' ? 'inpage':'')} style={{marginRight: "20px"}}>
+                                    <Link href="/publicaciones" legacyBehavior><a>Publicaciones</a></Link>
+                                </li>
+                                <li className={"item " +  (router.pathname === '/sesiones' ? 'inpage':'')} style={{marginRight: "20px"}}>
+                                    <Link href="/sesiones" legacyBehavior><a>Sesiones</a></Link>
+                                </li>
+                                <li className={"item " +  (router.pathname === '/contacto' ? 'inpage':'')} style={{marginRight: "20px"}}>
+                                    <Link href="/contacto" legacyBehavior><a>Contacto</a></Link>
+                                </li>
+                            </List>
+                        </Flex>
+                    )}
+    
+{/* SOCIAL MEDIA SECTION */}
+<Flex display={["none", "none", "flex", "flex"]}>
+    <List style={{ display: "flex", listStyleType: "none", margin: 0, padding: 0 }}>
+        <li style={{ padding: "0 0.5em", fontSize: "1.55em" }}>
+            <Link href="https://www.facebook.com/cpcchih/" legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer" style={{ color: white, textDecoration: "none" }}>
+                    <i aria-hidden className="fab fa-facebook" style={{ transition: "color 0.3s" }} onMouseEnter={(e) => e.target.style.color = yellow} onMouseLeave={(e) => e.target.style.color = white}></i>
+                </a>
+            </Link>
+        </li>
+        <li style={{ padding: "0 0.5em", fontSize: "1.55em" }}>
+            <Link href="http://twitter.com/cpc_chih" legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer" style={{ color: white, textDecoration: "none" }}>
+                    <i aria-hidden className="fab fa-twitter" style={{ transition: "color 0.3s" }} onMouseEnter={(e) => e.target.style.color = yellow} onMouseLeave={(e) => e.target.style.color = white}></i>
+                </a>
+            </Link>
+        </li>
+        <li style={{ padding: "0 0.5em", fontSize: "1.55em" }}>
+            <Link href="https://www.youtube.com/channel/UCSzbJsei-QnAbjUMmHXBxYg?view_as=subscriber" legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer" style={{ color: white, textDecoration: "none" }}>
+                    <i aria-hidden className="fab fa-youtube" style={{ transition: "color 0.3s" }} onMouseEnter={(e) => e.target.style.color = yellow} onMouseLeave={(e) => e.target.style.color = white}></i>
+                </a>
+            </Link>
+        </li>
+    </List>
+</Flex>
                 </Flex>
 
 

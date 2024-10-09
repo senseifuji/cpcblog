@@ -212,65 +212,40 @@ export default function Home({ posts, banners }) {
 
 {/* --------VACUNA A LA CORRUPCIÓN-------- */}
 <Section bg="cpc.yellowLight" color="cpc.blackLight" desktopWidth="100%">
-  {banners && banners.filter(banner => banner.section === 'vacunaCorrupcion').length > 0 && (
-    <Flex direction="column" mb={4}>
-      {banners.filter(banner => banner.section === 'vacunaCorrupcion').map((banner) => (
-        <Flex key={banner._id} direction="column" alignItems="center" textAlign="center" px="2em" mb="2em" position="relative">
-          <Image src={banner.image} alt={banner.title} width="100%" height="auto" />
-          <Text 
-            fontFamily={banner.font} 
-            color={banner.textColor?.hex || 'defaultColor'} 
-            fontSize={["1.5em", "2em", "2.5em", "3em"]}
-            position="absolute"
-            top={banner.textPosition === 'topLeft' || banner.textPosition === 'topRight' ? "10%" : 
-                 banner.textPosition === 'center' ? "50%" :
-                 "90%"}
-            left={banner.textPosition === 'topLeft' || banner.textPosition === 'bottomLeft' ? "10%" :
-                  banner.textPosition === 'center' ? "50%" :
-                  "90%"}
-            transform={banner.textPosition === 'center' ? "translate(-50%, -50%)" : "none"}
-            textAlign={banner.textPosition.includes('Left') ? "left" : 
-                       banner.textPosition.includes('Right') ? "right" : 
-                       "center"}
-            maxWidth="80%"
-          >
-            {banner.text}
-          </Text>
-        </Flex>
-      ))}
-    </Flex>
-  )}
   <Flex direction={["column", "column", "row", "row"]} alignItems="center">
     <Flex direction="column" width="100%" justify="center" alignItems="center" py={["2em"]}>
       <Flex direction="column" alignItems="center" transform="translateY(150px)" zIndex="50" mt="-10em">
-        <Text fontFamily="cpc.gothamMedium" fontSize={["2.2em", "2.8em", "2.8em", "2.8em"]}  color={white} textShadow="0px 0px 10px rgba(0,0,0,0.3)">
+        <Text fontFamily="cpc.gothamMedium" fontSize={["2.2em", "2.8em", "2.8em", "2.8em"]} color={white} textShadow="0px 0px 10px rgba(0,0,0,0.3)">
           <b>vacuna a la</b>
         </Text>
-        <Text fontFamily="cpc.gothamMedium" fontSize={["2.5em", "2.8em", "2.8em", "3.3em"]} mt="-0.75em" color={white} textShadow="0px 0px 10px rgba(0,0,0,0.3)" letterSpacing="-0.9px">
+        <Text fontFamily="cpc.gothamMedium" fontSize={["2.5em", "2.8em", "2.8em", "3.3em"]} mt="-0.75em" color={white} fontWeight="" textShadow="0px 0px 10px rgba(0,0,0,0.3)" letterSpacing="-0.9px">
           <b>CORRUPCIÓN</b>
         </Text>
-        <Image src="/images/covid.png" alt="Covid" style={covidImageStyle} />
+        <Text fontSize={["2em", "2em", "2em", "2em"]} mt={["-0.5em"]} px={5} py={0} fontFamily="cpc.gothamCondensed" color={white} bg={blue} width="fit-content">durante el COVID19</Text>
       </Flex>
+      <Image src="/images/covid.png" alt="COVID-19" style={covidImageStyle} />
     </Flex>
     <Flex fontFamily="cpc.gothamCondensed" lineHeight="1.1em" fontSize="1.2em" direction="column" width="100%" textAlign="center" alignItems="center" px="1em">
       <Text fontFamily="cpc.gothamCondensed" mb={3}>
-        Investigamos el proceso de compra de vacunas contra COVID-19 en Chihuahua.
+        Sabemos que estamos en un momento complicado como planeta y 
+        como especie. Son justo estos momentos en los que necesitamos 
+        respuestas públicas a la altura.
       </Text>
       <Text fontFamily="cpc.gothamCondensed" mb={3}>
-        Encontramos irregularidades en el proceso de compra y aplicación de las vacunas.
+        Es por eso que desde el CPC estamos vigilando como está reaccionando 
+        el gobierno estatal ante la emergencia.
       </Text>
-      <Link href="/publicaciones/vacunaalacorrupcion" passHref legacyBehavior>
-        <Button 
-          as="a"
-          size="lg" 
-          bg={blue} 
-          color={yellow} 
-          rounded="10px" 
-          _hover={{ bg: "cpc.blueMedium" }} 
-          width={["250px", "200px", "200px", "200px"]}
-        >
+      <Link href="/publicaciones/investigacioncovid" passHref legacyBehavior>
+        <Button as="a" size="lg" bg={blue} color={yellow} rounded="10px" _hover={{ bg: "cpc.blueMedium" }} width={["250px", "200px", "200px", "200px"]}>
           <i aria-hidden="true" className="far fa-file-alt"></i>
           &nbsp; Conoce la investigación
+        </Button>
+      </Link>
+      <Text fontFamily="cpc.gothamCondensed" my={4}>¿Ya conoces nuestras exigencias y quieres aportar?</Text>
+      <Link href="/contacto" passHref legacyBehavior>
+        <Button as="a" size="lg" bg={yellowLight} color={blue} borderColor={blue} border="2px" rounded="10px" _hover={{ bg: "cpc.blueLight" }} width="200px">
+          <i aria-hidden="true" className="fas fa-hand-peace"></i>
+          &nbsp; Me interesa sumarme
         </Button>
       </Link>
     </Flex>

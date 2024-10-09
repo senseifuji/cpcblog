@@ -323,6 +323,13 @@ width={["100%", "90%", "80%", "60%"]}>
         profileUrl="/integrantes/hectorvillanueva"
         imageStyle={{ borderRadius: '50%', width: '200px', height: '200px', objectFit: 'cover' }}
     />
+        <IntegrantCard
+        name="Gisela Rodríguez"
+        role="Integrante del CPC"
+        imageUrl="/images/giselarodriguezfr2.png"
+        profileUrl="/integrantes/giselarodriguez"
+        imageStyle={{ borderRadius: '50%', width: '200px', height: '200px', objectFit: 'cover' }}
+    />
                 </Flex>
                 <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" mt={10} mb={6}>
                     Exintegrantes del CPC

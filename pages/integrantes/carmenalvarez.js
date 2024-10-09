@@ -8,11 +8,11 @@ import { Box } from "@chakra-ui/react"
 
 const CarmenAlvarezPage = () => {
     const links = [
-        {title: "Declaraciones 3 de 3 ", url: "https://comiteanticorrupcion.mx/publicaciones/DeclaracionesCarmenAlvarez"},
-        {title: "Entrevista", url: "https://comiteanticorrupcion.mx/publicaciones/entrevistacarmen"},
-        {title: "Currículum", url: "https://comiteanticorrupcion.mx/publicaciones/cvcarmen"},
-        {title: "Nombramiento", url: "https://comiteanticorrupcion.mx/publicaciones/nombramientocarmen"},
-        {title: "Carta de Intención", url: "https://comiteanticorrupcion.mx/publicaciones/cartacarmen"}
+        {title: "Declaraciones 3 de 3", url: "/publicaciones/DeclaracionesCarmenAlvarez"},
+        {title: "Entrevista", url: "/publicaciones/EntrevistaCarmen"},
+        {title: "Currículum", url: "https://drive.google.com/file/d/1GHk48kAoBRL0weNv_dgyxLolLxdJA3Wv/view"},
+        {title: "Nombramiento", url: "/publicaciones/nombramientocarmen"},
+        {title: "Carta de Intención", url: "/publicaciones/cartacarmen"}
     ]
 
     return ( 
