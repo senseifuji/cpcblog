@@ -81,11 +81,10 @@ export default function Contact() {
                         </Text>
                         <Flex justify="center" alignItems="center" flexWrap="wrap" width="100%" mt={["2em", "2em", "0em", "0em"]}>
                             {[
-                                {name: "René Moreno", href: "/integrantes/renemoreno", image: "/images/cpc_profile_rene.svg"},
-                                {name: "Miguel Gómez", href: "/integrantes/miguelgomez", image: "/images/cpc_profile_miguel.svg"},
-                                {name: "Carmen Álvarez", href: "/integrantes/carmenalvarez", image: "/images/cpc_profile_carmen.svg"},
-                                {name: "Jesús Abbud", href: "/integrantes/jesusabbud", image: "/images/cpc_profile_jesus.svg"},
-                                {name: "Gisela Rodríguez", href: "/integrantes/giselarodriguez", image: "/images/cpc_profile_gisela.svg"}
+                                {name: "Carmen Lucía Pérez Lozano", href: "/integrantes/carmenalvarez", image: "/images/carmenalvarezfr2.png", role: "Presidenta del CPC"},
+                                {name: "Jesús Abraham López López", href: "/integrantes/jesusabbud", image: "/images/jesusabuddfr2.png", role: "Integrante del CPC"},
+                                {name: "Héctor José Villanueva Escamilla", href: "/integrantes/hectorvillanueva", image: "/images/josevillanuevafr2.png", role: "Integrante del CPC"},
+                                {name: "Gisela Rodríguez", href: "/integrantes/giselarodriguez", image: "/images/giselarodriguezfr2.png", role: "Integrante del CPC"}
                             ].map((member, index) => (
                                 <Box key={index} textAlign="center" m={4} width={["100%", "40%", "20%", "20%"]}>
                                     <Link href={member.href} passHref legacyBehavior>
@@ -95,10 +94,12 @@ export default function Contact() {
                                                 alt={member.name} 
                                                 width={150}
                                                 height={150}
+                                                style={{ borderRadius: '50%', objectFit: 'cover' }}
                                             />
                                         </a>
                                     </Link>
                                     <Text mt={2} fontWeight="bold" fontSize="lg">{member.name}</Text>
+                                    <Text fontSize="md">{member.role}</Text>
                                 </Box>
                             ))}
                         </Flex>
