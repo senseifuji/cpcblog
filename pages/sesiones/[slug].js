@@ -8,12 +8,8 @@ import {urlFor} from '../../lib/api';
 
 
 const SessionDetail = ({session}) => {
-    if (!session) {
-        return <div>No se encontró la sesión</div>;
-    }
-
     const title = `${session.title} - CPC Anticorrupcion`
-    const openGraphImage = session.coverImage ? urlFor(session.coverImage).height(600).width(800).url() : ''
+    const openGraphImage = urlFor(session.coverImage).height(600).width(800).url()
     return ( 
         <>
             <CpcSeo 
@@ -26,7 +22,7 @@ const SessionDetail = ({session}) => {
                 <Content>
                     <DetailItem 
                         title={session.title} 
-                        author={session.author?.name} 
+                        author={session.author.name} 
                         date={session.date}
                         coverImage={session.coverImage}
                         content={session.content}
@@ -42,20 +38,17 @@ const SessionDetail = ({session}) => {
 
 export async function getStaticProps({params}){
     const session = await getSessionBySlug(params.slug);
-    if (!session) {
-        return {
-            notFound: true
-        }
-    }
     return {
         props: {session},
         revalidate: 10
+
+
     }
 }
 
 export async function getStaticPaths(){
     const sessions = await getAllSessions();
-    const paths = sessions?.map(session => { return {params: {slug: session.slug}} }) || []
+    const paths = sessions?.map(session => { return {params: {slug: session.slug}} })
     return {
         paths: paths,
         fallback: 'blocking'
@@ -64,3 +57,4 @@ export async function getStaticPaths(){
 
  
 export default SessionDetail;
+
