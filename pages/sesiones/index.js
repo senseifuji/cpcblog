@@ -42,9 +42,8 @@ export default function SesionesPage({sessions}) {
             let newSessions = sessionsCopy.filter(session =>  {
                 let parsedTitle = session.title.toLowerCase()
                 let parsedDate = moment(session.date, 'YYYY-MM-DD').format('D [de] MMMM  YYYY')
-                let parsedAuthor = session.author?.name?.toLowerCase() || ''
                 let textContent = toPlainText(session.content).toLowerCase()
-                return parsedTitle.includes(parsedValue) || parsedDate.includes(parsedValue) || textContent.includes(parsedValue) || parsedAuthor.includes(parsedValue)
+                return parsedTitle.includes(parsedValue) || parsedDate.includes(parsedValue) || textContent.includes(parsedValue)
             })
 
             setFilteredSessions(newSessions)
@@ -84,7 +83,7 @@ export default function SesionesPage({sessions}) {
                     </Section>
                     <Section bg="cpc.white" color="cpc.red" desktopWidth="95%">
                         <Input 
-                            placeholder="Filtra una sesión por título, fecha, autor o contenido." 
+                            placeholder="Filtra una sesión por título, fecha o contenido." 
                             borderColor="cpc.red" 
                             focusBorderColor="cpc.red" 
                             size="lg" 
@@ -101,7 +100,6 @@ export default function SesionesPage({sessions}) {
                                             <ListItem 
                                                 key={session._id} 
                                                 title={session.title} 
-                                                author={session.author} 
                                                 date={session.date}
                                                 image={session.coverImage}
                                                 url={`/sesiones/${session.slug}`}
