@@ -3,7 +3,6 @@ import Header from '../../components/header'
 import Content from '../../components/content';
 import Member from '../../components/member'
 import CpcSeo from '../../components/cpcseo';
-import { Box } from "@chakra-ui/react"
 
 const JesusAbbudPage = () => {
 
@@ -27,7 +26,6 @@ const JesusAbbudPage = () => {
             <Layout>
                 <Header position="fixed"/>
                 <Content>
-                <Box maxWidth="800px" margin="auto" padding="2rem">
                     <Member 
                         title="Jesús Abbud"
                         role="Integrante"
@@ -39,7 +37,6 @@ const JesusAbbudPage = () => {
                             mailFontSize="sm"
                             linksFontSize="sm"
                     />
-                    </Box>
                 </Content>
             </Layout>
         </>
