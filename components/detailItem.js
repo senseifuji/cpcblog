@@ -60,12 +60,16 @@ const DetailItem = ({title, author, date, coverImage, content}) => {
            <Text mt={["0.5em", "0.5em", "1.25em", "1.25em"]} fontFamily="cpc.gothamCondensed" lineHeight="1em" fontSize={["2em", "2.5em", "2.75em", "3em"]}><b>{title}</b></Text>
            <Flex direction={["column", "row", "row", "row"]} justify="space-evenly" width="100%" alignItems="center" mt={["1.25em", "1.25em", "1.25em", "1.25em"]} mb={["1em"]}>
              <Flex direction={["column","row", "row", "row"]} justify="flex-start" alignItems="center" my={4} mt={3} width="100%">
-               <Image
-                   src={urlFor(author.avatar).height(48).width(48).url()}
-                   alt={author.name}
-                   rounded="full"
-                   unsized="true"
-               />
+               {author && author.avatar ? (
+                  <Image
+                      src={urlFor(author.avatar).height(48).width(48).url()}
+                      alt={author.name}
+                      rounded="full"
+                      unsized="true"
+                  />
+                ) : (
+                  <Box width="48px" height="48px" bg="gray.200" rounded="full" />
+                )}
                <Flex direction="column" alignItems={["center", "flex-start", "flex-start", "flex-start"]}>
                  <Text mx={2}  fontSize={["1em", "1em", "1.15em", "1em"]} color="cpc.black"><b>{author.name}</b></Text>
                  <Text mx={2} fontSize={["1em", "1em", "1.15em", "1.15em"]} fontFamily="cpc.gothamCondensedBook" color="cpc.black" lineHeight="1em">Publicado el día {parsedDate}</Text>
