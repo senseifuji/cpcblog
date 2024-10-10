@@ -220,26 +220,35 @@ width={["100%", "90%", "80%", "60%"]}>
             </Section>
             
             <Section bg="cpc.white" color="cpc.black" desktopWidth="58%">
-                <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]} 
-                mt={["-1.5em", "-1em", "-.8em", "-.8em"]}> 
-                    + 
-                </Text>
-                
-                <Image src="/images/comiteparticipacion.svg" 
-                alt="Comité de Participación Ciudadana" 
-                width={["15em", "18em", "20em", "20em"]} 
-                mt={["0", "1.25em", "1.25em", "1.25em"]} 
-                mb={["0", "0em", "0em", "0em"]}/>            
-                <Text width={["90%", "400px", "400px", "400px"]} border="2px" 
-                borderRadius="lg" px={["1.5em", "1em", "1.2em", "1.2em"]} 
-                py={["0.5em", "1em", ".5em", ".5em"]} my="0.8em" 
-                fontFamily="cpc.spaceMonoRegular" borderColor="cpc.red" 
-                fontSize={["1em", "1em", "1em", "1em"]} 
-                textAlign={["center", "left", "center", "center"]} 
-                lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
-                    5 personas de la academia o sociedad civil, con experiencia en: transparencia, 
-                    participación ciudadana y anticorrupción
-                </Text>
+                <Flex direction="column" alignItems="center" textAlign="center">
+                    <Text color="cpc.black" fontSize={["3em", "4em", "4em", "4em"]} mt={["-1.5em", "-1em", "-.8em", "-.8em"]}> 
+                        + 
+                    </Text>
+                    
+                    <Image 
+                        src="/images/comiteparticipacion.svg" 
+                        alt="Comité de Participación Ciudadana" 
+                        width={["15em", "18em", "20em", "20em"]} 
+                        mt={["0", "1.25em", "1.25em", "1.25em"]} 
+                        mb={["0", "0em", "0em", "0em"]}
+                    />            
+                    <Text 
+                        width={["90%", "400px", "400px", "400px"]} 
+                        border="2px" 
+                        borderRadius="lg" 
+                        px={["1.5em", "1em", "1.2em", "1.2em"]} 
+                        py={["0.5em", "1em", ".5em", ".5em"]} 
+                        my="0.8em" 
+                        fontFamily="cpc.spaceMonoRegular" 
+                        borderColor="cpc.red" 
+                        fontSize={["1em", "1em", "1em", "1em"]} 
+                        textAlign="center" 
+                        lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}
+                    >
+                        5 personas de la academia o sociedad civil, con experiencia en: transparencia, 
+                        participación ciudadana y anticorrupción
+                    </Text>
+                </Flex>
             </Section>
 
             {/* FUNCION DEL COMITE  */}
@@ -302,42 +311,41 @@ width={["100%", "90%", "80%", "60%"]}>
 <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" mb={6}>
     ¿Quiénes integran el Comité de Participación Ciudadana?
 </Text>
-<Flex direction={["column", "row"]} justify="center" alignItems="center" width="100%" flexWrap="wrap">
-    <IntegrantCard
-        name="Carmen Lucila Álvarez..."
-        role="Presidenta del CPC"
-        imageUrl="/images/carmenalvarezfr2.png"
-        profileUrl="/integrantes/carmenalvarez"
-        imageStyle={{ borderRadius: '50%', width: '200px', height: '200px', objectFit: 'cover' }}
-        nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
-    />
-    <IntegrantCard
-        name="Jesús Abdala Abbud Yepiz"
-        role="Integrante del CPC"
-        imageUrl="/images/jesusabuddfr2.png"
-        profileUrl="/integrantes/jesusabbud"
-        imageStyle={{ borderRadius: '50%', width: '200px', height: '200px', objectFit: 'cover' }}
-        nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
-    />
-    <IntegrantCard
-        name="Héctor José Villanueva..."
-        role="Integrante del CPC"
-        imageUrl="/images/josevillanuevafr2.png"
-        profileUrl="/integrantes/hectorvillanueva"
-        imageStyle={{ borderRadius: '50%', width: '200px', height: '200px', objectFit: 'cover' }}
-        nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
-    />
-    <IntegrantCard
-        name="Gisela Analí Rodríguez..."
-        role="Integrante del CPC"
-        imageUrl="/images/giselarodriguezfr2.png"
-        profileUrl="/integrantes/giselarodriguez"
-        imageStyle={{ borderRadius: '50%', width: '200px', height: '200px', objectFit: 'cover' }}
-        nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
-    />
+<Flex 
+  direction={["column", "row"]} 
+  justify="center" 
+  alignItems="center" 
+  width="100%" 
+  flexWrap="wrap" 
+  spacing={8} 
+>
+  <IntegrantCard
+    name="Carmen Lucila Álvarez González"
+    role="Presidenta del CPC"
+    imageUrl="/images/carmenalvarezfr2.png"
+    profileUrl="/integrantes/carmenalvarez"
+  />
+  <IntegrantCard
+    name="Jesús Abdala Abbud Yepiz"
+    role="Integrante del CPC"
+    imageUrl="/images/jesusabuddfr2.png"
+    profileUrl="/integrantes/jesusabbud"
+  />
+  <IntegrantCard
+    name="Héctor José Villanueva Escamilla"
+    role="Integrante del CPC"
+    imageUrl="/images/josevillanuevafr2.png"
+    profileUrl="/integrantes/hectorvillanueva"
+  />
+  <IntegrantCard
+    name="Gisela Analí Rodríguez Burciaga"
+    role="Integrante del CPC"
+    imageUrl="/images/giselarodriguezfr2.png"
+    profileUrl="/integrantes/giselarodriguez"
+  />
                 </Flex>
                 <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" mt={10} mb={6}>
-                    Exintegrantes del CPC
+                    Expresidentes del CPC
                 </Text>
                 <Flex direction={["column", "row"]} justify="center" alignItems="center" width="100%" flexWrap="wrap" spacing={4}>
                     <Box mb={4} mx={2}>
@@ -346,7 +354,6 @@ width={["100%", "90%", "80%", "60%"]}>
                             imageUrl="/images/salvadordominguezfr2.png"
                             profileUrl="/integrantes/miguelgomez"
                             isFormer={true}
-                            nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                         />
                     </Box>
                     <Box mb={4} mx={2}>
@@ -355,7 +362,6 @@ width={["100%", "90%", "80%", "60%"]}>
                             imageUrl="/images/renemorenofr2.png"
                             profileUrl="/integrantes/renemoreno"
                             isFormer={true}
-                            nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                         />
                     </Box>
                     <Box mb={4} mx={2}>
@@ -364,7 +370,6 @@ width={["100%", "90%", "80%", "60%"]}>
                             imageUrl="/images/lilianaochafr2.png"
                             profileUrl="/integrantes/lilianaochoa"
                             isFormer={true}
-                            nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                         />
                     </Box>
                     <Box mb={4} mx={2}>
@@ -373,7 +378,6 @@ width={["100%", "90%", "80%", "60%"]}>
                             imageUrl="/images/isabelterrazasfr2.png"
                             profileUrl="/integrantes/anaterrazas"
                             isFormer={true}
-                            nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                         />
                     </Box>
                     <Box mb={4} mx={2}>
@@ -382,7 +386,6 @@ width={["100%", "90%", "80%", "60%"]}>
                             imageUrl="/images/yadiralozanofr2.png"
                             profileUrl="/integrantes/normalozano"
                             isFormer={true}
-                            nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                         />
                     </Box>
                     <Box mb={4} mx={2}>
@@ -391,7 +394,6 @@ width={["100%", "90%", "80%", "60%"]}>
                             imageUrl="/images/enriquetamezfr2.png"
                             profileUrl="/integrantes/joseenriquez"
                             isFormer={true}
-                            nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                         />
                     </Box>
                 </Flex>
