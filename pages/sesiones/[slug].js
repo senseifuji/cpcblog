@@ -27,7 +27,6 @@ const SessionDetail = ({session}) => {
                 <Content>
                     <DetailItem 
                         title={session.title} 
-                        author={session.author.name} 
                         date={session.date}
                         coverImage={session.coverImage}
                         content={session.content}
@@ -65,4 +64,3 @@ export async function getStaticPaths(){
 
  
 export default SessionDetail;
-
