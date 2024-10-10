@@ -8,6 +8,11 @@ import {urlFor} from '../../lib/api';
 
 
 const SessionDetail = ({session}) => {
+    if (!session) {
+        return <p>Sesión no encontrada</p>;
+      }
+    
+      console.log('session.author:', session.author);    
     const title = `${session.title} - CPC Anticorrupcion`
     const openGraphImage = urlFor(session.coverImage).height(600).width(800).url()
     return ( 
@@ -38,11 +43,14 @@ const SessionDetail = ({session}) => {
 
 export async function getStaticProps({params}){
     const session = await getSessionBySlug(params.slug);
+    if (!session) {
+        return {
+            notFound: true,
+        }
+    }
     return {
         props: {session},
         revalidate: 10
-
-
     }
 }
 
