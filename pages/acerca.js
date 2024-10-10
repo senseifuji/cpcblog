@@ -303,14 +303,14 @@ width={["100%", "90%", "80%", "60%"]}>
 </Text>
 <Flex direction={["column", "row"]} justify="center" alignItems="center" width="100%" flexWrap="wrap">
     <IntegrantCard
-        name="Carmen Lucía Pérez Lozano"
+        name="Carmen Lucila Álvarez González"
         role="Presidenta del CPC"
         imageUrl="/images/carmenalvarezfr2.png"
         profileUrl="/integrantes/carmenalvarez"
         imageStyle={{ borderRadius: '50%', width: '200px', height: '200px', objectFit: 'cover' }}
     />
     <IntegrantCard
-        name="Jesús Abraham López López"
+        name="Jesús Abdala Abbud Yepiz"
         role="Integrante del CPC"
         imageUrl="/images/jesusabuddfr2.png"
         profileUrl="/integrantes/jesusabbud"
@@ -324,7 +324,7 @@ width={["100%", "90%", "80%", "60%"]}>
         imageStyle={{ borderRadius: '50%', width: '200px', height: '200px', objectFit: 'cover' }}
     />
         <IntegrantCard
-        name="Gisela Rodríguez"
+        name="Gisela Analí Rodríguez Burciaga"
         role="Integrante del CPC"
         imageUrl="/images/giselarodriguezfr2.png"
         profileUrl="/integrantes/giselarodriguez"
@@ -345,7 +345,7 @@ width={["100%", "90%", "80%", "60%"]}>
                     </Box>
                     <Box mb={4} mx={2}>
                         <IntegrantCard
-                            name="René Moreno"
+                            name="René Moreno Medina"
                             imageUrl="/images/renemorenofr2.png"
                             profileUrl="/integrantes/renemoreno"
                             isFormer={true}
