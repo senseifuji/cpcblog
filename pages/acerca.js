@@ -184,8 +184,8 @@ width={["100%", "90%", "80%", "60%"]}>
                     </Text>
                     
                     <Text width={["90%", "400px", "400px", "400px"]} border="2px" 
-                    borderRadius="lg" px={["1.5em", "1em", "1em", "1em"]} 
-                    py={["0.5em", "1em", "1em", "1em"]} 
+                    borderRadius="lg" px={["1.5em", "1em", "1.2em", "1.2em"]} 
+                    py={["0.5em", "1em", ".5em", ".5em"]} 
                     fontFamily="cpc.spaceMonoRegular" fontSize={["1em", "1em", "1em", "1em"]} 
                     lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                        Los <b>67 municipios</b> del estado de Chihuahua
