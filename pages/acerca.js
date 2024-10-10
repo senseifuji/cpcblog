@@ -4,6 +4,7 @@ import Header from '../components/header'
 import Content from '../components/content';
 import Section from '../components/section'
 import IntegrantCard from '../components/IntegrantCard';
+import { Button } from "@chakra-ui/react";
 
 import customtheme from '../customtheme.js'
 
@@ -205,7 +206,7 @@ width={["100%", "90%", "80%", "60%"]}>
                     borderColor="cpc.redCoor" fontSize={["1em", "1em", "1em", "1em"]} 
                     textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
                         Integrado por:
-                        <List styleType="disc">
+                        <List styleType="disc" pl={4}>
                             <ListItem>Secretaría de la Función Pública</ListItem>
                             <ListItem>Auditoría Superior del Estado </ListItem>
                             <ListItem>Tribunal de Justicia Administrativa </ListItem>
@@ -264,7 +265,7 @@ width={["100%", "90%", "80%", "60%"]}>
                 py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
                 borderColor="cpc.white" fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
                 textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
-                    <List styleType="square">
+                    <List styleType="square" pl={4}>
                         <ListItem><b>No</b> metemos gente a la cárcel</ListItem>
                         <ListItem><b>No</b> llevamos expedientes de investigación </ListItem>
                         <ListItem><b>No</b> investigamos, substanciamos ni sancionamos</ListItem>
@@ -284,7 +285,7 @@ width={["100%", "90%", "80%", "60%"]}>
                 py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
                 borderColor="cpc.white" fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
                 textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
-                    <List styleType="square">
+                    <List styleType="square" pl={4}>
                         <ListItem>Proponemos políticas públicas que permitan 
                         prevenir, detectar y sancionar actos de corrupción</ListItem>
                         <ListItem>Vigilamos el funcionamiento del 
@@ -303,11 +304,12 @@ width={["100%", "90%", "80%", "60%"]}>
 </Text>
 <Flex direction={["column", "row"]} justify="center" alignItems="center" width="100%" flexWrap="wrap">
     <IntegrantCard
-        name="Carmen Lucila Álvarez González"
+        name="Carmen Lucila Álvarez..."
         role="Presidenta del CPC"
         imageUrl="/images/carmenalvarezfr2.png"
         profileUrl="/integrantes/carmenalvarez"
         imageStyle={{ borderRadius: '50%', width: '200px', height: '200px', objectFit: 'cover' }}
+        nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
     />
     <IntegrantCard
         name="Jesús Abdala Abbud Yepiz"
@@ -315,20 +317,23 @@ width={["100%", "90%", "80%", "60%"]}>
         imageUrl="/images/jesusabuddfr2.png"
         profileUrl="/integrantes/jesusabbud"
         imageStyle={{ borderRadius: '50%', width: '200px', height: '200px', objectFit: 'cover' }}
+        nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
     />
     <IntegrantCard
-        name="Héctor José Villanueva Escamilla"
+        name="Héctor José Villanueva..."
         role="Integrante del CPC"
         imageUrl="/images/josevillanuevafr2.png"
         profileUrl="/integrantes/hectorvillanueva"
         imageStyle={{ borderRadius: '50%', width: '200px', height: '200px', objectFit: 'cover' }}
+        nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
     />
-        <IntegrantCard
-        name="Gisela Analí Rodríguez Burciaga"
+    <IntegrantCard
+        name="Gisela Analí Rodríguez..."
         role="Integrante del CPC"
         imageUrl="/images/giselarodriguezfr2.png"
         profileUrl="/integrantes/giselarodriguez"
         imageStyle={{ borderRadius: '50%', width: '200px', height: '200px', objectFit: 'cover' }}
+        nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
     />
                 </Flex>
                 <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" mt={10} mb={6}>
@@ -341,6 +346,7 @@ width={["100%", "90%", "80%", "60%"]}>
                             imageUrl="/images/salvadordominguezfr2.png"
                             profileUrl="/integrantes/miguelgomez"
                             isFormer={true}
+                            nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                         />
                     </Box>
                     <Box mb={4} mx={2}>
@@ -349,6 +355,7 @@ width={["100%", "90%", "80%", "60%"]}>
                             imageUrl="/images/renemorenofr2.png"
                             profileUrl="/integrantes/renemoreno"
                             isFormer={true}
+                            nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                         />
                     </Box>
                     <Box mb={4} mx={2}>
@@ -357,6 +364,7 @@ width={["100%", "90%", "80%", "60%"]}>
                             imageUrl="/images/lilianaochafr2.png"
                             profileUrl="/integrantes/lilianaochoa"
                             isFormer={true}
+                            nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                         />
                     </Box>
                     <Box mb={4} mx={2}>
@@ -365,6 +373,7 @@ width={["100%", "90%", "80%", "60%"]}>
                             imageUrl="/images/isabelterrazasfr2.png"
                             profileUrl="/integrantes/anaterrazas"
                             isFormer={true}
+                            nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                         />
                     </Box>
                     <Box mb={4} mx={2}>
@@ -373,6 +382,7 @@ width={["100%", "90%", "80%", "60%"]}>
                             imageUrl="/images/yadiralozanofr2.png"
                             profileUrl="/integrantes/normalozano"
                             isFormer={true}
+                            nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                         />
                     </Box>
                     <Box mb={4} mx={2}>
@@ -381,6 +391,7 @@ width={["100%", "90%", "80%", "60%"]}>
                             imageUrl="/images/enriquetamezfr2.png"
                             profileUrl="/integrantes/joseenriquez"
                             isFormer={true}
+                            nameStyle={{ textAlign: 'center', width: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                         />
                     </Box>
                 </Flex>
@@ -508,36 +519,35 @@ textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
             </Section>
 
             <Section bg="cpc.white" color="cpc.black">
-                <Flex direction={["column", "column", "column", "column"]} 
-                width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
-                    <Image src="/images/politicaanticorrupcion.svg" alt="Política Estatal Anticorrupción" 
-                    height={["6em", "6em", "7em", "7em"]} mt={5}/>
-                    <Text color="cpc.black" 
-                    px={[".7em", "1em", "1em", "1em"]} 
-                    py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
-                    fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
-                    textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
-                        Basado en una metodología que pone en primer lugar la participación de las 
-                        personas comunes se realizó en el año 2020 un proceso único en México de 
-                        <b> democracia deliberativa</b> observado por organismos internacionales
-                        para discutir a profundidad que camino debería de seguir el estado de
-                        Chihuahua para combatir la corrupción. 
-                    </Text>
-                    <Text color="cpc.black" 
-                    px={[".7em", "1em", "1em", "1em"]} 
-                    py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
-                    fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
-                    textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
-                        <Link
-                            href="https://drive.google.com/file/d/1yiAP49RjZo20MBtTmT1nuBSpG3Jmogj9/view"
-                            legacyBehavior>
-                            <a className="redlink"> 
-                               click aquí para ver la propuesta.
-                            </a>
-                        </Link>
-                    </Text>
-                </Flex>
-            </Section>
+    <Flex direction={["column", "column", "column", "column"]} 
+    width={["90%","500px", "600px", "600px"]} justify="center" alignItems="center">
+        <Image src="/images/politicaanticorrupcion.svg" alt="Política Estatal Anticorrupción" 
+        height={["6em", "6em", "7em", "7em"]} mt={5}/>
+        <Text color="cpc.black" 
+        px={[".7em", "1em", "1em", "1em"]} 
+        py={["0.5em", "1em", "1em", "1em"]} fontFamily="cpc.gothamCondensedBook" 
+        fontSize={["1.3em", "1.3em", "1.4em", "1.4em"]} 
+        textAlign="left" lineHeight={["1.2em", "1.2em", "1.2em", "1.2em"]}>
+            Basado en una metodología que pone en primer lugar la participación de las 
+            personas comunes se realizó en el año 2020 un proceso único en México de 
+            <b> democracia deliberativa</b> observado por organismos internacionales
+            para discutir a profundidad que camino debería de seguir el estado de
+            Chihuahua para combatir la corrupción. 
+        </Text>
+        <Link href="https://drive.google.com/file/d/1yiAP49RjZo20MBtTmT1nuBSpG3Jmogj9/view" passHref>
+            <Button
+                as="a"
+                mt={4}
+                colorScheme="red"
+                size="lg"
+                fontFamily="cpc.gothamCondensed"
+                _hover={{ bg: "cpc.redMedium" }}
+            >
+                Click aquí para ver la propuesta
+            </Button>
+        </Link>
+    </Flex>
+</Section>
             
         </Content>
         <style jsx>{`
