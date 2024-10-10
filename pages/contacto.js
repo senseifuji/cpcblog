@@ -99,8 +99,8 @@ export default function Contact() {
                                                 />
                                             </a>
                                         </Link>
-                                        <Text mt={2} fontWeight="bold" fontSize="lg" textAlign="center">{member.name}</Text>
-                                        <Text fontSize="md" textAlign="center">{member.role}</Text>
+                                        <Text mt={2} fontFamily="cpc.gothamBold" fontSize={["1.2em", "1.3em", "1.4em", "1.4em"]} textAlign="center" isTruncated>{member.name}</Text>
+                                        <Text fontFamily="cpc.gothamCondensedBook" fontSize={["1em", "1.1em", "1.2em", "1.2em"]} textAlign="center">{member.role}</Text>
                                     </Flex>
                                 </Box>
                             ))}
