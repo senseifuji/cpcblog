@@ -5,11 +5,6 @@ import Member from '../../components/member'
 import CpcSeo from '../../components/cpcseo';
 
 const AnaTerrazasPage = () => {
-    const links = [
-        {title: "Enlace de prueba 1", url: "#"},
-        {title: "Enlace de prueba 2", url: "#"}
-    ]
-
     return ( 
         <>
             <CpcSeo 
@@ -25,8 +20,7 @@ const AnaTerrazasPage = () => {
                         title="Ana Terrazas"
                         role="Presidenta"
                         membersince="1 año"
-                        photouRL="/images/isabelterrazasfr2.png" 
-                        links={links}
+                        photouRL="/images/isabelterrazasfr2.png"
                     />
                 </Content>
             </Layout>
