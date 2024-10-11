@@ -55,7 +55,7 @@ export default function NombramientoJesusAbbud() {
                 px={4}
                 py={2}
                 _hover={{ bg: "cpc.redMedium" }}
-                onClick={() => window.open('/pdfs/nombramiento_jesusabb.pdf', '_blank')}
+                onClick={() => window.open('/pdfs/Nombramiento_JesusAbb.pdf', '_blank')}
               >
                 Descargar Nombramiento
               </Button>
@@ -63,7 +63,7 @@ export default function NombramientoJesusAbbud() {
             <Box width="100%" maxW="800px">
               <AspectRatio ratio={16 / 9}>
                 <iframe
-                  src="/pdfs/nombramiento_jesusabb.pdf"
+                  src="/pdfs/Nombramiento_JesusAbb.pdf"
                   title="Nombramiento de Jesús Abbud"
                   width="100%"
                   height="100%"
