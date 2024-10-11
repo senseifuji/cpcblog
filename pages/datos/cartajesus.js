@@ -55,7 +55,7 @@ export default function CartaIntencionJesusAbbud() {
                 px={4}
                 py={2}
                 _hover={{ bg: "cpc.redMedium" }}
-                onClick={() => window.open('/pdfs/exposicion_de_motivos_jesus.pdf', '_blank')}
+                onClick={() => window.open('/pdfs/Exposicion_de_motivos_jesus.pdf', '_blank')}
               >
                 Descargar Carta de Intención
               </Button>
@@ -63,7 +63,7 @@ export default function CartaIntencionJesusAbbud() {
             <Box width="100%" maxW="800px">
               <AspectRatio ratio={16 / 9}>
                 <iframe
-                  src="/pdfs/exposicion_de_motivos_jesus.pdf"
+                  src="/pdfs/Exposicion_de_motivos_jesus.pdf"
                   title="Carta de Intención de Jesús Abbud"
                   width="100%"
                   height="100%"
