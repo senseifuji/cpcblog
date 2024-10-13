@@ -12,7 +12,7 @@ export default function Declaraciones3de3JesusAbbud() {
     { title: "Declaración 3 de 3 - 2021", url: "/pdfs/dJesusAbbudTestada_2021.pdf" },
     { title: "Declaración Patrimonial - 2023", url: "/pdfs/DECLARACION_PATRIMONIAL_JESUSA.pdf" },
     { title: "Código de Ética y Conducta", url: "/pdfs/JESUS_CODIGO_DE_ETICA_Y_CONDUCTA_CPC.pdf" },
-    { title: "Posibles Conflictos de Interés", url: "public/pdfs/Exposicion_de_motivos_jesus.pdf" }
+    { title: "Posibles Conflictos de Interés", url: "/pdfs/Exposicion_de_motivos_jesus.pdf" }
   ]
 
   return (
