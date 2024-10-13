@@ -30,7 +30,7 @@ export default function EntrevistaJesusAbb() {
             <Box width="100%" maxW="800px">
               <AspectRatio ratio={16 / 9}>
                 <iframe
-                  src="https://youtu.be/W7sVNPUhlY8?si=GAaYN6y6liPG-aSC"
+                  src="https://www.youtube.com/embed/W7sVNPUhlY8"
                   title="Entrevista a Jesús Abdala Abbud"
                   allowFullScreen
                 />
