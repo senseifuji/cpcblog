@@ -343,6 +343,12 @@ width={["100%", "90%", "80%", "60%"]}>
     imageUrl="/images/giselarodriguezfr2.png"
     profileUrl="/integrantes/giselarodriguez"
   />
+          <IntegrantCard
+    name="Mónica Patricia Oros Ramos"
+    role="Integrante del CPC"
+    imageUrl="/images/monicafr2.png"
+    profileUrl="/integrantes/monicapatricia"
+  />
                 </Flex>
                 <Text fontSize={["1.75em", "2em", "2em", "2em"]} fontFamily="cpc.gothamBold" fontWeight="300" textAlign="center" mt={10} mb={6}>
                     Expresidentes del CPC
