@@ -19,7 +19,7 @@ const MonicaPatriciaPage = () => {
                     <Member 
                         title="Patricia Oros"
                         role="Integrante"
-                        membersince="2023 - 2028"
+                        membersince="2024 - 2025"
                         photouRL="/images/monicafr2.png"
                     />
                 </Content>
