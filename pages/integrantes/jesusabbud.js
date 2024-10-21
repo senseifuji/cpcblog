@@ -29,7 +29,7 @@ const JesusAbbudPage = () => {
                     <Member 
                         title="Jesús Abbud"
                         role="Integrante"
-                        membersince="2021-2026"
+                        membersince="2024-2025"
                         photouRL="/images/jesusabuddfr2.png" 
                         mail="jesus@comiteanticorrupcion.mx"
                         twitter="pibe_abbud" 
