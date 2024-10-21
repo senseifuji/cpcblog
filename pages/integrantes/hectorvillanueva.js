@@ -23,7 +23,7 @@ const HectorVillanuevaPage = () => {
                         <Member 
                             title="Héctor Villanueva"
                             role="Integrante"
-                            membersince="2024-2029"
+                            membersince="2024-2025"
                             photouRL="/images/josevillanuevafr2.png"
                             links={links}
                             mailFontSize="sm"
